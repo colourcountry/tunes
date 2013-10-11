@@ -1,5 +1,10 @@
 \version "2.16.0"
-\layout { indent = 0.0\cm }
+
+\layout { 
+  indent = 0.0\cm
+  \context { \Score \remove "Bar_number_engraver" }	
+  \context { \Staff \remove "Time_signature_engraver" }
+}
 
 #(set-global-staff-size 18)
 
@@ -24,6 +29,15 @@ scoreTitleMarkup = \markup {
 
 }
 
+ossia = \with {
+      \remove "Time_signature_engraver"
+      alignAboveContext = #"main"
+      fontSize = #-3
+      \override StaffSymbol #'staff-space = #(magstep -3)
+      \override StaffSymbol #'thickness = #(magstep -3)
+      firstClef = ##f
+}
+
 makePercent =
 #(define-music-function (parser location note) (ly:music?)
    "Make a percent repeat the same length as NOTE."
@@ -35,6 +49,7 @@ makeDoublePercent =
    "Make a percent repeat the same length as NOTE."
    (make-music 'DoublePercentEvent
                'length (ly:music-length note)))
+
 
   
 \score{{ \label #'oscarwoods
@@ -53,10 +68,10 @@ makeDoublePercent =
 }}
 \header{
 piece = "Oscar Woods' Jig"
+subtitle = "Tiger Smith's Jig"
 opus = "WFS 13-07 01"
 }}
 \markuplist{
-    "Oscar Woods knew this tune as Tiger Smith's Jig."
     "Into..."
 }
 
@@ -113,15 +128,7 @@ opus = "WFS 13-07 03"
   fis4 a4 g4 b4 a4 fis'4 fis'8 e'8 fis'4
     <<
     { g4 e'4 e'8 d'8 e'4 fis4 d'4 d'8 cis'8 d'4 }
-
-    \new Staff \with {
-      \remove "Time_signature_engraver"
-      alignAboveContext = #"main"
-      fontSize = #-3
-      \override StaffSymbol #'staff-space = #(magstep -3)
-      \override StaffSymbol #'thickness = #(magstep -3)
-      firstClef = ##f
-    }
+    \new Staff \ossia
     { \key d \major g4 e'8 d'8 cis'8 b8 a8 g8 fis4 d'8 cis'8 d'2 }
   >>
   
@@ -131,7 +138,7 @@ opus = "WFS 13-07 03"
   g'4 fis'4 e'8 fis'8 g'8 e'8 d'4 b4 b8 a8 b4
   c'4 a4 a8 g8 a4 b4 g4 g2
   \makePercent s1  \makePercent s1
-  c'4 a4 a8 c'8 b8 a8 g4 b8 a8 g2 \bar "|."
+  c'4 a4 a8 c'8 b8 a8 g4 \afterGrace b4 a8 g2 \bar "|."
   
 }}
 \header{
@@ -200,15 +207,7 @@ opus = "WFS 13-07 06"
     \makePercent s1 \makePercent s1
     <<
     { b4 \grace g8 b8 d'8 cis'4 \grace a8 cis'8 e'8 }
-
-    \new Staff \with {
-      \remove "Time_signature_engraver"
-      alignAboveContext = #"main"
-      fontSize = #-3
-      \override StaffSymbol #'staff-space = #(magstep -3)
-      \override StaffSymbol #'thickness = #(magstep -3)
-      firstClef = ##f
-    }
+    \new Staff \ossia
     { \key g \major b8 cis'8 d'4 cis'8 d'8 e'4 }
   >>
     
@@ -397,12 +396,9 @@ opus = "WFS 13-07 14"
 }}
 \header{
 piece = "La Roulante"
+subtitle = "/ L.N.B. Polka"
 opus = "WFS 13-07 15"
 }}
-\markuplist{
-  "aka 'L.N.B. Polka'"
-}
-
 
 \score{{
 \transpose d d' {

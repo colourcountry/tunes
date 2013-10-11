@@ -3,8 +3,12 @@
 \layout { 
   indent = 0.0\cm
   \context { \Score \remove "Bar_number_engraver" }	
+  \context { \Staff \remove "Time_signature_engraver" }
 }
 
+\layout {
+  indent = 0.0\cm
+}
 #(set-global-staff-size 18)
 
 \paper {
@@ -98,7 +102,7 @@ opus = "EATMD 13-01 02"
 \time 6/8 \key d \major
   fis4 fis8 fis8 e8 d8 a4 a8 a4 fis8
   g4 g8 g8 fis8 e8 b4. b4 d'8
-  cis'4 c'8 cis'4 d'8 e'4 cis'8 b4 a8
+  cis'4 bis8 cis'4 d'8 e'4 cis'8 b4 a8
   d'4 cis'8 d'4 e'8 fis'8 e'8 d'8 cis'8 b8 a8
   \makePercent s2. \makePercent s2.
   \makePercent s2. \makePercent s4. cis'4.
@@ -108,7 +112,7 @@ opus = "EATMD 13-01 02"
   fis'4. fis'4. fis'8 e'8 d'8 a4.
   d'8 cis'8 d'8 e'4 d'8 cis'4. b4.
   g'4. g'4. g'8 fis'8 e'8 b4.
-  cis'4 c'8 cis'4 d'8 e'4 cis'8 b4 a8
+  cis'4 bis8 cis'4 d'8 e'4 cis'8 b4 a8
   \makePercent s2. \makePercent s2.
   \makePercent s2. \makePercent s2.
   g'4 g'8 g'8 fis'8 e'8 d'4 d'8 d'8 cis'8 b8
@@ -1035,7 +1039,7 @@ opus = "EATMD 13-01 45"
 }}
 \header{
 piece = "?"
-opus = "EATMD 13-01 45"
+opus = "EATMD 13-01 46"
 meter = "A B"
 }}
 
@@ -1059,7 +1063,7 @@ meter = "A B"
 }}
 \header{
 piece = "?"
-opus = "EATMD 13-01 46"
+opus = "EATMD 13-01 47"
 meter = "A1 A2 B A2"
 }}
 
@@ -1091,7 +1095,7 @@ meter = "A1 A2 B A2"
 }}
 \header{
 piece = "?"
-opus = "EATMD 13-01 47"
+opus = "EATMD 13-01 48"
 }}
 
 
@@ -1111,7 +1115,7 @@ opus = "EATMD 13-01 47"
 }}
 \header{
 piece = "The Fiery Clock Face"
-opus = "EATMD 13-01 48"
+opus = "EATMD 13-01 49"
 }}
 
 \score{{
@@ -1133,10 +1137,10 @@ opus = "EATMD 13-01 48"
 }}
 \header{
 piece = "?"
-opus = "EATMD 13-01 49"
+opus = "EATMD 13-01 50"
 }}
 
-\markuplist{ "Into (EATMD 13-01 50 = EATMD 13-01 26) (in C)"
+\markuplist{ "Into (EATMD 13-01 51 = EATMD 13-01 26) (in C)"
 }
 
 \score{{
@@ -1156,7 +1160,7 @@ opus = "EATMD 13-01 49"
 }}
 \header{
 piece = "?"
-opus = "EATMD 13-01 51"
+opus = "EATMD 13-01 52"
 }}
 
 \markuplist{ "Into..." }
@@ -1182,7 +1186,7 @@ opus = "EATMD 13-01 51"
 }}
 \header{
 piece = "?"
-opus = "EATMD 13-01 52"
+opus = "EATMD 13-01 53"
 meter = "A B"
 }}
 
@@ -1202,7 +1206,7 @@ meter = "A B"
 }}
 \header{
 piece = "?"
-opus = "EATMD 13-01 53"
+opus = "EATMD 13-01 54"
 }}
 
 \markuplist{ "Into..." }
@@ -1223,7 +1227,7 @@ opus = "EATMD 13-01 53"
 }}
 \header{
 piece = "?"
-opus = "EATMD 13-01 54"
+opus = "EATMD 13-01 55"
 }}
 
 \markuplist{ "Into..." }
@@ -1245,7 +1249,7 @@ opus = "EATMD 13-01 54"
 }}
 \header{
 piece = "?"
-opus = "EATMD 13-01 55"
+opus = "EATMD 13-01 56"
 }}
 
 \markuplist{ "Into..." }
@@ -1266,7 +1270,7 @@ opus = "EATMD 13-01 55"
 }}
 \header{
 piece = "?"
-opus = "EATMD 13-01 56"
+opus = "EATMD 13-01 57"
 }}
 
 \score{{
@@ -1286,7 +1290,7 @@ opus = "EATMD 13-01 56"
 }}
 \header{
 piece = "?"
-opus = "EATMD 13-01 57"
+opus = "EATMD 13-01 58"
 meter = "A B B"
 }}
 
@@ -1308,7 +1312,7 @@ meter = "A B B"
 }}
 \header{
 piece = "?"
-opus = "EATMD 13-01 58"
+opus = "EATMD 13-01 59"
 }}
 
 
@@ -1339,33 +1343,54 @@ opus = "EATMD 13-02 01"
 \score{{
 \transpose d d' {
 \time 3/2 \key g \major
+  
   b4. c'8 d'4 b4 a4 g4 fis4 a2 c'4 b4 a4
   b4. c'8 d'4 b4 a4 g4 d4 g2
-  \bar "||" \break b4 a4 g4
+  \bar "||" b4 a4 g4 \break 
   b4. c'8 d'4 e'4 fis'4 g'4 a'4 a2 c'4 b4 a4
   b4. c'8 d'4 e'4 fis'4 g'4 g'4 g2
-  \bar "||" \break b4 a4 g4
+  \bar "|." b4 a4 g4
+}}
+\header{
+piece = "The Dusty Miller"
+opus = "EATMD 13-02 02"
+}}
+
+
+\score{{
+\transpose d d' {
+\time 3/2 \key g \major
   g8 a8 b8 c'8 d'4 g4 b4 g4 fis4 a4 a4 c'4 b4 a4
   g8 a8 b8 c'8 d'4 g4 b4 g4 d4 g4 g4
-  \bar "||" \break b4 a4 g4
+  \bar "||" b4 a4 g4 \break 
   g'2 fis'2 e'2 fis'4 d'2 fis'4 e'4 d'4
   c'2 b2 a2 b4 g2 
-  \bar "||" \break b4 a4 g4
+  \bar "|." b4 a4 g4 
+}}
+\header{
+piece = "Punchinello's Hornpipe"
+subtitle = "/ The Three Rusty Swords"
+opus = "EATMD 13-02 03"
+}}
+
+
+\score{{
+\transpose d d' {
+\time 3/2 \key d \major
   fis4. e8 d4 fis'4 e'4 d'4 e'4 e2 b4 a4 g4
   fis4. e8 d4 fis'4 e'4 d'8 cis'8 d'4 d2
-  \bar "||" \break b4 a4 g4
+  \bar "||" b4 a4 g4 \break 
   fis4 a4 g4 b4 a4 cis'8 d'8 e'4 e2 b4 a4 g4
   fis4 a4 g4 b4 a4 b8 cis'8 d'4 d2
-  \bar "||" \break fis'4 g'4 a'4
+  \bar "||" fis'4 g'4 a'4 \break 
   fis'4. e'8 d'4 fis'4 e'4 d'4 cis'4 e'2 fis'4 g'4 a'4
   fis'4. e'8 d'4 fis'4 e'4 cis'4 d'4 d2
-  
-  \bar "|."  
+  \bar "|." b4 a4 g4 
 }}
 \header{
 piece = "?"
-meter = "(A A B B)x3 (C C D D)x3 (E E F F G G) x3"
-opus = "EATMD 13-02 02"
+meter = "A A B B C C"
+opus = "EATMD 13-02 04"
 }}
 
 
@@ -1389,7 +1414,7 @@ opus = "EATMD 13-02 02"
 \header{
 piece = "The Princess Royal"
 meter = "A(8) A B(12)"
-opus = "EATMD 13-02 03"
+opus = "EATMD 13-02 05"
 }}
 
 \score{{
@@ -1408,7 +1433,7 @@ opus = "EATMD 13-02 03"
 }}
 \header{
 piece = "?"
-opus = "EATMD 13-02 04"
+opus = "EATMD 13-02 06"
 }}
 
 \markuplist{ "Into..." }
@@ -1434,10 +1459,10 @@ opus = "EATMD 13-02 04"
 }}
 \header{
 piece = "?"
-opus = "EATMD 13-02 05"
+opus = "EATMD 13-02 07"
 }}
 
-\markuplist{ "? (EATMD 13-02 06 = WFS 13-07 18) into..." }
+\markuplist{ "? (EATMD 13-02 08 = WFS 13-07 18) into..." }
 
 \score{{
 \transpose d d' {
@@ -1455,7 +1480,7 @@ opus = "EATMD 13-02 05"
 }}
 \header{
 piece = "?"
-opus = "EATMD 13-02 07"
+opus = "EATMD 13-02 09"
 }}
 
 \score{{
@@ -1470,10 +1495,10 @@ opus = "EATMD 13-02 07"
 }}
 \header{
 piece = "?"
-opus = "EATMD 13-02 08"
+opus = "EATMD 13-02 10"
 }}
 
-\markuplist{ "Jenny Lind Polka (EATMD 13-02 09 = WFS 13-07 04) into..." }
+\markuplist{ "Jenny Lind Polka (EATMD 13-02 11 = WFS 13-07 04) into..." }
 
 \score{{
 \transpose d d' {
@@ -1489,16 +1514,16 @@ opus = "EATMD 13-02 08"
   <<
     { g'4 d'4 b4 d'8 c'8 }
      \new Staff \ossia
-    { \key g \major g'4 d'8 c'8 b8 a8 g4 }
+    { \key g \major g'4 d'8 c'8 b8 a8 \afterGrace g4 a8 }
   >>
-  b4 d'4 e'4 fis'4 g'2 fis'4 g'8 fis'8
+  \afterGrace b4 c'8 d'4 e'4 fis'4 g'2 fis'4 g'8 fis'8
   \makeDoublePercent s\breve
   \makeDoublePercent s\breve
   \bar "|."  
 }}
 \header{
 piece = "Brighton Camp"
-opus = "EATMD 13-02 10"
+opus = "EATMD 13-02 12"
 }}
 
 \score{{
@@ -1517,7 +1542,7 @@ opus = "EATMD 13-02 10"
 }}
 \header{
 piece = "?"
-opus = "EATMD 13-02 11"
+opus = "EATMD 13-02 13"
 }}
 
 %{
