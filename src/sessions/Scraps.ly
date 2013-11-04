@@ -68,7 +68,31 @@ makeDoublePercent =
   \bar "|."
 }}
 \header{
-piece = "Monsal Jig"
+piece = "Monsal Head"
+}}
+
+\score{{
+\transpose d d' {
+\time 4/4 \key g \major
+  \partial 4. d'8 e'8 fis'8
+  g'8 b8 d'8 e'8 g8 b8 d'8 e'8
+  d'8 c'8 a8 fis8 d8 e8 fis8 g8
+  a8 b8 c'8 d'8 ees'8 e'8 f'8 fis'8
+  e'8 d'8 b8 g8 d8 d'8 e'8 fis'8
+  \makePercent s1 \makePercent s1
+  \makePercent s1 g'8 d'8 b8 g4
+  \bar "||" \break
+  g'8 fis'8 g'8
+  e'8 c'8 c''8 e'8 a'8 g'8 e'8 c'8
+  b8 g8 g'8 b8 e'8 d'8 b8 g8
+  a8 b8 c'8 d'8 ees'8 e'8 f'8 fis'8
+  e'8 d'8 b8 g8 d8 g'8 fis'8 g'8
+  \makePercent s1 \makePercent s1
+  \makePercent s1 g'8 d'8 b8 g4
+  \bar "|."
+}}
+\header{
+piece = "?"
 }}
 
 \score{{

@@ -1,0 +1,184 @@
+X:WFS 13-10 01
+R:2
+K:G
+M:2/4
+xG/A/| BB BB Bd-dB BA AB A
+zd| ec g>f ed BG AG GA G     ||
+g>f| ed Bc d g>f ed GA B
+zd| ec g>f ed BG AG GA G    |]
+%%stop
+
+X:WFS 13-10 03
+R:2 1,1 1,/,/ /,/,/,/
+K:G
+M:2/4
+Bd dB ce ec Bd dB cA A
+x x x x Bd A>c BG G     ||
+Bd def gfgf gd Bd dB cBAB A
+x x x x Bd A>c BG G     |]
+
+X:WFS 13-10 06
+T:The Lincolnshire Poacher
+R:3 2,1 
+M:6/8
+K:D
+xA| dd dcB AG FA dd ec d
+zA| de fg af de ff fed e
+zA| de fg af de ff fed e
+fe| dd dcB AG FA dd ec d  |]
+
+X:WFS 13-10 07
+R:2
+M:2/4
+K:G
+B GB c Ac B GB AF D
+x x x x BG AF G4        ||
+Bd dg e dc B GB AF D
+x x x x BG AF G4        |]
+
+X:WFS 13-10 08
+R:2
+M:2/4
+K:G
+d dc Bc d AB cB AB c
+x x x x GA BG A G       ||
+BG DG BG B cA FA cA c
+x x x x GA BG A G       |]
+%%start
+
+X:WFS 13-10 09
+T:Bear Dance
+R:2 1,1 /,/,1
+K:G
+M:2/4
+BE E BE E>F GG FG A
+zG/A/| BB AA GG F EFG FD E     ||
+EFG EFG FD D EFG EFG A
+zG/A/| BB AA GG F EFG FD E     |]
+
+X:WFS 13-10 13
+T:Rogue's March
+R:3 2,1 
+M:6/8
+K:G
+BB Bcd ee e dd de dc BA
+x x x x def gdB A G        ||
+g f e def gg ff ee dc
+BB Bcd ee e def gdB A G    |]
+
+X:WFS 13-10 14
+T:Salmon Tails Up The Water
+R:2 1,1 1,/,/
+K:G
+M:2/4
+GE DE G GA Bd ABA GE D
+x x x x x ABA G z           ||
+Bd dcB ce e dB ABA GE D
+x x x e>f gf ed ef g
+Bd dcB ce e dB ABA GE DEF
+GE DE G GA Bd ABA G         |]
+
+X:WFS 13-10 15
+T:Winster Gallop
+R:2
+K:G
+M:2/4
+GB GB GB D A>c BA GB D
+ce fe dB d A>c BA G G       ||
+gf ed gf ed gf ed cB A
+fe d fe d d A>c BA G        |]
+
+X:WFS 13-10 17
+T:Willafjord
+R:4 2,2 2,1,1
+K:D
+AFA-ADFA BGB-BDGB AFA-ADFA EFGAGFED
+x x x x ABcd efge fd d      ||
+e2|fdf-fAdf geaf gfed fdf-fAdf ece-eAce
+x x x x ABcd efge fd d      |]
+
+X:WFS 13-10 21
+T:Lannigan's Ball
+R:3 2,1 
+M:6/8
+K:G
+EE GA BA Bc^d DD FG ABA FED
+x x x x eB cBA BGE E        ||
+ef gfe fag fed ef gfe fBB B
+x x x x eB cBA BGE E        |]
+
+X:WFS 13-10 22
+T:Harper's Frolic
+R:2 1,1 1,/,/ /,/,/,/
+M:2/4
+K:D
+A/G/| FA DAG FA Dd cd ec dcde f1
+x x x x x x d d1        ||
+e1| fdd df gee eg fdd df edcB A1
+x x x x fd ec d d1      |]
+
+%%stop
+X:WFS 13-10 23
+T:Bonnie Kate
+R:2 1,1 >:3/2,/ 1,/,/ <:/,/,1 /,/,/,/
+r:A B
+M:2/4
+K:G
+g>f g>f gd db cd<e dc BG GA BG GAB cA Ac Bc<d cB Ad ef
+x x x x x x x x x x x x x x A z ||
+BG GAB cA dB ec cd<e fd def g>f g/f/e1 def gB cde dc BG GA
+x x x x x x x x x x x x x x x G |]
+%%start
+
+X:WFS 13-10 24
+T:The Bonny Breast Knot
+R:2 1,1 1,/,/ /,/,/,/
+M:2/4
+K:G
+d/c/| BG GAB cABG FD GB GB GABc d1
+x x x x GB Adc BG G1    ||
+B/c/| d>e d>e dcBA G AAB cBcd eA ABc
+x x x x AA DEF G G1     |]
+
+X:WFS 13-10 25
+T:Young Collins
+R:2 1,1 1,/,/ /,/,/,/
+M:2/4
+K:G
+GABc dd ce ABc dd edc BA G
+x x x x x x x x     ||
+ED EFG AA G>A BA BCd ee dcBA
+GABc dd ce ABc dd edc BA G  |]
+
+X:WFS 13-10 26
+T:Spootiskerry
+M:4/4
+R:4 2,2 2,1,1 1,1,1,1
+D1E1| GDE GDEG DEGA BAB GDE GABd eged BAB
+x x x x ged edBA BG G1      ||
+e1f1| ged edB BABG EDE GABd eged BA A
+x x x x x x BG G        |]
+
+X:WFS 13-10 27
+M:4/4
+R:4 2,2 2,1,1 1,1,1,1
+B1A1| GB<d d>cB Ac<e e>dc Bdgd cedc BG G1
+x x x x x x x x ||
+B1d1| g>gf gdBd ed d>ef gdgf gdBd cA ABA
+GB<d d>cB Ac<e e>dc Bdgd cedc BG G1 |]
+
+X:WFS 13-10 28
+M:4/4
+R:4 2,2 2,1,1 1,1,1,1
+A2| dAG FDFA BGBd cAce ff gfed ce e2
+x x x x ff gfed Ad d2       ||
+A2| dfaf dfaf gfef gef gfed cdeg fefg a
+f1e1| x x x x x cAag fd d   |]
+
+X:WFS 13-10 29
+T:Morpeth Rant
+R:4 2,2 2,1,1
+D2| GDB, G,B,DB, G,CEC G,B,DB, GAB cABG FA AcBA
+x x x x x x DG G2              ||
+B1d1| gfed BGB cBAG FD ECEG cBAG FD D
+ECEG cBAG FDFA dcBA Ggfg dBcA GG G2 |]

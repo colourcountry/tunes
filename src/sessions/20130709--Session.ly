@@ -6,7 +6,7 @@
   \context { \Staff \remove "Time_signature_engraver" }
 }
 
-#(set-global-staff-size 18)
+#(set-global-staff-size 16)
 
 \paper {
 
@@ -155,7 +155,7 @@ opus = "WFS 13-07 04"
   
   \partial 4. d8 g8 a8
   b4 b4 c'4 d'2 g'8 fis'8
-  e'4. fis'8 g'8 e'8 d'4.
+  \afterGrace e'4. {c'8 e'8} fis'8 g'8 e'8 d'4.
   \makePercent s4.
   \makePercent s2.
   \makePercent s4.
@@ -165,7 +165,7 @@ opus = "WFS 13-07 04"
   << \new Voice { \voiceOne e'4 } \new Voice { \voiceTwo b8 c'8 } \oneVoice >>
   d'4. e'8 d'8 c'8 b2 g'8 fis'8
   e'8 c'8 e'8 fis'8 g'8 e'8 d'4.
-  d8 g8 a8 b4. c'8 a4 g2. \bar "|."
+  d8 g8 a8 b4. c'8 \afterGrace a4 fis4 g2. \bar "|."
   
 }}
 \header{
@@ -228,25 +228,22 @@ opus = "WFS 13-07 07"
 \score{{
 \transpose d d' {
 \time 6/8 \key g \major
-  
+  \repeat volta 2 {
+  \partial 4. d8 e8 fis8
   g4 fis8 g4 b8 a4 g8 e4 d8 g4 b8 d'4 g'8 e'4. d'8 e'8 fis'8
-  g'4 fis'8 g'4 d'8 e'4 d'8 b4 g8 a4 b8 a4 g8 e4. d8 e8 fis8
-  \makeDoublePercent s1.
-  \makeDoublePercent s1.
-  \makeDoublePercent s1.
-  a8 b8 a8 g4 fis8 g2. \bar "||" \break
-  
+  g'4 fis'8 g'4 d'8 e'4 d'8 b4 g8 }
+  \alternative { { a4 b8 a4 g8 e4. s4.}
+  {a8 b8 a8 g4 fis8 g4.} } \bar "||" \break 
+  b4 d'8
   g'4 fis'8 e'4 g'8 fis'4 e'8 d'4 fis'8 e'4 d'8 e'4 fis'8 e'4 d'8 b4 g8
-  g'4 fis'8 g'4 d'8 e'4 d'8 b4 g8 a4 b8 a4 g8 e4. d8 e8 fis8
-  \makeDoublePercent s1.
-  \makeDoublePercent s1.
-  \makeDoublePercent s1.  
-  a4. fis4. g2. \bar "|."
+  g'4 fis'8 g'4 d'8 e'4 d'8 b4 g8
+  a4 b8 a4 g8 e4. \bar "|."
   
 }}
 \header{
 piece = "Off to California"
 opus = "WFS 13-07 08"
+meter = "A1 A2 B A2"
 }}
 
 \score{{

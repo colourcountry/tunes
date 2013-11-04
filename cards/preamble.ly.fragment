@@ -1,0 +1,75 @@
+\version "2.16.0"
+\layout { 
+  indent = 0.0\cm
+  ragged-right = ##t
+  \context { \Score
+      \remove "Bar_number_engraver"
+      proportionalNotationDuration = #(ly:make-moment 1/8)
+  } 
+  \context { \Staff
+      \remove "Time_signature_engraver" 
+      \override StaffSymbol #'thickness = #(magstep -5)
+  }
+}
+
+#(set-global-staff-size 13)
+
+#(set! paper-alist (cons '("poker card" . (cons (* 3.5 in) (* 2.5 in))) paper-alist))
+#(set! paper-alist (cons '("bridge card" . (cons (* 3.5 in) (* 2.25 in))) paper-alist))
+#(set! paper-alist (cons '("1080p 300dpi" . (cons (* 6.4 in) (* 3.6 in))) paper-alist))
+
+\header {
+  tagline = ""  % removed
+} 
+
+\paper {
+  
+#(set-paper-size "1080p 300dpi")
+
+#(define top-margin (* 5 mm))
+#(define bottom-margin (* 7 mm))
+
+
+ragged-last-bottom = ##f
+ragged-bottom = ##f
+print-page-number = ##f
+  
+scoreTitleMarkup = \markup {
+  \column{
+  \fill-line {
+    \line {
+      \fontsize #4 \bold  
+      \fromproperty #'header:piece      
+      \normalsize
+      \normal-text
+      \italic
+      \fromproperty #'header:meter
+      
+    }
+    \line {
+      \fromproperty #'header:subtitle
+      \bold
+      \fromproperty #'header:opus
+    }
+  }
+  \fill-line {
+    \line {
+        \vspace #1
+    }
+  }
+  }
+} 
+
+}
+
+ossia = \with {
+      \remove "Time_signature_engraver"
+      alignAboveContext = #"main"
+      fontSize = #-3
+      \override StaffSymbol #'staff-space = #(magstep -3)
+      \override StaffSymbol #'thickness = #(magstep -3)
+      firstClef = ##f
+}
+
+
+

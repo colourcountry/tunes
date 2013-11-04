@@ -9,7 +9,7 @@
 \layout {
   indent = 0.0\cm
 }
-#(set-global-staff-size 18)
+#(set-global-staff-size 16)
 
 \paper {
 
@@ -180,7 +180,8 @@ opus = "EATMD 13-01 04"
   \bar "|."
 }}
 \header{
-piece = "?"
+piece = "The Sloe"
+subtitle = "Hardcore 48-03"
 opus = "EATMD 13-01 05"
 }}
 
@@ -373,7 +374,7 @@ opus = "EATMD 13-01 13"
   \alternative {
     {
       \makePercent s2. 
-      c'8 b8 c'8 e8 d8 c8 \break
+      c'8 b8 c'8 e8 d8 c8 
       b,8 c8 d8 e8 fis8 g8 a8 g8 fis8 g4 a8
     }{
       \makePercent s2. 
@@ -404,7 +405,8 @@ opus = "EATMD 13-01 14"
   \bar "|."  
 }}
 \header{
-piece = "?"
+piece = "Doncaster Races"
+subtitle = "Hardcore 57-03"
 opus = "EATMD 13-01 15"
 }}
 
@@ -586,7 +588,8 @@ opus = "EATMD 13-01 21"
   \bar "|."  
 }}
 \header{
-piece = "?"
+piece = "Sadler's Wells Hornpipe"
+subtitle = "Hardcore 23-02"
 opus = "EATMD 13-01 22"
 }}
 
@@ -598,7 +601,7 @@ opus = "EATMD 13-01 22"
 \time 2/2 \key g \major
   \partial 4 b,8 a,8
   g,8 b,8 d8 b,8 g,8 b,8 d8 b,8 g,4 g4 g4 fis8 e8
-  d8 fis8 a8 fis8 d8 fis8 a8 fis8 d4 d'4 d'4 b4
+  d8 fis8 a8 fis8 d8 fis8 a8 fis8 d4 d'4 d'4 b4 \noBreak
   c'8 d'8 e'8 c'8 b8 c'8 d'8 b8 a8 b8 c'8 d'8 e'8 fis'8 \afterGrace g'4 e'8
   g'8 d'8 e'8 c'8 d'8 b8 a8 g8 d4 g4 g4
   \bar "||" \break b8 c'8
@@ -609,7 +612,8 @@ opus = "EATMD 13-01 22"
   \bar "|."  
 }}
 \header{
-piece = "?"
+piece = "Butcher's Hornpipe"
+subtitle = "Hardcore 14-03"
 opus = "EATMD 13-01 23"
 }}
 
@@ -721,7 +725,8 @@ opus = "EATMD 13-01 28"
   \bar "|."  
 }}
 \header{
-piece = "?"
+piece = "Lodge Road"
+subtitle = "Hardcore 42-01"
 opus = "EATMD 13-01 30"
 }}
 
@@ -744,8 +749,10 @@ opus = "EATMD 13-01 30"
   \bar "|."  
 }}
 \header{
-piece = "?"
+piece = "From Night Till Morn"
+subtitle = "Welch MS; Sussex 05"
 opus = "EATMD 13-01 31"
+meter = "A(8) A B(4) A B A"
 }}
 
 \score{{
@@ -767,7 +774,8 @@ opus = "EATMD 13-01 31"
   \bar "|."  
 }}
 \header{
-piece = "?"
+piece = "South Downs"
+composer = "Jim Harding"
 opus = "EATMD 13-01 32"
 }}
 
@@ -966,7 +974,8 @@ opus = "EATMD 13-01 40"
   \bar "|."  
 }}
 \header{
-piece = "?"
+piece = "Oscar Woods' March"
+subtitle = "Hardcore 45-01"
 opus = "EATMD 13-01 43"
 meter = "A B C"
 }}
@@ -991,7 +1000,7 @@ meter = "A B C"
   \bar "|."  
 }}
 \header{
-piece = "?"
+piece = "Oh Joe"
 opus = "EATMD 13-01 44"
 }}
 
@@ -1062,7 +1071,8 @@ meter = "A B"
   \bar "|."  
 }}
 \header{
-piece = "?"
+piece = "George Green's Slow College Hornpipe"
+subtitle = "Lester's 005"
 opus = "EATMD 13-01 47"
 meter = "A1 A2 B A2"
 }}
@@ -1159,7 +1169,8 @@ opus = "EATMD 13-01 50"
   \bar "|."  
 }}
 \header{
-piece = "?"
+piece = "Walter Bulwer's Polka #4"
+subtitle = "Hardcore 54-02"
 opus = "EATMD 13-01 52"
 }}
 
@@ -1185,7 +1196,8 @@ opus = "EATMD 13-01 52"
   \bar "|."  
 }}
 \header{
-piece = "?"
+piece = "Walter Bulwer's Polka #3"
+subtitle = "Hardcore 54-01"
 opus = "EATMD 13-01 53"
 meter = "A B"
 }}
@@ -1335,7 +1347,8 @@ opus = "EATMD 13-01 59"
   \bar "|."  
 }}
 \header{
-piece = "?"
+piece = "Juniper Hill"
+subtitle = "Hardcore 60-02"
 opus = "EATMD 13-02 01"
 }}
 
@@ -1355,7 +1368,8 @@ opus = "EATMD 13-02 01"
 piece = "The Dusty Miller"
 opus = "EATMD 13-02 02"
 }}
-
+\markuplist{ "Into..."
+}
 
 \score{{
 \transpose d d' {
@@ -1372,7 +1386,8 @@ piece = "Punchinello's Hornpipe"
 subtitle = "/ The Three Rusty Swords"
 opus = "EATMD 13-02 03"
 }}
-
+\markuplist{ "Into..."
+}
 
 \score{{
 \transpose d d' {
@@ -1388,7 +1403,7 @@ opus = "EATMD 13-02 03"
   \bar "|." b4 a4 g4 
 }}
 \header{
-piece = "?"
+piece = "Old Lancashire Hornpipe"
 meter = "A A B B C C"
 opus = "EATMD 13-02 04"
 }}
@@ -1405,7 +1420,7 @@ opus = "EATMD 13-02 04"
   \bar "||" \break d'4
   e'4. d'8 e'4. d'8 e'4 fis'4 g'4. fis'8
   g'4 fis'4 e'4 d'4 b8 a8 g8 b8 a4 d4
-  g4 g4 a4 a4 b4 g4 g'4. fis'8
+  g4 g4 a4 a4 \afterGrace b4 a8 g4 g'4. fis'8
   g'4 d'4 e'2 d'4 b4 c'2
   c'4 b4 a4 g4 fis8 g8 a8 fis8 d4 d'8 c'8
   b8 a8 g8 b8 a4 fis4 g2.
@@ -1467,10 +1482,10 @@ opus = "EATMD 13-02 07"
 \score{{
 \transpose d d' {
 \time 4/4 \key g \major
-  g4 d'4 b2 a8 b8 a8 g8 e4 d4
+  g4 d'4 b2 a8 b8 a8 g8 <fis e>4 d4
   g4 d'4 b2 d'4 c'8 b8 a2
   \makePercent s1 \makePercent s1
-  e4 e4 c'4 b8 a8 fis4 fis4 g2
+  e4 e4 c'4 b8 a8 <fis g>4 fis4 g2
   \bar "||" \break
   fis4. g8 a4 b4 c'4 b4 a2
   g4 e4 c'4 d'4 b2 a2
@@ -1479,7 +1494,8 @@ opus = "EATMD 13-02 07"
   \bar "|."  
 }}
 \header{
-piece = "?"
+piece = "Mount Hills"
+subtitle = "Lester's 349; Hardcore 43-03"
 opus = "EATMD 13-02 09"
 }}
 
@@ -1541,7 +1557,7 @@ opus = "EATMD 13-02 12"
   \bar "|."  
 }}
 \header{
-piece = "?"
+piece = "Coleford Jig"
 opus = "EATMD 13-02 13"
 }}
 
