@@ -1,0 +1,158 @@
+
+X:WFS 13-11 12
+T:Oyster Girl
+M:6/8
+K:G
+ded B2G A2F D3 G2G BGB d2c A3 ded B2g f2e c3{e} d2d cBA G3-G2
+P:B
+Bcd Bcd e2c e2c ABc ABc d2B d2B ded B2g f2e c3{e} d2d cBA G3-G2
+
+X:WFS 13-11 13
+T:The New-Rigged Ship
+M:6/8
+K:D
+dcd d2f dcd d2f |1 ecA A2f ecA ABc :|2 ecA ABc d3
+P:B
+f2g |: a2f a2f |1 d2d dfa b2g b2g e2e efg :|2 d2d def ecA ABc d3
+
+%%text WFS 13-11 14 = WFS 13-07 02 Captain Lanoe's Quick March
+
+%%text WFS 13-11 15 = WFS 13-10 13 Rogue's March
+
+X:WFS 13-11 16
+T:Newcastle
+M:2/2
+K:G
+GA| B2d2 G2A2 G3A G2A2 B2d2 G2d2 e2g2-g2fe d2B2 A2G2 E2e2-e2dc d2B2 A3G G4
+P:B
+def| gfed g2B2 A2g2-g2A2 G3A BAGF E2e2-e2f2 gfed g2B2 A3B c2d2 e2B2 A3G G4
+
+%%text Into WFS 13-11 17 = WFS 13-10 41 Portsmouth
+
+X:WFS 13-11 19
+T:Mr Beveridge's Major Maggot
+M:3/2
+K:G
+g4 f2ef g4 d2cB ABc2 B2G2 G4 A2GA B4 c2BA GFE2 A2D2
+P:B
+B2d2-d2d2 d4 A2c2-c2c2 c2 G2B2-B2B2 B2AG F2AG FED2 F2A2
+B2d2-d2d2 d2B2 c2B2 A2G2 F4 Bcd2 ABc2 GAB2 F2B2 A2GF G4
+
+X:WFS 13-11 19
+T:Rochdale Coconut Dance
+M:4/4
+K:Em
+EFGF E2B2 EFGF E2B2 c2Ac B2GB AGF2 |1 E2D2 :|2 G2A2
+P:B
+G2BB G2B2 AGFG A4{cBA} |1 G2BB G2B2 AGFE D4 :|2 BdBG AcAF G2G2
+
+X:WFS 13-11 20
+T:Tip Top Polka
+M:4/4
+K:G
+Bc| d2d2 dedc B2B2 B2GA B2B2 B2d2 A4{BAG} A2AB c2c2 c2{d}cB A2A2 A2G2 |1 FGAB cdef g4 g2 :|2 FGAB cde2 d3c B2
+P:B
+ef| g2e2 e3f |1 g2d2 d4 B2B2 A2G2 e2d2 d2ef :|2 g2d2 d2B2 cBAB cdef g4 g2
+
+%%text WFS 13-11 21 = WFS 13-10 33 Navvy on the Line (dotted)
+
+%%text WFS 13-11 22 = WFS 13-07 03 The Moon and Seven Stars
+
+%%text WFS 13-11 23 = WFS 13-07 21 Hesleyside Reel
+
+%%text WFS 13-11 24 = WFS 13-07 20 Great North Run '86
+
+%%text WFS 13-11 25 = WFS 13-10 26 Spootiskerry
+
+%%text WFS 13-11 26 = WFS 13-10 17 Willafjord
+
+X:WFS 13-11 27
+T:Old Molly Oxford
+M:4/4
+K:D
+A | d2cd e2f2 e2dcBcdB c2A2 B2G2 A3G FGA2 d3c B2AG F2A2 d2A2 F2ED E2C2 D4
+P:B
+EFG | AGFE D2EF G2A2 B2c2 dcBA G3A Bcdf e2c2 d2Bd c2A2 BGEF G2B2 AGFE D2EF G4
+
+%%text WFS 13-11 28 = WFS 13-10 31 Idbury Hill
+
+%%text WFS 13-11 29 = WFS 13-10 32 I'll Go And Enlist For A Sailor
+
+X:WFS 13-11 30
+T:Black Joak
+M:6/8
+K:G
+D | D2G GFG AcB AGF GAB dcB AcB AGF G3 E3 DEF G2
+P:B
+B2d d2d e2e d2c B2d dBd e2{d}e d2c B2B BAG AcB AGF GAB dcB AcB AGF G3 E3 DEF G2
+
+%%text WFS 13-11 31 = WFS 13-07 15 La Roulante
+
+%%text WFS 13-11 32 = WFS 13-07 05 Michael Turner's Waltz
+
+X:WFS 13-11 33
+T:L'Inconnu de Limoise
+M:3/4
+K:G
+DGA | B2B2{G}cA B3Bcd |1 c2cBAG D3 :|2 c2cBAG A3
+P:B
+Bcd | e2gfef d3cBA G2{F}GABG D4GF E3FGA G2F2E2 |1 F2FGAB A3 :|2 F2FGAB G3
+
+X:WFS 13-11 34
+T:Sidney Smith's
+M:4/4
+P:(A B C)2
+K:G
+Bc | d2dd d2d2 e2d2 c2B2 dcBc A2dc BcAB G2dc BdBd AdAd GdGd F2d^c Bcde d2^c2 d4 :|
+P:B
+AG | FDFA dABc B6 GA BGBd gde=f e6 gf egeg dgdg cgcg BgBg egeg dgdg cgcg BgBg
+e2d2 c2B2 e2d2 c2B2 e2d2 c2B2 B2AG A2
+P:C
+Bc | d2dd d2d2 e2d2 c2B2 dcBc A2dc BcAB G2dc BdBd AdAd GdGd FdFd EdEd FdFd GdGd AdAd EdEd FdFd GdGd AdAd cedc B2A2 G4 G2
+
+%%text WFS 13-11 35 = EATMD 13-01 05 The Sloe
+
+%%text WFS 13-11 36 = EATMD 13-01 26 Yarmouth Breakdown (A) + EATMD 13-01 27 ? (B)
+
+%%text WFS 13-11 37 = WFS 13-07 12 Paddy Carey's, into WFS 13-11-38 = WFS 13-07 13 Spirit Of The Dance
+
+X:WFS 13-11 01
+T:The Curly-Headed Ploughboy = WFTB 04-02
+R:2
+M:2/4
+K:G
+d/c/| B d G B E2 D G |1 F/G/A/B/ c B B2 A :|2 F/G/A/B/ c A G3
+P:B
+d | ^c ^c ^c/A/B/^c/ d d/d/d d ^c ^c ^c/A/B/^c/ d/e/f/e/ d d ^c ^c ^c/A/B/^c/ d2 B G F A G{F/} E D3
+
+%%text WFS 13-11 02 = WFS 13-07 22 Galopede
+
+%%text WFS 13-11 03 = WFS 13-10 14 Salmon Tails Up The Water
+
+%%text WFS 13-11 04 = WFS 13-10 22 Harper's Frolic, into WFS 13-11 05 = WFS 13-10 23 Bonnie Kate
+
+%%text WFS 13-11 06 = WFS 13-10 04 Uncle Bernard's Polka
+
+%%text WFS 13-11 07 = WFTB 02-02 Rattling Bog
+
+%%text WFS 13-11 08 = EATMD 13-02 12 Brighton Camp
+
+%%text WFS 13-11 09 = WFS 13-10 05 Jamie Allen, into...
+
+X:WFS 13-11 10
+T:Davy-Davy Knick Knack
+R:2
+M:4/4
+K:G
+GFGA B2B2 GFGA B2B2 |1 dcBc A2A2 dcBc A2A2 :|2 dcBc AcBA G4{ABA} G4
+P:B
+Bc|d2>c2 B2{c}d2 g2g2 d4 |1 dcBc A2A2 dcBc A2A2 :|2 dcBc AcBA G4{ABA} G4
+
+X:WFS 13-11 11
+T:Believe Me, if All Those Endearing Young Charms 
+P:A#1 A#2 B A#2
+M:3/4
+K:G
+BA| G3AG2 G2B2d2 c2e2g2 g4fe |1 d3cB2 A3GA2 B6-B4 :|2 d3gB2 A3GA2 G6-G4
+P:B
+dc| B2d2g2 g4d2 e2c2g2 g4fe d3cB2 A3GA2 B6-B4 

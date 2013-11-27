@@ -174,8 +174,10 @@ opus = "EATMD 13-01 04"
   b4 a4 b8 cis'8 d'8 b8 a4 g4 fis4 a4
   \makePercent s1 \makePercent s1
   b4 a4 b4 cis'4 d'2 d'4 \bar "||" \break a4
-  b4 a4 fis4 a4 b4 a4 fis4 d'4 d'4 cis'4 cis'4 b4
-  b4 a4 a4 d'4 d'4 cis'4 cis'4 e'4 e'4 d'4 d'4 fis'4
+  b4 a4 fis4 a4 b4 a4 fis4 \afterGrace d'4 d'8 d'4 \afterGrace cis'4 cis'8 cis'4
+  \afterGrace b4 b8 b4 \afterGrace a4 a8 a4
+  \afterGrace d'4 d'8 d'4 \afterGrace cis'4 cis'8 cis'4
+  \afterGrace e'4 e'8 e'4 \afterGrace d'4 d'8 d'4 fis'4
   fis'4 e'4 b4 cis'4 d'2 d'4
   \bar "|."
 }}
@@ -582,9 +584,8 @@ opus = "EATMD 13-01 21"
   \bar "||" \break d'8 e'8 fis'8
   g'4 d'8 fis'8 e'8 c'8 b8 a8 b8 d'8 b8 g8 g8 fis8 e8 d8
   c4 e8 c8 b,4 d8 b,8 a,4 a4 a8 d'8 e'8 fis'8
-  \makeDoublePercent s\breve
-  \makeDoublePercent s\breve
-
+  \makePercent s1 \makePercent s1
+  c'4 b8 a8 b4 a8 g8 d4 fis4 g8
   \bar "|."  
 }}
 \header{
@@ -655,7 +656,7 @@ opus = "EATMD 13-01 24"
   \bar "|."  
 }}
 \header{
-piece = "?"
+piece = "Yarmouth Breakdown"
 opus = "EATMD 13-01 26"
 }}
 \markuplist{ "Into..."
@@ -1510,7 +1511,7 @@ opus = "EATMD 13-02 09"
   \bar "|."  
 }}
 \header{
-piece = "?"
+piece = "Shepherds' Hey"
 opus = "EATMD 13-02 10"
 }}
 

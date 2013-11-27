@@ -246,12 +246,12 @@ opus = "WFS 13-10 15 = WFTB 01-01"
   a4 fis8 a4 d8 fis8 a8 b4 g8 b4 d8 g8 b8
   a4 fis8 a4 d8 fis8 a8 e8 fis8 g8 a8 g8 fis8 e8 d8
   \makePercent s1 \makePercent s1
-  a8 b8 cis'8 d'8 e'8 fis'8 g'8 e'8 fis'4 d'4 d'4
+  a8 <b d'>8 cis'8 d'8 e'8 fis'8 g'8 e'8 fis'4 d'4 d'4
   \bar "||" \break e'4
   fis'4 d'8 fis'4 a8 d'8 fis'8 g'8 e'8 a'8 fis'8 g'8 fis'8 e'8 d'8
   fis'4 d'8 fis'4 a8 d'8 fis'8 e'4 cis'8 e'4 a8 cis'8 e'8
   \makePercent s1 \makePercent s1
-  a8 b8 cis'8 d'8 e'8 fis'8 g'8 e'8 fis'4 d'4 d'4
+  a8 <b d'>8 cis'8 d'8 e'8 fis'8 g'8 e'8 fis'4 d'4 d'4
   \bar "|."
 }}
 \header{
@@ -386,7 +386,7 @@ opus = "WFS 13-10 25"
 \header{
 piece = "Spootiskerry"
 opus = "WFS 13-10 26"
-meter = "A B B"
+meter = "A1 A2 B A2"
 }}
 
 \score{{

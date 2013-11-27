@@ -1,10 +1,8 @@
 \version "2.16.0"
 \layout { 
   indent = 0.0\cm
-  ragged-right = ##t
   \context { \Score
       \remove "Bar_number_engraver"
-      proportionalNotationDuration = #(ly:make-moment 1/8)
   } 
   \context { \Staff
       \remove "Time_signature_engraver" 
@@ -23,6 +21,8 @@
 } 
 
 \paper {
+
+ragged-bottom = ##t
   
 #(set-paper-size "1080p 300dpi")
 
@@ -30,8 +30,6 @@
 #(define bottom-margin (* 7 mm))
 
 
-ragged-last-bottom = ##f
-ragged-bottom = ##f
 print-page-number = ##f
   
 scoreTitleMarkup = \markup {

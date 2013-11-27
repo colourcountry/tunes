@@ -86,9 +86,14 @@ opus = "WFS 13-07 01"
   
   b4. b4.-> b8 a8 b8 c'4. b4 c'8 d'4 c'8 b4 a8 b4 g8
   \makePercent s2.   \makePercent s2.
-  d'4 g'8 d'8 b8 g8 a4. g4. \bar "|."
   
+  <<
+    { d'4 g'8 d'8 b8 g8 a4. g4. }
+    \new Staff \ossia
+    { b4 c'8 d'4 d'8 c'8 b a g4. }
+  >>  
   
+  \bar "|."  
   
 }}
 \header{
@@ -126,7 +131,7 @@ opus = "WFS 13-07 03"
 \time 4/4 \key d \major
 
   fis4 a4 g4 b4 a4 fis'4 fis'8 e'8 fis'4
-    <<
+  <<
     { g4 e'4 e'8 d'8 e'4 fis4 d'4 d'8 cis'8 d'4 }
     \new Staff \ossia
     { \key d \major g4 e'8 d'8 cis'8 b8 a8 g8 fis4 d'8 cis'8 d'2 }
@@ -354,7 +359,7 @@ opus = "WFS 13-07 12"
 
 }}
 \header{
-piece = "Spirit of the Dance"
+piece = "Spirit Of The Dance"
 opus = "WFS 13-07 13"
 }}
 
