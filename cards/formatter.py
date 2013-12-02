@@ -2,6 +2,31 @@
 
 import re, os, sys
 
+PAUSE_ON_ERROR = False
+CRIB = False
+
+def log_to_stderr(format, *args):
+    # Log with prejudice. Attempt to get something printable out of whatever is supplied.
+    x = []
+    for item in args:
+        try:
+            x.append( item.decode('utf-8') )
+        except UnicodeDecodeError:
+            x.append( item.decode('iso-8859-1') )
+        except UnicodeEncodeError:
+            x.append( item.encode('iso-8859-1').decode('utf-8') )
+        except AttributeError:
+            x.append( repr(item).decode('iso-8859-1') )
+    try:
+        sys.stderr.write(format % tuple(i.encode('utf-8') for i in x))
+    except TypeError:
+        sys.stderr.write(format)
+        sys.stderr.write(repr(x))
+        
+    sys.stderr.write("\n")
+
+
+
 class Key:
     # Register keys using the first 4 characters of their ABC definition, lowercased.
     # Note that 'mi' will come out as mixolydian not minor, but it's illegal ABC anyway.
@@ -24,13 +49,19 @@ class Key:
     @classmethod
     def from_string(c_lass, strg):
         strg = re.sub('[^a-z#_=^]','',strg.lower())
-        base = c_lass.REGISTER[strg[:4]]
+        try:
+            base = c_lass.REGISTER[strg[:4]]
+        except KeyError:
+            raise NotImplementedError("Key %s" % strg)
         if re.search('[_=^]', strg[4:]):
-            raise NotImplementedError("keys with random accidentals")
+            raise NotImplementedError("Key with explicit accidentals: %s" % strg)
         return base
 
 Key.REGISTER.update( {
+    'eb': Key('ees \major', (), ('b', 'e', 'a')),
+    'cm': Key('c \minor', (), ('b', 'e', 'a')),
     'bb': Key('bes \major', (), ('b', 'e')),
+    'gm': Key('g \minor', (), ('b', 'e')),
     'f':  Key('f \major', (), ('b')),
     'dm': Key('d \minor', (), ('b')),
     'c':  Key('c \major', (), ()),
@@ -39,18 +70,40 @@ Key.REGISTER.update( {
     'em': Key('e \minor', ('f'), ()),
     'd':  Key('d \major', ('f', 'c'), ()),
     'bm': Key('b \minor', ('f', 'c'), ()),
-    'a':  Key('a \major', ('f', 'c', 'g'), ())
+    'a':  Key('a \major', ('f', 'c', 'g'), ()),
+    'e':  Key('e \major', ('f', 'c', 'g', 'd'), ())
 })
 
 Key.REGISTER.update( {
-    'cdor': Key.REGISTER['bb']
+    'amaj': Key.REGISTER['a'],
+    'cmaj': Key.REGISTER['c'],
+    'dmaj': Key.REGISTER['d'],
+    'emaj': Key.REGISTER['e'],
+    'fmaj': Key.REGISTER['f'],
+    'gmaj': Key.REGISTER['g'],
+
+    'cdor': Key.REGISTER['bb'],
+    'ddor': Key.REGISTER['c'],
+    'edor': Key.REGISTER['d'],
+    'fdor': Key.REGISTER['eb'],
+    'gdor': Key.REGISTER['f'],
+    'ador': Key.REGISTER['g'],
+    'bdor': Key.REGISTER['a'],
+
+    'dmix': Key.REGISTER['g'],
+    'emix': Key.REGISTER['a'],
+    'fmix': Key.REGISTER['bb'],
+    'gmix': Key.REGISTER['c'],
+    'amix': Key.REGISTER['d'],
+    'bmix': Key.REGISTER['e'],
+    'cmix': Key.REGISTER['f'],
 })
 
             
 
 class AbcConnector:
 
-    TYPES = ['','--', ' ', '|', '||', '|]', '[|', '|:', '_', '|_', ':|']
+    TYPES = ['','--', ' ', '|', '||', '|]', '[|', '|:', '_', '|_', ':|', '{', '}']
     BEAM = 0
     TIE = 1
     BREAK = 2
@@ -142,11 +195,9 @@ class AbcConnector:
         else:
             newline = False
 
-        if '"' in strg:
-            raise NotImplementedError('" character (chord) in %s' % strg)
-
         if '!' in strg:
-            raise NotImplementedError('! character (decoration) in %s' % strg)
+            strg = strg.replace("!","")
+            log_to_stderr("%% Ignoring extra ! character (decoration?) in %s",strg)
 
         if s.endswith('{'):
             return c_lass.from_string(s[:-1]) + [c_lass(c_lass.BEGIN_GRACE,newline)]
@@ -272,15 +323,30 @@ class Duration:
         elif re.match("/+$",strg):
             return c_lass(1,2**len(strg))
         elif "/" in strg:
-            (n, d) = strg.split("/")
-            return c_lass(int(n),int(d))
+            try:
+                (n, d) = strg.split("/")
+            except ValueError:
+                raise NotImplementedError("multiple slashes in duration %s" % strg)
+            try:
+                return c_lass(int(n),int(d))
+            except ValueError:
+                raise NotImplementedError("non-integer duration %s" % strg)
         else:
-            return c_lass(int(strg),1)
+            try:
+                return c_lass(int(strg),1)
+            except ValueError:
+                raise NotImplementedError("unparseable duration %s" % strg)
 
 class AbcNote:
-    RE = re.compile("([~]?)([_=^]*)([A-Ga-gxyz])([,']*)([0-9/]?)")
+    # allow ! as a trill
+    RE = re.compile("([~!]?)([_=^]*)([A-Za-z])([,']*)([0-9/]?)")
+
+    # AB does not allow redefining letters, nor the extra space charatcter y
+    AB_PITCH = re.compile("[A-Ga-gxz]")
 
     def __init__(self, pitch, oct, acc, dur, trill):
+        if not AbcNote.AB_PITCH.match(pitch):
+            raise NotImplementedError("unsupported note %s" % pitch)
         self.pitch = pitch
         self.dur = Duration.from_string(dur)
         self.oct = oct or ''
@@ -289,7 +355,7 @@ class AbcNote:
 
 
     def __repr__(self):
-        return "%s%s%s%s" % (self.trill or '_', self.acc or '_', self.pitch or '_', self.dur)
+        return "%s%s%s%s" % (self.trill or '', self.acc or '', self.pitch or '', self.dur)
 
     def as_ly(self, key, unit):
         octave = 0
@@ -344,23 +410,83 @@ class AbcNote:
                 s.append(c_lass(m[i+3],m[i+4],m[i+2],m[i+5],m[i+1]))
         return s
 
-        
+
+class AbcHeader:
+    RE = re.compile("[[](.):([^]]*)[]]")
+
+    AREA = "A"
+    BOOK = "B"
+    COMPOSER = "C"
+    DISCOGRAPHY = "D"
+    FILE_URL = "F"
+    GROUP = "G"
+    HISTORY = "H"
+    INSTRUCTION = "I"
+    KEY = "K"
+    UNIT_NOTE_LENGTH = "L"
+    METER = "M"
+    MACRO = "m"
+    NOTES = "N"
+    ORIGIN = "O"
+    PARTS = "P"
+    TEMPO = "Q"
+    RHYTHM = "R"
+    REMARK = "r"
+    SOURCE = "S"
+    SYMBOL_LINE = "s"
+    TUNE_TITLE = "T"
+    USER_DEFINED = "U"
+    VOICE = "V"
+    WORDS_AFTER = "W"
+    WORDS = "w"
+    REFERENCE = "X"
+    TRANSCRIPTION = "Z"
+    DIRECTIVE = "%"
+    DECORATION = "!"
+    CHORD = '"'
+    PLUS = '+'
+
+    @classmethod
+    def from_string(c_lass, strg):
+        m = c_lass.RE.split(strg)
+        s = []
+        for i in range(0,len(m),3):
+            s.extend(AbcNote.from_string(m[i]))
+            if len(m)>=i+4:
+                s.append(c_lass(m[i+1],m[i+2]))
+        return s
+
+    def __init__(self, what, value):
+        self.what = what
+        self.value = value
+
+    def get_clean_value(self):
+        if self.value is None:
+            return '(unknown)'
+        # remove characters which excite lilypond
+        strg = re.sub(r"[\\{}]","",self.value)
+        try:
+            strg = strg.decode('utf-8')
+        except UnicodeDecodeError:
+            strg = strg.decode('iso-8859-1')
+        return strg
+
+
 
 class Phrase:
-    def __init__(self, key, rhythm=None, name=None, time='4/4', unit='1/8', notes=[]):
+    def __init__(self, name=None, key='c', time='4/4', unit='1/8', rhythm=None):
         # notes = a list of tuples, one per beat.
         self.rhythm = rhythm
-        self.key = key
-        self.name = name
+        self.key = Key.from_string(key)
+        self.name = name or '(no name)'
         self.time = Duration.from_string(time)
         self.unit = Duration.from_string(unit)
         self.notes = []
-        sys.stderr.write("New phrase %s\n" % self.name)
-        self.add_notes(notes)
+        #log_to_stderr("New phrase %s",self.name)
 
 
     def __repr__(self):
-        return "<phrase %s %s>" % (self.name, self.notes[:8])
+        return "<%s: %s>" % (self.name, ''.join([repr(x) for x in self.notes[:16]]))
 
     def rhythmify(self, notes):
         if self.rhythm is None:
@@ -402,8 +528,11 @@ class Phrase:
 
         return notes
         
-    def add_notes(self, notes):
+    def extend(self, notes):
         self.notes.extend(notes)
+
+    def append(self, note):
+        self.notes.append(note)
 
     def get_code(self):
         def transpose(n,key=self.key):
@@ -466,6 +595,7 @@ class Phrase:
         pause = False
         new_bar = None
         last_note_index = 0
+        prev_item = None
 
         for i, item in enumerate(self.notes):
             if isinstance(item, AbcNote):
@@ -482,7 +612,10 @@ class Phrase:
                                 if cur_bar_nr == 2:
                                     # add invisible bar line to suppress line before anacrusis
                                     cur_bar = [r'\set Timing.measureLength = #(ly:make-moment %s)' % cur_bar_length.as_moment(), r'\bar ""'] + cur_bar
-                                    cur_bar = [r'\partial %s ' % ticks.mod_nonzero(cur_bar_length).as_ly()] + cur_bar
+                                    try:
+                                        cur_bar = [r'\partial %s ' % ticks.mod_nonzero(cur_bar_length).as_ly()] + cur_bar
+                                    except TypeError:
+                                        raise NotImplementedError("partial yielded unexpected result: %s" % ticks.mod_nonzero(cur_bar_length))
                                     cur_bar_nr = 1
                                 else:
                                     cur_bar_length = ticks
@@ -495,7 +628,7 @@ class Phrase:
                             ticks = Duration()
 
                             if pause:
-                                sys.stderr.write("Warning, new bar encountered during pause in %s\n" % ' '.join(cur_bar))
+                                log_to_stderr("%% Warning, new bar encountered during pause in %s",' '.join(cur_bar))
                                 tune_ly += "%s \n" % (' '.join(cur_bar) )
                             else:
                                 tune_ly += "%s %s \n" % (' '.join(cur_bar), new_bar)
@@ -536,10 +669,17 @@ class Phrase:
                 elif item.what == AbcConnector.END_GRACE:
                     cur_bar.append('}')
                     pause = False
+                elif item.what == AbcConnector.TIE:
+                    # tie must immediately follow a note, not a barline or other such
+                    if isinstance(prev_item, AbcNote):
+                        cur_bar.append(item.as_ly())
+                    else:
+                        raise NotImplementedError("tie from non-note %s" % prev_item)
                 else:
                     if not no_repeats:
                         cur_bar.append(item.as_ly())
 
+            prev_item = item
 
         # allow last bar in phrase to be any length. going to assume it's not also the first bar
         if ticks != cur_bar_length:
@@ -555,55 +695,38 @@ class Phrase:
 
 
 class Tune:
-    def __init__(self, phrases=None, name=None, meter=''):
-        if phrases is None:
-            self.phrases = {}
-        else:
-            self.phrases = phrases
+    OK = 0
+    FATAL = 1
+    DIRECTIVE_IGNORED = 2
+    HEADER_IGNORED = 4
+    DECORATION_IGNORED = 8
+    CHORD_IGNORED = 16
+    PLUS_IGNORED = 32
 
-        self.set_name(name)
-        self.set_meter(meter)
+    def __init__(self):
 
-        # These may change as the tune is created
-        # so refer to the state at the end.
-        # Phrases have a single value throughout
-        self.unit = '1/8'
-        self.set_time('4/4')
-        self.set_key('C')
-        self.set_phrase('A')
-        self.set_rhythm('')
+        self.status = Tune.OK
+        self.phrases = {}
+        self.fields = {}
+        self.name = '(no name)'
+        self.ref = None
 
-    def set_time(self,time):
-        self.time = time
+    def get_header(self, key, idx=0):
+        if key not in self.fields:
+            return ''
 
-    def set_unit(self,unit):
-        self.unit = unit
+        return self.fields[key][idx]
 
-    def set_key(self,key):
-        self.key = key
+    def set_ref(self, item):
+        self.ref = item.get_clean_value()
 
-    def set_phrase(self,phrase):
-        self.phrase = phrase
+    def set_name(self, item):
+        self.name = item.get_clean_value()
 
-    def set_rhythm(self,rhythm):
-        self.rhythm = rhythm
-
-    def set_name(self,name):
-        self.name = name
-
-    def set_meter(self,meter):
-        self.meter = meter
-
-    def add_notes(self,notes):
-        sys.stderr.write( 'Adding %s notes to phrase %s\n' % (len(notes),self.phrase) )
-        new_phrase = Phrase(Key.from_string(self.key),
-                            self.rhythm,
-                            "%s %s" % (self.name, self.phrase),
-                            self.time, self.unit, notes)
-        # The same phrase should not be defined twice. If it is, the notes get appended
-        if self.phrase not in self.phrases:
-            self.phrases[self.phrase]=[]
-        self.phrases[self.phrase].append(new_phrase)
+    def add_header(self, item):
+        if item.what not in self.fields:
+            self.fields[item.what] = []
+        self.fields[item.what].append(item.get_clean_value())
 
     def render_ly(self, phrase_separator=None, end=None, bar_limit=None, page_break=True, no_repeats=False):
 
@@ -616,8 +739,7 @@ class Tune:
         s = r'''
 \score{{
 \transpose d d' {
-\time %s
-''' % self.time
+'''
 
         key = None
         continuation = False
@@ -644,82 +766,203 @@ class Tune:
     opus = "%s"
     meter = "%s"
 }}
-''' % (self.name, '', self.meter)
+''' % (self.name.replace('"',"'").encode('utf-8'), '', self.get_header('meter').replace('"',"'").encode('utf-8'))
 
         if page_break:
             s += '\\pageBreak\n'
 
         return s
 
-class ABFile:
-    def __init__(self, data):
-        curtune = None
-        curphrase = None
-        curkey = None
-        self.tunes = []
-        stopped = False
-        header = False
-        finished = None
-        abc = ""
-        for line in data.readlines()+["X::"]:
-            if line.startswith("%%"):
-                pass
-            elif line.startswith("X:"):
-                header = True
-                finished = curtune
-                curtune = Tune()
-            elif line.startswith("T:"):
-                curtune.set_name( line[2:].strip() )
-            elif line.startswith("r:"):
-                curtune.set_meter( line[2:].strip() )
-            elif line.startswith("M:"):
-                curtune.set_time( line[2:].strip() )
-            elif line.startswith("P:"):
-                if header:
-                    curtune.set_meter( line[2:].strip() )
+    @classmethod
+    def from_string(c_lass, ab, strictness=None):
+        '''Parse an inlined AB with inlined headers into a Tune object.'''
+
+        # normalize space
+        ab = re.sub(r'[\r\n\t ]+', ' ', ab.strip())
+
+        # Obtain a stream of AbcHeader|AbcNote|AbcConnector objects.
+        try:
+            stream = AbcHeader.from_string(ab)
+        except NotImplementedError, e:
+            ref = re.match("^[[](X:[^]]*)[]]",ab)
+            if ref:
+                log_to_stderr("%% Unknown item in tune %s: %s" ,ref.group(1), e)
+            else:
+                log_to_stderr("%% Unknown item in tune also missing id: ", e)
+            # this is automatically fatal
+            return None
+
+        if strictness is None:
+            strictness = Tune.FATAL #| Tune.DIRECTIVE_IGNORED
+
+        in_header = True
+        tune = c_lass()
+        tune.src = ab
+
+        cur_key = 'C'
+        cur_time = '4/4'
+        cur_unit = '1/8'
+        cur_phrase_id = 'A'
+        cur_phrase = None
+
+        for item in stream:
+            try:
+                if isinstance(item, AbcHeader):
+                    # log_to_stderr("% Finished tune %s: %s\n",finished.name, finished.phrases)
+                    if item.what == AbcHeader.REFERENCE:
+                        tune.set_ref( item )
+                    elif item.what == AbcHeader.TUNE_TITLE:
+                        tune.set_name( item )
+                    elif item.what == AbcHeader.METER:
+                        value = item.value.lower()
+                        if value == 'c':
+                            value = '4/4'
+                        elif value == 'c|':
+                            value = '2/2'
+                        cur_time = value
+                    elif item.what == AbcHeader.PARTS:
+                        if in_header:
+                            tune.add_header( item )
+                        else:
+                            cur_phrase = None
+                            cur_phrase_id = item.value
+                    elif item.what ==  AbcHeader.UNIT_NOTE_LENGTH:
+                        parts = item.value.split(" ")
+                        cur_unit = parts[0]
+                        #rhythm = []
+                        #if len(parts)>1:
+                        #    for i,item in enumerate(parts[1:]):
+                        #        v = item.split(",")
+                        #        if len(v)!=i+1:
+                        #            raise ValueError("Invalid L: %s should have length %s" % (item, i+1))
+                        #        rhythm.append( item.split(",") )
+                        #curtune.set_rhythm( rhythm )
+                    elif item.what ==  AbcHeader.KEY:
+                        cur_key = item.value
+                        in_header = False
+                    elif item.what ==  AbcHeader.DIRECTIVE:
+                        tune.status |= Tune.DIRECTIVE_IGNORED
+                        if strictness & Tune.DIRECTIVE_IGNORED:
+                            log_to_stderr("%% Unsupported directive in tune %s: '%s'",tune.ref,item.value)
+                        else:
+                            log_to_stderr("%% Ignored directive in tune %s: '%s'",tune.ref,item.value)
+                    elif item.what ==  AbcHeader.CHORD:
+                        tune.status |= Tune.CHORD_IGNORED
+                        if strictness & Tune.CHORD_IGNORED:
+                            log_to_stderr("%% Unsupported chord in tune %s: '%s'",tune.ref,item.value)
+                        else:
+                            log_to_stderr("%% Ignored chord in tune %s: '%s'",tune.ref,item.value)
+                    elif item.what ==  AbcHeader.DECORATION:
+                        tune.status |= Tune.DECORATION_IGNORED
+                        if strictness & Tune.DECORATION_IGNORED:
+                            log_to_stderr("%% Unsupported decoration in tune %s: '%s'",tune.ref,item.value)
+                        else:
+                            log_to_stderr("%% Ignored decoration in tune %s: '%s'",tune.ref,item.value)
+                    elif item.what ==  AbcHeader.PLUS:
+                        tune.status |= Tune.PLUS_IGNORED
+                        if strictness & Tune.PLUS_IGNORED:
+                            log_to_stderr("%% Unsupported plus (may be chord or decoration) in tune %s: '%s'",tune.ref,item.value)
+                        else:
+                            log_to_stderr("%% Ignored plus (may be chord or decoration) in tune %s: '%s'",tune.ref,item.value)
+                    else:
+                        tune.add_header(item)
                 else:
-                    if abc:
-                        curtune.add_notes(AbcNote.from_string(abc))
-                    curtune.set_phrase( line[2:].strip() )
-                    abc=""
-            elif line.startswith("L:"):
-                parts = line[2:].strip().split(" ")
-                curtune.set_unit( parts[0] )
-                rhythm = []
-                if len(parts)>1:
-                    for i,item in enumerate(parts[1:]):
-                        v = item.split(",")
-                        if len(v)!=i+1:
-                            raise ValueError("Invalid L: %s should have length %s" % (item, i+1))
-                        rhythm.append( item.split(",") )
-                curtune.set_rhythm( rhythm )
-            elif line.startswith("K:"):
-                curtune.set_key( line[2:].strip() )
-                header = False
-            elif header:
-                sys.stderr.write("Found unknown header line %s\n" % line)
+                    if not cur_phrase:
+                        cur_phrase = Phrase("%s %s" % (tune.name, cur_phrase_id),
+                                            cur_key, cur_time, cur_unit)
+                        if cur_phrase_id not in tune.phrases:
+                            tune.phrases[cur_phrase_id] = []
+                        tune.phrases[cur_phrase_id].append(cur_phrase)
+                    cur_phrase.append(item)
+            except NotImplementedError, e:
+                log_to_stderr("%% Unknown item in tune X:%s: %s",tune.ref, e)
+                tune.status |= Tune.FATAL
+
+        if tune.status & strictness:
+            return None
+        else:
+            return tune
+
+
+class ABCollection:
+    def __init__(self, include_duplicates=False):
+        self.tunes = []
+        self.tune_check = {}
+        self.include_duplicates = include_duplicates
+
+    def add_file(self, file):
+        count = 0
+        original_abc = None
+        abc = ""
+        finished_ab = None
+        ab = ""
+        x_line = "" # only used when reporting a duplicate
+        pause = False
+        for line in data.readlines()+["X::"]:
+            if line.startswith("X:") or line.startswith("[X:"):
+                if pause and PAUSE_ON_ERROR:
+                    pause = raw_input("continue?")
+                    if "yes".startswith(pause):
+                        pause = False
+                    else:
+                        raise SystemExit
+                finished_ab = ab
+                original_abc = abc
+                if line.startswith("X:"):
+                    ab = "["+line.replace("]",r"\u005d").replace("[",r"\u005b").strip()+"]"
+                else:
+                    ab = line
+                abc = line
+                x_line = line
             else:
                 abc += line
 
-            if finished:
+                if line.startswith("%"):
+                    ab += "[%:"+line.strip()+"]"
+                elif re.match("[A-Za-z]:", line):
+                    ab += "["+line.replace("]",")").replace("[","(").strip()+"]"
+                else:
+                    # music line
+                    # replace decorations with inline decoration header
+                    line = re.sub('[!]([^!]*)[!]', r'[!:\1]', line)
+                    # chords
+                    line = re.sub('["]([^"]*)["]', r'[":\1]', line)
+                    # old style chords/decorations, can't tell which but don't support either
+                    # (do this last as + is legal within chords and decorations)
+                    line = re.sub('[+]([^+]*)[+]', r'[+:\1]', line)
 
+                    ab += line
+
+            if finished_ab:
                 # remove score line breaks
-                abc = re.sub('[!+]\n|$', '', abc)
-                abc = re.sub('^|\n[!+]', '', abc)
-                # remove decorations
-                abc = re.sub('[!][^!]+[!]', '', abc)
-                # remove chords
-                abc = re.sub('["][^"]+["]', '', abc)
-                # remove old style decorations (do this last as + is legal within chords and decorations)
-                abc = re.sub('[+][^+]+[+]', '', abc)
+                finished_ab = re.sub('[!+][\r\n]+|$', '', finished_ab)
+                finished_ab = re.sub('^|[\r\n][!+]', '', finished_ab)
 
-                finished.add_notes(AbcNote.from_string(abc))
-                sys.stderr.write("Finished tune %s: %s\n" % (finished.name, finished.phrases))
-                if finished.name is None:
-                    finished.name = '?'#finished.phrases[0].get_code()
-                self.tunes.append(finished)
-                finished = None
-                abc = ""
+                # normalize space
+                finished_ab = re.sub(r'[\r\n\t ]+', ' ', finished_ab.strip())
+
+                # use entire tune after X: as its own id
+                check_id = re.sub("^[[]X:[^]]*[]]","",finished_ab)
+
+                if check_id in self.tune_check:
+                    log_to_stderr("%% Skipped %s as exactly duplicated %s", x_line.strip(), self.tune_check[check_id])
+                else:
+                    tune = Tune.from_string(finished_ab)
+
+                    if tune:
+                        self.tune_check[check_id] = tune.ref
+                        self.tunes.append(tune)
+                        count += 1
+                    else:
+                        self.tune_check[check_id] = x_line.strip()
+                        sys.stderr.write("%% Couldn't process the following tune:\n%s\n")
+                        sys.stderr.write(original_abc)
+                        pause = True
+
+                finished_ab = None
+                original_abc = None
+        return count
+
 
     def get_tunes(self):
         return self.tunes
@@ -737,13 +980,6 @@ class ABFile:
         return p      
 
 
-def loadFile(filename):
-    data = open(filename, 'r')
-    abfile = ABFile(data)
-    tunes = abfile.get_tunes()
-    sys.stderr.write("Found %s tunes in %s\n" % (len(tunes), filename))
-    TUNES.extend(tunes)
-    #PHRASES.update(abfile.get_phrases())
 
 
 
@@ -751,8 +987,9 @@ def loadFile(filename):
 
 if __name__=="__main__":
 
-    TUNES = []
     PHRASES = {}
+
+    TUNES = ABCollection()
 
     if len(sys.argv)>1:
         for filename in sys.argv[1:]:
@@ -760,10 +997,11 @@ if __name__=="__main__":
     else:
         for (path, dirs, files) in os.walk('data'):
             for filename in files:
-                loadFile(os.path.join(path,filename))
+                data = open(os.path.join(path,filename), 'r')
+                count = TUNES.add_file(data)
+                log_to_stderr("%% Finished %s , found %s tunes.\n\n",filename, count)
+    #PHRASES.update(abfile.get_phrases())
 
-
-    CRIB = True
 
     if CRIB:
         PREAMBLE = open("preamble.crib.ly.fragment","r").read()
@@ -771,22 +1009,26 @@ if __name__=="__main__":
         PREAMBLE = open("preamble.ly.fragment","r").read()
 
     print PREAMBLE
-    for tune in TUNES:
-        if CRIB:
-            z=tune.render_ly(\
-                phrase_separator=r'''    \set Score.repeatCommands = #'((volta #f)) 
+    for tune in TUNES.tunes:
+            try:
+                if CRIB:
+                    z=tune.render_ly(\
+                        phrase_separator=r'''    \set Score.repeatCommands = #'((volta #f)) 
 \bar ":" \stopStaff 
 \set Timing.measureLength = #(ly:make-moment 1/4) s4
 \startStaff
 ''',
-                end='    \\set Score.repeatCommands = #\'((volta #f)) \\bar ":"',
-                bar_limit=3,
-                page_break=False,
-                no_repeats=True
-            )
-        else:
-            z=tune.render_ly()
-        print z
+                        end='    \\set Score.repeatCommands = #\'((volta #f)) \\bar ":"',
+                        bar_limit=3,
+                        page_break=False,
+                        no_repeats=True
+                    )
+                else:
+                    z=tune.render_ly()
+                print z
+            except NotImplementedError, e:
+                log_to_stderr("%% Couldn't render %s: %s\n",tune.name or '(unknown)', e)
+            
 
     #for code,phrases in sorted(PHRASES.items()):
-    #    sys.stderr.write( code+": "+",".join(phrase.name for phrase in phrases)+"\n" )
+    #    log_to_stderr( code+": "+",".join(phrase.name for phrase in phrases)+"\n" )
