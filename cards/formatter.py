@@ -14,13 +14,13 @@ def log_to_stderr(format, *args):
         except UnicodeDecodeError:
             x.append( item.decode('iso-8859-1') )
         except UnicodeEncodeError:
-            x.append( item.encode('iso-8859-1').decode('utf-8') )
+            x.append( re.sub('[^ -~]','',item).decode('ascii') )
         except AttributeError:
             x.append( repr(item).decode('iso-8859-1') )
     try:
         sys.stderr.write(format % tuple(i.encode('utf-8') for i in x))
     except TypeError:
-        sys.stderr.write(format)
+        sys.stderr.write(repr(format))
         sys.stderr.write(repr(x))
         
     sys.stderr.write("\n")
@@ -103,8 +103,8 @@ Key.REGISTER.update( {
 
 class AbcConnector:
 
-    TYPES = ['','--', ' ', '|', '||', '|]', '[|', '|:', '_', '|_', ':|', '{', '}']
-    BEAM = 0
+    TYPES = ['','--', ' ', '|', '||', '|]', '[|', '|:', '_', '|_', ':|', '{', '}', '(', ')', r'\n']
+    NEW_LINE = 0
     TIE = 1
     BREAK = 2
     BAR = 3
@@ -117,17 +117,20 @@ class AbcConnector:
     END_REPEAT = 10
     BEGIN_GRACE = 11
     END_GRACE = 12
+    BEGIN_SLUR = 13
+    END_SLUR = 14
+    BEGIN_CHORD = 15
+    END_CHORD = 16
+    TUPLET = 17
+    SWING = 18
+    SNAP = 19
 
-    def __init__(self, what, newline=False, alts=None):
+    def __init__(self, what, value=None):
         self.what = what
-        self.newline = newline
-        if alts:
-            self.alts = tuple(alts)
-        else:
-            self.alts = ()
+        self.value = value
 
     def __repr__(self):
-        return '%s%s' % (AbcConnector.TYPES[self.what], ','.join(self.alts))
+        return '%s%s' % (AbcConnector.TYPES[self.what], repr(self.value))
 
 
     def is_phrase_over(self):
@@ -135,7 +138,7 @@ class AbcConnector:
             return True
         elif self.what == AbcConnector.DOUBLE_BAR:
             return True
-        elif self.what == AbcConnector.END_REPEAT and not self.alts:
+        elif self.what == AbcConnector.END_REPEAT and not self.value:
             return True
         elif self.what == AbcConnector.END_BAR:
             return True
@@ -159,9 +162,7 @@ class AbcConnector:
         return False
 
     def as_ly(self):
-        if self.what == AbcConnector.BEAM:
-            return ' '
-        elif self.what == AbcConnector.TIE:
+        if self.what == AbcConnector.TIE:
             return ' ~ '
         elif self.what == AbcConnector.BREAK:
             return ' '
@@ -176,68 +177,97 @@ class AbcConnector:
         elif self.what == AbcConnector.BEGIN_REPEAT:
             return ' \\set Score.repeatCommands = #\'(start-repeat) '
         elif self.what == AbcConnector.END_REPEAT:
-            if self.alts:
-                return ' \\set Score.repeatCommands = #\'((volta #f) end-repeat (volta "%s.")) ' % '., '.join(self.alts)
+            if self.value:
+                return ' \\set Score.repeatCommands = #\'((volta #f) end-repeat (volta "%s.")) ' % '., '.join(self.value)
             else:
                 return ' \\set Score.repeatCommands = #\'((volta #f) end-repeat) '
         elif self.what == AbcConnector.BEGIN_ALTERNATIVE:
-            return ' \\set Score.repeatCommands = #\'((volta "%s.")) ' % '., '.join(self.alts)
+            return ' \\set Score.repeatCommands = #\'((volta "%s.")) ' % '., '.join(self.value)
         elif self.what == AbcConnector.BEGIN_ALTERNATIVE_AT_BAR:
-            return ' | \\set Score.repeatCommands = #\'((volta "%s.")) ' % '., '.join(self.alts)
+            return ' | \\set Score.repeatCommands = #\'((volta "%s.")) ' % '., '.join(self.value)
         else:
             raise NotImplementedError("Bar type %s needs help to be lilyfied" % self.what)
 
     @classmethod
-    def from_string(c_lass, strg):
-        s = strg.strip().replace('\\\n','')
-        if '\n' in strg:
-            newline = True
-        else:
-            newline = False
+    def from_string(c_lass, s):
+        if not s:
+            return []
 
-        if '!' in strg:
-            strg = strg.replace("!","")
-            log_to_stderr("%% Ignoring extra ! character (decoration?) in %s",strg)
-
-        if s.endswith('{'):
-            return c_lass.from_string(s[:-1]) + [c_lass(c_lass.BEGIN_GRACE,newline)]
+        skip = 1
+        if s.startswith('{'):
+            result = [c_lass(c_lass.BEGIN_GRACE)]
         elif s.startswith('}'):
-            return [c_lass(c_lass.END_GRACE,newline)] + c_lass.from_string(s[1:])
-
-        elif s=='-':
-            return [c_lass(c_lass.TIE,newline)]
-        elif s=='|':
-            return [c_lass(c_lass.BAR,newline)]
-        elif s=='||':
-            return [c_lass(c_lass.DOUBLE_BAR,newline)]
-        elif s=='|]':
-            return [c_lass(c_lass.END_BAR,newline)]
-        elif s=='[|':
-            return [c_lass(c_lass.REVERSE_END_BAR,newline)]
-        elif s=='|:':
-            return [c_lass(c_lass.BEGIN_REPEAT,newline)]
+            result = [c_lass(c_lass.END_GRACE)]
+        elif s.startswith('>'):
+            result = [c_lass(c_lass.SWING)]
+        elif s.startswith('<'):
+            result = [c_lass(c_lass.SNAP)]
+        elif s.startswith('('):
+            m = re.match('[(]([0-9:]+)(.*)', s)
+            if m:
+                value = tuple(m.group(1).split(':'))
+                return [c_lass(c_lass.TUPLET, value)] + c_lass.from_string(m.group(2))
+            else:
+                result = [c_lass(c_lass.BEGIN_SLUR)]
+        elif s.startswith(')'):
+            result = [c_lass(c_lass.END_SLUR)]
+        elif s.startswith('-'):
+            result = [c_lass(c_lass.TIE)]
+        elif s.startswith('||'):
+            result = [c_lass(c_lass.DOUBLE_BAR)]
+            skip = 2
+        elif s.startswith('|]'):
+            result = [c_lass(c_lass.END_BAR)]
+            skip = 2
+        elif s.startswith('[|'):
+            result = [c_lass(c_lass.REVERSE_END_BAR)]
+            skip = 2
+        elif s.startswith('|:'):
+            result = [c_lass(c_lass.BEGIN_REPEAT)]
+            skip = 2
         elif s.startswith(':|'):
-            m = re.match(':[|][ ]*[[]?([0-9,]+)', s)
-            if not m:
-                return [c_lass(c_lass.END_REPEAT,newline)]
-            alts = m.group(1).split(',')
-            return [c_lass(c_lass.END_REPEAT,newline,alts)]
+            m = re.match(':[|][ ]*[[]?([0-9,]+)(.*)', s)
+            if m:
+                value = tuple(m.group(1).split(','))
+                return [c_lass(c_lass.END_REPEAT,value)] + c_lass.from_string(m.group(2))
+            else:
+                result = [c_lass(c_lass.END_REPEAT)]
+                skip = 2
         elif s.startswith('|'):
-            m = re.match('[|][ ]*[[]?([0-9,]+)', s)
-            if not m:
-                return [c_lass(c_lass.BEGIN_ALTERNATIVE_AT_BAR,newline)]
-            alts = m.group(1).split(',')
-            return [c_lass(c_lass.BEGIN_ALTERNATIVE_AT_BAR,newline,alts)]
+            m = re.match('[|][ ]*[[]?([0-9,]+)(.*)', s)
+            if m:
+                value = tuple(m.group(1).split(','))
+                return [c_lass(c_lass.BEGIN_ALTERNATIVE_AT_BAR,value)] + c_lass.from_string(m.group(2))
+            else:
+                result = [c_lass(c_lass.BAR)]
         elif s.startswith('['):
-            m = re.match('[[]([0-9,]+)', s)
-            if not m:
-                return [c_lass(c_lass.BEGIN_ALTERNATIVE,newline)]
-            alts = m.group(1).split(',')
-            return [c_lass(c_lass.BEGIN_ALTERNATIVE,newline,alts)]
-        elif s==strg:
-            return [c_lass(c_lass.BEAM,newline)]
+            m = re.match('[[]([0-9,]+)(.*)', s)
+            if m:
+                value = tuple(m.group(1).split(','))
+                return [c_lass(c_lass.BEGIN_ALTERNATIVE,value)] + c_lass.from_string(m.group(2))
+            else:
+                result = [c_lass(c_lass.BEGIN_CHORD)]
+        elif s.startswith(']'):
+            # after chord, may have a duration, which multiplies the duration of notes within the chord
+            m = re.match('[]]([0-9/]+)(.*)', s)
+            if m:
+                value = Duration.from_string(m.group(1))
+                return [c_lass(c_lass.END_CHORD)] + c_lass.from_string(m.group(2))
+            else:
+                result = [c_lass(c_lass.END_CHORD)]
+        elif s.startswith('\\'):
+            # FIXME: continuations are crazy in abc, this doesn't support their full craziness
+            m = re.match(r'\\[ \n\r\t]*(.*)', s)
+            return [c_lass.from_string(m.group(1))]
+        elif s.startswith('\n'):
+            result = [c_lass(c_lass.NEW_LINE)]
+        elif s.startswith(' '):
+            m = re.match(' +(.*)', s)
+            return [c_lass(c_lass.BREAK)] + c_lass.from_string(m.group(1))
         else:
-            return [c_lass(c_lass.BREAK,newline)]
+            raise NotImplementedError("connector type %s" % s)
+
+        return result + c_lass.from_string(s[skip:])
 
 class Duration:
     def __init__(self, n=0, d=1):
@@ -323,6 +353,8 @@ class Duration:
         elif re.match("/+$",strg):
             return c_lass(1,2**len(strg))
         elif "/" in strg:
+            if strg.startswith("/"):
+                strg = "1"+strg
             try:
                 (n, d) = strg.split("/")
             except ValueError:
@@ -338,8 +370,8 @@ class Duration:
                 raise NotImplementedError("unparseable duration %s" % strg)
 
 class AbcNote:
-    # allow ! as a trill
-    RE = re.compile("([~!]?)([_=^]*)([A-Za-z])([,']*)([0-9/]?)")
+    # allow ! before note, pretend it's a trill
+    RE = re.compile("([~!]?)([_=^]*)([A-Za-z])([,']*)([0-9/]*)")
 
     # AB does not allow redefining letters, nor the extra space charatcter y
     AB_PITCH = re.compile("[A-Ga-gxz]")
@@ -443,7 +475,7 @@ class AbcHeader:
     TRANSCRIPTION = "Z"
     DIRECTIVE = "%"
     DECORATION = "!"
-    CHORD = '"'
+    CHORD_NAME = '"'
     PLUS = '+'
 
     @classmethod
@@ -461,14 +493,12 @@ class AbcHeader:
         self.value = value
 
     def get_clean_value(self):
+        assert isinstance(self.value, unicode)
         if self.value is None:
-            return '(unknown)'
+            return u'(unknown)'
         # remove characters which excite lilypond
         strg = re.sub(r"[\\{}]","",self.value)
-        try:
-            strg = strg.decode('utf-8')
-        except UnicodeDecodeError:
-            strg = strg.decode('iso-8859-1')
+        assert isinstance(strg, unicode)
         return strg
 
 
@@ -478,7 +508,8 @@ class Phrase:
         # notes = a list of tuples, one per beat.
         self.rhythm = rhythm
         self.key = Key.from_string(key)
-        self.name = name or '(no name)'
+        self.name = name or u'(no name)'
+        assert isinstance(self.name, unicode)
         self.time = Duration.from_string(time)
         self.unit = Duration.from_string(unit)
         self.notes = []
@@ -667,8 +698,25 @@ class Phrase:
                         cur_bar.insert(last_note_index, r'\afterGrace')
                         cur_bar.append(r'{')
                 elif item.what == AbcConnector.END_GRACE:
+                    assert pause
                     cur_bar.append('}')
                     pause = False
+
+                elif item.what == AbcConnector.BEGIN_SLUR:
+                    raise NotImplementedError("slur")
+                elif item.what == AbcConnector.END_SLUR:
+                    raise NotImplementedError("slur")
+                elif item.what == AbcConnector.BEGIN_CHORD:
+                    raise NotImplementedError("chord")
+                elif item.what == AbcConnector.END_CHORD:
+                    raise NotImplementedError("chord")
+                elif item.what == AbcConnector.TUPLET:
+                    raise NotImplementedError("tuplet %s" % repr(item.value))
+                elif item.what == AbcConnector.SWING:
+                    raise NotImplementedError("swing")
+                elif item.what == AbcConnector.SNAP:
+                    raise NotImplementedError("snap")
+
                 elif item.what == AbcConnector.TIE:
                     # tie must immediately follow a note, not a barline or other such
                     if isinstance(prev_item, AbcNote):
@@ -700,33 +748,41 @@ class Tune:
     DIRECTIVE_IGNORED = 2
     HEADER_IGNORED = 4
     DECORATION_IGNORED = 8
-    CHORD_IGNORED = 16
+    CHORD_NAME_IGNORED = 16
     PLUS_IGNORED = 32
+    SLUR_IGNORED = 32
 
     def __init__(self):
 
         self.status = Tune.OK
         self.phrases = {}
         self.fields = {}
-        self.name = '(no name)'
+        self.name = u'(no name)'
         self.ref = None
 
     def get_header(self, key, idx=0):
         if key not in self.fields:
-            return ''
+            return u''
 
-        return self.fields[key][idx]
+        x = self.fields[key][idx]
+        if not isinstance(x, unicode):
+            x = u'wtf'
+        return x
+                
 
     def set_ref(self, item):
         self.ref = item.get_clean_value()
 
     def set_name(self, item):
         self.name = item.get_clean_value()
+        assert isinstance(self.name, unicode)
 
     def add_header(self, item):
         if item.what not in self.fields:
             self.fields[item.what] = []
-        self.fields[item.what].append(item.get_clean_value())
+        clean_value = item.get_clean_value()
+        assert isinstance(clean_value, unicode)
+        self.fields[item.what].append(clean_value)
 
     def render_ly(self, phrase_separator=None, end=None, bar_limit=None, page_break=True, no_repeats=False):
 
@@ -736,7 +792,7 @@ class Tune:
         if not end:
             end = '    \\set Score.repeatCommands = #\'((volta #f)) \\bar "|." \\break'
 
-        s = r'''
+        s = ur'''
 \score{{
 \transpose d d' {
 '''
@@ -759,6 +815,8 @@ class Tune:
                 key = phrase.key
                 continuation = True
 
+        assert isinstance(self.name, unicode)
+        assert isinstance(self.get_header('meter'), unicode)
         s += end + r'''
 }}
 \header{
@@ -766,7 +824,7 @@ class Tune:
     opus = "%s"
     meter = "%s"
 }}
-''' % (self.name.replace('"',"'").encode('utf-8'), '', self.get_header('meter').replace('"',"'").encode('utf-8'))
+''' % (self.name.replace('"',"'"), '', self.get_header('meter').replace('"',"'"))
 
         if page_break:
             s += '\\pageBreak\n'
@@ -774,7 +832,7 @@ class Tune:
         return s
 
     @classmethod
-    def from_string(c_lass, ab, strictness=None):
+    def from_string(c_lass, ab, abc=None, strictness=None):
         '''Parse an inlined AB with inlined headers into a Tune object.'''
 
         # normalize space
@@ -797,7 +855,10 @@ class Tune:
 
         in_header = True
         tune = c_lass()
-        tune.src = ab
+        if abc:
+            tune.src = abc
+        else:
+            tune.src = ab
 
         cur_key = 'C'
         cur_time = '4/4'
@@ -808,6 +869,7 @@ class Tune:
         for item in stream:
             try:
                 if isinstance(item, AbcHeader):
+                    assert isinstance(item.value, unicode)
                     # log_to_stderr("% Finished tune %s: %s\n",finished.name, finished.phrases)
                     if item.what == AbcHeader.REFERENCE:
                         tune.set_ref( item )
@@ -825,7 +887,7 @@ class Tune:
                             tune.add_header( item )
                         else:
                             cur_phrase = None
-                            cur_phrase_id = item.value
+                            cur_phrase_id = item.value.replace('"',"'")
                     elif item.what ==  AbcHeader.UNIT_NOTE_LENGTH:
                         parts = item.value.split(" ")
                         cur_unit = parts[0]
@@ -846,12 +908,12 @@ class Tune:
                             log_to_stderr("%% Unsupported directive in tune %s: '%s'",tune.ref,item.value)
                         else:
                             log_to_stderr("%% Ignored directive in tune %s: '%s'",tune.ref,item.value)
-                    elif item.what ==  AbcHeader.CHORD:
-                        tune.status |= Tune.CHORD_IGNORED
-                        if strictness & Tune.CHORD_IGNORED:
-                            log_to_stderr("%% Unsupported chord in tune %s: '%s'",tune.ref,item.value)
+                    elif item.what ==  AbcHeader.CHORD_NAME:
+                        tune.status |= Tune.CHORD_NAME_IGNORED
+                        if strictness & Tune.CHORD_NAME_IGNORED:
+                            log_to_stderr("%% Unsupported chord name in tune %s: '%s'",tune.ref,item.value)
                         else:
-                            log_to_stderr("%% Ignored chord in tune %s: '%s'",tune.ref,item.value)
+                            log_to_stderr("%% Ignored chord name in tune %s: '%s'",tune.ref,item.value)
                     elif item.what ==  AbcHeader.DECORATION:
                         tune.status |= Tune.DECORATION_IGNORED
                         if strictness & Tune.DECORATION_IGNORED:
@@ -867,6 +929,15 @@ class Tune:
                     else:
                         tune.add_header(item)
                 else:
+                    # allow tune to ignore unsupported items:
+                    if isinstance(item, AbcConnector):
+                        if item.what == AbcConnector.BEGIN_SLUR or item.what == AbcConnector.END_SLUR:
+                            tune.status |= Tune.SLUR_IGNORED
+                            if strictness & Tune.SLUR_IGNORED:
+                                log_to_stderr("%% Unsupported slur in tune %s",tune.ref)
+                            else:
+                                log_to_stderr("%% Ignored slur in tune %s",tune.ref)
+                                continue
                     if not cur_phrase:
                         cur_phrase = Phrase("%s %s" % (tune.name, cur_phrase_id),
                                             cur_key, cur_time, cur_unit)
@@ -890,7 +961,7 @@ class ABCollection:
         self.tune_check = {}
         self.include_duplicates = include_duplicates
 
-    def add_file(self, file):
+    def add_data(self, fileobj):
         count = 0
         original_abc = None
         abc = ""
@@ -898,7 +969,12 @@ class ABCollection:
         ab = ""
         x_line = "" # only used when reporting a duplicate
         pause = False
-        for line in data.readlines()+["X::"]:
+        for line in fileobj.readlines()+["X::"]:
+            try:
+                line = line.decode('utf-8')
+            except UnicodeDecodeError:
+                line = line.decode('iso-8859-1')
+
             if line.startswith("X:") or line.startswith("[X:"):
                 if pause and PAUSE_ON_ERROR:
                     pause = raw_input("continue?")
@@ -947,7 +1023,7 @@ class ABCollection:
                 if check_id in self.tune_check:
                     log_to_stderr("%% Skipped %s as exactly duplicated %s", x_line.strip(), self.tune_check[check_id])
                 else:
-                    tune = Tune.from_string(finished_ab)
+                    tune = Tune.from_string(finished_ab, original_abc)
 
                     if tune:
                         self.tune_check[check_id] = tune.ref
@@ -956,7 +1032,7 @@ class ABCollection:
                     else:
                         self.tune_check[check_id] = x_line.strip()
                         sys.stderr.write("%% Couldn't process the following tune:\n%s\n")
-                        sys.stderr.write(original_abc)
+                        sys.stderr.write(original_abc.encode('utf-8'))
                         pause = True
 
                 finished_ab = None
@@ -991,15 +1067,11 @@ if __name__=="__main__":
 
     TUNES = ABCollection()
 
-    if len(sys.argv)>1:
-        for filename in sys.argv[1:]:
-            loadFile(filename)
-    else:
-        for (path, dirs, files) in os.walk('data'):
-            for filename in files:
-                data = open(os.path.join(path,filename), 'r')
-                count = TUNES.add_file(data)
-                log_to_stderr("%% Finished %s , found %s tunes.\n\n",filename, count)
+    for (path, dirs, files) in os.walk('data'):
+        for filename in files:
+            data = open(os.path.join(path,filename), 'r')
+            count = TUNES.add_data(data)
+            log_to_stderr("%% Finished %s , found %s tunes.\n\n",filename, count)
     #PHRASES.update(abfile.get_phrases())
 
 
@@ -1025,10 +1097,11 @@ if __name__=="__main__":
                     )
                 else:
                     z=tune.render_ly()
-                print z
+                print z.encode('utf-8')
             except NotImplementedError, e:
-                log_to_stderr("%% Couldn't render %s: %s\n",tune.name or '(unknown)', e)
-            
+                log_to_stderr("%% Couldn't render the following tune (%s): %s\n",tune.name or '(unknown)', e)
+                sys.stderr.write(tune.src.encode('utf-8'))
+          
 
     #for code,phrases in sorted(PHRASES.items()):
     #    log_to_stderr( code+": "+",".join(phrase.name for phrase in phrases)+"\n" )
