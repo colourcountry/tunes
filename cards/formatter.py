@@ -5,6 +5,8 @@ import re, os, sys
 PAUSE_ON_ERROR = False
 REMOVE_KEY_SIGNATURES = True
 CRIB = False
+LIMIT = None
+BUCKET_SIZE = 500
 
 def log_to_stderr(format, *args):
     # Log with prejudice. Attempt to get something printable out of whatever is supplied.
@@ -116,7 +118,7 @@ Key.REGISTER.update( {
 
 class AbcConnector:
 
-    TYPES = [r'\n','--', ' ', '|', '||', '|]', '[|', '|:', '_', '|_', ':|', '{', '}', '(', ')', '[', ']', '3', '>', '<', '::']
+    TYPES = [r'\n','--', ' ', '|', '||', '|]', '[|', '|:', '_', '|_', ':|', '{', '}', '(', ')', '[', ']', '(', '>', '<', '::']
     NEW_LINE = 0
     TIE = 1
     BREAK = 2
@@ -156,6 +158,16 @@ class AbcConnector:
             return '%s%s' % (AbcConnector.TYPES[self.what], ','.join(self.value))
         elif self.what == AbcConnector.END_REPEAT:
             return '%s%s' % (AbcConnector.TYPES[self.what], ','.join(self.value))
+        elif self.what == AbcConnector.TUPLET:
+            if self.value[0]==self.value[2]:
+                value = ':'.join(str(x) for x in self.value[:2])
+                if value=='3:2':
+                    value = '3'
+                if value=='2:3':
+                    value = '2'
+            else:
+                value = ':'.join(str(x) for x in self.value)
+            return '%s%s' % (AbcConnector.TYPES[self.what], value)
 
 
 
@@ -217,6 +229,8 @@ class AbcConnector:
             result = '' # already had effect in 'rhythmify'
         elif self.what == AbcConnector.SNAP:
             result = '' # already had effect in 'rhythmify'
+        elif self.what == AbcConnector.TUPLET:
+            result = ' \\times %s/%s { ' % (self.value[1], self.value[0]) # phrase is responsible for closing this bracket
         elif self.what == AbcConnector.DOUBLE_BAR:
             result = ' \\bar "||" \\set Score.repeatCommands = #\'((volta #f)) '
         elif self.what == AbcConnector.END_BAR:
@@ -226,7 +240,8 @@ class AbcConnector:
         elif self.what == AbcConnector.BEGIN_REPEAT:
             result = ' \\set Score.repeatCommands = #\'(start-repeat) '
         elif self.what == AbcConnector.DOUBLE_REPEAT:
-            result = ' \\set Score.repeatCommands = #\'(double-repeat) '
+            # FIXME; this doesn't work
+            result = ' \\set Score.repeatCommands = #\'((volta #f) end-repeat) \\set Score.repeatCommands = #\'(start-repeat) '
         elif self.what == AbcConnector.END_REPEAT:
             if self.value:
                 result = ' \\set Score.repeatCommands = #\'((volta #f) end-repeat (volta "%s.")) ' % '., '.join(self.value)
@@ -258,8 +273,17 @@ class AbcConnector:
         elif s.startswith('('):
             m = re.match('[(]([0-9:]+)(.*)', s)
             if m:
-                value = tuple(m.group(1).split(':'))
-                return [c_lass(c_lass.TUPLET, value)] + c_lass.from_string(m.group(2))
+                value = (m.group(1).split(':') + ['',''])[:3]
+                if value[1]=='':
+                    if int(value[0]) in (2,4,8):
+                        value = [value[0], 3, value[2]]
+                    elif int(value[0]) in (3,6):
+                        value = [value[0], 2, value[2]]
+                    else:
+                        raise NotImplementedError('tuple %s' % value)
+                if value[2]=='':
+                    value[2] = value[0]
+                return [c_lass(c_lass.TUPLET, tuple(int(x) for x in value))] + c_lass.from_string(m.group(2))
             else:
                 result = [c_lass(c_lass.BEGIN_SLUR)]
         elif s.startswith(')'):
@@ -727,8 +751,8 @@ class Phrase:
         return (''.join(transpose(note[0]) for note in notes)).ljust(8,"0")
 
     def as_ab(self):
-        value = ''.join(item.as_ab() for item in self.notes) + "\n\n"
-        return value
+        value = ''.join(item.as_ab() for item in self.notes)
+        return "%s\n" % value
 
     def render_ly(self, key=None, partial=None, bar_limit=None, no_repeats=False):
 
@@ -751,6 +775,8 @@ class Phrase:
         last_note_index = None
         prev_item = None
         new_bar = None
+        end_tuplet_count = None
+        cur_tuplet_stretch = None
 
         if not isinstance(self.notes[-1], AbcConnector) or not self.notes[-1].is_bar_line():
             self.notes.append( AbcConnector(AbcConnector.END_BAR) )
@@ -762,7 +788,16 @@ class Phrase:
                 cur_bar.append( item.as_ly(self.key, self.unit) )
 
                 if not pause:
-                    ticks += item.dur * self.unit
+                    if cur_tuplet_stretch:
+                        ticks += item.dur * self.unit * cur_tuplet_stretch
+                    else:
+                        ticks += item.dur * self.unit
+
+                if end_tuplet_count:
+                    end_tuplet_count -=1
+                    if end_tuplet_count == 0:
+                        cur_bar.append( "}" )
+                        cur_tuplet_stretch = None
 
 
             elif isinstance(item, AbcConnector):
@@ -827,7 +862,6 @@ class Phrase:
                         cur_bar.append(r'{')
                 elif item.what == AbcConnector.END_GRACE:
                     if not pause:
-                        log_to_stderr(self.notes)
                         raise NotImplementedError("} character outside gracenote")
                     cur_bar.append('}')
                     pause = False
@@ -840,8 +874,6 @@ class Phrase:
                     raise NotImplementedError("chord")
                 elif item.what == AbcConnector.END_CHORD:
                     raise NotImplementedError("chord")
-                elif item.what == AbcConnector.TUPLET:
-                    raise NotImplementedError("tuplet %s" % repr(item.value))
 
                 elif item.what == AbcConnector.TIE:
                     # tie must immediately follow a note, not a barline or other such
@@ -849,6 +881,12 @@ class Phrase:
                         cur_bar.append(item.as_ly())
                     else:
                         raise NotImplementedError("tie from non-note %s" % prev_item)
+
+                elif item.what == AbcConnector.TUPLET:
+                    end_tuplet_count = item.value[2]
+                    cur_tuplet_stretch = Duration(item.value[1], item.value[0])
+                    cur_bar.append(item.as_ly())
+
                 else:
                     if not no_repeats:
                         cur_bar.append(item.as_ly())
@@ -883,7 +921,7 @@ class Tune:
         self.status = Tune.OK
         self.phrases = []
         self.fields = {}
-        self.name = '(no name)'
+        self.name = u'(no name)'
         self.ref = None
 
     def get_header(self, key, idx=0):
@@ -918,7 +956,6 @@ class Tune:
         for field, values in sorted(self.fields.items()):
             for value in values:
                 s += u'%s:%s\n' % (field, value)
-        log_to_stderr(repr(self.fields))
         for value in keys:
             assert isinstance(value, Key)
             s += u'K:%s\n' % value.as_ab()
@@ -982,6 +1019,17 @@ class Tune:
     @classmethod
     def from_string(c_lass, ab, abc=None, strictness=None):
         '''Parse an inlined AB with inlined headers into a Tune object.'''
+
+
+        def get_next(strg):
+            ALPH = "ABCDEFGHKLMNPQRSTUVWXYZ"
+            if strg[-1] in ALPH:
+                try:
+                    return ALPH[ALPH.index(strg)+1]
+                except IndexError:
+                    pass
+            return "?"
+            
 
         # normalize space
         ab = re.sub(r'[\r\n\t ]+', ' ', ab.strip())
@@ -1088,6 +1136,14 @@ class Tune:
                                 log_to_stderr("%% Ignored slurs in tune %s",tune.ref)
                             tune.status |= Tune.SLUR_IGNORED
                             continue
+                        elif item.what == AbcConnector.BEGIN_REPEAT:
+                            # assume starts a new phrase
+                            cur_phrase = None
+                            cur_phrase_id = get_next(cur_phrase_id)
+                        elif item.what == AbcConnector.DOUBLE_REPEAT:
+                            # assume starts a new phrase
+                            cur_phrase = None
+                            cur_phrase_id = get_next(cur_phrase_id)
                     elif isinstance(item, AbcNote):
                         pass
                     else:
@@ -1233,7 +1289,7 @@ if __name__=="__main__":
     for (path, dirs, files) in os.walk('data'):
         for filename in files:
             data = open(os.path.join(path,filename), 'r')
-            count = TUNES.add_data(data, 200)
+            count = TUNES.add_data(data, LIMIT)
             log_to_stderr("%% Finished %s , found %s tunes.\n\n",filename, count)
     # PHRASES.update(abfile.get_phrases())
 
@@ -1245,8 +1301,8 @@ if __name__=="__main__":
 
 
         
-    for i in range(0,len(TUNES.tunes),200):
-        tuneset = TUNES.tunes[i:i+200]
+    for i in range(0,len(TUNES.tunes),BUCKET_SIZE):
+        tuneset = TUNES.tunes[i:i+BUCKET_SIZE]
         ly_filename = 'tunes%s.ly' % i
         ly_file = open(os.path.join('out',ly_filename),'w')
         ly_file.write(PREAMBLE)
