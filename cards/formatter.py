@@ -158,6 +158,8 @@ class AbcConnector:
             return '%s%s' % (AbcConnector.TYPES[self.what], ','.join(self.value))
         elif self.what == AbcConnector.END_REPEAT:
             return '%s%s' % (AbcConnector.TYPES[self.what], ','.join(self.value))
+        elif self.what == AbcConnector.END_CHORD:
+            return '%s%s' % (AbcConnector.TYPES[self.what], self.value.as_ab())
         elif self.what == AbcConnector.TUPLET:
             if self.value[0]==self.value[2]:
                 value = ':'.join(str(x) for x in self.value[:2])
@@ -176,8 +178,8 @@ class AbcConnector:
             return True
         elif self.what == AbcConnector.DOUBLE_BAR:
             return True
-        elif self.what == AbcConnector.END_REPEAT and not self.value:
-            return True
+        #elif self.what == AbcConnector.END_REPEAT and not self.value:
+        #    return True
         elif self.what == AbcConnector.END_BAR:
             return True
         return False
@@ -335,8 +337,10 @@ class AbcConnector:
             # after chord, may have a duration, which multiplies the duration of notes within the chord
             m = re.match('[]]([0-9/]+)(.*)', s)
             if m:
+                # chord with duration outside bracket
+                # keep it here for information, but 'rhythmify' has already applied the multiplier
                 value = Duration.from_string(m.group(1))
-                result = [c_lass(c_lass.END_CHORD)]
+                result = [c_lass(c_lass.END_CHORD, value)]
                 skip = m.group(2)
             else:
                 result = [c_lass(c_lass.END_CHORD)]
@@ -449,6 +453,13 @@ class Duration:
             return str(dur.d // 4)+'..'
         elif dur.n == 15 and (dur.d % 8 == 0):
             return str(dur.d // 8), '...'
+        elif dur.d == 1:
+            if dur.n == 2:
+                return r'\breve'
+            elif dur.n == 4:
+                return r'\longa'
+            else:
+                raise NotImplementedError("note of length %s" % (dur.n, dur.d))
         else:
             raise NotImplementedError("note of length %s/%s" % (dur.n, dur.d))
 
@@ -553,8 +564,12 @@ class AbcNote:
         elif acc < 0: acc = "es"*-acc
         else: acc = ""
 
-        x = self.dur * unit
-        length = (self.dur * unit).as_ly()
+        if unit is None:
+            # suppress length (e.g. in a chord)
+            length = ''
+        else:
+            x = self.dur * unit
+            length = (self.dur * unit).as_ly()
 
         return ' '+note+acc+octave+length+' '
 
@@ -562,6 +577,17 @@ class AbcNote:
 
     @classmethod
     def from_string(c_lass, strg):
+        # remove decorations
+        # (FIXME: convert to inline object of some kind? trouble is we have to do this here as they may contain note names)
+        strg = re.sub('[!]([^!]*)[!]', r'', strg)
+        # chords
+        strg = re.sub('["]([^"]*)["]', r'', strg)
+        # old style chords/decorations, can't tell which but don't support either
+        # (do this last as + is legal within chords and decorations)
+        strg = re.sub('[+]([^+]*)[+]', r'', strg)
+
+
+
         m = c_lass.RE.split(strg)
         s = []
         for i in range(0,len(m),6):
@@ -611,6 +637,7 @@ class AbcField:
     def from_string(c_lass, strg):
         m = c_lass.RE.split(strg)
         s = []
+        log_to_stderr(m)
         for i in range(0,len(m),3):
             s.extend(AbcNote.from_string(m[i]))
             if len(m)>i+2:
@@ -641,11 +668,34 @@ class AbcField:
     def __repr__(self):
         return u'<field '+self.what+':'+repr(self.value)+u'>'
 
-    def as_ab(self):
+    def as_ab_bare(self, what=None, pfx=''):
+        if not what:
+            what = self.what
         if isinstance(self.value, unicode):
-            return u'[%s:%s]\n' % (self.what, self.value)
+            return u'%s:%s' % (what, pfx + self.value)
         else:
-            return u'[%s:%s]\n' % (self.what, self.value.as_ab())
+            return u'%s:%s' % (what, pfx + self.value.as_ab())
+
+    def as_ab(self):
+        if self.what in 'KLMNPQRr':
+            return u'['+self.as_ab_bare()+u']\n'
+        else:
+            return u'['+self.as_ab_bare('N', self.what+':')+u']\n'
+
+    def as_ab_header(self):
+        if self.what in 'ABCDFGHKNOPQRrSTWXZ':
+            return self.as_ab_bare()+u']\n'
+        else:
+            return self.as_ab_bare('N', self.what+':')
+    
+
+    def as_ly(self):
+        if self.what == AbcField.METER:
+            return r'\time %s' % self.value.as_moment()
+        elif self.what == AbcField.KEY:
+            return r'\key %s' % self.value.as_ly()
+        else:
+            raise NotImplementedError("inline field: %s" % self)
 
     def get_clean_value(self):
         if isinstance(self.value, unicode):
@@ -684,6 +734,8 @@ class Phrase:
         #        rhythm = self.rhythm[len(items)-1]  
         #    except IndexError:
         #        rhythm = []
+        chord_start = None
+
         for i, item in enumerate(self.notes):
             if isinstance(item, AbcConnector):
                 if item.what == AbcConnector.SWING:
@@ -698,6 +750,16 @@ class Phrase:
                         self.notes[i+1].dur *= Duration(3,2)
                     else:
                         raise NotImplementedError("snap between non-notes")
+                elif item.what == AbcConnector.BEGIN_CHORD:
+                    chord_start = i
+                elif item.what == AbcConnector.END_CHORD:
+                    if item.value:
+                        # chord length multiplier found after chord, do this now
+                        if not isinstance(chord_start, int):
+                            raise NotImplementedError("chord end did not follow chord start")
+                        for j in range(chord_start, i):
+                            if isinstance(self.notes[j], AbcNote):
+                                self.notes[j].dur *= item.value
         return self
     
     def extend(self, items):
@@ -771,7 +833,8 @@ class Phrase:
         cur_bar_nr = 1
         warn_bar_length = 0
 
-        pause = False
+        pause = 0
+        chord_time = None
         last_note_index = None
         prev_item = None
         new_bar = None
@@ -782,16 +845,32 @@ class Phrase:
             self.notes.append( AbcConnector(AbcConnector.END_BAR) )
 
         for i, item in enumerate(self.notes):
-
             if isinstance(item, AbcNote):
                 last_note_index = len(cur_bar)
-                cur_bar.append( item.as_ly(self.key, self.unit) )
 
-                if not pause:
-                    if cur_tuplet_stretch:
-                        ticks += item.dur * self.unit * cur_tuplet_stretch
-                    else:
-                        ticks += item.dur * self.unit
+                if chord_time:
+                    # duration goes after chord in lilypond
+                    cur_bar.append( item.as_ly(self.key, None) )
+                else:
+                    cur_bar.append( item.as_ly(self.key, self.unit) )
+
+                if cur_tuplet_stretch:
+                    ticks_elapsed = item.dur * self.unit * cur_tuplet_stretch
+                else:
+                    ticks_elapsed = item.dur * self.unit
+
+                if pause < 0:
+                    pass # pause until told to stop
+                elif pause > 0:
+                    # pause after this number of notes
+                    pause -= 1
+                    if pause == 0:
+                        pause = -1
+                    if chord_time is True:
+                        chord_time = ticks_elapsed
+                        ticks += ticks_elapsed
+                else:
+                    ticks += ticks_elapsed
 
                 if end_tuplet_count:
                     end_tuplet_count -=1
@@ -810,23 +889,23 @@ class Phrase:
                         new_bar = item.as_ly()
 
                     if pause:
-                        raise NotImplementedError("bar line whilst paused")
+                        raise NotImplementedError("bar line whilst paused (%s)" % pause)
                         # grace notes can't span a bar line
                         cur_bar.append('}')
                         pause = False
 
                     if ticks.n != 0:
                         if ticks != cur_bar_length:
-                            if cur_bar_nr == 1:
-                                cur_bar = [r'\set Timing.measureLength = #(ly:make-moment %s)' % self.time.as_moment(), r'\bar ""'] + cur_bar
+                            if not cur_bar:
+                                # suppress barline before anacrusis
+                                cur_bar = [r'\bar ""']
+
+                            if ticks > self.time:
                                 cur_bar_length = self.time
-                                try:
-                                    cur_bar = [r'\partial %s ' % ticks.mod_nonzero(cur_bar_length).as_ly()] + cur_bar
-                                except TypeError:
-                                    raise NotImplementedError("partial yielded unexpected result: %s" % ticks.mod_nonzero(cur_bar_length))
+                                log_to_stderr("%% Long space without barlines in %s bar %s, reverting to %s", self.name, cur_bar_nr, self.time)
                             else:
-                                cur_bar = [r'\set Timing.measureLength = #(ly:make-moment %s)' % ticks.as_moment()] + cur_bar                    
                                 cur_bar_length = ticks
+                            cur_bar = [r'\set Timing.measureLength = #(ly:make-moment %s)' % cur_bar_length.as_moment()] + cur_bar
 
                         if ticks < self.time:
                             if item.allow_short_bar():
@@ -834,7 +913,7 @@ class Phrase:
                             else:
                                 if warn_bar_length > 2:
                                     log_to_stderr("%% Warning in %s bar %s: short bar of length %s, expected %s", self.name, cur_bar_nr, ticks, self.time)
-                                cur_bar_nr -= 1 # short bar doesn't count
+                                cur_bar_nr -= 1 # short bar doesn't count towards limit
                         elif ticks > self.time:
                             log_to_stderr("%% Warning in %s bar %s: long bar of length %s, expected %s", self.name, cur_bar_nr, ticks, self.time)
 
@@ -848,13 +927,13 @@ class Phrase:
 
                 if item.what == AbcConnector.BAR:
                     # The only connector which is definitely on a real bar line is the bar line itself.
-                    # Plus we don't know the proper length for the bar immediately after a bar we know to be short.
+                    # Plus we don't know the proper length for the bar immediately after a bar we know to be short (without looking at the time signature)
                     # So wait for 3 consecutive bar lines before warning.
                     warn_bar_length += 1
                     # (bar check was already added above)
 
                 elif item.what == AbcConnector.BEGIN_GRACE:
-                    pause = True # grace notes take up no time
+                    pause = -1 # grace notes take up no time
                     if i==0 or not isinstance(self.notes[i-1], AbcNote):
                         cur_bar.append(r'\grace {')
                     else:
@@ -871,10 +950,20 @@ class Phrase:
                 elif item.what == AbcConnector.END_SLUR:
                     raise NotImplementedError("slur")
                 elif item.what == AbcConnector.BEGIN_CHORD:
-                    raise NotImplementedError("chord")
+                    pause = 1 # take the next note as the duration
+                    cur_bar.append(r'<')
+                    chord_time = True
                 elif item.what == AbcConnector.END_CHORD:
-                    raise NotImplementedError("chord")
-
+                    pause = False
+                    if isinstance(chord_time, Duration):
+                        cur_bar.extend([r'>', chord_time.as_ly()])
+                        chord_time = None
+                    elif chord_time is True:
+                        chord_time = None
+                        raise NotImplementedError("empty chord")
+                    else:
+                        chord_time = None
+                        raise NotImplementedError("] character outside chord")
                 elif item.what == AbcConnector.TIE:
                     # tie must immediately follow a note, not a barline or other such
                     if isinstance(prev_item, AbcNote):
@@ -892,12 +981,10 @@ class Phrase:
                         cur_bar.append(item.as_ly())
 
             elif isinstance(item, AbcField):
-                if item.what == AbcField.METER:
-                    cur_bar.append(r'\time %s' % item.value.as_moment())
-                elif item.what == AbcField.KEY:
-                    cur_bar.append(r'\key %s' % item.value.as_ly())
-                else:
-                    raise NotImplementedError("inline field: %s" % item)
+                try:
+                    cur_bar.append( item.as_ly() )
+                except NotImplementedError:
+                    log_to_stderr("%% Warning in %s: can't render to ly: %s", self.name, item)
 
             prev_item = item
 
@@ -914,7 +1001,7 @@ class Tune:
     DECORATION_IGNORED = 8
     CHORD_NAME_IGNORED = 16
     PLUS_IGNORED = 32
-    SLUR_IGNORED = 32
+    SLUR_IGNORED = 64
 
     def __init__(self):
 
@@ -1022,10 +1109,12 @@ class Tune:
 
 
         def get_next(strg):
+            if not strg:
+                strg = 'A'
             ALPH = "ABCDEFGHKLMNPQRSTUVWXYZ"
             if strg[-1] in ALPH:
                 try:
-                    return ALPH[ALPH.index(strg)+1]
+                    return strg[:-1]+ALPH[ALPH.index(strg[-1])+1]
                 except IndexError:
                     pass
             return "?"
@@ -1215,15 +1304,6 @@ class ABCollection:
                 elif re.match("[A-Za-z]:", line):
                     ab += "["+line.replace("]",")").replace("[","(").strip()+"]"
                 else:
-                    # music line
-                    # replace decorations with inline decoration header
-                    line = re.sub('[!]([^!]*)[!]', r'[!:\1]', line)
-                    # chords
-                    line = re.sub('["]([^"]*)["]', r'[":\1]', line)
-                    # old style chords/decorations, can't tell which but don't support either
-                    # (do this last as + is legal within chords and decorations)
-                    line = re.sub('[+]([^+]*)[+]', r'[+:\1]', line)
-
                     ab += line
 
             if finished_ab:

@@ -1,0 +1,199 @@
+X:WFS 13-12 01
+T:?
+M:4/4
+K:D
+[P:A] A2| dcBc d2B2 A2B2 F2A2 BAG2 d2cd A6GF E2B2 A2G2 AGFG A2dB G2FG A2A2 d6 ||
+
+X:WFS 13-12 02
+T:Good King Wenceslas
+M:2/4
+P:AB
+K:G
+[P:A] GGGA | GGD2 | EDEF | G2G2 :|
+[P:B] dcBA | BAG2 | EDEF | G2G2 | DDEF | GGA2 | dcBA | G2c2 | G4 ||
+
+X:WFS 13-12 03
+T:Tomorrow Will Be My Dancing Day
+M:6/8
+P:ABC
+K:G
+[P:A] D| GFG ABc | dcB A2B | GFG ABc | dcB A2              ||
+[P:B] d| d2B c2B | AGB A2D | G2A Bcd | cBA G2              ||
+[P:C] B| A2B/c/ d3 | BGB A2B | A2B A2D | G2A Bcd | cBA G2  ||
+
+X:WFS 13-12 04
+T:I Saw Three Ships Come Sailing In
+M:6/8
+K:G
+[P:A] D| G2G A2B | d2B A2c |1 B2G G2B | A2F D2 :| B2G GAB | A3 G2 ||
+
+%%text Into...
+
+X:WFS 13-12 05
+T:We Three Kings
+M:6/8
+P:AB
+K:Em
+[P:A] B2A G2E | FGF E3 | B2A G2E | FGF E3 | G2G A2A | B2B dcB | ABA G2F | E3 F2A ||
+[P:B] G2G G2D | G2E G3 | G2G G2D | G2E G3 | G2G A2B | c2B A2B | G2G G2D | G2E G3 ||
+
+X:WFS 13-12 06
+T:Ding Dong! Merrily On High
+M:4/4
+K:G
+[P:A] G2G2 AGFE | D4 D2D2 | E2G2 G2F2 | G4 G4 :|
+[P:B] d3c BcdB | c3B ABcA | B3A GABG | A3G FGAF | G3F EFGE | F3E D2D2 | E2G2 G2F2 | G4 G4 :|
+
+X:WFS 13-12 07
+T:Silent Night
+M:6/8
+K:G
+[P:A] d>ed B3 | d>ed B3 | a2a f3 | g2g d3 || 
+[P:B] e2e g>fe | d>ed B3 | e2e g>fe | d>ed B3 ||
+[P:C] a2a c'>af | g3 b3 | gdB d>cA | G6 ||
+
+X:WFS 13-12 08
+T:Jingle Bells
+M:2/4
+K:G
+[P:A] BBB2 | BBB2 | BdG>A | B4 | ccc>c | cBBB |1 BAAB | A2d2 :|2 ddcA | G4 ||
+[P:B] DBAG | D3D | DBAG | E4 |1 EcBA | F4 | ddCA | B4 :|2 EcBA | dddd | edcA | G2d2 ||
+
+X:WFS 13-12 09
+T:Kafoozalum
+M:2/4
+R:swung
+K:G
+[P:A] d2dc | Bcd2 | ABcB | ABc2 | d2{e}dc | Bcd2 | GAB2{G} | A2G2 ||
+[P:B] bGDG | BGB2 | cAFA | cAc2 | bGDG | BGB2 | GAB2{G} | A2G2 ||
+
+X:WFS 13-12 10
+T:The Keel Row
+M:2/4
+K:G
+[P:A] B2GB | c2Ac | B2GB | AFD2 | B2GB | c2Ac | BGAF | G4 ||
+[P:B] (3Bdddg | e2dc | B2GB | AGD2 | (3Bdddg | e2dc | BGAF | G4 ||
+
+%%text Salmon Tails Up The Water (WFS 13-12 11 = WFS 13-10 14), into...
+
+X:WFS 13-12 12
+T:Rattling Bog
+N:=WFS 13-11 07
+M:2/4
+K:G
+[P:A] B2B>A | GEE2 |1 DGG/F/G/A/ | BAA2 :|2 Ddd>c | BAG2 ||
+[P:B] BGAG/A/ | BGAG/A/ |1 Bddc | BAA2 :|2 Bddc | BAG2 ||
+
+%%text !Michael Turner's Waltz (WFS 13-12 13 = WFS 13-07 05)
+
+%%text Oyster Girl (WFS 13-12 14 = WFS 13-11 12), into...
+
+X:WFS 13-12 15
+T:Rosin the Bow
+M:6/8
+P:A1 A2 B A2
+K:G
+[P:A] D| GFG BGB | d3 efg | dBG [1 GAB | E3-E2D :|2 ABA | G3-G ||
+[P:B] Bc| d2d def | g2g gfe | dBG GAB | E3 [F3D3] ||
+
+%%text Rakes of Mallow (WFS 13-12 16 = WFS 13-10 16)
+
+%%text Princess Royal (WFS 13-12 17 = EATMD 13-02 05)
+
+X:WFS 13-12 18
+T:Captain Lanoe's Quick March
+M:6/8
+K:G
+[P:A] G2B d2d | gfe d3 | cec BdB | AGA [1 B2A :|2 G3{A} ||
+[P:B] B3 B3 | BAB c3 |1 B2c d2c | B2A B2G :|2 Bdg dBG | A3 G3{A} ||
+
+X:WFS 13-12 19
+T:Linky Lanky
+S:Frankie
+M:6/8
+K:Em
+[P:A] E2B B2A | G2G AGF | E2B B2A | G2A [1 B2F :|2 B2 ||
+[P:B1] B| c2c B2G | A2G FED | E2B B2A | G2A B2 ||
+[P:C] F| G2B d2D | F2G ABc | BcB e2d | c2B A3 ||
+[P:B2] B2G A2F | G2E FED | E2B B2A | G2A B2 ||
+[P:C] F| G2B d2D | F2G ABc | BcB e2d | c2B A2 ||
+[P:D] f| g2g f2d | e2B ABc | B3 BcB | AGF E3 ||
+
+X:WFS 13-12 20
+T:God Rest Ye Merry, Gentlemen
+M:2/4
+R:swung
+P:AB
+K:G
+[P:A] E| EBBA | GFED | EFGA | B3E | EBBA | GFED | EFGA | B3 ||
+[P:B] B| cABc | deBA | GEFG | A2GA | B2cB | BAGF | E2G/F/E | A2GA | Bcde | BAGF | E3 ||
+
+%%text I'll Go And Enlist For A Sailor (WFS 13-12 21 = WFS 13-10 32)
+
+%%text Off To California (WFS 13-12 22 = WFS 13-07 08)
+
+%%text Newcastle (WFS 13-12 23 = WFS 13-11 16), into Portsmouth (WFS 13-12 24 = WFS 13-10 41)
+
+X:WFS 13-12 25
+T:Wisbech
+S:Frankie
+M:6/8
+K:Em
+[P:A] E2G B2E | D2F A2E-|E2F G2A | B3 d3 | c2d e2c | d2B G2B |1 A2B A2G | F2G A2F :| A3 G2F | E6 ||
+[P:B] e2f gfe | d2g c2g | B2d B2G |1 ABA G3 | e2f gfe | d2g c2g | B2d B2G | A3 A3 :| ABA G2A | B2A G2F | E2G ABc | B2A G2F | E6 ||
+
+%%text Rochdale Coconut Dance (WFS 13-12 26 = WFS 13-11 19), into Tip Top Polka (WFS 13-12 27 = WFS 13-11 20)
+
+%%text Ffiddle-Ffaddle (WFS 13-12 28 = WFS 13-07 14), into L.N.B. Polka (WFS 13-12 29 = WFS 13-07 15)
+
+X:WFS 13-12 30
+T:Soldier's Joy
+M:4/4
+K:D
+[P:A] AFDF AFDF A2d2 [1 d2B2 AFDF AFDF G2E2 E2FG :|2 d2e2 | fagf egfe d2f2 d2
+[P:B] e2| f2{d}f2{d} fagf e2{c}e2{c} egfe |1 f2f2 fagf | edcB A2 :|2 fafd egec d2f2 d2
+
+%%text Staten Island Ferry (WFS 13-12 31 = WFS 13-07 10)
+
+%%text Morpeth Rant (New) (WFS 13-12 32 = WFS 13-10 28)
+
+X:WFS 13-12 33
+T:John Ryan's
+M:4/4
+K:D
+[P:A] d2d2 BcdB A2F2 [1 A2F2 d2d2 BcdB A2F2 E2D2 :|2 A2de | f2d2 e2c2 d4 d2
+[P:B] e2| f2d2 d2ef g2f2 e2de |1 f2d2 A2d2 f2a2 a3g :|2 f2d2 e2c2 d4 d2
+
+%%text Horses Brawl (WFS 13-12 34 = WFS 13-07 09)
+
+%%text Oscar Woods' Jig in D (WFS 13-12 35) into do. in G (WFS 13-12 36 = 13-07 01)
+
+X:WFS 13-12 37
+T:Lemmy Brazil's
+M:4/4
+K:D
+[P:A] AG| F2A2{d} B2A2 defd B2AG FAdA Bcdf |1 e2e2 e2 :| e2c2 d2
+[P:B] fg| afdf afd2 defd B2AG FAdA Bcdf |1 e2e2 e2 :| e2c2 d2
+
+X:WFS 13-12 38
+T:?
+M:2/4
+K:G
+[P:A] G2GA B2B2 A2A2 GBd2 e2e2 |1 dBG2 GFGB AFD2 :|2 dBGA B2A2 G2
+[P:B] Bc| d2d2 e4 GFGA B4 c2ce |1 dBG2 GFGB AFD2 :|2 dBGA B2A2 G2
+
+%%text Harper's Frolic (WFS 13-12 39 = WFS 13-10 22) into Bonnie Kate (WFS 13-12 40 = WFS 13-10 23)
+
+%%text Speed the Plough (WFS 13-12 41 = WFS 13-10 43)
+
+X:WFS 13-12 42
+T:Gloucestershire Wassail
+M:3/4
+L:1/4
+P:AB
+K:G
+[P:A] D| G2G GAB cBA Bdd cAA ABc B/A/G/A/B A2c B/A/G/A/B/c/ d2d/c/ BGB A2G/A/ B2A/B/ c2B AGF G3
+[P:B] BGB D3 BGB A2G/A/ B2A/B/ c2B aGF G3
+
+%%text Bear Dance in A (WFS 13-12 43 = WFS 13-10 09)
+

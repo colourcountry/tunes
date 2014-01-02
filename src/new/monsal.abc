@@ -1,12 +1,24 @@
 X:1
 T:Monsal Head
-r:A B C
-K:G
+P:A A B C
 M:6/8
-BAG edB AGA B2G D2G B2G AGA B2G
+L:1/8
+K:G
+[P:A] BAG edB AGA B2G D2G B2G AGA B2G 
 x3 x3 x3 x3 x3 x3 ABA G3        ||
-c3 e3 g2f= edc B2G D2G AGA B2G
+[P:B] c3 e3 g2f= edc B2G D2G AGA B2G
 x3 x3 x3 x3 x3 x3 ABA G3        ||
-d3 f3 a2f dec B2G D2G AGA B2G
+[P:C] d3 f3 a2f dec B2G D2G AGA B2G
 x3 x3 x3 x3 x3 D2d cBA G3       |]
+
+X:2
+T:?
+P:A A B B
+M:4/4
+L:1/8
+K:Am
+[P:A] "Am"efed c2A2 "G"B2G2 "Am"A4 A3B c2d2 "D"e2^f2 "C"g4
+"Am"efed c2A2 "G"B2G2 "Am"A4 "Em"B3A G2B2 "D"A4 "Am"A4    ||
+[P:B] "C"g4 e2c2 "D"d4 "Am"A4 "C"g2g2 e2c2 "D"d4 "Em"B4
+"Am"efed c2A2 "G"B2G2 "Am"A4 "Em"B3A G2B2 "D"A4 "Am"A4    |]
 

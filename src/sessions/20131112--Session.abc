@@ -1,11 +1,51 @@
+X:WFS 13-11 01
+T:The Curly-Headed Ploughboy = WFTB 04-02
+R:2
+M:2/4
+K:G
+d/c/| B d G B E2 D G |1 F/G/A/B/ c B B2 A :|2 F/G/A/B/ c A G3
+P:B
+d | ^c ^c ^c/A/B/^c/ d d/d/d d ^c ^c ^c/A/B/^c/ d/e/f/e/ d d ^c ^c ^c/A/B/^c/ d2 B G F A G{F/} E D3
+
+%%text WFS 13-11 02 = WFS 13-07 22 Galopede
+
+%%text WFS 13-11 03 = WFS 13-10 14 Salmon Tails Up The Water
+
+%%text WFS 13-11 04 = WFS 13-10 22 Harper's Frolic, into WFS 13-11 05 = WFS 13-10 23 Bonnie Kate
+
+%%text WFS 13-11 06 = WFS 13-10 04 Uncle Bernard's Polka
+
+%%text WFS 13-11 07 = WFTB 02-02 Rattling Bog
+
+%%text WFS 13-11 08 = EATMD 13-02 12 Brighton Camp
+
+%%text WFS 13-11 09 = WFS 13-10 05 Jamie Allen, into...
+
+X:WFS 13-11 10
+T:Davy-Davy Knick Knack
+R:2
+M:4/4
+K:G
+GFGA B2B2 GFGA B2B2 |1 dcBc A2A2 dcBc A2A2 :|2 dcBc AcBA G4{ABA} G4
+P:B
+Bc|d2>c2 B2{c}d2 g2g2 d4 |1 dcBc A2A2 dcBc A2A2 :|2 dcBc AcBA G4{ABA} G4
+
+X:WFS 13-11 11
+T:Believe Me, if All Those Endearing Young Charms 
+P:A#1 A#2 B A#2
+M:3/4
+K:G
+BA| G3AG2 G2B2d2 c2e2g2 g4fe |1 d3cB2 A3GA2 B6-|B4 :|2 d3gB2 A3GA2 G6-|G4
+P:B
+dc| B2d2g2 g4d2 e2c2g2 g4fe d3cB2 A3GA2 B6-|B4 
 
 X:WFS 13-11 12
 T:Oyster Girl
 M:6/8
 K:G
-ded B2G A2F D3 G2G BGB d2c A3 ded B2g f2e c3{e} d2d cBA G3-G2
+ded B2G A2F D3 G2G BGB d2c A3 ded B2g f2e c3{e} d2d cBA G6
 P:B
-Bcd Bcd e2c e2c ABc ABc d2B d2B ded B2g f2e c3{e} d2d cBA G3-G2
+Bcd Bcd e2c e2c ABc ABc d2B d2B ded B2g f2e c3{e} d2d cBA G6
 
 X:WFS 13-11 13
 T:The New-Rigged Ship
@@ -13,7 +53,7 @@ M:6/8
 K:D
 dcd d2f dcd d2f |1 ecA A2f ecA ABc :|2 ecA ABc d3
 P:B
-f2g |: a2f a2f |1 d2d dfa b2g b2g e2e efg :|2 d2d def ecA ABc d3
+fg | a2f a2f |1 d2d dfa b2g b2g | e2e e: |2 d2d def ecA ABc d3
 
 %%text WFS 13-11 14 = WFS 13-07 02 Captain Lanoe's Quick March
 
@@ -50,9 +90,9 @@ X:WFS 13-11 20
 T:Tip Top Polka
 M:4/4
 K:G
-Bc| d2d2 dedc B2B2 B2GA B2B2 B2d2 A4{BAG} A2AB c2c2 c2{d}cB A2A2 A2G2 |1 FGAB cdef g4 g2 :|2 FGAB cde2 d3c B2
+Bc| d2d2 dedc B2B2 B2GA B2B2 B2d2 A4{BAG} A2AB c2c2 c2{d}cB A2A2 A2G2 |1 FGAB cde3 d3c B2 :|2 FGAB cdef g4 g4
 P:B
-ef| g2e2 e3f |1 g2d2 d4 B2B2 A2G2 e2d2 d2ef :|2 g2d2 d2B2 cBAB cdef g4 g2
+g2e2 e3{de}f |1 g2d2 d4 B2B2 A2G2 e2d2 d2ef :|2 g2d2 d2B2 cBAB cdef g4 g2
 
 %%text WFS 13-11 21 = WFS 13-10 33 Navvy on the Line (dotted)
 
@@ -116,43 +156,3 @@ Bc | d2dd d2d2 e2d2 c2B2 dcBc A2dc BcAB G2dc BdBd AdAd GdGd FdFd EdEd FdFd GdGd 
 
 %%text WFS 13-11 37 = WFS 13-07 12 Paddy Carey's, into WFS 13-11-38 = WFS 13-07 13 Spirit Of The Dance
 
-X:WFS 13-11 01
-T:The Curly-Headed Ploughboy = WFTB 04-02
-R:2
-M:2/4
-K:G
-d/c/| B d G B E2 D G |1 F/G/A/B/ c B B2 A :|2 F/G/A/B/ c A G3
-P:B
-d | ^c ^c ^c/A/B/^c/ d d/d/d d ^c ^c ^c/A/B/^c/ d/e/f/e/ d d ^c ^c ^c/A/B/^c/ d2 B G F A G{F/} E D3
-
-%%text WFS 13-11 02 = WFS 13-07 22 Galopede
-
-%%text WFS 13-11 03 = WFS 13-10 14 Salmon Tails Up The Water
-
-%%text WFS 13-11 04 = WFS 13-10 22 Harper's Frolic, into WFS 13-11 05 = WFS 13-10 23 Bonnie Kate
-
-%%text WFS 13-11 06 = WFS 13-10 04 Uncle Bernard's Polka
-
-%%text WFS 13-11 07 = WFTB 02-02 Rattling Bog
-
-%%text WFS 13-11 08 = EATMD 13-02 12 Brighton Camp
-
-%%text WFS 13-11 09 = WFS 13-10 05 Jamie Allen, into...
-
-X:WFS 13-11 10
-T:Davy-Davy Knick Knack
-R:2
-M:4/4
-K:G
-GFGA B2B2 GFGA B2B2 |1 dcBc A2A2 dcBc A2A2 :|2 dcBc AcBA G4{ABA} G4
-P:B
-Bc|d2>c2 B2{c}d2 g2g2 d4 |1 dcBc A2A2 dcBc A2A2 :|2 dcBc AcBA G4{ABA} G4
-
-X:WFS 13-11 11
-T:Believe Me, if All Those Endearing Young Charms 
-P:A#1 A#2 B A#2
-M:3/4
-K:G
-BA| G3AG2 G2B2d2 c2e2g2 g4fe |1 d3cB2 A3GA2 B6-B4 :|2 d3gB2 A3GA2 G6-G4
-P:B
-dc| B2d2g2 g4d2 e2c2g2 g4fe d3cB2 A3GA2 B6-B4 

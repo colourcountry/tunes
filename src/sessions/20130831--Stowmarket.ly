@@ -1239,7 +1239,7 @@ opus = "EATMD 13-01 54"
   \bar "|."  
 }}
 \header{
-piece = "?"
+piece = "The New-Rigged Ship"
 opus = "EATMD 13-01 55"
 }}
 
