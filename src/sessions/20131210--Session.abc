@@ -65,14 +65,14 @@ M:2/4
 R:swung
 K:G
 [P:A] d2dc | Bcd2 | ABcB | ABc2 | d2{e}dc | Bcd2 | GAB2{G} | A2G2 ||
-[P:B] bGDG | BGB2 | cAFA | cAc2 | bGDG | BGB2 | GAB2{G} | A2G2 ||
+[P:B] BGDG | BGB2 | cAFA | cAc2 | BGDG | BGB2 | GAB2{G} | A2G2 ||
 
 X:WFS 13-12 10
 T:The Keel Row
 M:2/4
 K:G
 [P:A] B2GB | c2Ac | B2GB | AFD2 | B2GB | c2Ac | BGAF | G4 ||
-[P:B] (3Bdddg | e2dc | B2GB | AGD2 | (3Bdddg | e2dc | BGAF | G4 ||
+[P:B] (3Bdddg | e2dc | B2FB | AGD2 | (3Bdddg | e2dc | BGAF | G4 ||
 
 %%text Salmon Tails Up The Water (WFS 13-12 11 = WFS 13-10 14), into...
 

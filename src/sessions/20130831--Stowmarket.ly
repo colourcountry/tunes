@@ -274,7 +274,8 @@ opus = "EATMD 13-01 08"
   \bar "|."  
 }}
 \header{
-piece = "?"
+piece = "Gloucester Hornpipe"
+subtitle = "Hardcore 17-03"
 opus = "EATMD 13-01 09"
 }}
 
@@ -295,7 +296,8 @@ opus = "EATMD 13-01 09"
   \bar "|."  
 }}
 \header{
-piece = "?"
+piece = "Watson's Hornpipe"
+subtitle = "Hardcore 26-01"
 opus = "EATMD 13-01 10"
 }}
 
@@ -632,7 +634,8 @@ opus = "EATMD 13-01 23"
   \bar "|."  
 }}
 \header{
-piece = "?"
+piece = "Just As The Tide Was Flowing"
+subtitle = "Hardcore 29-03"
 opus = "EATMD 13-01 24"
 }}
 

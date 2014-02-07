@@ -126,7 +126,7 @@ opus = "WFS 13-10 06"
   \bar "|."
 }}
 \header{
-piece = "?"
+piece = "The Keel Row"
 opus = "WFS 13-10 07"
 }}
 \markuplist{"Into..."
@@ -147,7 +147,7 @@ opus = "WFS 13-10 07"
   \bar "|."
 }}
 \header{
-piece = "?"
+piece = "Kafoozalum"
 opus = "WFS 13-10 08"
 }}
 \markuplist{
