@@ -1,25 +1,175 @@
-X:
+X:WFS 14-01 01
+T:The Minstrel Boy
+K:G
+P:A A B A
+[P:A] GA| B3B cBAG | B2d2 g2fg | e2d2 BcdB | A4 G2  ||
+[P:B]   | g2g2 efge | f2e2 d4 | g2g2 efge | f2g2 a2 |]
+
+X:WFS 14-01 02
+T:The Leaving Of Liverpool
+K:G
+[P:A] GA| B3d cBAG g2e2 d2GA |1 Bddd edBG A2F>G A2 :|2 B2Bd cAFA G4-G2 ||
+[P:B] g2| a2f2 d2ga g2e2 d2GA Bddd edBG A2F>G A2 GA| B3d cBAG g3e d2GA BddB c2A2 G4-G2 |]
+
+%% X:WFS 14-01 03 Cock O' The North K:D AG |F2F FED F2A B2A F2F FED E3 .....
+
+%% X:WFS 14-01 04, as 03 but in G.
+
+%% X:WFS 14-01 05 Kafoozalum (just me :( )
+
+%% X:WFS 14-01 06 Salmon Tails
+
+%% X:WFS 14-01 07 Jamie Allen K:G GA| b2G2 G2A2 b3A G2aB c2A2 A2B2 c4 B2A2 ...
+
+X:WFS 14-01 08
+T:The British Grenadiers
+P:A A B
+[P:A] D| GD GA Bc/B/ AB/c/ dG B/A/G/F/ G3 ||
+[P:B] B/c/| d>e dc Bc dd ee d/c/B/A/ G2 F2 | GF/G/ AG/A/ BA/B/ cB/c/ dG B/A/G/F/ G3 ||
+
+%% Into...
+
+X:WFS 14-01 09
+T:Polly Wolly Doodle
+[P:A] G/A/| BB GG/A/ BB GG/A/ BB cB A3 F/G/ AA FF/G/ AA FA dd cA |1 B3 :|2 G3 ||
+[P:B] B/c/| d3B/c/ d3B/c/ dded c3A/B/ c/d/c/B/ A/F/A/B/ c/d/c/B/ AA dd cA |1 B3 :|2 G3 ||
+%%maybe B part is just alison extemporizing
+
+%% X:WFS 14-01 10 Bonny Breast Knot dc | B2G2 G2AB cBAG F2D2 || Bc d3e d3e dcBA G4 BUT NOT A2A2 D2D2 A2Bc d4
+
+X:WFS 14-01 11
+T:Old Tom Of Oxford
+K:D
+P:A1 A2 A1 A2 B B
+[P:A] A2Bc d2A2 G2F2 |1 E4 DEFG A2d2 c2d2 e4 :|2 EABc d2A2 G2F2 E4 D4 ||
+[P:B] F2A2 F2A2 F2A2 dcBA G2B2 G2B2 G2B2 dcBA F2A2 F2A2 A2Bc d2Bc d2A2 G2F2 E4 D4 ||
+
+%% X:WFS 14-01 12 BAG BAG Bcd ded
+
+X:WFS 14-01 13
+T:Rogue's March
+M:6/8
+K:G
+P:A1 A2 A1 A2 B A2 B A2
+[P:A] B2B Bcd e2e e3 |1 d2d d2e d2c B2A :|2 d2g dBG A3 G3 ||
+[P:B] g3 f3 e3 def g2g f2f e2e d2c
+
+%% X:WFS 14-01 14 Bear Dance
+
+%% X:WFS 14-01 15 Brighton Camp
+
+X:WFS 14-01 16
+T:My Love Is But A Lassie Yet
+K:D
+[P:A] dc| d2 D2 F2 A2 d2 D2 D2 dc d2 D2 F2 A2 e2 E2 E2 dc d2 D2 F2 A2 B2 g2 f2 e2 dcBA Bcde f2 d2 d2 ||
+[P:B] fg| a2 f2 g2 e2 f2 d2 d2 fg a2 f2 g2 a2 b2 e2 e2 fg a2 f2 g2 e2 f2 d2 e2 c2 dcBA Bcde f2 d2 d2 |]
+
+X:WFS 14-01 17
+T:?
+K:D
+[P:A] FE| D2FA d2dc d2D2 FGAF E2e2 e2ef edcB AGFE D2FA d2de fedc d2A2 BcdB ABAG F2D2 D2 ||
+[P:B] de| fedB ABde fedc d2A2 |1 B2e2 e2de f2e2 e2 :|2 BcdB ABAG F2D2 D2 |]
+
+%% X:WFS 14-01 18 Off To California
+
+%% X:WFS 14-01 19 Newcastle, into  X:WFS 14-01 20 Portsmouth
+
+X:WFS 14-01 21
+T:Out On The Ocean
+M:6/8
+K:G
+[P:A] D2B BAB BdB AGA GED G2A |1 B2B AGE :|2 BGG G
+[P:B] Bd| e2e edB e2e edB d2d def gfe dBA G2A B2d e2e dBA GED G2A BGG G
+
+%% X:WFS 14-01 22 La Roulante? G>A BB cBcA G>A BG FAFD
+
+X:WFS 14-01 23
+M:3/8
+T:?
+[P:A] D| GBd BGG Ac/B/A/G/ FDD GB/A/G/F/ ECE DGF G2
+[P:B] B/c/| dB/c/d/e/ dcB cA/B/c/d/ cBA BG/A/B/c/ BAG Adc d2
+
+X:WFS 14-01 24
+T:Buttered Peas
+[P:A] B2d2 d2B2 c2e2 e2c2 |1 B2d2 d2B2 c2A2 A4 :|2 B2d2 A3c B2G2 G4 ||
+[P:B] B2d2 g3a gfed g2dc |1 B2d2 g2fg a2d2 d4 :|2 B2d2 A3c B2G2 G4 |]
+
+%% X:WFS 14-01 25 Speed the Plough
+
+X:WFS 14-01 26
+T:Personent Hodie
+[P:A] EEB2 AAB2 BBe2 ^cdB2 ABd2 ABG2 FEFD E2E2 FGAD E2E2
+[P:B] FGA2 A2A2 GAB2 B2B2 FGA2 GFE2 FEED E2E2
+
+%% X:WFS 14-01 27 Bear Dance (again)
+
+%% X:WFS 14-01 28 Amoco Stomp E2EF G2A2 BcBA B4
+
+%% X:WFS 14-01 29 Good King Wenceslas (Spring Dance) into X:WFS 14-01 30 I Saw Three Ships and back
+
+X:WFS 14-01 31
+T:Because He Was A Bonny Lad
+[P:A] d2| B3A G2g2 efg2 d3B c2e2 |1 d2B2 c2A2 A2 :|2 d3c B2G2 G2 ||
+[P:B] dc| B2G2 d2G2 e2G2 d2G2 c3e |1 d2B2 c2A2 A2 :|2 d2c2 B2G2 G2 |]
+
+%% Into...
+
+X:WFS 14-01 32
+T:Welcome To The Town Again
+P: A1 A2 A1 A2 B1 B2 B1 C
+[P:A] f2| g4 d2c2 B4 G2c2 Bcd2 |1 G2B2 c2A2 A2 :|2 A3c B2G2 G2 ||
+[P:B] dc| B2G2 d2G2 e2G2 d2G2 B2d2 |1 edcB c2A2 A2 :|2 A3c B2G2 G2 ||
+[P:C] dc| B2d2 c2B2 c2d2 e2f2 g2 d2 edBA B2G2 G2 |]
+
+%% X:WFS 14-01 33 Great North Run '86, into X:WFS 14-01 34 Hesleyside Reel
+
+X:WFS 14-01 35
+T:93 Not Out
+M:6/8
+K:D
+[P:A] A| d2d c2A BdB AFD GFG |1 AFD EFG ABc :|2 EFG ABc d2
+[P:B] A| d2d fed cBc ecA B2B dcB AGA AFD GFG BAG |1 F2A d3 BAB e2d cBA gfe :|2 FAd f2g fed edc d3-d2
+
+%% Into...
+
+X:WFS 14-01 36
+T:?
+M:6/8
+K:G
+[P:A] D| G2G BAG edB AGA Bde dBG BAG FED G2G BAG Bde dge dBG AGE DGG G2
+[P:B] B| e2e efg fed B2A d2d dfg afd fed B2e efg fed efg age dBG AGF G2
+
+X:WFS 14-01 37
+T:Whittingham Green Lane
+L:1/4
+M:3/4
+P:A1 A2 B
+[P:A] B/A/| GBd g2f f3 e2G FAc e2d |1 B3-B2 :|2 G3-G2 ||
+[P:B] d| d2A ABc B3-B2d dAA Ad>c B3-B2d e2e c>de d>ed BAG FAc e2d G3-G2 |]
+
+X:WFS 14-01 38
 T:Bonny at Morn
 S:Alan
 P:A1 A2 B B
+M:3/4
 K:Em
 P:A
-B3cBA B2E2FG A3GFE D3EF2 |1 B2cBA B2E2FG A2F2D2 E6 :|2 EDEFGA B2e2d2 B2d2F2 E6 ||
+B3cBA B2E2FG A3GFE D3EF2 |1 B3cBA B2E2FG A2F2D2 E6 :|2 EDEFGA B2e2d2 B2d2F2 E6 ||
 P:B
 E2e2e2 E2GFG2 F2d2d2 D3EF2 EDEFGA B2e2d2 B2d2F2 E6 ||
 
-# Spootiskerry, into Willafjord
+%% WFS 14-01 39 Spootiskerry, into WFS 14-01 40 Willafjord
 
-X:
+X:WFS 14-01 41
 T:Flower of Edinburgh
 S:Alan
 K:G
 P:A
 D2DE G2GA BGBd cBAG FGEF DEFG AFdF E2EF D2DE G2GA BGBd efge dcBA GFGA B2G2 G2 ||
 P:B
-d2 | g2g2 gbag f2f2 fagf edef gfed B2e2 e2ge dBGB d2d2 edef g2ef dcBA GFGA B2G2 G2 ||
+d2 | g2g2 gbag f2f2 fagf edef gfed B2e2 e2ge dBGB d2d2 edef g2fe dcBA GFGA B2G2 G2 ||
 
-X:
+X:WFS 14-01 42
 T:Calla Herring
 S:Alan
 K:G
@@ -29,35 +179,37 @@ G3G G2G2 F4 G2A2 B2E2 A3G F2D2 E2F2 G3G G2G2 F4 G2A2 B2c2 A3G G4-G2 ||
 d2 | g3g g2g2 f4 g2f2 e2d2 c2B2 A2B2 c2^c2 d3d d2d2 ^c4 d2e2 f2g2 e3d d4-d2 ||
 AB | c3c c2c2 B4 c2d2 e2E2 A3G F2D2 E2F2 G3G G2G2 F4 G2A2 B2c2 A3G G4-G2 ||
 
-X:
+X:WFS 14-01 43
 T:?
 S:Alan
-N:not sure of timing, maybe in 3/4
+M:3/4
+P:A1 A2 B1 B2 B1 A2
 K:G
-D | G2BA/F/ G3B C3B A3A d2cB/A/ c2BA/G/ |1 B3d A3 :|2 B3d/F/ G3 ||
-d | e>fgf d2gf d3B d3d e>fgf d3B e2ce/c/ a3
-d | e>fga f>afe e>fge e3 e2cB/A/ d2BA/G/ B3D/F/ G3 ||
-d | e>fgf d2gf d3B d3d e>fgf d3B e2ce/c/ a3
-D | G2BA/F/ G3B C3E A3A d2cB/A/ c2BA/G/ B3d/F/ G3 ||
+P:A
+D2 | G4(3B>AF {F}G4B2 c4B2 A4A2 d4(3c>BA c4(3B>AG |1 B4d2 A4 :|2 B3dF2 {F}G4 ||
+P:B
+d2 | e>fg2f2 d4gf d4B2 d4d2 e>fg2f2 d4B2 e4(3c>ec A4 ||
+d2 | e>fg2a2 f>af2e2 e>fg2e2 e6 e4(3c>BA d4(3B>AG B3dF2 {F}G4 ||
 
-# Michael Turner's Waltz
+%% WFS 14-01 44 Michael Turner's Waltz
 
-# La Roulante
+%% WFS 14-01 45 La Roulante
 
-# Radstock Jig 
+%% WFS 14-01 46 Radstock Jig 
 
-# Bonny Kate into Harper's Frolic
+%% WFS 14-01 47 Bonny Kate into WFS 14-01 48 Harper's Frolic
 
-# Lemonville
+%% WFS 14-01 49 Lemonville
 
-X:
+X:WFS 14-01 50
 T:Quarryman
+M:6/8
 S:Frankie
 K:D
-A | Aff f2e edd d2C BAB dcB A3-A2 Aee e2f g2e dcB ABA |1 BAG F3 F2 :|2 ABc d3 d2 ||
-c | Bcd G2B d2B edB ABA F2A d2A fed cgg g2e e2c c2A |1 Aff f2e e2d d2 :|2 ABA ABc d3-d2 ||
+A | Aff f2e edd d2c BGB dcB A3-A2A Aee e2f g2e dcB ABA |1 BAG F3 F2 :|2 ABc d3 d2 ||
+=c | B=cd G2B d2B edB ABA F2A d2A fed cgg g2e e2c c2A |1 Aff f2e e2d d2 :|2 ABA ABc d3-d2 ||
 
-# Morpeth Rant (New)
+%% WFS 14-01 51 Morpeth Rant (New)
 
-# Morpeth Rant (Old)
+%% WFS 14-01 52 Morpeth Rant (Old)
 
