@@ -1,0 +1,80 @@
+The AB format
+-------------
+
+This is a restricted form of the ABC format specifically for transcribing and exchanging tunes.
+It is intended to act as a common baseline which will be understood by any ABC2.x compliant software
+and which is less fragile to rough treatment.
+
+By design, any AB file is also an ABC file compliant with the ABC 2.1 standard without conversion.
+AB does not support formatting, most decorations, expression marks or multi-part music.
+Use ABC if you want these.
+
+The intent of AB is that 99% of the tunes in ABC files out there should also be AB files already.
+The remainder are either not suitable for AB or can be manually fixed.
+
+Format of an AB file
+--------------------
+
+<AB-file> :: (<tune>\n)+
+    An AB file may not have a file header.
+    There must not be whitespace at the beginning of an AB file.
+    An AB file must be encoded in UTF-8.
+    AB files may not contain comments. Use r: fields instead.
+
+
+<tune> :: <header><body>
+
+<header> :: <X field><T field>?<[ABCDFGHNOPQRrSTWZ] field>*<K field>
+    FIXME:continuation
+
+<field> :: [ABCDFGHKLMNOPQRrSTXZ]:.*\n
+    The I, m and U fields are not supported because they alter the format itself.
+    Within a field, the \uxxxx notation is available to represent any character.
+
+<body> :: (<note>|<connector>|<inline-field>|<whitespace>|\n)*\n
+    Music is whitespace agnostic.
+    There is no continuation character, and newlines within the body have no special meaning.
+    The characters [H-Zh-wy#*;?@] may only exist in the body as part of a field.
+
+<note> :: <trill>?<accidental>?<pitch><octave>?<duration>?
+
+<trill> :: [~!]
+
+<accidental> :: [_=^]
+
+<pitch> :: [A-Ga-gxz]
+
+<octave> :: [,']
+
+<duration> :: [0-9]+/[0-9]+) | / | /[0-9]+
+    Use '/4' instead of '//'.
+
+<connector> :: TODO
+
+<inline-field> :: [[][KLMNPQRr]:[^]]*[]]
+    The I, m and U fields are not supported because they alter the format itself.
+    The s and w fields are not supported because in ABC they are only allowed in the tune body but are not allowed to be inline.
+    The W field is not supported in the tune body because in ABC it is not allowed to be inline.
+    The V field is not supported in AB1.0 but may be supported in a future version.
+    Within a field, the \uxxxx notation is available to represent any character.
+    The ']' character must be notated as '\u005d' to avoid ending the field.
+
+Deprecated fields
+-----------------
+Fields [ABCDFGHORSZ] are deprecated.
+AB-supporting programs which also support ABC should provide the option to preserve them,
+or to replace them with appropriate N: fields, preserving ordering and content.
+
+AB+
+---
+An AB+ file is like an AB file except
+1. All fields are inline fields. White space outwith fields has no special meaning.
+2. Only fields may be placed between an [X:] field and the following [K:] field.
+    This is because the [P:] field has a special meaning in this position.
+
+Unfortunately an AB+ file is not a valid ABC file.
+
+AB+ can be easily converted to AB by "de-inlining" the fields between (and including) an [X:] and its following [K:].
+
+Programs which declare support for AB should also support AB+.
+An AB+ file can be detected because it must begin with '[X:'
