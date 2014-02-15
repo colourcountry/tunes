@@ -11,15 +11,22 @@ K:G
 [P:A] GA| B3d cBAG g2e2 d2GA |1 Bddd edBG A2F>G A2 :|2 B2Bd cAFA G4-G2 ||
 [P:B] g2| a2f2 d2ga g2e2 d2GA Bddd edBG A2F>G A2 GA| B3d cBAG g3e d2GA BddB c2A2 G4-G2 |]
 
-%% X:WFS 14-01 03 Cock O' The North K:D AG |F2F FED F2A B2A F2F FED E3 .....
+X:WFS 14-01 03
+T:Cock O' The North
+M:6/8
+K:D
+P:A
+AG |F2F FED F2A B2A F2F |1 FED E3-E :|2 EFE D3-D2 ||
+P:B
+A  |d2A B2A d2A B2A F2F |1 FED E3-E :|2 EFE D6 |]
 
-%% X:WFS 14-01 04, as 03 but in G.
+%% WFS 14-01 04, as 03 but in G.
 
-%% X:WFS 14-01 05 Kafoozalum (just me :( )
+%% WFS 14-01 05 = WFS 13-10 08 Kafoozalum
 
-%% X:WFS 14-01 06 Salmon Tails
+%% WFS 14-01 06 = WFS 13-10 14 Salmon Tails
 
-%% X:WFS 14-01 07 Jamie Allen K:G GA| b2G2 G2A2 b3A G2aB c2A2 A2B2 c4 B2A2 ...
+%% WFS 14-01 07 = WFS 13-10 05 Jamie Allen
 
 X:WFS 14-01 08
 T:The British Grenadiers
@@ -35,7 +42,7 @@ T:Polly Wolly Doodle
 [P:B] B/c/| d3B/c/ d3B/c/ dded c3A/B/ c/d/c/B/ A/F/A/B/ c/d/c/B/ AA dd cA |1 B3 :|2 G3 ||
 %%maybe B part is just alison extemporizing
 
-%% X:WFS 14-01 10 Bonny Breast Knot dc | B2G2 G2AB cBAG F2D2 || Bc d3e d3e dcBA G4 BUT NOT A2A2 D2D2 A2Bc d4
+%% WFS 14-01 10 = WFS 13-10 24 The Bonny Breast Knot 
 
 X:WFS 14-01 11
 T:Old Tom Of Oxford
@@ -44,19 +51,13 @@ P:A1 A2 A1 A2 B B
 [P:A] A2Bc d2A2 G2F2 |1 E4 DEFG A2d2 c2d2 e4 :|2 EABc d2A2 G2F2 E4 D4 ||
 [P:B] F2A2 F2A2 F2A2 dcBA G2B2 G2B2 G2B2 dcBA F2A2 F2A2 A2Bc d2Bc d2A2 G2F2 E4 D4 ||
 
-%% X:WFS 14-01 12 BAG BAG Bcd ded
+%% WFS 14-01 12 = WFS 13-07 01 Oscar Woods' Jig
 
-X:WFS 14-01 13
-T:Rogue's March
-M:6/8
-K:G
-P:A1 A2 A1 A2 B A2 B A2
-[P:A] B2B Bcd e2e e3 |1 d2d d2e d2c B2A :|2 d2g dBG A3 G3 ||
-[P:B] g3 f3 e3 def g2g f2f e2e d2c
+%% WFS 14-01 13 = WFS 13-10 13 Rogue's March
 
-%% X:WFS 14-01 14 Bear Dance
+%% WFS 14-01 14 = WFS 13-10 09 Bear Dance
 
-%% X:WFS 14-01 15 Brighton Camp
+%% WFS 14-01 15 = EATMD 13-02 12 Brighton Camp
 
 X:WFS 14-01 16
 T:My Love Is But A Lassie Yet
@@ -81,7 +82,7 @@ K:G
 [P:A] D2B BAB BdB AGA GED G2A |1 B2B AGE :|2 BGG G
 [P:B] Bd| e2e edB e2e edB d2d def gfe dBA G2A B2d e2e dBA GED G2A BGG G
 
-%% X:WFS 14-01 22 La Roulante? G>A BB cBcA G>A BG FAFD
+%% WFS 14-01 22 = WFS 13-07 14 Ffiddle-Ffaddle
 
 X:WFS 14-01 23
 M:3/8
@@ -103,9 +104,10 @@ T:Personent Hodie
 
 %% X:WFS 14-01 27 Bear Dance (again)
 
-%% X:WFS 14-01 28 Amoco Stomp E2EF G2A2 BcBA B4
+%% X:WFS 14-01 28 = WFS 13-07 17 Amoco Stomp
 
-%% X:WFS 14-01 29 Good King Wenceslas (Spring Dance) into X:WFS 14-01 30 I Saw Three Ships and back
+%% X:WFS 14-01 29 = WFS 13-12 02 Good King Wenceslas (Spring Dance) into...
+%% X:WFS 14-01 30 = WFS 13-12 04 I Saw Three Ships (and back)
 
 X:WFS 14-01 31
 T:Because He Was A Bonny Lad
@@ -121,7 +123,8 @@ P: A1 A2 A1 A2 B1 B2 B1 C
 [P:B] dc| B2G2 d2G2 e2G2 d2G2 B2d2 |1 edcB c2A2 A2 :|2 A3c B2G2 G2 ||
 [P:C] dc| B2d2 c2B2 c2d2 e2f2 g2 d2 edBA B2G2 G2 |]
 
-%% X:WFS 14-01 33 Great North Run '86, into X:WFS 14-01 34 Hesleyside Reel
+%% X:WFS 14-01 33 = WFS 13-07 20 Great North Run '86, into...
+%% X:WFS 14-01 34 = WFS 13-07 21 Hesleyside Reel
 
 X:WFS 14-01 35
 T:93 Not Out
@@ -158,7 +161,8 @@ B3cBA B2E2FG A3GFE D3EF2 |1 B3cBA B2E2FG A2F2D2 E6 :|2 EDEFGA B2e2d2 B2d2F2 E6 |
 P:B
 E2e2e2 E2GFG2 F2d2d2 D3EF2 EDEFGA B2e2d2 B2d2F2 E6 ||
 
-%% WFS 14-01 39 Spootiskerry, into WFS 14-01 40 Willafjord
+%% WFS 14-01 39 = WFS 13-10 26 Spootiskerry, into
+%% WFS 14-01 40 = WFS 13-10 17 Willafjord
 
 X:WFS 14-01 41
 T:Flower of Edinburgh
@@ -191,13 +195,14 @@ P:B
 d2 | e>fg2f2 d4gf d4B2 d4d2 e>fg2f2 d4B2 e4(3c>ec A4 ||
 d2 | e>fg2a2 f>af2e2 e>fg2e2 e6 e4(3c>BA d4(3B>AG B3dF2 {F}G4 ||
 
-%% WFS 14-01 44 Michael Turner's Waltz
+%% WFS 14-01 44 = WFS 13-07 05 Michael Turner's Waltz
 
-%% WFS 14-01 45 La Roulante
+%% WFS 14-01 45 = WFS 13-07 15 La Roulante
 
-%% WFS 14-01 46 Radstock Jig 
+%% WFS 14-01 46 = EATMD 13-01 02 Radstock Jig 
 
-%% WFS 14-01 47 Bonny Kate into WFS 14-01 48 Harper's Frolic
+%% WFS 14-01 47 = WFS 13-10 23 Bonny Kate into
+%% WFS 14-01 48 = WFS 13-10 22 Harper's Frolic
 
 %% WFS 14-01 49 Lemonville
 

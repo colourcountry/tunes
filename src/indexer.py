@@ -43,9 +43,11 @@ class Performance:
                         location='',
                         follows='',
                         given_name='',
+                        led_by='',
                         same_as='',
                         apparent_name='',
-                        time='',
+                        ext_references='',
+                        ext_performances='',
                         remarks=''):
 
         # Treat empty strings as None
@@ -62,7 +64,8 @@ class Performance:
         self.given_name = given_name.strip() or None
         self.same_as = same_as.strip() or None
         self.apparent_name = apparent_name.strip() or None
-        self.time = time.strip() or None
+        self.ext_references = set(ext_references.strip().split(',')) or None
+        self.ext_performances = set(ext_performances.strip().split(',')) or None
         self.remarks = remarks.strip() or None
         self.tune = None
 
@@ -75,11 +78,11 @@ class Tune:
         tunes = {}
 
         for performance in Performance.PERFORMANCES.values():
-            if not performance.same_as:
+            if not performance.same_as or performance.same_as == performance.id:
                 tunes[performance.id]=Tune(performance)
 
         for performance in Performance.PERFORMANCES.values():
-            if performance.same_as:
+            if performance.same_as and performance.same_as != performance.id:
                 try:
                     orig_tune = tunes[performance.same_as]
                 except KeyError:
@@ -96,19 +99,32 @@ class Tune:
         self.id = performance.id
         self.performances = []
         self.names = set()
+        self.ext_references = set()
+        self.ext_performances = set()
         self.add_performance(performance)
         self.performances = [performance]
+        
 
     def __str__(self):
         s = '%s %s\n' % (self.id, tuple(self.names))
         for p in sorted(self.performances, key=Performance.get_id):
             s += '    %s\n' % str(p)
+        if self.ext_references:
+            s += 'References: %s\n' % ', '.join(sorted(self.ext_references))
+        if self.ext_performances:
+            s += 'Performances: %s\n' % ', '.join(sorted(self.ext_performances))
         return s
 
     def add_performance(self, performance):
         self.performances.append(performance)
         self.names.update( (performance.given_name, performance.apparent_name) )
         self.names.discard(None)
+        self.ext_references.update(performance.ext_references)
+        self.ext_references.discard(None)
+        self.ext_references.discard('')
+        self.ext_performances.update(performance.ext_performances)
+        self.ext_performances.discard(None)
+        self.ext_performances.discard('')
         performance.tune = self
 
     def get_id(self):
@@ -142,9 +158,11 @@ if __name__=="__main__":
                                   location=location,
                                   follows=follows,
                                   given_name=p[4],
-                                  same_as=p[5],
-                                  apparent_name=p[6],
-                                  time=p[9],
+                                  led_by=p[5],
+                                  same_as=p[6],
+                                  apparent_name=p[7],
+                                  ext_references=p[8],
+                                  ext_performances=p[9],
                                   remarks=p[10])
             previous = p[0]
 
