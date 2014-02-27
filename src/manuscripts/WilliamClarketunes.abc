@@ -76,8 +76,8 @@ M:6/8
 L:1/8
 K:C
 G|c2d e2g|fdB c2G|AcA BdB|cGE C2G|
-c2d e2g|fdB c2G|AcA BdB|cdc c2"^*":||
-:e/2c/2|ded d2B|ceg f2d|def ege|cde d c:|
+c2d e2g|fdB c2G|AcA BdB|cdc c2"^*":|
+|:e/2c/2|ded d2B|ceg f2d|def ege|cde d c:|
 
 X:7
 T:Pease upon a Trencher   
@@ -320,17 +320,17 @@ L:1/8
 K:G
 d4(cB)(AG)|(BA)(GF) GB(df)|g2(fe) (dB)(AG)|(gd)cB B2A2|
 d4(cB)(AG)|(BA)(GF) (GB)(df)|g2(fe) (dB)(ec)|Bd(cA)G4||
-g2d2e2d2|(gB).B.B c2B2|(gd).d.d (gd).d.d|(gd).c.B B2{c^ced}A2{B=c^c:||
+g2d2e2d2|(gB).B.B c2B2|(gd).d.d (gd).d.d|(gd).c.B B2{c^ced}A2{B=c^c}:||
 
 X:24
 T:Prime of Life  
 O:No 24 Page 9 William Clarke of Feltwell   MS 1858
 N:Last 4 notes in bar 11 given as quavers in MS
-Z: transcribed by Lyn Law
+Z:transcribed by Lyn Law
 M:2/4
 L:1/16
 K:G
-}dedc B2B2|gddB G2B2|AGAB cBce|dedB G4:|
+dedc B2B2|gddB G2B2|AGAB cBce|dedB G4:|
 |:f2g2f2g2|f2g2a2b2|c'2b2a2g2|fdef g2g2|
 f2g2f2g2|f2g2a2b2|c'bab"^*"abag|fdef g4:|
 
@@ -375,14 +375,14 @@ L:1/8
 K:D
 V:1
 "^For two Flutes"
-D2|F2D3/2F/2 A2F3/2A/2|d2A3/2d/2 f2d3/2f/2|a2b3/2a/2 g2"^tr"f3/2e/4f/4|e2e3/2e/2 e2D2|/!
-F2D3/2F/2 A2F3/2A/2|B2g3/2e/2 c2BA|B3/2c/2 d3/2g/2 f2"^tr"e3/2d/2|d2d3/2d/2 d2:||:/!
-A2|d2f3/2d/2 B2d3/2B/2|A3/2F/2d3/2B/2 AFED|FAdc B3/2A/2G3/2F/2|{F}E2E3/2E/2 E2D3/2E/2|/!
+D2|F2D3/2F/2 A2F3/2A/2|d2A3/2d/2 f2d3/2f/2|a2b3/2a/2 g2"^tr"f3/2e/4f/4|e2e3/2e/2 e2D2|
+F2D3/2F/2 A2F3/2A/2|B2g3/2e/2 c2BA|B3/2c/2 d3/2g/2 f2"^tr"e3/2d/2|d2d3/2d/2 d2:||:
+A2|d2f3/2d/2 B2d3/2B/2|A3/2F/2d3/2B/2 AFED|FAdc B3/2A/2G3/2F/2|{F}E2E3/2E/2 E2D3/2E/2|
 F2D3/2F/2 A2F3/2A/2|B3/2c/2d3/2e/2 {d}c2{B}A2|Bbag f2"^tr"e3/2d/4e/4|d2d3/2d/2 d2|]
 V:2
-z2|z2D2F2D3/2F/2|A2F3/2A/2 d2A3/2d/2|f2g3/2f/2 e2d3/2c/4d/4|c2c3/2c/2 c2z2|/!
-z2D2F2D3/2F/2|G2B2E2F2|G3/2E/2F3/2G/2 A2G3/2F/4G/4|F2F3/2F/2 F2:||:/!
-F2|F2D2G2B3/2G/2|F2G2FDEF|DFBA G3/2F/2E3/2d/2|{d}c2c3/2c/2 c2z2|/!
+z2|z2D2F2D3/2F/2|A2F3/2A/2 d2A3/2d/2|f2g3/2f/2 e2d3/2c/4d/4|c2c3/2c/2 c2z2|
+z2D2F2D3/2F/2|G2B2E2F2|G3/2E/2F3/2G/2 A2G3/2F/4G/4|F2F3/2F/2 F2:||:
+F2|F2D2G2B3/2G/2|F2G2FDEF|DFBA G3/2F/2E3/2d/2|{d}c2c3/2c/2 c2z2|
 z2D2F2D3/2F/2|G2B3/2G/2 F2G2|Ggfed2"^tr"d3/2B/4c/4|d2F3/2F/2 F2|]
 
 X:28
@@ -414,7 +414,7 @@ K:D
 a3gf2f2|f3ed2d2|e2d2e2c2|(de).f.e"^*"(de).f.g|
 a3gf2f2|f3ed2d2|e2d2e2c2|d4d4:|
 |:e4f4|g2gf e2e2|f4g4|
-(a2a)g f2a2|(a2g2)(g2f2)|(a2g2)(g2f2)|a2ba g2f2|f4e4:||]
+(a2a)g f2a2|(a2g2)(g2f2)|(a2g2)(g2f2)|a2ba g2f2|f4e4:|
 
 X:30
 T:Dusty Miller 
@@ -571,13 +571,14 @@ G3/2G/2G3/2E/2|G3/2A/2 c2|A3/2A/2A3/2G/2|ABcd|e3/2f/2d3/2e/2 cded|c3/2A/2A3/2G/2
 X:41
 T:The Grinders
 O:No 41 Wm Clarke of Feltwell  MS 1858
-N:Should be 9/8
-Z: transcribed by Lyn Law
-M:6/8
+N:Original has 6/8
+N:Transcription has note 'O' at end, should be 'B' (maybe 'A'?)
+Z:transcribed by Lyn Law
+M:9/8
 L:1/8
 K:G
-gfg edc BAG|gfg efg agf|gfg edc BAG|ABA A2B dcO:|
-|:AAA A2B G2E|AAA A2B dcB|AAA A2B G2E|dBG GBc dcO:|
+gfg edc BAG|gfg efg agf|gfg edc BAG|ABA A2B dcB:|
+|:AAA A2B G2E|AAA A2B dcB|AAA A2B G2E|dBG GBc dcB:|
 
 X:42
 T:Maltese Dance
@@ -1065,7 +1066,7 @@ e2e2f2|g2c'2a2|f2d2B2|c4:|
 |:d2|g4d2|b4g2|a2c'2^f2|g2b2d'2|
 g2g2d2|b2b2g2|a2c'2^f2|g4d2|
 g2d2B2|b2g2d2|c'2a2^f2|g2b2d'2|
-g2d2B2|b2g2d'2|c'2a2^f2|g2^f2=f2||]
+g2d2B2|b2g2d'2|c'2a2^f2|g2^f2=f2:|
 
 
 X:70G
@@ -1195,7 +1196,7 @@ K:C
 |:G|c2d edc|A2c G2E|G2c cde|f2d d2G|
 c2d edc|A2c G2E|A2c d2e|c3-c2:|
 |:e|d2g g^fg|e2g g^fg|d2g g^fg|ege c2e|
-d2g g^fg|e2g g^fg|^faf de^f|gag =fed||]
+d2g g^fg|e2g g^fg|^faf de^f|gag =fed:|
 
 X:77
 T:Duke of Yorks New March
@@ -1757,6 +1758,7 @@ N:4 sqr
 N:Bar 12: rest added
 N:bar 15: sq
 N:Bar 25 cr    Fine added
+N:Original transcription had {fged|} in last line, | removed
 Z: transcribed by Lyn Law
 M:4/4
 L:1/8
@@ -1769,7 +1771,7 @@ d3c .B.c.d.e|.f.e.d.c .B.A.G.F|E2G3/2G/2 F3/2F/2 E3/2E/2|
 D2g3/2g/2 a3/2a/2 b3/2b/2|c'2c'3/2c'/2 b3/2c'/2d'3/2b/2|c'b/2a/2 (g/2f/2e/2d/2) cgfe|
 .d(d/2e/2) .f.d|.B(g/2a/2) .b.g|.c'c'/2c'/2"^*"c'4z2!FINE!:|
 |:g4ec'bc'|abc'a g2e3/2g/2|f2f2e2e2|d2z2g2z2|
-{fged|}g4ec'bc'|abc'a g2e3/2g/2|f2d3/2f/2 e2d2|c2c3/2c/2 c2z2|]
+{fged}g4ec'bc'|abc'a g2e3/2g/2|f2d3/2f/2 e2d2|c2c3/2c/2 c2z2|]
 
 X:117
 T:A Dance
@@ -2107,7 +2109,7 @@ M:3/8
 L:1/8
 K:F
 c| c{d}c/=B/c/d/| c f2|A {B}A/G/A/B/| A c2|F/G/A/B/=B/c/| d2 c| e/d/c/B/A/G/| F2 :|
-:| 3(.c.c.c)| (=Bc/).c/.c/.c/| (bc/).c.c.c.|f/e/d/c/B/A/| c.B/.B/.B/.B/| (AB/).B/.B/.B/|(AB/).B/.B/.B/ | edcBAG|F2||
+|: (3.c.c.c)| (=Bc/).c/.c/.c/| (bc/).c.c.c|f/e/d/c/B/A/| c.B/.B/.B/.B/| (AB/).B/.B/.B/|(AB/).B/.B/.B/ | edcBAG|F2||
 
 X:145
 T:A Waltz
@@ -2117,7 +2119,7 @@ Z:Transcribed by M Humphreys May 2010
 M:3/8
 L:1/8
 K:F
-:d2c| (cA).f| f2 e| dBb| b>a|gec'| c'2 b| a/b/c'/b/a/g/|f2c| cAf| f2 e| dBg| g2 f| e/f/g/f/e/d/|(c/e/)(d/f/)(e/g/)| (f/e/)(f/e/)(f/e/)| f2:||: c'| bge| cBG|Acf| afc'| bge|cBG| Acf| afc'| cAf| f2 e| dBg| g2 f| (e/f/g/f/e/d/)|(c/e/)(d/f/)(e/g/)|(f/e/)(f/e/)(f/e/)|f2||
+|:d2c| (cA).f| f2 e| dBb| b>a|gec'| c'2 b| a/b/c'/b/a/g/|f2c| cAf| f2 e| dBg| g2 f| e/f/g/f/e/d/|(c/e/)(d/f/)(e/g/)| (f/e/)(f/e/)(f/e/)| f2:||: c'| bge| cBG|Acf| afc'| bge|cBG| Acf| afc'| cAf| f2 e| dBg| g2 f| (e/f/g/f/e/d/)|(c/e/)(d/f/)(e/g/)|(f/e/)(f/e/)(f/e/)|f2||
 
 X:146
 T:Minuette
@@ -2141,7 +2143,7 @@ M:3/8
 L:1/8
 K:G
 d|g/d/B/d/g/b/|ggb|ggb|a/f/d2|a/f/d/f/a/c'/|bbd'|g g/b/a/f/| g2:||
-f/g/|/a/f/ dd'|b/d'/g2|a/f/ df| g/f/g/a/g|a/f/ dd'|b/d'/ g2|a/f/d/f/a/b/| g2:||
+f/g/|a/f/ dd'|b/d'/g2|a/f/ df| g/f/g/a/g|a/f/ dd'|b/d'/ g2|a/f/d/f/a/b/| g2:||
 d'/c'/|bbb|b/c'/a/b/g|gg/a/b/c'/|d'2d'/c'/|bbb|b/c'/a/b/g|gg/b/a/f/|g2:||
 
 
@@ -2152,8 +2154,8 @@ Z:Transcribed by M Humphreys May 2010
 M:4/4
 L:1/8
 K:G
-B2{d}}cB/c/ d2g2|(f/g/a) dg (f/g/a) d>c|B2 {d}c/B/c d2c'2}|(3bag (3fga bgg2:||
-g3d BGBd|gbag faab|c'abg afge| f2{a}gf/g/} afed|g3d BGBd| gbag faab|aabg afge| dgfa bg g2:||
+B2{d}cB/c/ d2g2|(f/g/a) dg (f/g/a) d>c|B2 {d}c/B/c d2c'2|(3bag (3fga bgg2:||
+g3d BGBd|gbag faab|c'abg afge| f2{a}gf/g/ afed|g3d BGBd| gbag faab|aabg afge| dgfa bg g2:||
 
 X:149
 T:Roger de Covery
@@ -2172,8 +2174,8 @@ Z:Transcribed by M Humphreys May 2010
 M:4/4
 L:1/8
 K:A
-d|cBAa|gaec|dfec|(3BBB Bd|cBAa|gaec|dfec|(3AAA A:||
-: d|cAeA|fAeA|dfec|(3BBB  Bd| cAeA|fAeA |eaeg| (3AAA Ad| cAeA |fAeA|dfec| (3 BBB Bg| agfe|fedc| dBec| (3AAA A:||
+d|cBAa|gaec|dfec|(3BBB Bd|cBAa|gaec|dfec|(3AAA A:|
+|: d|cAeA|fAeA|dfec|(3BBB  Bd| cAeA|fAeA |eaeg| (3AAA Ad| cAeA |fAeA|dfec| (3 BBB Bg| agfe|fedc| dBec| (3AAA A:||
 
 X:151
 T: Miss Cortney
@@ -2195,9 +2197,9 @@ Z:Transcribed by M Humphreys May 2010
 M:6/8
 L:1/8
 K:G
-dc|B2B {c}BAB |d2 B {c}BAB| c2e g2e| d2 B {c}BAB| dcA {B}AGA| dBG {A}GFG| EGe d2c|B2 G G:||/
-G d|d2c Bcd| e2 f g2a | b2 a gfe| d2c Bcd| e2 e ecA| d2d dBG|c2B c2 B | AFD Ddc|/
-d2c Bcd| e2 f g2a | b2 a gfe| d2c Bcd| e2 e ecA| d2d dBG|c2B c2 B | AFD Ddc|/
+dc|B2B {c}BAB |d2 B {c}BAB| c2e g2e| d2 B {c}BAB| dcA {B}AGA| dBG {A}GFG| EGe d2c|B2 G G:||
+G d|d2c Bcd| e2 f g2a | b2 a gfe| d2c Bcd| e2 e ecA| d2d dBG|c2B c2 B | AFD Ddc|
+d2c Bcd| e2 f g2a | b2 a gfe| d2c Bcd| e2 e ecA| d2d dBG|c2B c2 B | AFD Ddc|
 B2B {c}BAB |d2 B {c}BAB| c2e g2e| d2 B {c}BAB| dcA {B}AGA| dBG {A}GFG| EGe d2c|B2 G G||
 
 X:153
@@ -2228,7 +2230,7 @@ L:1/8
 N:cr rest added to bar A4
 K:G
 G2 GBAc| B2 Bdce| d2 gfed|{d}!trill!c>Bc/ B2z2| G2 GBAc| B2 Bdce| d>e/d/ c2 B2 |!trill!B>A/B/ A2 z2:|
-|: d2 edcB| c2 dcBA| BdgdcB| !trill! B>A/B/A2z2| G2 GBAc| Bgfagd| {d2}c2 B2 !trill!A G/A/|G6||}
+|: d2 edcB| c2 dcBA| BdgdcB| !trill! B>A/B/A2z2| G2 GBAc| Bgfagd| {d2}c2 B2 !trill!A G/A/|G6||
 
 X:156
 T:The March in Scipio
@@ -2257,7 +2259,7 @@ M:C
 L:1/8
 N:In M.S. repeat marks at beginning of B but not at end.
 K:G
-:B |G2Ge dBBe|dBec dBBg|G2Ge dBBd|(e/f/g) dB A2A:||
+B |G2Ge dBBe|dBec dBBg|G2Ge dBBd|(e/f/g) dB A2A:||
 (g/a/)|bggb affa|geeg dBB (g/a/)|bggb affd|(e/f/g) dB A2 A(g/a/)|
 bggb affa|geeg dBBd|g<b f<a e<g d<B|(e/f/g) dB A2A||
 
@@ -2271,8 +2273,8 @@ N:Transcribed by D Dolby/M Humphreys May 2010
 N:In m.s. del segno sign at end of B music.Probably should have been D.S and the segno at Bar 1 of the A.
 N:In m.s. no repeat mark at end of B music.
 K:G
-:!segno!D|G2AB2c|d3B2G|A2AE2G|F3DEF|G2AB2c|d3B2g|e2a fef|g3g2:||
-:d|ABA A2c|B2dg2g|fef def|g2b dBG|FAFD2c|
+!segno!D|G2AB2c|d3B2G|A2AE2G|F3DEF|G2AB2c|d3B2g|e2a fef|g3g2:||
+d|ABA A2c|B2dg2g|fef def|g2b dBG|FAFD2c|
 B2dg2g|fed ^cde|d3d2^d|e2e EF^G|A2Bc2e|
 d2d DEF|G2AB2d|c2BA2G|F2GA2B|AdF AGE|DEC DEF!D.S.!||
 
@@ -2284,7 +2286,7 @@ M:6/8
 L:1/8
 N:transcribed by D. Dolby/M. Humphreys May2010
 K:C
-:!segno!{A}G|c2 c {d}cBc|d2dg2f|e2e efe|dddd2G|c2 c {d}cBc|d2dg2f|e2 e {e}dc>d|cccc2:|
+!segno!{A}G|c2 c {d}cBc|d2dg2f|e2e efe|dddd2G|c2 c {d}cBc|d2dg2f|e2 e {e}dc>d|cccc2:|
 |:c|a3g^fg|e3efg|f3def|eg/f/e/d/c2c|a3g^fg|e3efg|f3ded|{ed}c3c2!segno!:|
 |:e|efee2a|c'3a2c'|bc'bb2a|{a}g^fge2e|d'2d'b2b|{c'}c'bc'a2c'|b2b e^f^g|a2c'a2!segno!||
 
@@ -2297,7 +2299,7 @@ M:6/8
 L:1/8
 N:See notes for160(C)
 K:G
-:{E}D|G2G {A}GFG|A2Ad2c|B2B BcB|AAA A2D|G2G{A} GFG|A2Ad2c|B2B {B}AF>A|GGG G2:|
+{E}D|G2G {A}GFG|A2Ad2c|B2B BcB|AAA A2D|G2G{A} GFG|A2Ad2c|B2B {B}AF>A|GGG G2:|
 |:G|e3d^cd|B3Bcd|c3ABc|Bd/c/B/A/G2G|e3d^cd|B3Bcd|c3ABA|{BA}G3G2:|
 |:B|BcBB2e|g3e2g|fgff2e|{e}d^cdB2B|a2af2f|{a}gfge2g|f2f B^c^d|e2ge2:|
 
@@ -2309,7 +2311,7 @@ M:3/4
 L:1/4
 N:In MS in G, with 2/4 time signature. Very similar to Bury Waltz elsewhere in Clarke.
 K:C
-:(3g/a/g/fd|e2c|d/e/fg|g2e|(3g/a/g/fd|e2c|d/e/fB|c3:|
+(3g/a/g/fd|e2c|d/e/fg|g2e|(3g/a/g/fd|e2c|d/e/fB|c3:|
 |:(3d/e/d/BG|e2c|d/e/ fa|g2e|(3d/e/d/BG|e2c|d/e/fB|c3:||
 
 X:162
@@ -2333,7 +2335,7 @@ L:1/8
 K:D
 N:No time sig in MS
 b|affe|dedA|BdAd| BdAb|affe|dedf| eaa^g| a2-a:||
-:a|bgge|fgaf|geec|defd|BdAd| BdAb| afef| d2 d:||
+a|bgge|fgaf|geec|defd|BdAd| BdAb| afef| d2 d:||
 
 X:164
 T:O'er the Boggie with my love (Dance)
@@ -2342,8 +2344,8 @@ Z:Transcribed by M Humphreys May 2010
 M:C
 L:1/8
 K:D
-c|dedB dA-AB|dedB A3 d| Bee^d efgb|afed B2 A2 z:||:/
-d2 fa d2 fa|dedB A3 d| Be-e^d efgb|afed B3 c| /
+c|dedB dA-AB|dedB A3 d| Bee^d efgb|afed B2 A2 z:||:
+d2 fa d2 fa|dedB A3 d| Be-e^d efgb|afed B3 c|
 d2 f/g/a d2 f/g/a |dedB ABdG|Bee^d efgb| afed B2 A z:||
 
 X:165
@@ -2353,20 +2355,20 @@ Z:Transcribed by M Humphreys May 2010
 M:C
 L:1/8
 K:D
-B| AFAf edBd|AFAB dedB|AFAf edBg| (f/g/a) AB d2z:||/
- g| fede edBa| fedf abag|fedf edBg| (f/g/a) AB d3 g|/
+B| AFAf edBd|AFAB dedB|AFAf edBg| (f/g/a) AB d2z:||
+ g| fede edBa| fedf abag|fedf edBg| (f/g/a) AB d3 g|
  fedf edBg| fedf abaf|gafg edBb|afge d3||
 
 X:166
 T:The Wounded Hussar
 O:No 166 William Clarke of Feltwell
-Z:Transcribed M.Humphreys May2010.Written with note values for 3/8, time 
-signature written as 6/8.I have changed note values to correspond with 
-6/8 time to reflect the Slow comment at the beginning of the tune.
+Z:Transcribed M.Humphreys May 2010.
+N:Written with note values for 3/8, time signature written as 6/8.
+N:I have changed note values to correspond with 6/8 time to reflect the Slow comment at the beginning of the tune.
 M:6/8
 L:1/8
-K:Am
 P:Slow
+K:Am
 (AG)|E2A2B2|c4(BA)| (BcdcBA)|^G2A2B2|c2e2c2|(edcBAG)|E2A2^G2| A4 (AG)|
 E2A2B2|c4(BA) |(BcdcBA)| ^G2 A2 B2| c2e2c2| (edcBAG)| E2A2 ^G2| A4||
 (AB)|c2e2e2|e4 dc|B2d2d2|d4g2| e2a2^g2| a2b2c'2|e2a2^g2| !fermata! a4 (ab)|
@@ -2375,15 +2377,15 @@ c'2b2a2| g2f2e2| (edcBAg)|G2A2B2| c2e2c2| (edcBAG)|E2A2^G2| A6||
 X:167
 T:The Chinise Dance
 O:No167 William Clarke of Feltwell
-Z:Transcribed M. Humphreys May 2010.Sounds very much like The Chainess Dance from 
-Hampshire Dance Tunes.Part B Bar 8 changed from EF# to GA - possible 
-transcription error.Also B ends at bar 8 with comment Da Capo. I have 
-written it out in full.
+Z:Transcribed M. Humphreys May 2010.
+N:Sounds very much like The Chainess Dance from Hampshire Dance Tunes.
+N:Part B Bar 8 changed from EF# to GA - possible transcription error.
+N:Also B ends at bar 8 with comment Da Capo. I have written it out in full.
 M:2/4
 L:1/8
 K:G
-(d/c/)|Bgfe|d/e/d/c/ Bd|BdBd| cAAB| Ggfe| d/e/d/c/ Bd| Bd cA| G3:|/
- c/G/| FAFA |FA cB/A/| GBGB | GB d2| gg dB| gg dB| e/d/c/B/ c/B/A/G/ | FDD G/A/|/
+(d/c/)|Bgfe|d/e/d/c/ Bd|BdBd| cAAB| Ggfe| d/e/d/c/ Bd| Bd cA| G3:|
+ c/G/| FAFA |FA cB/A/| GBGB | GB d2| gg dB| gg dB| e/d/c/B/ c/B/A/G/ | FDD G/A/|
 Bgfe|d/e/d/c/ Bd|BdBd| cAAB| Ggfe| d/e/d/c/ Bd| Bd cA| G3||
 
 X:168
@@ -2394,9 +2396,9 @@ L:1/8
 K:G
 Z:Transcribed M Humphreys May 2010
 N: No repeat of B in MS
-F>E| D2 E>F G3 A| BGdG cBAG| AGFE DEFG |AFdF E3 F|/! 
-D3 E G3 A| BGBd efge| dcBA GFGA | B2 G2 G2:||:/!
-d(e/f/) | gfga (ga/b/) ag| fefg (fg/a/) gf| edef gfed|/!
+F>E| D2 E>F G3 A| BGdG cBAG| AGFE DEFG |AFdF E3 F|
+D3 E G3 A| BGBd efge| dcBA GFGA | B2 G2 G2:||:
+d(e/f/) | gfga (ga/b/) ag| fefg (fg/a/) gf| edef gfed|
 B2 e2e2 (ef/g/)| dBAG d2 cB| edef g2 fe|dcBA GFGA | B2 G2 G2:||
 
 X:169
@@ -2408,7 +2410,7 @@ K:G
 Z: Transcribed M Humphreys May 2010
 N:Bar line missing Bar 3-4 in MS
 GDBG dBef| gdBd GFED| ecBc A2 AB| cABG GFED|GDBG dBef| gdBd GFED| ecBc A2 AB | cAGF G4:||:
-DEFG ABcA| BcdG GFED| E(F/G/) F (G/A/) G2 e(f/g/) | fed^c d2 (ef/g/)|/!
+DEFG ABcA| BcdG GFED| E(F/G/) F (G/A/) G2 e(f/g/) | fed^c d2 (ef/g/)|
 fdBd ecAc| BcdG GFED| ecBc A2  AB| cAGF G4:||
 
 X:170
@@ -2583,9 +2585,9 @@ Z:Transcribed by David Dolby 2010
 M:C
 L:1/8
 K:D
-:A2| FDFA d2 cd| efge dcBA| BGGB AFFA| GEEA GFED|\
- FDFA d2 cd| efge dcBA|f2 fgaf df| gedc d2 z||\
-fddf ecce| dBBd- dc.B.A| BGGB AFFA | GEEG GFED|\
+A2| FDFA d2 cd| efge dcBA| BGGB AFFA| GEEA GFED|
+ FDFA d2 cd| efge dcBA|f2 fgaf df| gedc d2 z||
+fddf ecce| dBBd- dc.B.A| BGGB AFFA | GEEG GFED|
 FDFA d2 cd| efge dcBA| f2 fg afdf| gedc d2 z |]
 
 X:187C
@@ -2648,7 +2650,7 @@ b/g/d'/g/b/g/| c'/g/e'/g/c'/g/| f/d/a/d/f/d/| g:||
 d/e/d/c/| Bgb| d2B| cac'| cc/d/c/B/|
 Afa| d2 f| g(g/b/d'/b/)| g(d/e/d/c/)|B(d/g/)b| d2B|
 c (e/a/) c'|e2 c| (B/d/B/d/)g| (A/c/A/c/)f| G/g/f/g/d/B/|G2:|
-:G/A/| B B/B/B/c/|dBG|g/a/f/g/e/f/|dBG| A A/A/A/B/|
+G/A/| B B/B/B/c/|dBG|g/a/f/g/e/f/|dBG| A A/A/A/B/|
 cBA| e/d/d/B/A/F/| G2:||
 
 X:189
@@ -2684,7 +2686,7 @@ K:C
 N: Name illegible. Part A note values changed in bar 6 from equ to e cr
 c2 c'2agac'| e2ede2 ed| c2 c'2 agac'|d2 dc d2 de|
 c2 c'2 agac'| e2ed e2 eg| agab a2 ab| c'age d2 d2:||
-:ccec geeg| e2ed e2 ed| ccec geeg| d2 dc d2 de|
+ccec geeg| e2ed e2 ed| ccec geeg| d2 dc d2 de|
 ccec geeg| e2 ed e2 eg| agab a2 ab| c'age d2 d2:||
 
 X:192
@@ -2711,7 +2713,7 @@ N:Part A Bar missing at 6. Replaced with bar 2
 N:
 D>EF>G A>Bc>A| d>fa>f d>cB>A|B>dc>e d>fe>g|f>da>g f2 e2|
 D>EF>G A>Bc>A|d>fa>f d>cB>A| B>dc>e d>fe>g| f2!trill!e2d4:||
-:a>fa>f g>eg>e|f>da>f d>cB>A| B>dc>e d>fe>a|f>da>f f2 e2|
+a>fa>f g>eg>e|f>da>f d>cB>A| B>dc>e d>fe>a|f>da>f f2 e2|
 a>fa>f g>eg>e| f>da>f d>cB>A| B>dc>e d>fe>g| f2 !trill!e2 d4:||
 
 X:194
@@ -2725,7 +2727,7 @@ N: Note values adjusted in A: Bar 4 E cr changed to E qu, G cr changed to qu.
 N:B : A cr changed to A qu in B bar 10
 A|d2dB2G| F2GA2^c| B2 d ceg| f3 e G A|
 d2 .d f2d|B2 B e2d| c2c BAB| A2 A2 z2:|
-:A| e2c A2A|f2d A2d|c2d g2f| f3 e2 A| A^GA Bcd|
+A| e2c A2A|f2d A2d|c2d g2f| f3 e2 A| A^GA Bcd|
 efg afd| B2 ed2c| d2 z2 DF| A3 A3 |A d2!fermata!d2 A|
 AFA AFA| A d2 !fermata! d2 A/c/|e3 e3| ea2 a2 e|
 ece ece| e g2!fermata!g2 a/g/| fd AFD f| ecA Eag| fd AFD f|
@@ -2743,9 +2745,9 @@ K:D
 N:No time signature in MS.
 af|d2 d>d d2 c>d| e2 e>e e2 fe| dcBA BABc| d2f>f f2 af|
 d2 d>d d2 cd|e2 e>e e2 fe|dcBA BABc| d2 d>d d2:||
-:fg| a2f2a2f2|a4 f2d2|B2 cd efed| c2 A>A A2 fg|
+fg| a2f2a2f2|a4 f2d2|B2 cd efed| c2 A>A A2 fg|
 a2f2a2f2|a4 f2d2| B2cd e2dc| d2 d>d d2:|
-:FG| A2A>A A2 Bc|d2 d>d d2 dc| B2 cd eged| c2 A>A A2 F>G|
+FG| A2A>A A2 Bc|d2 d>d d2 dc| B2 cd eged| c2 A>A A2 F>G|
 A2 A>A A2 Bc| d2 d>d d2dc| B2 c>d f>ed>c| d2 d>d d2:|
 
 X:196
@@ -2771,8 +2773,8 @@ Z:Transcribed by David Dolby 2010
 M:2/4
 L:1/8
 K:G major
-f|g2 dc|B2 AG|FGAB| cAAf | (g/f/e/f/) gd|B2 AG| FGAc |BGG :|!
-|:B| DGBG |AGBG |DGBG| cAAB | cdef| gdcB| cAdc | BGG:|]
+f|g2 dc|B2 AG|FGAB| cAAf | (g/f/e/f/) gd|B2 AG| FGAc |BGG :|
+|:B| DGBG |AGBG |DGBG| cAAB | cdef| gdcB| cAdc | BGG:|
 
 X:198
 T:Queens berry House
@@ -2953,7 +2955,7 @@ M:2/4
 L:1/8
 N:In M.s. the A music is only 7 bars. 2nd bar is |ef2de2c|, used to make A2 and A3 below.
 K:C
-G|Gcce|ef2d|e2c2|c/B/A/B/ GG|Gcce|eg2d|cc c/B/A/G/|c2c:|]E/F/|GEAF|Gcec|Adfd|c2B E/F/|GEAF|Gcec|BB A/G/A/B/|(Ggg)"D.C."|]
+G|Gcce|ef2d|e2c2|c/B/A/B/ GG|Gcce|eg2d|cc c/B/A/G/|c2c:|E/F/|GEAF|Gcec|Adfd|c2B E/F/|GEAF|Gcec|BB A/G/A/B/|(Ggg)"D.C."|]
 
 X:216
 T:Jenny Jones
@@ -3059,8 +3061,8 @@ M: 3/4
 N: bar missing between Bar 3 & 4.
 L: 1/8
 K: C
-G2|cBcdef|g2g2e2|a2a2f2|g2g2e2|cBcdef|g2g2g2|abc'bc'a|g4:||;/
-e2|f2a2f2|e2g2e2| d2d2d2|e2c2e2|f2a2f2|e2g2e2|d2d2d2|c4:||]
+G2|cBcdef|g2g2e2|a2a2f2|g2g2e2|cBcdef|g2g2g2|abc'bc'a|g4:||
+e2|f2a2f2|e2g2e2| d2d2d2|e2c2e2|f2a2f2|e2g2e2|d2d2d2|c4:|
 
 X:225
 T:A Russian March
@@ -3069,9 +3071,9 @@ Z:Transcribed by M Humphreys May 2010
 M:C
 L:1/8
 K:C
-G>G|c2 e>c G2 G>G| d2 f>d B2 G2| g>fe>g f>ed>f| e>dc>e d2 G>G| /
-c2 e>c G2 G>G | d2 f>d B2G2 | c>d e>f g>efd|c2 c>c c2::/
-e2|d>BG>G G2f2| e>cG>G G2 g2| f>ed>f e>dc>e | d>cB>A G>GA>B| c2 e>f g2 _B|A2 f>g a2 f2| e>fg>f e>fd>e| c2 c>c c2:||] 
+G>G|c2 e>c G2 G>G| d2 f>d B2 G2| g>fe>g f>ed>f| e>dc>e d2 G>G| 
+c2 e>c G2 G>G | d2 f>d B2G2 | c>d e>f g>efd|c2 c>c c2::
+e2|d>BG>G G2f2| e>cG>G G2 g2| f>ed>f e>dc>e | d>cB>A G>GA>B| c2 e>f g2 _B|A2 f>g a2 f2| e>fg>f e>fd>e| c2 c>c c2:| 
 
 X:226
 T:Lord Derby's March
@@ -3080,8 +3082,8 @@ Z:Transcribed by M Humphreys May 2010
 M:C
 L:1/8
 K:D
-a>f|d2 d>d d2f2|a4 f2 d2| e>fg>a b>Bg>e| (d3e/d/c2) a>f|/! d2 d>d d2 f2| a4 e2a2| ^g>fe>d c2e2|A2 A>A A2:||/!
-:A>A| g4 e2a2| f2 d>d d2A2| g4 e2 a>f| (g3a/g/ f2) aa|/! d'4 a3f|b4 e3g| f>ga>g f>ge>f| d2 d>d d2:|]
+a>f|d2 d>d d2f2|a4 f2 d2| e>fg>a b>Bg>e| (d3e/d/c2) a>f|d2 d>d d2 f2| a4 e2a2| ^g>fe>d c2e2|A2 A>A A2:||
+A>A| g4 e2a2| f2 d>d d2A2| g4 e2 a>f| (g3a/g/ f2) aa|d'4 a3f|b4 e3g| f>ga>g f>ge>f| d2 d>d d2:|
 
 X:227
 T:King George the third Country Dance
@@ -3091,9 +3093,9 @@ N:Bar 16 should be two dotted crotchets?
 M:6/8
 L:1/8
 K:C
-e3c3| G3GEF| GEF GEF| GFE D3|e3c3| G3 GEF|GAG GAB| d3 c3||/!
-c3 e3 |g3 gec| cBA GAB| cde dBG| c3 e3| g3 gBe| dec BcA| G3 G3||/!
-e3c3| G3 GEF| GEF GEF| GFE D3| e3c3| G3 GEF| GAG GAB| d3 c3||/!
+e3c3| G3GEF| GEF GEF| GFE D3|e3c3| G3 GEF|GAG GAB| d3 c3||
+c3 e3 |g3 gec| cBA GAB| cde dBG| c3 e3| g3 gBe| dec BcA| G3 G3||
+e3c3| G3 GEF| GEF GEF| GFE D3| e3c3| G3 GEF| GAG GAB| d3 c3||
 (Gc)c (ec)c|gcc ecc| Gcc ecc| fdc BAG| Gcc ecc| gcc ecc| GBd fdB|ceg c'3||
 
 X:228
@@ -3103,8 +3105,8 @@ Z:Transcribed by M Humphreys May 2010
 M:C
 L:1/8
 K:C
-B2 (de) (de) (de)|dg b2 dg b2|c'2 ab abab| agfg af d2:||/!
-:bg g2dgBd|GBdg fa a2| (bg g2) dgBd| GBdg ag g2:||] 
+B2 (de) (de) (de)|dg b2 dg b2|c'2 ab abab| agfg af d2:||
+bg g2dgBd|GBdg fa a2| (bg g2) dgBd| GBdg ag g2:| 
 
 X:229
 T:Russan Waltz
@@ -3114,10 +3116,10 @@ Z:Transcribed by M Humphreys May 2010
 M:3/4
 L:1/8
 K:G
-G2|d>(e/d/) c2 A2| B4 G2| (AB) ce| d4 B2| d>(ed) c2 A2| B4 G2| FAd^c=cA| G4:||/!
-:B2|(gd)(dB)(BG)| (ec)(cA)(AG)| FAd^c=cA| GB d2 d2|(gd)(dB)(BG)| (ec)(cA)(AF)| FAd^c=cA| G !segno!:||/!
-:d2 d/(e/d/c/) BGBG| (d/e/d/c/) BGBG|ABcBed| d3 ^c=cA| (d/e/d/c/) BGBG| (d/e/d/c/) BGBG| ABcedF| G3:||/!
-:b>b| b3 ^ab>a|b3 ^ab>a| bcbagf| e2B2 a>a |a3 ^ga>g| a3 ^ga>g| a>ba>gf>e|d4!segno!:||
+G2|d>(e/d/) c2 A2| B4 G2| (AB) ce| d4 B2| d>(ed) c2 A2| B4 G2| FAd^c=cA| G4:||
+B2|(gd)(dB)(BG)| (ec)(cA)(AG)| FAd^c=cA| GB d2 d2|(gd)(dB)(BG)| (ec)(cA)(AF)| FAd^c=cA| G !segno!:||
+d2 d/(e/d/c/) BGBG| (d/e/d/c/) BGBG|ABcBed| d3 ^c=cA| (d/e/d/c/) BGBG| (d/e/d/c/) BGBG| ABcedF| G3:||
+b>b| b3 ^ab>a|b3 ^ab>a| bcbagf| e2B2 a>a |a3 ^ga>g| a3 ^ga>g| a>ba>gf>e|d4!segno!:||
 
 X:230
 T:Reel
@@ -3126,8 +3128,8 @@ Z:Transcribed by M Humphreys May 2010
 M:C
 L:1/8
 K:G
-G2BG dGBG| G2 Bd ed (3efg| G2 Bg dGBG| GFDF G2G2:||/!
-:d2 dg e2 eg| dgbd' c'bag| d2 dg e2 eg| dBAB G2 G2:|]
+G2BG dGBG| G2 Bd ed (3efg| G2 Bg dGBG| GFDF G2G2:||
+d2 dg e2 eg| dgbd' c'bag| d2 dg e2 eg| dBAB G2 G2:|
 
 X:231
 T:Dance
@@ -3136,8 +3138,8 @@ Z:Transcribed by M Humphreys May 2010
 M:6/8
 L:1/8
 K:G
-DFA d2f| edc B2 d| A2d F2 d| AGF E2 F| DFA d2 f| edc B2 d| A2 d F2 d | ABc d2!fermata!:|/!
-e^de A2 f| e^de a2f| e2 d c2 B|c3 A A2| e^de A2 f| e^de a2 f|e2 d c2 B| A2 G F2 E:||/!
+DFA d2f| edc B2 d| A2d F2 d| AGF E2 F| DFA d2 f| edc B2 d| A2 d F2 d | ABc d2!fermata!:|
+e^de A2 f| e^de a2f| e2 d c2 B|c3 A A2| e^de A2 f| e^de a2 f|e2 d c2 B| A2 G F2 E:||
 D2f fef| d3 A A2| D2 f fef| g3 e e2| D2 f fef| d2 A A^GA| Bcd egd| cBA GFE|!D.C.!||
 
 X:232
@@ -3146,7 +3148,7 @@ O:No 232 Wm Clarke of Feltwell MS  1858
 N:Dot was on wrong crochet bars 12, 18, 20
 N:Bars 9-16 probably should not be repeated.
 N:Fine sign added.  This gives 40 bars.
-Z Transcribed by Lyn Law
+Z:Transcribed by Lyn Law
 M:6/8
 L:1/8
 K:D
@@ -3163,10 +3165,10 @@ Z:Transcribed by M Humphreys May 2010
 M:3/8
 L:1/8
 K:C
-e3 f/e/d/| c/e/ g e/c/| B/d/g/^f/=f/d/| (c/e/) GG|e>fe/d/|c/e/a/g/e/c/| B/d/g/f/d/B/| c2:|/!
-c|A/d/g/f/d/B/|c/e/a/g/e/c/|B/d/g/f/d/B/| c/e/ GG|e>fe/d/|c/e/a/g/e/c/|B/d/g/f/d/B/| c4:||/!
+e3 f/e/d/| c/e/ g e/c/| B/d/g/^f/=f/d/| (c/e/) GG|e>fe/d/|c/e/a/g/e/c/| B/d/g/f/d/B/| c2:|
+c|A/d/g/f/d/B/|c/e/a/g/e/c/|B/d/g/f/d/B/| c/e/ GG|e>fe/d/|c/e/a/g/e/c/|B/d/g/f/d/B/| c4:||
 K:F
-A/B/| c2B| A/c/f/a/c/'a/| b/g/e/c/d/e/| f/a/g/f/e/d/| c2b| A/c/f/a/c'/a/| b/g/e/c/d/e/|f2:||
+A/B/| c2B| A/c/f/a/c'/a/| b/g/e/c/d/e/| f/a/g/f/e/d/| c2b| A/c/f/a/c'/a/| b/g/e/c/d/e/|f2:||
 
 X:234
 T:Reel
@@ -3227,7 +3229,8 @@ T:I will gang no more to your town
 O:No 239 William Clarke of Feltwell
 Z:Transcribed by David Dolby 2010 
 M:4/4
-L:1/8N:Final note of both parts has been changed to a quaver.
+L:1/8
+N:Final note of both parts has been changed to a quaver.
 K:G
 B|Gggd B2Gd|Bd GB BAAa|b/a/g/f/ gdB2Gd|Bd Ac BG G::c|BGdG eGdg|BG e/d/c/B/ cAAc|BGdG eGdG|Bd Ac BGGc|BG dG eG dg|BG e/d/c/B/ cAAc|BG dG eG dG |Bd Ac BG G:|
 
@@ -3248,8 +3251,9 @@ Z:Transcribed by David Dolby 2010
 M:4/4
 L:1/8
 N:Key signature of C given in m.s.
+N:Original transcription had 'bgg2S' at end
 K:G
-(B/c/)||Sd3e dBge|defg aAA2|d3e dBge|dedc BGG::dgbg agbg|dgbg age2|dgbg agbg|dedc BGG2|dgbg agbg|dgbg age2|c'bag gfed|efga bgg2S:|
+(B/c/)||Sd3e dBge|defg aAA2|d3e dBge|dedc BGG::dgbg agbg|dgbg age2|dgbg agbg|dedc BGG2|dgbg agbg|dgbg age2|c'bag gfed|efga bgg2:|
 
 X:242
 T:Waltz
@@ -3328,7 +3332,7 @@ M:6/8
 L:1/8
 K:C
 G| cdc cde| gc'a gec| dcd edc | ABA A2 G| cdc cde |gc'a gec| dcd edc| A2 B c2:|| 
-: g| gab c'2 a| b2 g age| gab c'2 b| a2 g a2 g| gab c'2 b| a2 g abc'|cdc cde| gc'a gec| dcd edc | ABA A2G| cdc cde| gc'a gec| dcd edc| A2 B c2:!D.C.!|| 
+g| gab c'2 a| b2 g age| gab c'2 b| a2 g a2 g| gab c'2 b| a2 g abc'|cdc cde| gc'a gec| dcd edc | ABA A2G| cdc cde| gc'a gec| dcd edc| A2 B c2:!D.C.!|| 
 
 X:250
 T:Waltz   
@@ -3337,7 +3341,7 @@ Z:Transcribed by M Humphreys May 2010
 M:3/8
 L:1/16
 K:D
-3(ABc)| cAFADA| dAfAdA| eAGAEA| eAgAeA| dAFADA| dAfAdA| ba^ga=ge| d8:||:
+(3(ABc)| cAFADA| dAfAdA| eAGAEA| eAgAeA| dAFADA| dAfAdA| ba^ga=ge| d8:||:
 afdfaf| afd'afa| gecege|gebgeg| afdfaf| afd'afa|gecABc| d8:!D.C.!||
 
 X:251
@@ -3348,7 +3352,7 @@ M:4/4
 L:1/8
 K:G
 (gf)gd (gf)gd| (ef)ge edcB| ceAe ceAe| ceAe (cB)AG| (ge)gd (gf)gd| (ef)ge (ed)cB| (ed)cB cBAG| D2 F2 G4:||
-: BdGd BdGd| BdGd (cB)AG| ceAe ceAe| ceAe (fe)dc| BdGd BdGd| BdGB (cB)AG| (ef)ge (dB)AG| D2 F2 G4:||
+BdGd BdGd| BdGd (cB)AG| ceAe ceAe| ceAe (fe)dc| BdGd BdGd| BdGB (cB)AG| (ef)ge (dB)AG| D2 F2 G4:||
 
 X:252
 T:Brandon Quick Step  
@@ -3370,7 +3374,7 @@ Z:Transcribed by M Humphreys May 2010
 M: C
 L: 1/8
 K: D
-fe | dcdA FGAG| D2 D2 dded|cdef gfed| cded cBAG| FAeG GBeG| Acfd BegB| cbag fedc| d2 d2 d2 :||;
+fe | dcdA FGAG| D2 D2 dded|cdef gfed| cded cBAG| FAeG GBeG| Acfd BegB| cbag fedc| d2 d2 d2 :||
 ag| fada fada| b3 g2 g2 ba| gbeb gbeb| c'3 a2a2 gf| gbge fafd| egfe dcBA| Bbag fedc| d2 d2 d2 :|| 
 
 X:254
@@ -3383,7 +3387,7 @@ L:1/8
 K:C
 EF| GECE GEDF| C2 c4 BA| GECE GECE| F2 D4 EF|
  GECE GECE| C2 c4 ef| gece fdBd| c2 c4:| |
-:d2| edef egfe| dcBc defd| edef egfe| dcBA G2 G2| edef egfe| dcBc defe|gece fdBd| c2 c4:||
+d2| edef egfe| dcBc defd| edef egfe| dcBA G2 G2| edef egfe| dcBc defe|gece fdBd| c2 c4:||
 
 X:255
 T:The Bailiffs are Comeing
@@ -3433,7 +3437,7 @@ N:Dal segno sign over end of A music.
 N: There appears to be F sharps in bars A4 and A5. These have been left out.
 N:B anacrusis changed from a crotchet to a quaver.
 K:C
-Gc| c2GG|ccG2|cedf|cag2|eg/f/ a2|eg/f/g2|df/e/f2|ecc!D.S.!:||/:g|c'bag|c'bag|c'bag|fddf|bagf|bagf|bagf|ecc:|
+Gc| c2GG|ccG2|cedf|cag2|eg/f/ a2|eg/f/g2|df/e/f2|ecc!D.S.!:||:g|c'bag|c'bag|c'bag|fddf|bagf|bagf|bagf|ecc:|
 
 X:259
 T:New German Waltz
@@ -3442,9 +3446,9 @@ Z:Transcribed by David Dolby 2010
 M:3/8
 L:1/8
 K:G
-d/c/|BBA|G3/2(g/f/e/)|ddc|d2d/c/|BBA|G2g|(gf).e|d2:||:/
-d|(ad).d|(bd).d|(dc').b|(ba).f|(gf).e|dfg|agf|g2:||:/
-B/c/|dBd|gfe|edd|d2B/d/|dcc|c2A/c/|cBB|B2B/c/|/
+d/c/|BBA|G3/2(g/f/e/)|ddc|d2d/c/|BBA|G2g|(gf).e|d2:||:
+d|(ad).d|(bd).d|(dc').b|(ba).f|(gf).e|dfg|agf|g2:||:
+B/c/|dBd|gfe|edd|d2B/d/|dcc|c2A/c/|cBB|B2B/c/|
 dcd|gfe|edd|d2B/d/|dcc|c2A/F/|Ggg|g2:|
 
 X:260
@@ -3454,7 +3458,7 @@ Z:Transcribed by David Dolby 2010
 M:4/4
 L:1/8
 K:C
-GF|ECEG c2de|fdec cBAG|affa geeg|fdgf fedc|ECEGc2de|fdec cBAG|edef gece|fdBdc2:||:/
+GF|ECEG c2de|fdec cBAG|affa geeg|fdgf fedc|ECEGc2de|fdec cBAG|edef gece|fdBdc2:||:
 d2|ecce dBB2|cAdc cBAG|affa geeg|fdgf fedc|ECEGc2de|fdec cBAG|edef gece|fdBdc2:|
 
 X:261
@@ -3464,10 +3468,10 @@ Z:Transcribed by David Dolby 2010
 M:4/4
 L:1/8
 K:G
-g4d4|B3G AGAB|cBcd edef|g2G>GG2z2|B4c3A|(G4F2)z2|d4dedc|B4Adef|/
-g2g>gg2b2|a3g fedc|B>Bd>d gggg|f2d>dd2ef|g2d2B2G2|d2d>dd2z2:||:/
-A3d f>df>d|B3d g>dg>d|a2a2g2g2|f2d>dd2z2|A3d fdfd|B3d g>dg>d|a2za2gz g|f2d>dd2z2|/
-d3d fedc|B3BdcBA|G2G>GA2AB|G2G>GG2zB|c2c>cc2dc|B2zBc2e2|d2zBc2e2|d2zBc2e2|dgeag2f2|/
+g4d4|B3G AGAB|cBcd edef|g2G>GG2z2|B4c3A|(G4F2)z2|d4dedc|B4Adef|
+g2g>gg2b2|a3g fedc|B>Bd>d gggg|f2d>dd2ef|g2d2B2G2|d2d>dd2z2:||:
+A3d f>df>d|B3d g>dg>d|a2a2g2g2|f2d>dd2z2|A3d fdfd|B3d g>dg>d|a2za2gz g|f2d>dd2z2|
+d3d fedc|B3BdcBA|G2G>GA2AB|G2G>GG2zB|c2c>cc2dc|B2zBc2e2|d2zBc2e2|d2zBc2e2|dgeag2f2|
 g2zBc2e2|d2zBc2e2|d2zBc2e2|dgeag2f2|g2zb agfe|d2g2a2f2|g2zb agfe|d2g2a2f2|g2G>G B>B d>d|g2g>gg2z2:|
 
 X:262
@@ -3478,7 +3482,7 @@ M:4/4
 L:1/8
 N:In m.s. bar line between B1 and B2 omitted.
 K:C
-ED|C2(c2c2)(Bc)|dBGBc2cd|ecec fdfd|geAd cBAG|C2(c2c2)(Bc)|dBGB c2Bc| dBdB cAGF|G2G2G2:||:/
+ED|C2(c2c2)(Bc)|dBGBc2cd|ecec fdfd|geAd cBAG|C2(c2c2)(Bc)|dBGB c2Bc| dBdB cAGF|G2G2G2:||:
 ef|gfed cBAG|F2F2F2(fg)|agfe dcBA|G2G2G2ef|gege afaf|gege afaf|gefd ecdB|c2c2c2:|
 
 X:263(C)
@@ -3541,7 +3545,7 @@ L:1/8
 K:C
 U:T=!trill!
 G|c2 c>d B>A GG|e2 e>f d>c BB|c2 c>d B>AGG|(c/d/e/c/) (d/e/f/g/)|e2 e1:||
-:e/f/|gggg (a/g/f/e/) d>e|ffff (g/f/e/d/)  (c/d/)(e/f/)|g2 c>d B>A G(e/f/)|gf/e/ f/e/d/e/ c2 c:||
+e/f/|gggg (a/g/f/e/) d>e|ffff (g/f/e/d/)  (c/d/)(e/f/)|g2 c>d B>A G(e/f/)|gf/e/ f/e/d/e/ c2 c:||
 
 X:268
 T:The Merry Dancers  
@@ -3551,8 +3555,8 @@ M:6/8
 L:1/8
 K:C
 f|ede fcA|cdc c2f|ede fcA|\GAG G2f|ede fcA|edc c2f|e/f/ge f2e|dBG G2:||
-:f|(e/f/ge) cdc|(e/f/ge)cde|dBA G2f|(e/f/ge) cdc|e/f/ge f2a|gfe f2e|dBG G2:||
-: c'|bab c'ge|c'ge c2c'|bab c'ge|dBG G2 c'|bab c'ge|gab c'ge|f2 d'e2 c'|dBG G2:||
+f|(e/f/ge) cdc|(e/f/ge)cde|dBA G2f|(e/f/ge) cdc|e/f/ge f2a|gfe f2e|dBG G2:||
+ c'|bab c'ge|c'ge c2c'|bab c'ge|dBG G2 c'|bab c'ge|gab c'ge|f2 d'e2 c'|dBG G2:||
 
 X:269
 T:Spanish March  
@@ -3564,7 +3568,7 @@ L:1/16
 K:C
 U:T=!trill!
 c2e2 e2dc|f2f2 f2(ed)|(c2c2c2c2)|dcBA G2z2|c2e2 e2dc|f2f2 f2(ed)|c2c2c2c2|dcBA G2z2|c2cd (cBAG)|F2F2 F4|d2de (dcBA)|G2G2 G4|e2d2e2d2|cdef g3f|e2d2e2d2|(cd)(ef) g3f|e4 d4|c8:||
-:c4 c4|c4 G4|c2G2c2G2|EFGE C2z2|e2d2e3d|cdef g3f|e2d2e3d|cdef g3f|e4 d4|c8:||
+c4 c4|c4 G4|c2G2c2G2|EFGE C2z2|e2d2e3d|cdef g3f|e2d2e3d|cdef g3f|e4 d4|c8:||
 
 X:270
 T:Aldridges Allemande  
@@ -3587,8 +3591,8 @@ L:1/8
 K:c
 U:T=!trill!
 c3 c3|cBA GAB|cBA GFE|FGE TD2C|d3 d3|edc dgf|edc AGA|cde Td2c:||
-:edc dGG|edc dGG|fed eAA|fed eAA|edc dGG|edc dgf|edc AGA|cde Td2c:||
-:ceg ceg||ceg gfe|dfa dfa|dfa afd|ceg ceg||ceg gdg|edc AGA|cde d2c:||
+edc dGG|edc dGG|fed eAA|fed eAA|edc dGG|edc dgf|edc AGA|cde Td2c:||
+ceg ceg||ceg gfe|dfa dfa|dfa afd|ceg ceg||ceg gdg|edc AGA|cde d2c:||
 
 X:272
 T:Irish Trott   
@@ -3608,9 +3612,9 @@ Z:Transcribed by David Dolby 2010
 M:4/4
 L:1/8
 K:G
-D2|G2BGA2cA|B2dBG3B|c2ecB2dB|A2BG GFED|/
+D2|G2BGA2cA|B2dBG3B|c2ecB2dB|A2BG GFED|
 G2BGA2cA|B2dBc2ed|cBAGD2ga|g2dBG2:||
-:z2|gfge edcB|efge edcB|c2acB2gB|A2BG GFED|/
+z2|gfge edcB|efge edcB|c2acB2gB|A2BG GFED|
 G2BGA2cA|B2dBc2ed|cBAGD2fa|g2dBG2:|
 
 X:274
@@ -3660,7 +3664,7 @@ M:2/4
 L:1/8
 K:D
 f| f2 ff|f/e/f/g/ a2| g2 f/g/ e/a/| f/g/e/f/ e z|f2 ff| f/e/f/g/ a2| g2f/g/ f/a/| d2z:|
-:e2 ^d/e/g/e/| c2 A2| d2 fa| e2 (g/f/) e2| e2 ^d/e/g/e/|c2 A2| d2 fa|e2 e2:|| 
-f2 ff| f b/g/f/e/ d| =c2 3(c/d/e/)| f2 ff| a/g/e/g/fed| ^ccd2|A/B/c/d/| FG|F2||
+e2 ^d/e/g/e/| c2 A2| d2 fa| e2 (g/f/) e2| e2 ^d/e/g/e/|c2 A2| d2 fa|e2 e2:|| 
+f2 ff| f b/g/f/e/ d| =c2 (3(c/d/e/)| f2 ff| a/g/e/g/fed| ^ccd2|A/B/c/d/| FG|F2||
 
 

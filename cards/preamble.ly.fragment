@@ -69,5 +69,15 @@ ossia = \with {
       firstClef = ##f
 }
 
+makePercent =
+#(define-music-function (parser location note) (ly:music?)
+   "Make a percent repeat the same length as NOTE."
+   (make-music 'PercentEvent
+               'length (ly:music-length note)))
 
+makeDoublePercent =
+#(define-music-function (parser location note) (ly:music?)
+   "Make a percent repeat the same length as NOTE."
+   (make-music 'DoublePercentEvent
+               'length (ly:music-length note)))
 

@@ -49,6 +49,8 @@ Format of an AB file
 <duration> :: [0-9]+/[0-9]+) | / | /[0-9]+
     Use '/4' instead of '//'.
 
+<tuplet> :: TODO
+
 <connector> :: TODO
 
 <inline-field> :: [[][KLMNPQRr]:[^]]*[]]
@@ -78,3 +80,15 @@ AB+ can be easily converted to AB by "de-inlining" the fields between (and inclu
 
 Programs which declare support for AB should also support AB+.
 An AB+ file can be detected because it must begin with '[X:'
+
+formatter.py
+------------
+formatter.py will convert any valid AB file into a lilypond score.
+
+It will also accept files with these features (although they may be ignored)
+- slurs
+- special 'y' character
+- trills . and ~
+- decorations enclosed in !!
+- chord marks enclosed in ""
+

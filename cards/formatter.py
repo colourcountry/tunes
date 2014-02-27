@@ -4,7 +4,7 @@ import re, os, sys
 
 PAUSE_ON_ERROR = False
 REMOVE_KEY_SIGNATURES = True
-CRIB = False
+CRIB = True
 LIMIT = None
 BUCKET_SIZE = 500
 
@@ -172,18 +172,6 @@ class AbcConnector:
             return '%s%s' % (AbcConnector.TYPES[self.what], value)
 
 
-
-    def is_phrase_over(self):
-        if self.what == AbcConnector.NEW_LINE:
-            return True
-        elif self.what == AbcConnector.DOUBLE_BAR:
-            return True
-        #elif self.what == AbcConnector.END_REPEAT and not self.value:
-        #    return True
-        elif self.what == AbcConnector.END_BAR:
-            return True
-        return False
-
     def is_bar_line(self):
         if self.what == AbcConnector.BAR:
             return True
@@ -194,7 +182,7 @@ class AbcConnector:
         elif self.what == AbcConnector.REVERSE_END_BAR:
             return True
 
-        # these are not really bar lines but they still reset the clock timer
+        # these are not necessarily bar lines but they still reset the clock timer
         # so we can hack lilypond to do what we want
         elif self.what == AbcConnector.END_REPEAT:
             return True
@@ -254,8 +242,6 @@ class AbcConnector:
         else:
             raise NotImplementedError("Bar type %s needs help to be lilyfied" % self.what)
 
-        if self.is_phrase_over():
-            result += ' \\break '
         return result
 
     @classmethod
@@ -503,23 +489,21 @@ class Duration:
             try:
                 return c_lass(int(strg),1)
             except ValueError:
-                raise NotImplementedError("unparseable duration %s" % strg)
+                raise NotImplementedError("unparseable duration %s" % list(strg))
 
 class AbcNote:
-    # allow ! before note, pretend it's a trill
-    RE = re.compile("([~!]?)([_=^]*)([A-Za-z])([,']*)([0-9/]*)")
-
-    # AB does not allow redefining letters, nor the extra space character y
-    AB_PITCH = re.compile("[A-Ga-gxz]")
+    # Letters H..W,h..w are assumed to be valid trills but ignored (they don't need to be defined)
+    # !, *, q, S have been seen in the wild.
+    
+    RE = re.compile("([*.~!H-Wh-w]?)([_=^]*)([A-Ga-gxyz])([,']*)([0-9/]*)")
 
     def __init__(self, pitch, oct, acc, dur, trill):
-        if not AbcNote.AB_PITCH.match(pitch):
-            raise NotImplementedError("unsupported note %s" % pitch)
         self.pitch = pitch
         self.dur = Duration.from_string(dur)
         self.oct = oct or ''
         self.acc = acc or ''
         self.trill = trill or ''
+        self.value = self.as_ab()
 
 
     def __repr__(self):
@@ -594,7 +578,10 @@ class AbcNote:
             items = AbcConnector.from_string(m[i])
             s.extend(items)
             if len(m)>=i+4:
-                s.append(c_lass(m[i+3],m[i+4],m[i+2],m[i+5],m[i+1]))
+                if (m[i+3]=='y'):
+                    pass # y just adds extra space, is not really a note
+                else:
+                    s.append(c_lass(m[i+3],m[i+4],m[i+2],m[i+5],m[i+1]))
         return s
 
 
@@ -637,7 +624,6 @@ class AbcField:
     def from_string(c_lass, strg):
         m = c_lass.RE.split(strg)
         s = []
-        log_to_stderr(m)
         for i in range(0,len(m),3):
             s.extend(AbcNote.from_string(m[i]))
             if len(m)>i+2:
@@ -648,7 +634,7 @@ class AbcField:
     @classmethod
     def value_from_string(c_lass, what, value):
         if what == AbcField.METER:
-            value = value.lower()
+            value = value.strip().lower()
             if value == 'c':
                value = Duration(4,4)
             elif value == 'c|':
@@ -833,6 +819,9 @@ class Phrase:
         cur_bar_nr = 1
         warn_bar_length = 0
 
+        tune_ly = '\set Timing.measureLength = #(ly:make-moment %s)' % cur_bar_length.as_moment()
+
+        bar_check = "|"
         pause = 0
         chord_time = None
         last_note_index = None
@@ -842,17 +831,12 @@ class Phrase:
         cur_tuplet_stretch = None
 
         if not isinstance(self.notes[-1], AbcConnector) or not self.notes[-1].is_bar_line():
-            self.notes.append( AbcConnector(AbcConnector.END_BAR) )
+            # default end of phrase
+            self.notes.append( AbcConnector(AbcConnector.DOUBLE_BAR) )
 
         for i, item in enumerate(self.notes):
             if isinstance(item, AbcNote):
                 last_note_index = len(cur_bar)
-
-                if chord_time:
-                    # duration goes after chord in lilypond
-                    cur_bar.append( item.as_ly(self.key, None) )
-                else:
-                    cur_bar.append( item.as_ly(self.key, self.unit) )
 
                 if cur_tuplet_stretch:
                     ticks_elapsed = item.dur * self.unit * cur_tuplet_stretch
@@ -871,6 +855,24 @@ class Phrase:
                         ticks += ticks_elapsed
                 else:
                     ticks += ticks_elapsed
+                    if ticks > self.time:
+                        # bar can't be longer than time signature
+                        cur_bar_nr += 1
+                        if cur_bar_length != self.time:
+                            cur_bar_length = self.time
+                            cur_bar = [r'\set Timing.measureLength = #(ly:make-moment %s)' % cur_bar_length.as_moment()] + cur_bar
+                        tune_ly += ' '.join(cur_bar + [bar_check, '\n'])
+                        ticks = ticks_elapsed
+                        cur_bar = []
+
+                        if bar_limit and cur_bar_nr >= bar_limit:
+                            break
+
+                if chord_time:
+                    # duration goes after chord in lilypond
+                    cur_bar.append( item.as_ly(self.key, None) )
+                else:
+                    cur_bar.append( item.as_ly(self.key, self.unit) )
 
                 if end_tuplet_count:
                     end_tuplet_count -=1
@@ -881,7 +883,6 @@ class Phrase:
 
             elif isinstance(item, AbcConnector):
                 if item.is_bar_line() :
-                    bar_check = "|"
 
                     if no_repeats:
                         new_bar = ""
@@ -894,12 +895,17 @@ class Phrase:
                         cur_bar.append('}')
                         pause = False
 
-                    if ticks.n != 0:
+                    if ticks.n == 0:
+                        # the only situation we want a barline at time 0 is if the phrase is itself empty
+                        # (it's probably a repeated phrase)
+                        for j, jtem in enumerate(self.notes):
+                            if isinstance(jtem, AbcNote):
+                                break
+                        else:
+                            tune_ly += new_bar
+                    else:
+                        #log_to_stderr("%% End %s bar %s: self.time %s, cur_bar_length %s, ticks %s", self.name, cur_bar_nr, self.time, cur_bar_length, ticks)
                         if ticks != cur_bar_length:
-                            if not cur_bar:
-                                # suppress barline before anacrusis
-                                cur_bar = [r'\bar ""']
-
                             if ticks > self.time:
                                 cur_bar_length = self.time
                                 log_to_stderr("%% Long space without barlines in %s bar %s, reverting to %s", self.name, cur_bar_nr, self.time)
@@ -916,6 +922,7 @@ class Phrase:
                                 cur_bar_nr -= 1 # short bar doesn't count towards limit
                         elif ticks > self.time:
                             log_to_stderr("%% Warning in %s bar %s: long bar of length %s, expected %s", self.name, cur_bar_nr, ticks, self.time)
+                            
 
                         cur_bar_nr += 1                            
                         tune_ly += ' '.join(cur_bar + [bar_check, new_bar, '\n'])
@@ -925,12 +932,6 @@ class Phrase:
                         if bar_limit and cur_bar_nr >= bar_limit:
                             break
 
-                if item.what == AbcConnector.BAR:
-                    # The only connector which is definitely on a real bar line is the bar line itself.
-                    # Plus we don't know the proper length for the bar immediately after a bar we know to be short (without looking at the time signature)
-                    # So wait for 3 consecutive bar lines before warning.
-                    warn_bar_length += 1
-                    # (bar check was already added above)
 
                 elif item.what == AbcConnector.BEGIN_GRACE:
                     pause = -1 # grace notes take up no time
@@ -1002,6 +1003,19 @@ class Tune:
     CHORD_NAME_IGNORED = 16
     PLUS_IGNORED = 32
     SLUR_IGNORED = 64
+    TRILL_IGNORED = 128
+    CUSTOM_TRILL_IGNORED = 256
+
+    STATUS_ITEMS = {
+        DIRECTIVE_IGNORED: "directive",
+        HEADER_IGNORED: "header",
+        DECORATION_IGNORED: "decoration",
+        CHORD_NAME_IGNORED: "chord name",
+        PLUS_IGNORED: "chord name or decoration (with +)",
+        SLUR_IGNORED: "slur",
+        TRILL_IGNORED: "trill",
+        CUSTOM_TRILL_IGNORED: "custom trill",
+    }
 
     def __init__(self):
 
@@ -1053,13 +1067,13 @@ class Tune:
         
         return s
 
-    def render_ly(self, phrase_separator=None, end=None, bar_limit=None, page_break=True, no_repeats=False):
+    def render_ly(self, phrase_identifier=None, end=None, bar_limit=None, line_break=True, page_break=True, no_repeats=False):
 
-        if not phrase_separator:
-            phrase_separator = '''    \\set Score.repeatCommands = #\'((volta #f)) \\break \\bar "" \\mark "%s"\n'''
+        if not phrase_identifier:
+            phrase_identifier = '''\\markup { \\bold \\sans \\smaller %s }\n'''
 
         if not end:
-            end = '    \\set Score.repeatCommands = #\'((volta #f)) \\bar "|." \\break'
+            end = ''
 
         s = ur'''
 \score{{
@@ -1068,16 +1082,35 @@ class Tune:
 
         key = None
         continuation = False
-
         for id,phrase in self.phrases:
+            id_in_brackets = re.match("[(].*[)]$", id)
+            if line_break and not id_in_brackets:
+                # if phrase is in brackets, don't force a line break even if specified
+                s += '''
+ \\break '''
 
-            if continuation:
-                if "%s" in phrase_separator:
-                    assert '"' not in id
-                    s += phrase_separator % id
+            if id:
+                assert '}' not in id
+                ly_id = re.sub("([0-9]+)","\\\\finger{\\1.}", id)
+
+                if id_in_brackets:
+                    ly_id = ly_id[1:-1]
+                    if "%s" in phrase_identifier:
+                        # phrase is repeated add a repeat mark with the appropriate markup
+                        s += '\\bar "||" \\makeDoublePercent s%s \\bar "" \\mark %s s%s' % (phrase.time.as_ly(), phrase_identifier % ly_id, phrase.time.as_ly())
+                    else:
+                        # crib mode, ignore repeated section
+                        pass
                 else:
-                    s += phrase_separator
+                    if "%s" in phrase_identifier:
+                        s += "\\mark" + (phrase_identifier % ly_id)
+                    else:
+                        s += phrase_identifier
             else:
+                pass
+                # phrase without id, doesn't need identifying
+
+            if not continuation:
                 s += "\\time %s\n" % phrase.time.as_moment()
                 if not REMOVE_KEY_SIGNATURES:
                     s += "\\key %s\n" % phrase.key.as_ly()
@@ -1118,6 +1151,13 @@ class Tune:
                 except IndexError:
                     pass
             return "?"
+
+        def update_status(bit):
+            if strictness & bit:
+               log_to_stderr("%% Unsupported %s in tune %s: '%s'",Tune.STATUS_ITEMS[bit],tune.ref,item.value)
+            else:
+               log_to_stderr("%% Ignored %s in tune %s: '%s'",Tune.STATUS_ITEMS[bit],tune.ref,item.value)
+            tune.status |= bit
             
 
         # normalize space
@@ -1176,32 +1216,16 @@ class Tune:
                     elif item.what ==  AbcField.UNIT_NOTE_LENGTH:
                         cur_unit = item.value
                     elif item.what ==  AbcField.DIRECTIVE:
-                        if strictness & Tune.DIRECTIVE_IGNORED:
-                            log_to_stderr("%% Unsupported directive in tune %s: '%s'",tune.ref,item.value)
-                        else:
-                            log_to_stderr("%% Ignored directive in tune %s: '%s'",tune.ref,item.value)
-                        tune.status |= Tune.DIRECTIVE_IGNORED
+                        update_status(Tune.DIRECTIVE_IGNORED)
                         continue
                     elif item.what ==  AbcField.CHORD_NAME:
-                        if strictness & Tune.CHORD_NAME_IGNORED:
-                            log_to_stderr("%% Unsupported chord name in tune %s: '%s'",tune.ref,item.value)
-                        else:
-                            log_to_stderr("%% Ignored chord name in tune %s: '%s'",tune.ref,item.value)
-                        tune.status |= Tune.CHORD_NAME_IGNORED
+                        update_status(Tune.CHORD_NAME_IGNORED)
                         continue
                     elif item.what ==  AbcField.DECORATION:
-                        if strictness & Tune.DECORATION_IGNORED:
-                            log_to_stderr("%% Unsupported decoration in tune %s: '%s'",tune.ref,item.value)
-                        else:
-                            log_to_stderr("%% Ignored decoration in tune %s: '%s'",tune.ref,item.value)
-                        tune.status |= Tune.DECORATION_IGNORED
+                        update_status(Tune.DECORATION_IGNORED)
                         continue
                     elif item.what ==  AbcField.PLUS:
-                        if strictness & Tune.PLUS_IGNORED:
-                            log_to_stderr("%% Unsupported plus (may be chord or decoration) in tune %s: '%s'",tune.ref,item.value)
-                        else:
-                            log_to_stderr("%% Ignored plus (may be chord or decoration) in tune %s: '%s'",tune.ref,item.value)
-                        tune.status |= Tune.PLUS_IGNORED
+                        update_status(Tune.PLUS_IGNORED)
                         continue
 
                     if in_header is not False:
@@ -1219,11 +1243,7 @@ class Tune:
                     # allow tune to ignore unsupported items:
                     if isinstance(item, AbcConnector):
                         if item.what == AbcConnector.BEGIN_SLUR or item.what == AbcConnector.END_SLUR:
-                            if strictness & Tune.SLUR_IGNORED:
-                                log_to_stderr("%% Unsupported slurs in tune %s",tune.ref)
-                            elif not (tune.status & Tune.SLUR_IGNORED):
-                                log_to_stderr("%% Ignored slurs in tune %s",tune.ref)
-                            tune.status |= Tune.SLUR_IGNORED
+                            update_status(Tune.SLUR_IGNORED)
                             continue
                         elif item.what == AbcConnector.BEGIN_REPEAT:
                             # assume starts a new phrase
@@ -1234,7 +1254,10 @@ class Tune:
                             cur_phrase = None
                             cur_phrase_id = get_next(cur_phrase_id)
                     elif isinstance(item, AbcNote):
-                        pass
+                        if item.trill:
+                            update_status(Tune.TRILL_IGNORED)
+                            if item.trill not in ".~HLMOPSTuv":
+                                update_status(Tune.CUSTOM_TRILL_IGNORED)
                     else:
                         raise NotImplementedError("non-abc object (type %s) %s" % (repr(type(item)), repr(item)))
 
@@ -1247,6 +1270,11 @@ class Tune:
             except NotImplementedError, e:
                 log_to_stderr("%% Unknown item in tune X:%s: %s",tune.ref, e)
                 tune.status |= Tune.FATAL
+
+
+        if in_header:
+            log_to_stderr("%% No K: field in tune X:%s",tune.ref)
+            tune.status |= Tune.FATAL
 
         try:
             for phrase_id, phrase in tune.phrases:
@@ -1330,7 +1358,7 @@ class ABCollection:
                             break
                     else:
                         self.tune_check[check_id] = x_line.strip()
-                        sys.stderr.write("%% Couldn't process the following tune:\n%s\n")
+                        sys.stderr.write("% Couldn't process the following tune:\n")
                         sys.stderr.write(original_abc.encode('utf-8'))
                         pause = True
 
@@ -1393,13 +1421,14 @@ if __name__=="__main__":
             try:
                 if CRIB:
                     z=tune.render_ly(\
-                        phrase_separator=r'''    \set Score.repeatCommands = #'((volta #f)) 
-\bar ":" \stopStaff 
+                        phrase_identifier=r'''    \set Score.repeatCommands = #'((volta #f)) 
+\bar "" \stopStaff 
 \set Timing.measureLength = #(ly:make-moment 1/4) s4
-\startStaff
+\startStaff \bar ".|"
 ''',
-                        end='    \\set Score.repeatCommands = #\'((volta #f)) \\bar ":"',
+                        end='    \\set Score.repeatCommands = #\'((volta #f)) \\bar ""',
                         bar_limit=3,
+                        line_break=False,
                         page_break=False,
                         no_repeats=True
                     )
