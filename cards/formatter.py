@@ -3,8 +3,8 @@
 import re, os, sys
 
 PAUSE_ON_ERROR = False
-REMOVE_KEY_SIGNATURES = True
-CRIB = True
+REMOVE_KEY_SIGNATURES = False
+CRIB = False
 LIMIT = None
 BUCKET_SIZE = 500
 
@@ -973,6 +973,8 @@ class Phrase:
                         raise NotImplementedError("tie from non-note %s" % prev_item)
 
                 elif item.what == AbcConnector.TUPLET:
+                    if end_tuplet_count:
+                        raise NotImplementedError("new tuplet %s started, but expecting %s more notes in previous tuplet" % (item, end_tuplet_count) )
                     end_tuplet_count = item.value[2]
                     cur_tuplet_stretch = Duration(item.value[1], item.value[0])
                     cur_bar.append(item.as_ly())
@@ -988,6 +990,9 @@ class Phrase:
                     log_to_stderr("%% Warning in %s: can't render to ly: %s", self.name, item)
 
             prev_item = item
+
+        if end_tuplet_count:
+            raise NotImplementedError("phrase ended, but expecting %s more notes in tuplet" % end_tuplet_count )
 
         leftover_duration = ticks % self.time
 
@@ -1104,7 +1109,8 @@ class Tune:
                 else:
                     if "%s" in phrase_identifier:
                         s += "\\mark" + (phrase_identifier % ly_id)
-                    else:
+                    elif continuation:
+                        # crib mode, only add phrase identifier (Separator) after the start
                         s += phrase_identifier
             else:
                 pass
@@ -1169,9 +1175,9 @@ class Tune:
         except NotImplementedError, e:
             ref = re.match("^[[](X:[^]]*)[]]",ab)
             if ref:
-                log_to_stderr("%% Unknown item in tune %s: %s" ,ref.group(1), e)
+                log_to_stderr("%% Unknown item in tune %s: %s" ,ref.group(1), str(e))
             else:
-                log_to_stderr("%% Unknown item in tune also missing id: ", e)
+                log_to_stderr("%% Unknown item in tune also missing id: ", str(e))
             # this is automatically fatal
             return None
 
@@ -1437,7 +1443,7 @@ if __name__=="__main__":
                 ly_file.write( z.encode('utf-8') )
                 ab_file.write( tune.as_ab().encode('utf-8') )
             except NotImplementedError, e:
-                log_to_stderr("%% Couldn't render the following tune (%s): %s\n",tune.name or '(unknown)', e)
+                log_to_stderr("%% Couldn't render the following tune (%s): %s\n",tune.name or '(unknown)', str(e))
                 sys.stderr.write(tune.src.encode('utf-8'))
           
 

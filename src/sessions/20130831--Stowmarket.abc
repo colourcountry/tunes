@@ -1,0 +1,448 @@
+X:EATMD 13-01 01
+K:G
+P:A
+GABc d2B2 |1,4 c2e2 d4 :|2,5 c2e2 A4 :|3,6 c2e2 d2ef g2B2 cedc B2G2 G4 :|
+P:B
+g2g2 gagf e2c2 c4 a2a2 abag f2d2 d2ef gagf e2ag fgfe d2ef g2B2 cedc B2G2 G4 :|
+
+X:EATMD 13-01 02
+T:Radstock Jig
+K:G
+P:A
+c4 E3F G2G2 G4 A2AB cBcd e2e2 A4 A2AB cBcd edef g2fg afdf ege^c A6 :|
+P:B
+ef| g2g2 gfed ^cdef g2 [1,3 f2 e2a2 a4 e2a2 a2 :|2,4 fg| afdf ege^c A6 :|
+
+X:EATMD 13-01 03
+T:Britannia Two Step
+M:6/8
+K:D
+P:A
+F2F FED A2A A2F G2G GFE B3-B2 [1 d| c2^B c2d e2c B2A d2c d2e fed cBA :|2 c| d2d dcB A2A AGF EFG ABc dAB cde
+P:B
+f3 f3 fed A3 dcd e2d c3 B3 |1 g3 g3 gfe B3 c2^B c2d e2c B2A :|2 g2g gfe d2d dcB A2A B2c d3 =c3
+P:C
+B3 B3 =c3 ^c3 d2c d2e d6 B2c ^c2d e3 d3 |1 F6 F3 A2B =c3 =c3 =c2B A2B =c3 =c3 =c2B c2d f3 e3 d3 A3 ^A6 B6 :|2 f6
+f2d e2f g2g gfe g2g gfe d2d dcd e3 d3 A2A B^AB cBc def g2d edB G3 A3
+
+X:EATMD 13-01 04
+M:6/8
+K:G
+P:A
+B2B BAG B2B BAG GAG F2G A3-A2d f2f fed f2f fed |1 d^cd e2d B3-B2D :|2 d^cd e2f gde fga
+P:B
+b2a gfe d2B G2A B2B BAB c3-c2d f2f fed f2f fed |1 d^cd e2d Bde fga :|2 d^cd e2f g3 d3
+
+X:EATMD 13-01 05
+T:The Sloe
+K:D
+P:A
+A2| d3c d2e2 f3e d2c2 |1,3 B2A2 BcdB A2G2 F2 :|2,4 B2A2 B2c2 d4d2 :|
+P:B
+A2| B2A2 F2A2 B2A2 F2d2 d2c2 c2B2 B2A2 A2d2 d2c2 c2e2 e2d2 d2f2 f2e2 B2c2 d4d2 :|
+
+X:EATMD 13-01 06
+T:Herbert Smith's Four-hand Reel
+K:D
+P:A
+A2| d2c2 B2A2 G2F2 E2D2 |1,3 DEFG A2F2 F2E2 E2 :|2,4 DEFG A2f2 |[M:3/2] e2cd e2dc d2 :|
+P:B
+e2|[M:4/4] f2ff f2f2 |1,4 gfed e2e2 :|2,5 edcB A2e :|3,6 gfed e2e2 f2d2 e2c2 d4d2 :|
+
+X:EATMD 13-01 07
+T:The Burdett
+M:6/8
+K:D
+P:A
+A| d2d f2a gfg e2a |1,3 f2d B2e cBc A2 :|2,4 afd gec d3-d2 :|
+P:B
+A| d2d cdc B3-B2B e2e ded c3-c2A dcd ede fef gfg afd gec d3-d2 :|
+
+X:EATMD 13-01 08
+T:Sadler's Balloon
+M:6/8
+K:G
+P:A
+D2F A2d f2d A2F |1,3 G2B e2d cBA GFE :|2,4 G2e cBA c3 d3 :|
+P:B
+A2c e2c A2d f2d A2e g2e fed cBA d2A e2A f2A g2A fed cBc c3 d3 :|
+
+X:EATMD 13-01 09
+T:?
+K:G
+P:A
+G3G G2G2 |1 FGAF G2A2 B2BG c2cA B2BG A4 :|2 FGAF G4 FGAB AGFE D6
+P:B
+Bc| dcBA GFED E2C2 C4 edcB AGFE F2D2 D2Bc d2dB e2ec d2dB e2ec dgfe dcBA GAGF G2 :|
+
+X:EATMD 13-01 10
+T:?
+K:D
+P:A
+AGFG A3A Bcde dcBA |1,3 defd B2cd efge dcBA :|2,4 defd B2g2 f2e2 d2 :|
+P:B
+de| f3g agf2 e3f gfe2 defd B2cd efge dcBA [P:(A2)] :|
+
+X:EATMD 13-01 11
+T:Hills Of Tara
+K:G
+P:A
+Bc| d2G2 G2AB c2E2 E2AG |1,3 FGAB cBc2 e2d2 d2 :|2,4 FGAB cAF2 A2G2 G2 :|
+P:B
+g2g2 g2ag f2e2 e4 |1,3 c2c2 cBcd e2d2 d4 :|2,4 FGAB cAF2 A2G2 G2 :|
+
+X:EATMD 13-01 12
+T:Fred Pigeon's
+K:G
+P:A
+G2G2 FGAF G2G2 FGAF G2AB cBAG |1,3 FGAF D4 :|2,4 FGAF G4 :|
+P:B
+d2d2 d3e dcBA G4 |1,3 A2A2 D2D2 A2Bc d4 :|2,4 A2A2 D2EF G4 G4 :|
+
+X:EATMD 13-01 13
+T:?
+K:G
+P:A
+GFGA BABc d2d2 B4 |1,3 c2A2 A4 F2D2 D4 :|2,4 c2A2 F2D2 F2G2 G4 :|
+P:B
+B2GG G2G2 G6A2 B2GG G2G2 A6A2 B2GG G2F2 E2c2 c4 BdcB A2A2 G4 :|
+
+X:EATMD 13-01 14
+T:?
+M:6/8
+K:G
+P:A
+gfg d2B cde d3 |1,3 cac BgB Adc BAG :|2,4 caf gdB cAF G3 :|
+P:B
+BAB GAB cBc ABc Bdc BAG FDE FGA BAB GAB |1 cBc EDC B,CD EFG AGF G3 :|2
+cAF DEC B,CD EFG ABc def |]
+
+X:EATMD 13-01 15
+T:Doncaster Races
+M:6/8
+K:G
+P:A
+d2B dcA G2G GFG AFD DEF |1,3 GBd gfe :|2,4 G2{D}B G3 :|
+P:B
+Adf fef gdB dBG Adf fef gdB GBd e2{c}e gfe d2{B}d gdB dcA cBG B3 A3 :|
+
+X:EATMD 13-01 16
+T:?
+M:6/8
+K:G
+P:A
+D| G2G GAB AFD DEF G2B d2B def g2f |1,3 e2c cde d2B GAB c2B A2G FGADEF :|2,4
+e2c gfe edc BAG FGA DEF G3 G2 :|
+P:B
+B| Bee e2f g3-g2g f2B agf e3-e2A Add d2e f3-f2g aba gfe d2B cBA [P:(A2)] :|
+
+X:EATMD 13-01 17
+T:The Shepherd And Shepherdess
+K:G
+P:A
+GA| Bcd2 G2g2 e6g2 d2de d2B2 AGFG A2B2 G2D4B2 c2A2 dcBA B2d2 A2BA G6 :|
+P:B
+GA| B2G2 c2A2 B2G2 G3A B2G2 d2B2 AGFG A2B2 G2D4B2 c2A2 dcBA B2d2 A2BA G6 :|
+P:C
+gfef g2a2 g2f2 e2d2 Bcd2 efg2 G2F2 E2D2 E2C2 c2A2 B2G2 dcBA B2d2 A2BA G6 :|
+
+X:EATMD 13-01 18
+T:?
+M:3/4
+K:G
+P:A
+D2| B3cB2 A2d2B2 G3AG2 F2B2G2 E3GE2 D2B2G2 |1 G2F2G2 A4 :|2 A2E2F2 G4
+P:B
+F2| E4D2 D2B2G2 A2B2c2 B2A2G2 E2c2E2 D2B2G2 |1 A4G2 F2E2D2 :|2 A2E2F2 G4 |]
+
+X:EATMD 13-01 19
+T:Sherborne Waltz
+M:3/4
+K:G
+P:A
+D2| E2G2E2 D2G2A2 Bd3B2 A4BA G2E2E2 D2G2A2 B2G2G2 |1 A4 :|2 G4 
+P:B
+A2| B3ABc d4B2 A2G2A2 B2c2d2 e2d2B2 A2G2A2 B2A2G2 E4x2 [P:(A2)] |]
+
+X:EATMD 13-01 20
+T:?
+M:3/4
+K:G
+P:A
+GA| B2G2E2 D2G2A2 B2G2e2 d4gf e3fgf e2d2B2 |1 e2c2B2 A4 :|2 c2B2A2 G4 
+P:B
+Bc| d2B2e2 d4GA B2G2c2 B4gf e3fgf e2d2B2 |1 e2c2B2 A4 :|2 c2B2A2 G4 |]
+
+X:EATMD 13-01 21
+T:?
+M:3/4
+K:G
+P:A
+D2| G2G2A2 B4d2 c3dcB A4{B}c2 B3cBA |1 G4B2 A3BAG F2E2 :|2 G4F2 G2FGAF G4
+P:B
+d2| c3BAG F4c2 B3AGF E4B2 A3GFE F2G2A2 |1 B3AGA B4 :|2 G2FGAF G4 |]
+
+X:EATMD 13-01 22
+T:Sadlers Wells Hornpipe
+K:G
+P:A
+cBA| G2G,2 G,2BA BdBG GFED |1,3 C2EC B,2DB, A,2A2 A :|2,4 c2BA B2AG D2F2 G :|
+P:B
+def| g2df ecBA BdBG GFED |1,3 C2EC B,2DB, A,2A2 A :|2,4 c2BA B2AG D2F2 G :|
+
+X:EATMD 13-01 23
+T:Butcher's Hornpipe
+K:G
+P:A
+B,A,| G,B,DB, G,B,DB, G,2G2 G2FE DFAF DFAF D2d2 d2B2 || cdec BcdB ABcd efg2{e} gdec dBAG D2G2 G2 :|
+P:B
+Bc| dBGB dBGB ecGc ecGc gfed efga f2d2 d2B2 [P:(A2)] :|
+
+X:EATMD 13-01 24
+T:?
+K:G
+P:A
+G2G2{F} E2D2 G2G2 A2GA |1,3 B2B2 GAGA BAGA E2D2 :|2,4 B2d2 cBAG E2F2 G4 :|
+P:B
+d2d2 d2Bd e2d2 d4{Bd} e2d2 BAGA BAGF E2D2 [P:(A2)] :|
+
+X:EATMD 13-01 26
+T:Yarmouth Breakdown
+K:D
+P:A
+FAde fede fedc B2A2 gfed cABc |1,3 edcB A4 :|2,4 d2f2 d4 :|
+P:B
+FDFA dAFD G2FD A,2D2 CDEF GECE |1,3 DEFG A4 :|2,4 E2D2 D4 :|
+
+X:EATMD 13-01 27
+T:?
+K:D
+P:A
+fedB A2F2 GFGA B4 gfed cABc |1,3 edcB A4 :|2,4 d2f2 d4 :|
+P:B
+F2A2 d3c B2B2 e2f gfed cABc |1,3 edcB A4 :|2,4 e2d2 d4 :|
+
+X:EATMD 13-01 28
+T:?
+M:6/8
+K:G
+P:A
+ABA ABA |1,4 d2A A2F :|2,5 e2A A2F :|3,6 dcd e3 fed ABc d3 d3 :|
+P:B
+fed fed |1,4 e2A A3 :|2,5 g2e e3 :|3,6 gfe gfe fed ABc d3 d3 :|
+
+X:EATMD 13-01 30
+T:?
+K:G
+P:A
+def| g3a gfe2 d3e dcBA |1,3 GBdB GBdB c2B2 A :|2,4 GBdB cAFA A2G2 G4 :|
+P:B
+GABc dcBA GABc d2B2 c2Ac B2GB AGFE D4 B2B2 c2c2 A2A2 B3A GBdB GBdB c2B2 A4 B2B2 c2c2 A2A2 B3A GBdB cBA2 G4 G :|
+
+X:EATMD 13-01 31
+T:From Night Till Morn
+K:G
+P:A
+B3B B2B2 AGAB G2AB cBAG GABc |1,3 d2ec B2A2 :|2,4 A4 G4 :|
+P:B
+GABc d3d d2e2 d4 e2d2 g2d2 d2ec B2A2 [P:(A1)] [P:(A2)] |]
+
+X:EATMD 13-01 32
+T:South Downs
+M:6/8
+K:G
+P:A
+dcA| G2G EFG AFE DEF |1,3 GAB cde dBG dcA |2,4 GAB cAF G3 :|
+P:B
+Bcd| e2c d2B c2A Bcd |[M:9/8] e2c d2B c2B |[M:6/8] A3 DGF E3 cBA F2E DEF GAB cAF G3 :|
+
+X:EATMD 13-01 33
+T:?
+M:6/8
+K:G
+P:A
+D| G2G A2A B2c dBG |1,3 E2E c2B A2G FED |2,4 EcB AGF G3 G2 :|
+P:B
+B| d2d e2e d2e dBG d2d e2e dBG A3 d2d e2e d2g g2f e2d ^cB^c d3 d2x [P:(A1)] [P:(A2)] |]
+
+X:EATMD 13-01 34
+T:?
+M:6/8
+K:G
+P:A
+DEF GAB ced cBA BGE Ddc BcA G3 :|
+P:B
+Bcd d2d e2e dBG Bcd e2{f}g GAG FED c2c BdB GFG AFD GFE Ddc BcA G3 :|
+
+X:EATMD 13-01 35
+T:Sweet Jenny Jones
+M:3/4
+K:G
+P:A
+d2| g2d2B2 G3AB2 c2e2ag f3ed2 g2d2B2 c3de2 d2g2f2 g4 :|
+P:B
+a2| b2g2b2 a4f2 g2e2g2 f3ga2 b2g2b2 a2f2d2 g2f2e2 d4x [P:(A)] |]
+
+X:EATMD 13-01 36
+T:?
+K:C
+P:A
+G2 | c2c2 B2G2 c2c2 d2d2 |1,3 e2e2 d2f2 g3a gfed :|2,4 e2g2 f2e2 e4d4 :|
+P:B
+g2gg g2e2 g2f2 f4 e2e2 d2d2 |1,3 cdefgabc' :|2,4 e2e2 d2d2 cege c4 :|
+
+X:EATMD 13-01 37
+T:?
+K:C
+P:A
+c2e2 c2e2 d2g2 gfed |1,3 c2e2 c2e2 dcBA G4 :|2,4 c2e2 d2gf e2c2 c4 :|
+P:B
+d^cd^c d2f2 e2c2 c2e2 |1,3 dcBA G2B2 c2e2 d4 :|2,4 dcBA GAB2 c2e2 c4 :|
+
+X:EATMD 13-01 38
+T:?
+K:G
+P:A
+D2| GBGA FADA GBGB D2D2 |1,3 E2e2 edcB cBAG GFED :|2,4 Eedc BAGF A2G2 G2 :|
+P:B
+Bc| dBdB dBdB edcB c2AB cAcA cAcA dcBA B2x2 [P:(A2)] :|
+
+X:EATMD 13-01 40
+T:?
+K:D
+P:A
+dAFE D3d cAEC D2EF |1,3 GABA GFED C2B,2 A,4{ABc} :|2,4 GBAG FEDC E2D2 D4 :|
+P:B
+FADA FAD2{A} GBEB GBE2{B} FADA FAD2{A} CEA,ECEA,2{E} FADA FAD2{A} GFGA Bc (3dcB AdcB AGFE F2D2 D2 :|
+
+X:EATMD 13-01 43
+T:Oscar Woods' March
+K:C
+P:A
+E2F2| G3AG2E2 D6ED C2E2G2A2 |1 G6c2 B2A2D2E2 F6B2 A2G2C2D2 E4 :|2 B4c4 d2B2 AGAB c2G2 GAGc B2A2 F2D2 C4
+P:B
+C2D2| E2C2E2C2 E6c2 B2A2A2G2 D6C2 |1 B,2C2D2E2 F6G2 B2A2G2F2 E2 :|2 B,2C2D2E2 B6A2 G2G2A2B2 c4
+P:C
+E2F2| G3AG2E2 D6ED C2E2G2A2 G6AB c2B2A2G2 D6G2 B2G2A2G2 E6D2 E2C2G,2A,B, C2DEF2D2 E2D2A,2B,2 C2E2G,4 G,2E2E2G,2 A,2D2F4 E2D2A,2B,2 C4 |]
+
+X:EATMD 13-01 44
+T:Oh Joe
+K:C
+P:A
+F2| E4E2F2 G6A2 G2e2d2c2 B4A4 |1 D4D2E2 F6G2 A2BAG2F2 E6 :|2 d4e4 f2d2B2A2 G2G2A2B2 c6
+P:B
+F2| E2G2c3G E2G2c3G c2e2d2c2 B4A4 |1 B2c2d3c B2c2d3c B2c2B2A2 G6 :|2 d4e4 f2d2B2A2 G2G2A2B2 c6 |]
+
+X:EATMD 13-01 45
+K:C
+P:A
+G,2| C2C2D2E2 G6E2 F2A2B2A2 G6E2 F2F2D2F2 E2E2C2E2 |1 D2A,2B,2C2 D2B,2A,2G,2 :|2 D2A,2B,2G,2 C4
+P:B
+c2B2| A8-A2c2B2A2 G4E4-E2G2A2G2 |1 G4D4-D2G2A2G2 G4E4-E2c2c2B2 :|2 G4D4-D2F2E2D2 C3DE2D2 C6 |]
+
+X:EATMD 13-01 46
+K:C
+P:A
+E2G2C2E2 E2D2D4 D2F2B,2D2 D2C2C4 :|
+P:B
+D2|E2E2D2C2 B,2D4E2 F2F2E2D2 C2E4F2 G4c2B2 B2A6 G2G2F2D2 C4C2 :|
+
+X:EATMD 13-01 47
+M:6/8
+K:C
+P:A
+GAB| c2e d2c B3 GAB c2e d2c B3 g3 f2e d2c B2G A2B |1 d2c B2A G3 :|2 c3 e3 c3
+P:B
+e3 g3 e3 g3 a2g f2e d6 f2e d2c B2G A2B d2c B2A G3 x3 [P:(A2)] |]
+
+X:EATMD 13-01 48
+M:6/8
+K:G
+P:A
+G2F G2A B2c dcB c2B c2d e2f gfe d2e dcB c2d cBA |1 B2c BAG ABc d3 :|2 G3 B3 G3
+P:B
+B2A| GBd gdB GBd g2f e2f gfe d2c B3 c2d edc |1 B2c dBG A3 e3 f2e dcA :|2 B3 G3 A3 F3 G3 |]
+
+X:EATMD 13-01 49
+T:The Fiery Clock Face
+M:6/8
+K:G
+P:A
+g2g G2A B2c d2e =f2=f A2B c2d e2f g2g G2A B2c d3 efg a2{g}f g3 :|
+P:B
+d'2c' bc'b gab c'2b a2g f2e d2e f2g a2c' bc'b gab c'2b a2g f2d e2f g3 :|
+
+X:EATMD 13-01 50
+T:?
+K:C
+P:A
+c2c2 c2GE F2FE D4 |1,3 B,CDE FEFD CDEF GABG :|2,4 B,CDE GFED C2E2 C2 :|
+P:B
+GF| (3EGEC2 (3EGEC2 DEFE D4 |1,3 (3DFDB,2 (3DFDB,2 CDEF G4 :|2,4 B,CDE GFED C2E2 C2 :| 
+
+X:EATMD 13-01 52
+T:Walter Bulwer's Polka #4
+K:G
+P:A
+GA| B2G2 D2GA B2G2 D2 [1,3 (3GAB c2A2 F2D2 c2A2 F2D2 :|2,4 G2| FGAB cdef g6 :|
+P:B
+d2| b2a2 g2f2 gfgf g2Bc |1,3 d2AB c2A2 GABc d2d2 :|2,4 d2AB cAFA G2B2 G2 :|
+
+X:EATMD 13-01 53
+T:Walter Bulwer's Polka #3
+K:G
+P:A
+GA| B2B2 BAGA B2D2D4 E2G2G2A2 G6 [1 D2 D2G2A2B2 d2B4A2 G2E2F2G2 A6 :|2 D2| B2B2c2B2 A2E4G2 F2D2B2A2 G4
+P:B
+d3c| B2B2 d2BA G2G2 B2GF E2E2F2G2 c6B2 c2e2A3B c2e2A3G F2G2F2E2 D4d4 e2d2B2G2 D6G2 F2G2A2B2 c8 d2c2A2F2 d2c2A2F2 D2D2E2F2 G6 |]
+
+X:EATMD 13-01 54
+T:?
+K:G
+P:A
+G2G2 G2FG A2A2 A4 GFED E2F2 |1,3 GABc dcBA :|2,4 G4 :|
+P:B
+G2A2| B2B2 B2AB c2c2 c4 A2A2 A2GA B2B2 BcdB [P:(A2)] :|
+
+X:EATMD 13-01 55
+T:?
+M:6/8
+K:G
+P:A
+GFG G2B GFG G2B |1,3 AFD D2B AFD D3 :|2,4 AFD DEF G3 G3 :|
+P:B
+d2B d2B G2G G3 |1,3 e2c e2c A2A ABc :|2,4 A2A DEF G3 G3 :|
+
+X:EATMD 13-01 56
+T:?
+M:6/8
+K:G
+P:A
+D| G2D G2D G2D G2B |1,3 dcB BAG A3-A2 :|2,4 dcB AGA G3-G2 :|
+P:B
+D| BAB cBc d3 B2c |1,3 dcB BAG A3-A2 :|2,4 dcB AGA G3-G2 :|
+
+X:EATMD 13-01 57
+T:?
+M:6/8
+K:G
+P:A
+DED DED B2G A2 [1,3 B c2A F2A d2B GFE :|2,4 c| Bcd cBA G3 G3 :|
+P:B
+B3 d3 e3d B2G ABA E2F |1,3 A2G D3 :|2,4 G6 :|
+
+X:EATMD 13-01 58
+T:?
+K:G
+P:A
+G2G2 G2G2 FGAF G3A B2B2 B2B2 ABcA B4
+P:B
+cdec A2A2 BcdB G2G2 ABcA FDEF |1,3 GABc d4 :|2,4 G2B2 G4 :|
+
+X:EATMD 13-01 59
+T:?
+K:G
+P:A
+DEDG B2B2 DEDG B2B2 cBAG FDEF |1,3 AGFE D4 :|2,4 G2B2 G2 :|
+P:B
+Bc| d2c2 B2A2 GABG E4 |1,3 c2B2 A2G2 FGAF D4 :|2,4 cBAG FDEF G2B2 G2 :|
