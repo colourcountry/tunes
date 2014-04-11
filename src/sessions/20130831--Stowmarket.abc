@@ -47,7 +47,7 @@ K:D
 P:A
 A2| d2c2 B2A2 G2F2 E2D2 |1,3 DEFG A2F2 F2E2 E2 :|2,4 DEFG A2f2 |[M:3/2] e2cd e2dc d2 :|
 P:B
-e2|[M:4/4] f2ff f2f2 |1,4 gfed e2e2 :|2,5 edcB A2e :|3,6 gfed e2e2 f2d2 e2c2 d4d2 :|
+e2|[M:4/4] f2ff f2f2 |1,4 gfed e2e2 :|2,5 edcB A2e :|3,6 gfed e2e2 | f2d2 e2c2 | d4d2 :|
 
 X:EATMD 13-01 07
 T:The Burdett
@@ -232,7 +232,7 @@ P:B
 fed fed |1,4 e2A A3 :|2,5 g2e e3 :|3,6 gfe gfe fed ABc d3 d3 :|
 
 X:EATMD 13-01 30
-T:?
+T:Lodge Road
 K:G
 P:A
 def| g3a gfe2 d3e dcBA |1,3 GBdB GBdB c2B2 A :|2,4 GBdB cAFA A2G2 G4 :|
@@ -252,16 +252,16 @@ T:South Downs
 M:6/8
 K:G
 P:A
-dcA| G2G EFG AFE DEF |1,3 GAB cde dBG dcA |2,4 GAB cAF G3 :|
+dcA| G2G EFG AFE DEF |1,3 GAB cde dBG dcA :|2,4 GAB cAF G3 :|
 P:B
 Bcd| e2c d2B c2A Bcd |[M:9/8] e2c d2B c2B |[M:6/8] A3 DGF E3 cBA F2E DEF GAB cAF G3 :|
 
 X:EATMD 13-01 33
-T:?
+T:Linen Hall
 M:6/8
 K:G
 P:A
-D| G2G A2A B2c dBG |1,3 E2E c2B A2G FED |2,4 EcB AGF G3 G2 :|
+D| G2G A2A B2c dBG |1,3 E2E c2B A2G FED :|2,4 EcB AGF G3 G2 :|
 P:B
 B| d2d e2e d2e dBG d2d e2e dBG A3 d2d e2e d2g g2f e2d ^cB^c d3 d2x [P:(A1)] [P:(A2)] |]
 
@@ -429,7 +429,7 @@ K:G
 P:A
 DED DED B2G A2 [1,3 B c2A F2A d2B GFE :|2,4 c| Bcd cBA G3 G3 :|
 P:B
-B3 d3 e3d B2G ABA E2F |1,3 A2G D3 :|2,4 G6 :|
+B3 d3 e2d B2G ABA E2F |1,3 A2G D3 :|2,4 G6 :|
 
 X:EATMD 13-01 58
 T:?

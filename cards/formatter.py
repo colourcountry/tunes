@@ -868,6 +868,10 @@ class Phrase:
                         if bar_limit and cur_bar_nr >= bar_limit:
                             break
 
+                if pause:
+                    # put passing notes in brackets
+                    cur_bar.append( r'\parenthesize' )
+
                 if chord_time:
                     # duration goes after chord in lilypond
                     cur_bar.append( item.as_ly(self.key, None) )
