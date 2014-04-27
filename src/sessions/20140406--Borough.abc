@@ -1,0 +1,687 @@
+X:BFS 14-04 01 
+T:When Daylight Shines
+M:6/8
+N:See George Spencer MS, Leeds, 1831
+K:G
+P:A
+{def} | gfe dcB d2c A3 |1,3 cBc e2d B3 :|2,4 cBc e2F G3 :|
+P:B
+{d} | G2A B2c |1,3 d3 B2d e2d c2d B3 A3 :|2,4 d3 g3 fed cBA G6 :|
+P:C
+dcB BAG FAc e3 |1,3 d2{e}d cdc B3 A3 :|2,4 d2{e}d cBA G6 :|
+
+% Into...
+
+X:BFS 14-04 02
+T:Voulez-vous Danser / The Portuguese Dance / Oats, Peas and Beans / Oh For The Life Of A Soldier
+M:6/8
+N:Wilson (Companion to the Ball Room), 1816. 
+N:Recast by Muthuswamy Dikshitar (1775-1835) as "Shakti sahita Ganapatim"
+K:G
+P:A
+B3 B3 ABA G3 F2G A2F G2A B3 | B3 B3 ABA GAB c2B A2F G6 :|
+P:B
+K:D
+ABA F2D GAB A3 ABA F2D GAB ABc d2d c3 B2B A3 G3 F3 E3 D3 :|
+P:C
+K:G
+d3 d3 cdc B3 A2B c2A B2c d3 | d3 d3 cdc Bcd e2d c2B AGF G3 :|
+
+X:BFS 14-04 03
+T:Family Jig
+M:6/8
+K:D
+P:A
+A2d dcd B2e e2d |1,3  c2a aga f2e dcB :|2,4 c2a gfe d3 :|
+P:B
+{e}| f2f def g3 g2f e2e ede f3 f2e d2d def g2B e2d c2a gfe d3 :|
+
+% Into..
+
+X:BFS 14-04 04
+T:
+M:6/8
+K:G
+P:A
+d| e2d B2d G3-G2G F2A c2A F6 d^cd f2e d2B cAF |1 GFG B2c d3-d2 :|2 GFG B2A G3-G2 ||
+P:B
+B2B BGA B2B B3 A2B c2d f3 e3 d2e f2e d2B cAF |1 G2G G2B d3 c3 :|2 GFG B2A G3-G2 ||
+
+% BFS 14-04 05 Newcastle, into BFS 14-04 06 Portsmouth
+
+% BFS 14-04 07 Captain Lanoe's Quick March, into...
+
+X:BFS 14-04 08
+T:Upton Stick Dance
+M:6/8
+K:G
+P:A
+d| dcB BAG AGA BGE |1,3 DGG GBd edB A2 :|2,4 DGG GAB AGF G2 :|
+P:B
+GBd g2d edc B2A GBd g2d edB A3 GBd g2d edB ABd ege dBG AGF G2 :|
+
+% BFS 14-04 09 The Sloe, into...
+
+X:BFS 14-04 10
+T:Kerry Polka #1 / Mist on the Glen / Rhubarb Sandwich / Pat Horgan's #1 / Cercle circassien / Cercle rosbif / The Ballydesmond #3 / Shoe The Donkey / Cathy's Favourite / Andy Boyle's
+M:2/4 
+N:Comment by ConorW on thesession.org/tunes/1410:
+N:Roche and Giblin both printed this tune in 1927 and 1928 respectively. Both have no title and are the same versions so perhaps Giblin was copying from Roche.
+N:It appears in four different manuscripts from the Leitrim/Longford area:
+N:The Bernard Rogers MS c.1895-1905 has it entitled "The Waterford Polka".
+N:The Stephen Grier MS c.1883 just calls it "Polka" while
+N:the Larry Smyth MS c.1880s-1920s entitles his as "The Dargin Polka".
+N:The Terence Reilly MS entitles it as "The Evening Polka"
+K:G
+P:A
+G>A Bd g>f ed |1,3 eA AB c2 BA :|2,4 ea ef g2 g :|
+P:B
+e| ae be ae e>f |1,3 ge ge ge de :|2,4 ge dB A2 A2 :|
+
+% Into BFS 14-04 11 The Barren Rocks Of Aden
+
+X:BFS 14-04 12
+T:Vulcan's Cave
+M:6/8
+C:John Charles White, 1830
+N:"The celebrated dance of Vulcan’s Cave, introduced at the Theatre Royal Covent Garden, performed at the Amicable Society’s Balls, Willis’s Rooms, and all Fashionable assemblies in London, Bath, Cheltenham, Brighton etc. Originally composed as the Quadrille of Les Deux Rivales in White’s third set, and now adapted as a Country Dance, by John Charles White. Bath, published at White’s, Music & Piano Forte Warehouses, 1, Milsom Street & 3, George Street."
+N:Later set to new lyrics as "The King Of The Cannibal Islands"
+N:Also used to dance "The Cumberland Reel"
+K:D
+P:A
+{e}| f2e d2c dcB A2F GFG EFG F2G A2A B2c dcB A2F d3 cde ABc d2 d2 :|
+P:B
+f2f f2e f2f fde f2f g2f e3-e2c d2d d2c d2d d2c d2d e2d c2B ABc
+d2d cBA B2c d3 d2d cBA B2c def e2e e2f e2e efg a2a ABc d3 d2
+
+% Into...
+
+X:BFS 14-04 13
+T:Hulligan Jig
+M:6/8
+K:G
+P:A
+{D}| G2{F}G B2{A}B d2{c}d B3 cBc e3 dBG A3 G2G B2B d2d g3 fed cBA G6 
+P:B
+d2{c}d Bcd e3-e2e f2{e}f def gba gfe d2d Bcd e2{f}e gfe d2{e}d cBA G6
+
+X:BFS 14-04 14
+T:Scan Tester's #2
+C:Lewis "Scan" Tester, 1886-1972
+M:4/4
+K:G
+P:A
+B2c2 | d2dd d2d2 d2^c2 =c2B2 A3B A2G2 F4-F2DE F4 G4 A2d2-d2cB A2G2 F2E2 D4 :|
+P:B
+B2c2 | d2G2 B2AB c2E2 A3B |1,3 c2e2 d2c2 B4-B2 :|2,4 c2c2 B2A2 G4 :|
+
+% Into...
+
+X:BFS 14-04 15
+T:Scan Tester's #1
+C:Lewis "Scan" Tester, 1886-1972
+M:4/4
+K:G
+P:A
+BA| G2G2 GABc d4-d2B2 c2d2 e2f2 g4-g2b2 a2g2 f2e2 e2d2 B3d |1 e2d2 c2B2 A4-A2 :|2 e2d2 c2A2 G4-G2 :|
+P:B
+D2| G3A B2c2 e2d2 B2B2 A3B c2d2 e2d2 B2A2 G3A B2c2 e2d2 B2g2 fedc B2A2 G4-G2 :|
+
+X:BFS 14-04 16
+T:Tars Of The Victory
+N:Wilson (Companion to the Ball Room), 1816. 
+N:Callaghan (Hardcore English), 2007; pg. 65.
+M:6/8
+K:G
+P:A
+d^cd d^cd g2G GAB ABc DEF |1,3 GAB d3 :|2,4 G3-G2 :|
+P:B
+g| fed d2c Bcd G2B ABc DEF |1,3 GBd d2 :|2,4 G3-G2 :|
+
+% Into...
+
+X:BFS 14-04 15
+T:Louisberg Square
+N:Bob Cann (1916-1990) recorded this as Uncle's Jig (West Country Melodeon, 1975)
+M:6/8
+K:G
+P:A
+d2d dBc d2d def g2g f2e d3-d2B c2e edc |1 B2c dcB A2B c2A G2F E2D :|2 B2d G2B A2c F2A G6 ||
+P:B
+K:D
+A2d c2e d2f agf e2f gfe |1,3 d2f A3 :|2,4 d3 d3 :|
+
+X:BFS 14-04 16
+T:
+M:3/4
+K:G
+P:A
+D2| G2B2e2 d2B2G2 c4E2 E4G2 F2G2A2 E2F2D2 |1 G4B2 D4 :|2 G6-G4 ||
+P:B
+d2| e4d2 g4B2 d2c2B2 A4B2 c4A2 f4e2 e2d2c2 B4c2 d4B2 g4f2 e2A2A2 A4B2 c2B2A2 d2c2A2 G6-G4 |]
+
+% BFS 14-04 17 Elsey's Waltz
+
+X:BFS 14-04 18
+T:
+M:6/8
+K:G
+P:A
+d2G d2{c}B cBc ABc d2G d2c BcA G3 :|
+P:B
+cBc cBc ABc def gfg eag gfe def g2g gfe d2c B2c d2G d2c BcA G3 :|
+
+% Into BFS 14-04 19 Paddy Carey's
+
+X:BFS 14-04 20
+T:
+M:4/4
+K:G
+P:A
+D2| G2G2 GBd2 e2ef g2fe |1,3 dBGB dBGB cAFA cAFA :|2,4 dgfe dcBA G2B2 G2 ||
+P:B
+Bc| d2B2 GFGd e2c2 cBce d2B2 GFGB AGFE D2Bc d2B2 GFGd edef g2fe dgfe dcBA G2B2 G2 :|
+
+% Into...
+
+X:BFS 14-04 21
+T:
+M:4/4
+K:G
+P:A
+G2g2 g2dB cBcd egfe |1,3 dBGB edcB ABcA GFED :|2,4 dBGB ecAF G2B2 G3 ||
+P:B
+B2BA Bcd2 e2ed efge |1,3 dBGB edcB ABcA GFED :|2,4 dBGB ecAF G2B2 G4 ||
+
+X:BFS 14-04 22
+T:
+M:4/4
+K:D
+P:A
+F6G2 A6F2 A2d2c2B2 A4F4 E6F2 G6A2 |1 B2cBA2G2 F6D2 :|2 B2A2B2c2 d6 ||
+P:B
+e2| f2AAf2A2 f6A2 A2B2c2d2 c4B4 |1 g2BBg2B2 g6A2 A2B2c2d2 e2c2B2A2 :|2 B2c2d2cB A2d2f4 f2e2B2c2 d8 ||
+
+% Into BFS 14-04 23 Oh Joe
+
+X:BFS 14-04 24
+T:
+M:6/8
+K:D
+P:A
+A| d2d def A2A A2d B2d c2e |1,3 d2f ecA :|2,4 d3-d2 :|
+P:B
+e2e efg f2e d2f :|3 e2d c2B A2G F2E ||
+P:C
+F3 GFG A3-A2A B2d c2e |1 d2f ecA :|2 d3-d2 ||
+
+X:BFS 14-04 25
+T:John of Paris
+M:6/8
+K:G
+P:A
+B2B BAB d2B BAB c2e g2e d2B BAB c2A AGA |1,3 B2G G2B A2B A2G F2E D3 :|2,4 B2G G2F E2e d2c B2A G3 :|
+P:B
+d2c Bcd e2f g2a b2a gfe d2c Bcd e2e ecA d2d dBG c2A B2G FGA d2c || [P:(A2)] |]
+
+X:BFS 14-04 26
+T:
+M:4/4
+K:D
+P:A
+{FG}| A2A>B AFED f2fd edBd |1,3 A2A>B AF DF E2EF E2 :|2,4 A2de fedc d2dc d2 ||
+P:B
+de| f2fe d2fa g2f2 e2fg afdB AFGF E2EF E2FG ADFA dFAd fagf edcB Aagf gedc d2dc d2 |]
+
+X:BFS 14-04 27
+T:
+M:4/4
+K:G
+P:A
+D2| GFGA BABc dedc B4 |1 cdcB A2d2 BcBA G2 :|2 c2A2 F2D2 G4 G2 ||
+P:B
+d2| g2gf e2e2 dedc B4 |1 cdcB A4 dedc B2 :|2 c2A2 F2D2 G4 G2 |]
+
+X:BFS 14-04 28
+T:
+M:4/4
+K:Em
+P:A
+B2e2 fgfe B2e2 g4 B2Bc d2d2 cBce d4 B2e2 fgfe B2e2 g3f gbag fagf g2e2 e2 :|
+P:B
+dc| B2G2 G3A B2G2 BdcB c2A2 A3B c2A2 cedc B2G2 G3A B2d2 g4 gbag fagf g2e2 e2 :|
+
+X:BFS 14-04 29
+T:
+M:6/8
+K:G
+P:A
+ded ^c2d B2d GAB c2c B2c A6 FAd fed FAd f2e |1 ded cdc B6 :|2 ded cBA G6 ||
+P:B
+GDG BAG GDG BAG AEA cAc e6 d^cd f2e d^cd f2e |1 ded cdc B6 :|2 ded cBA G2 |]
+
+% Into... 
+
+X:BFS 14-04 30
+T:
+M:6/8
+K:D
+P:A
+dcd D3 EFG ABc |1 dcd Bed c2A a3 :|2 d2F GFE F2D D3 ||
+P:B
+{ABc}| dcd fed cBc edc BAB dcB A3-A2F GFG BAG F2A d3 |1 E2A c2B A3 :|2 fed edc d6 |]
+
+% Into BFS 14-04 31 = EATMD 13-01 16 (01:24)
+
+X:BFS 14-04 32
+T:
+M:4/4
+K:G
+P:A
+{Bc} |d2BG d2BG cdef agfe |1 d2BG d2BG ABcB A2 :|2 dgfe dcBA G2B2 G4 ||
+P:B
+A2FD B2GE c2AF d2BG edcB cBAG |1 AGFE D4 :|2 FGAF G2 |]
+
+% BFS 14-04 33 = WFS 13-07 18
+
+% Into...
+
+X:BFS 14-04 34
+T:Argiers / The Wedding Night
+M:4/4
+K:G
+P:A
+GABc A3G F2D2 D4 |1,3 d2A2 d3c B2G2 G4 :|2,4 EFG2 FGA2 G4 G4 :|
+P:B
+FGA2 FGA2 d2A2 d2A2 FGA2 FGA2 d2A2 d2A2 d2cB c4 B2AG A2D2 EFG2 FGA2 G4 G4 :|
+
+% BFS 14-04 35 = EATMD 13-01 50 (in G)
+
+X:BFS 14-04 36
+T:Grimstock
+M:6/8
+K:G
+P:A
+g2f g2d efg f2e Bcd e2d |1,3 cdB A3 :|2,4 cBA G3 :|
+P:B
+G2A BGA BGA BGA G2A BGA BGA G3 :|
+
+X:BFS 14-04 37
+T:
+M:6/8
+K:G
+P:A
+GAG B2B ABA c3 BdG c2B AGF G3 :|
+P:B
+g2f g2d de=f e2d def gde dcB A2d edc Bcd edc Bcd egG c2B AGF G3 :|
+
+X:BFS 14-04 38
+T:
+M:6/8
+K:G
+P:A
+D3{E} D3 G2A BAG E3{C} E3 A2B AFE D2B, D3 G2A B2A GFE D2B A3 G3 :|
+P:B
+d3 G2A B2c d2B e3 A2B c2d e2c d3 G2F G2A B2A GFE D2B A3 G3 :|
+
+% Into...
+
+X:BFS 14-04 39
+T:
+M:6/8
+K:G
+P:A
+d3 dcB A3 G3 |1,3 E2A A2G F2E D3 :|2,4 E2A G2F G3-G2 :|
+P:B
+A| B2A GFE D6 |1,3 G2F G2B A3-A2 :|2,4 E2A G2F G3-G2 :|
+
+% Into...
+
+X:BFS 14-04 40
+T:
+M:6/8
+K:G
+P:A
+B3 B3 B3 BAG A3 A3 A2B c2A B3 B3 B2c d2g e2c A2F G3-G2 :|
+P:B
+gfe d2c B2c d3 |1,3 gfe d2c B2c A3 :|2,4 G2G A2F G3-G2 :|
+
+% Into...
+
+X:BFS 14-04 41
+T:
+M:6/8
+K:G
+P:A
+AAA A2G F2G A2B |1,3 cBc e2d B3 G3 :|2,4 cBc e2F G6 :|
+P:B
+d2g g2g f2A A2B |1,3 cBc e2d B3 G3 :|2 cBc e2F G6 :| [P:(A2)] |]
+
+% BFS 14-04 42 The Man in the Moon, into...
+
+X:BFS 14-04 43
+T:
+M:3/4
+K:G
+P:A
+d2c2| B3AG2 B2c2d2 A6-A2d2c2 B3AG2 E2D2EF G6-G2 :|
+P:B
+{B2}d2| g6 g2f2e2 d6 d4c2 |1 B3AG2 B2c2d2 A6-A2 :|2 B3AG2 E2A2F2 G6-G2 |]
+
+X:BFS 14-04 44
+T:
+M:3/4
+K:G
+P:A
+GA| G2D2Bc B2A2Bc d2c2B2 A3Bc2 d2G2AB A2G2E2 G6-G4 :|
+P:B
+{A2}G2| F2A2A2 A2G2F2 E2c2B2 A3Bc2 d2G2AB A3GA2 G6-G4 :|
+
+% Into BFS 14-04 45 = EATMD 13-01 20 Ville de Quebec
+
+X:BFS 14-04 46
+T:
+M:4/4
+K:Em
+P:A
+E2E2 EFGE FGFE D4 |1,3 B2B2 ABAG FEDE FGAF :|2,4 BAGF EGFD E4 E4 :|
+P:B
+BGEG B2B2 AFDF A2A2 |1,3 GFED E2EG FEDE FGAF :|2,4 GFED EGFD E4 E4 :|
+
+X:BFS 14-04 47
+T:
+M:4/4
+K:Edor
+P:A
+E2B2 BAGF E2E2 d4 dBcA BAGF E4 E4 :|
+P:B
+BcdB e2e2 Bcd2 e2Bc d2d2 c2c2 BcBG F4 || [P:(A2)] :|
+
+X:BFS 14-04 48
+T:
+M:4/4
+K:Am
+P:A
+A2AB cBcd efec d2cd |1,3 edcB ABcA BGE2 E4 :|2,4 eaga edcB c2A2 A2 ||
+P:B
+ef| g3a gfef gfec d4 edcB ABcA BGE2 E4 || [P:(A2)] :|
+
+% Into...
+
+X:BFS 14-04 49
+T:
+M:4/4
+N:'B' and 'C' parts of "Come ashore Jolly Tar And Your Trousers On"
+K:Em
+P:A
+e2ef g2fe d2B2 B3B |1,3 ABde faef d2A2 A2Bd :|2,4 AGFE DEFA G2E2 E2 :|
+P:B
+GA| BGEG BGEG BAGF E2FG AFDF AFDF AGFE D2EF GFGE g2fe dBGB d2cB AGFE DEFA G2E2 E2 :|
+
+X:BFS 14-04 50
+T:
+M:4/4
+K:G
+P:A
+GF |E2GF E2GF E2e2 B3A |1,3 G2E2 EFGE F2D2 D2 :|2,4 G2E2 FED2 E4 E2 :|
+P:B
+B2e2 efge f2d2 d2gf |1,3 e2B2 B2cB AGFG ABcA :|2,4 e2B2 A2GF E4 E2 :|
+
+X:BFS 14-04 51
+T:
+M:4/4
+K:G
+P:A
+{Bd}| g2G2 G2Bc dedc B2AB |1,3 c2E2 E2AG FGFE D2 :|2,4 c2E2 AGFE D2G2 G2 :|
+P:B
+D2B2 BAGF E2c2 c4 |1,3 E2c2 cBcd e2d2 B2A2 :|2,4 defe dcBA A4 G2 :|
+P:C
+D2D2 D2GF E2E2 E2cA |1,3 F2F2 FDEF GFGA B2G2 :|2,4 F2F2 FDEF G4 G2 :|
+P:D
+GA| B2B2 B2GA B2B2 B2GA Bgfe dcB2 AGAB A4 B2B2 BGAB c2c2 c4 dgfe dcBA A4 G2 :|
+
+% BFS 14-04 52 = WFS 14-03 19 Astley's Ride, into BFS 14-04 53 = WFS 14-01 24 Buttered Peas
+
+X:BFS 14-04 54
+T:Lord of the Dance
+M:4/4
+K:G
+P:A
+D2| G2GA B2Bc dedc B2B2 |1,3 A2A2 A3B cBAG F2D2 :|2,4 A2A2 B2BA G2G2 G2 :|
+P:B
+d4 B3A BcBA G4 B2Bc d2cB A2A2 A2D2 G2G2 G3A BABc d2cB A2A2 B2BA G2G2 G2 :|
+
+X:BFS 14-04 55
+T:
+M:4/4
+K:D
+P:A
+F2G2| A2d2c2d2 B4A4 |1,3 ABAGF2G2 A4 :|2,4 ABAGF2E2 D4 :|
+P:B
+D2E2| F2F2F2EF G2G2G2FG |1,3 A2A2ABAG F2E2 :|2,4 ABAGF2E2 D4 :|
+
+% Into...
+
+X:BFS 14-04 56
+T:
+M:4/4
+K:D
+P:A
+D3EF2E2 D2E2F2G2 |1,3 A2F2D2F2 E4E4 :|2,4 A2F2D2F2 E4D4 :|
+P:B
+A2Bcd2cB A2F2A2F2 |1,3 A2Bcd2cB A2F2E4 :|2,4 A2F2D2F2 E4D4 :| 
+
+% BFS 14-04 57 Michael Turner's Waltz
+
+% BFS 14-04 58 Andrew Kerr, into BFS 14-04 59 Long Room at Scarborough
+
+X:BFS 14-04 60
+T:Cheshire Waltz
+M:3/4
+N:ftf has it in D
+K:C
+P:A
+gf|e2efed c2cdcB A2B2c2 G4e2 f3ed2 a2g2B2 |1 c2cdef g4 :|2 c6 c4 ||
+P:B
+d2|e2gedc Bcd2f2 egecGE C2E2G2 c4e2 f3edc B2dcBA G4 || [P:(A2)] ||
+P:C
+{F2}| E2G2c2 c3BA2 B2d2g2 f6 |1,3 f4f2 A2d2c2 B3cBA G4 :|2,4 f4f2 A2d2cB c6 c6 :|
+
+X:BFS 14-04 61
+T:
+M:4/4
+R:swung
+K:G
+P:A
+B2B2 B<d-d2 cBcd e4 dgfe dcBA |1,3 GABG D4 :|2,4 G2B2 G2 :|
+P:B
+d2| c2F2 F2e2 d2G2 G2g2 |1,3 f2AB c2e2 d2GA BdcB :|2,4 f2AB cdef g2G2 G2 :|
+P:C
+A2| B2B2 B2AG FEFG A3B c2c2 c2BA |1,3 GFGA B2 :|2,4 G2B2 G2 :|
+
+% BFS 14-04 62 = EATMD 13-02 13 Coleford Jig, Into...
+
+X:BFS 14-04 62
+T:
+M:4/4
+K:D
+P:A
+F2FA d2d2 efge dcBA |1,3 B2GB A2F2 EFGA GFED :|2,4 fefg afdf gece d4 :|
+P:B
+f2fd e2ec Bcde dcBA B2GB A2F2 EFGA GFED || [P:(A2)] :|
+
+X:BFS 14-04 63
+T:
+M:4/4
+K:G
+P:A
+D2| G2G2 GABc d4 d2B2 |1,3 c4 c2A2 B4 B2 :|2,4 c2A2 A2F2 A2G2 G2 :|
+P:B
+d2| e2d2 B2G2 G2F2 F4 e2d2 c2A2 A2G2 G2Bd g2g2 g2ag f2e2 e4 d2d2 c2F2 A2G2 G2 :|
+
+% Into BFS 14-04 64 Jenny Lind Polka
+
+X:BFS 14-04 65
+T:The Cotillion
+M:4/4
+K:G
+P:A
+G4 d4 B2AB G2AB c2B2 A2G2 FGEF D2D2
+E4 F4 GFGA B2c2 B2AG A2GF G6 :|
+P:B
+d2| dedc B2d2 dedc B2d2 e2d2 e2f2 g4 d4 g2fe d2d2 e2dc B2B2 c2B2 A2G2 FGEF D2D2
+E4 F4 GFGA B2c2 B2AG A2GF G6 :|
+
+% Into...
+
+X:BFS 14-04 66
+T:
+M:4/4
+K:G
+P:A
+D2| GABc d2g2 d2BA G2AB c2E2 E2AG FGEF D2D2 E2C2 C2c2 c2E2 E2c2 Bcd2 D2F2 G4 G2 :|
+P:B
+F2| G2D2 D2G2 B2G2 Bcd2 c2A2 A2a2 a2A2 ABc2 B2G2 c2A2 |1 d2B2 efg2 fga2 A2^c2 d4 d2 :|2 d2B2 e2c2 Bcd2 D2F2 G4 G2 :|
+
+% BFS 14-04 67 Orange in Bloom (in G)
+
+X:BFS 14-04 68
+T:
+M:4/4
+K:Edor
+P:A
+B2E2 E2F2 GFED F2D2 |1,3 B2E2 E2c2 d2c2 B2A2 :|2,4 D3E D2c2 d2c2 B2A2 :|
+P:B
+B2e2 e2f2 gfed e4 B2e2 e2f2 g2e2 f2d2 a2d2 d2e2 dcBA d4 F2A2 A2Bc d2c2 B2A2 :|
+
+% Into...
+
+X:BFS 14-04 69
+T:
+M:4/4
+K:Amix
+P:A
+c2e2 e2fg a2e2 e2g2 |1,3 f2d2 d2ef g2f2 e2d2 :|2,4 f2d2 fgaf e4-e2 :|
+P:B
+d2| c2A2 A2c2 B2G2 G2B2 |1,3 c2A2 A2fg a2e2 e2 :|2,4 c2A2 A2Bc d4-d2 :|
+
+% Into...
+
+X:BFS 14-04 70
+T:
+M:4/4
+K:Edor
+P:A
+E2B2 B2d2 c2A2 B2G2 E2B2 B2d2 d2D2 F2D2 E2B2 B2d2 c2A2 B2c2 d2B2 edcB A2D2 F2D2 :|
+P:B
+E2d2 cde2 c2A2 B2G2 E2d2 cde2 D2FG A2F2 E2d2 cde2 c2A2 B2c2 d2B2 edcB A2D2 F2D2 :|
+
+X:BFS 14-04 71
+T:
+M:4/4
+K:Em
+P:A
+D2| EFG2 G2F2 E4 E2D2 E3D E2F2 GFGA GFED EFG2 G2F2 E4 E2D2 E3D E2F2 G4 G2 :|
+P:B
+D2| Bcd2 d2c2 B2A2 A4 BABc d2D2 BABc d2D2 EFG2 G2F2 E4 E2D2 E3D E2F2 G4 G2 :|
+
+% BFS 14-04 72 = EATMD 13-08 09 Mount Hills
+
+X:BFS 14-04 73
+T:
+M:3/4
+K:D
+P:A
+D2| D2F2A2 D2F2A2 D2F2A2 f4fg |1,3 f2e2d2 A4AB A2F2D2 E6 :|2,4 f2e2d2 A4A2 A2c2e2 d4 :|
+P:B
+A2| f4f2 e4d2 c4B2 G4A2 BcB2A2 BcB2A2 |1,3 BcB2A2 F4 :|2,4 A2c2e2 d4 :|
+
+% Into...
+
+X:BFS 14-04 74
+T:
+M:3/4
+K:G
+P:A
+c2| B3AG2 F2E2D2 E2F2G2 F4G2 A3Bc2 B2c2d2 e2f2g2 f2e2d2 g4g2 g2d2B2 c4B2 A3Bc2 B2G2B2 A2F2D2 G6 G4 :|     
+P:B
+a2| b2a2g2 a2g2f2 g2f2e2 d2e2f2 g2f2e2 d2c2B2 A6 d4c2 B3AB2 G2g2B2 c4B2 A3Bcd B2G2B2 A2F2D2 G6 G4 :|
+
+X:BFS 14-04 75
+T:
+M:3/4
+K:G
+P:A
+D2| G4G2 G2A2B2 c4B2 A4G2 F4E2 D4E2 F4G2 A4c2 B3AG2 B2c2d2 e4A2 A4G2 F3ED2 D2E2F2 G6 G4 :|
+P:B
+Bc| d4d2 d2B2d2 G4G2 G2B2d2 e4e2 e2c2e2 A4A2 A2B2c2 d4d2 e2f2g2 f2g2a2 d4c2 B3AG2 A3GF2 G6 G4 :|
+
+% BFS 14-04 76 The Dusty Miller, into BFS 14-04 77 Three Rusty Swords
+
+% BFS 14-04 78 = WFS 14-03 26 Josefins Dopvals
+
+X:BFS 14-04 79
+T:Å Jenta Å Ja
+M:3/4
+K:G
+P:A
+B2A>BG2 B2A>BG2 A2A>GF>G A>GF>ED2 B2A>BG2 B2A>BG2 A2A>GF>G A2G2G2 :|
+P:B
+G>Bd2d2 c2e>dc>B ABc2c2 B2d>cB>A G>AB2B2 A>Bc>BA>G F>GA>DE>F A2G2G2 :|
+
+X:BFS 14-04 80
+T:
+M:4/4
+K:D
+P:A
+D2DE D2DE D2d2 FGAF |1,3 E2EF E2EF EFGA BGFE :|2,4 G2BG F2AF EFGABcd2 :|
+P:B
+dcdA dcdA dcdA F2ED |1,3 e^deA e^def gfed c2BA :|2,4 EGBG F2AF EFGA Bcd2 :|
+
+X:BFS 14-04 81
+T:
+M:4/4
+K:D
+P:A
+D2DF E2EF D2DF E2EF D2dc BAGF E2A2 F2D2 :|
+P:B
+A2AB AGFG A2d2 A2FG A2d2 A2d2 A2d2 A2F2 G2BG F2dF E2EF AGFE D2dc BAGF E2A2 F2D2 :|
+
+% BFS 14-04 82 = WFS 13-10 36 Jamaica
+
+X:BFS 14-04 83
+T:The British Toper?
+M:4/
+K:G
+P:A
+{G2A2}| BcBA G2D2 B,2D2 G2A2 |1,3 B4 c4 dcBA GFGA :|2,4 B4 A4 G4 :|
+P:B
+B2c2| d4 d4 e2d2 c2B2 c4 c4 d2c2 B2A2 G4 A4 B4 c4 d2c2 B2A2 G4 :|
+
+X:BFS 14-04 84
+T:Orlando's Return
+M:4/4
+K:G
+P:A
+D2| GFGA G2A2 BABc B2c2 |1,3 d2G2 c2B2 AGFE D2 :|2,4 d2G2 cBA2 G4 :|
+P:B
+B2c2| d4 d4 c2e2 A4 B2G2 c2B2 AGFE D2 || [P:(A2)] :|
+
+X:BFS 14-04 85
+T:Prince William's March
+M:4/4
+K:G
+P:A
+G4 B4 A6 c2 B4 G4 GFGA G2A2 B2G2 D2B2 A6G2 F2d2 d2^c2 d4 |1 dcBA :|
+P:B
+B2c2 | d4 e3d c2B2 A3B c2B2 A2G2 F2E2 D4 G2FG A2G2 B2AB c4 B2G2 A2F2 G4 :|
+
+X:BFS 14-04 86
+T:Doctor Faustus Tumnus
+M:4/4
+K:D
+P:A
+A2| d2A2 d2e2 f2d2 f2g2 a4 g2f2 |1,3 edef e2 :|2,4 e4-e2 :|
+P:B
+A2| A2GA F2A2 A2GA F2d2 d2cd B2e2 c2Bc A2a2 a2ga f2f2 f2ef d2d2 A2d2 e2c2 d4 d2 :|
+

@@ -834,6 +834,10 @@ class Phrase:
             # default end of phrase
             self.notes.append( AbcConnector(AbcConnector.DOUBLE_BAR) )
 
+        if isinstance(self.notes[0], AbcConnector) and self.notes[0].what == AbcConnector.BEGIN_GRACE:
+            # provide an empty note for grace to attach to
+            self.notes.insert( 0, AbcNote('x',None,None,'/16',None) )
+
         for i, item in enumerate(self.notes):
             if isinstance(item, AbcNote):
                 last_note_index = len(cur_bar)
@@ -886,7 +890,7 @@ class Phrase:
 
 
             elif isinstance(item, AbcConnector):
-                if item.is_bar_line() :
+                if item.is_bar_line():
 
                     if no_repeats:
                         new_bar = ""
@@ -940,7 +944,8 @@ class Phrase:
                 elif item.what == AbcConnector.BEGIN_GRACE:
                     pause = -1 # grace notes take up no time
                     if i==0 or not isinstance(self.notes[i-1], AbcNote):
-                        cur_bar.append(r'\grace {')
+                        cur_bar.append(r'\afterGrace <> {')
+                        #cur_bar.append(r'\grace {')
                     else:
                         cur_bar.insert(last_note_index, r'\afterGrace')
                         cur_bar.append(r'{')
@@ -1443,7 +1448,7 @@ if __name__=="__main__":
                         no_repeats=True
                     )
                 else:
-                    z=tune.render_ly()
+                    z=tune.render_ly(page_break=False)
                 ly_file.write( z.encode('utf-8') )
                 ab_file.write( tune.as_ab().encode('utf-8') )
             except NotImplementedError, e:

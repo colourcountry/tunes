@@ -5,11 +5,18 @@ import sys, csv, re
 
 class Performance:
     PERFORMANCES = {}
+    SESSIONS = []
+    BY_SESSION = {}
 
     @classmethod
     def register(c_lass, **defn):
         new = c_lass(**defn)
         c_lass.PERFORMANCES[new.id] = new
+        if new.session not in c_lass.BY_SESSION:
+            c_lass.SESSIONS.append(new.session)
+            c_lass.SESSIONS.sort()
+            c_lass.BY_SESSION[new.session] = []
+        c_lass.BY_SESSION[new.session].append(new)
 
     @classmethod
     def list(c_lass):
@@ -53,6 +60,8 @@ class Performance:
         # Treat empty strings as None
         
         self.id = id.strip() or None
+        self.session = re.match('(.*) [0-9]+$',self.id).group(1)
+
         self.date = date.strip() or None
         self.location = location.strip() or None
 
@@ -98,6 +107,7 @@ class Tune:
     def __init__(self, performance):
         self.id = performance.id
         self.performances = []
+        self.last_name = "?"
         self.names = set()
         self.ext_references = set()
         self.ext_performances = set()
@@ -119,6 +129,7 @@ class Tune:
         self.performances.append(performance)
         self.names.update( (performance.given_name, performance.apparent_name) )
         self.names.discard(None)
+        self.last_name = performance.apparent_name or performance.given_name
         self.ext_references.update(performance.ext_references)
         self.ext_references.discard(None)
         self.ext_references.discard('')
@@ -131,7 +142,23 @@ class Tune:
         return self.id
 
     def get_popularity(self):
-        return len(self.performances)
+        # count number of session appearances
+        # (!= number of performances if played more than once in a session)
+        count = 0
+        appearances = []
+        for session in Performance.SESSIONS:
+            for performance in self.performances:
+                if performance.session == session:
+                    count += 1
+                    appearances.insert(0,True)
+                    break
+            else:
+                appearances.insert(0,False)
+
+        # make number of session appearances override recentness
+        appearances.insert(0,count)
+
+        return appearances
 
 if __name__=="__main__":
     try:
@@ -166,7 +193,14 @@ if __name__=="__main__":
                                   remarks=p[10])
             previous = p[0]
 
+
+    Performance.SESSIONS.pop( Performance.SESSIONS.index("EATMD 13-01") )
+    Performance.SESSIONS.pop( Performance.SESSIONS.index("EATMD 13-02") )
+    Performance.SESSIONS.pop( Performance.SESSIONS.index("WFS 13-01") )
+    Performance.SESSIONS.pop( Performance.SESSIONS.index("WFS 13-06") )
+
     for tune in Tune.list( key=Tune.get_popularity ):
         print '%s\n\n' % tune
 
-
+    for tune in Tune.list( key=Tune.get_popularity ):
+        print "%s %s\n " % (Tune.get_popularity(tune), tune.last_name)
