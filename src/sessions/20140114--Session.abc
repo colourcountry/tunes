@@ -131,6 +131,7 @@ K:G
 
 X:WFS 14-01 35
 T:93 Not Out
+S:Jackie
 M:6/8
 K:D
 [P:A] A| d2d c2A BdB AFD GFG |1,3 AFD EFG ABc :|2,4 EFG ABc d2 :|
@@ -139,7 +140,10 @@ K:D
 % Into...
 
 X:WFS 14-01 36
-T:?
+T:Pippa Sandford's
+S:Jackie
+C:Will Atkinson
+N:So named by transcriber 'ceolachan'
 M:6/8
 K:G
 [P:A] D| G2G BAG edB AGA Bde dBG BAG FED G2G BAG Bde dge dBG AGE DGG G2 :|
@@ -147,6 +151,7 @@ K:G
 
 X:WFS 14-01 37
 T:Whittingham Green Lane
+S:Alan
 L:1/4
 M:3/4
 P:A1 A2 B
