@@ -1,9 +1,13 @@
+% Small post-afternoon session set.
+
 % SSF 13-19 301 Rochdale Coconut Dance
 
 % SSF 13-19 302 Sweet Jenny Jones
 
 X:SSF 13-19 303
 T:Roxburgh Castle
+O:Scotland
+B:Glen, Collection of Highland Bagpipe Music, Book 6, c1880s
 M:4/4
 K:G
 P:A
@@ -15,6 +19,7 @@ def| gdBd edBd gdBd edcB c2ec B2dB c2A2 A4 || [P:(A2)] :|
 
 X:SSF 13-19 306
 T:La Russe
+B:Kennedy, Fiddler's Tune Book, vol.1, 1951
 M:4/4
 K:G
 P:A
@@ -26,7 +31,7 @@ A2d2 d2cB A2a2 a2f2 |1,3 g2f2 g2e2 fga2 f2dB :|2 g2f2 g2e2 d4 d4 :|4 g2f2 g2e2 d
 % Into SSF 13-19 307 Winster Gallop, into SSF 13-19 308 Salmon Tails Up The Water
 
 X:SSF 13-19 309
-T:
+T:The Poppy Leaf
 M:4/4
 K:G
 P:A
