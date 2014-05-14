@@ -27,11 +27,11 @@ x8 |]
 X:3
 T:?
 P:A A B B
-M:9/8
+M:3/8
 L:1/8
 K:G
-[P:A] D| GAB c2A Bdg |1[M:6/8] edc BcA :|2[M:9/8]edc BcA G2
-[P:B] d| g2d cde d2B |1[M:6/8] ABc def :|2|[M:9/8]ABc dBA G2 |]
+[P:A] D| GAB c2A Bdg |1 edc BcA :|2 edc cBA G2
+[P:B] d| g2d cde d2B |1 ABc def :|2 cBA dBA G2 |]
 
 
 X:4
@@ -44,3 +44,41 @@ P:A
 bag2 a2f2 g2fe d2B2 |1 edc2 d2B2 ABcd efga :|2 edc2 d2g2 g2f2 g4
 P:B
 B2Bc BAGA B2e2 e4 |1 f2fg afd^c d2cB A4 :|2 fgfe dcBA G2Bd g4 |]
+
+X:5
+T:The Forest Gates
+P:A A B B
+M:3/8
+K:Em
+P:A
+"Em"B3 "G"GAB "D"d2A "G"BAG "C"c2e "G"dBG "D"A>BA "Am"A3 :|
+P:B
+"C"g2e "G"d3 "Em"GAB "D"A3 "G"B3 "C"GAB "D"A>BA "Am"A3 :|
+
+X:6
+T:The Dark Island
+M:7/8
+K:Am
+P:A
+"Am"Aa2 a2e2 ga2 b2a2 |1,3 "C"ge2 e2dc "G"gd2 d2cB :|2 "C"ge2 e2d2 "G"BAG2 "D"A2B :|
+"Am"Aa2 a2e2 gd'b a2ga ge2 e2d2 "C"ge2 e2d2 "G"BAG2 "D"A2B ||
+P:B
+"Am"AGA2 "C"B2A "Em"GAB2 "D"A2G "Am"ABA2 "C"G2A "Em"BAG2 "D"A2B :|
+
+X:7
+T:Seyre #1
+M:6/8
+K:Am
+P:A
+"Am"A2c d>eg e2d B>Ad B2A "D"F2E |1,3 "C"GAF "D"D2C :|2 "C"GFD "D"A2C :|4 "C"GFD "D"A3 ||
+P:B
+"C/G"c2B "D"A2G c2d B2A "C/G"c2B "D"A2G |1,3 F2E D2C :|2 F>ED "A"A2C :|4 "D"F>ED "A"A3 ||
+
+X:8
+T:Seyre #2
+M:6/8
+K:Dmix
+P:A
+"D"A2A "C"B>cd "D"A2A "G"B>cd "F"=f3 "C"e3 |1,3 "G"dcB "A"A2G :|2,4 "G"dcB "A"A3 :|
+P:B
+"D"a3 "C"g3 "D"f>ed "F"=f3 |1,3 "C"e3 "G"d2c "Em"B>AG "A"A3 :|2,4 "C"e3 "G"d2e "A"d>B^c "D"d3 :|

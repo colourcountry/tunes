@@ -1096,6 +1096,7 @@ class Tune:
 
         key = None
         continuation = False
+        leftover_duration = None
         for id,phrase in self.phrases:
             id_in_brackets = re.match("[(].*[)]$", id)
             if line_break and not id_in_brackets:
@@ -1110,14 +1111,20 @@ class Tune:
                 if id_in_brackets:
                     ly_id = ly_id[1:-1]
                     if "%s" in phrase_identifier:
-                        # phrase is repeated add a repeat mark with the appropriate markup
-                        s += '\\bar "||" \\makeDoublePercent s%s \\bar "" \\mark %s s%s' % (phrase.time.as_ly(), phrase_identifier % ly_id, phrase.time.as_ly())
+                        # phrase is repeated
+                        # return to normal bar length and draw a repeat mark with the appropriate markup
+                        s += '\\set Timing.measureLength = #(ly:make-moment %s)' % (phrase.time.as_moment())
+                        s += '\\makeDoublePercent s%s \\bar "" \\mark %s s%s' % (phrase.time.as_ly(), phrase_identifier % ly_id, phrase.time.as_ly())
                     else:
                         # crib mode, ignore repeated section
                         pass
                 else:
                     if "%s" in phrase_identifier:
-                        s += "\\mark" + (phrase_identifier % ly_id)
+                        # treat coda specially by converting into sign
+                        if ly_id.lower()=="coda":
+                            s += '\\mark \\markup { \musicglyph #"scripts.coda" }'
+                        else:
+                            s += "\\mark" + (phrase_identifier % ly_id)
                     elif continuation:
                         # crib mode, only add phrase identifier (Separator) after the start
                         s += phrase_identifier

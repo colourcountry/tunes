@@ -197,10 +197,56 @@ if __name__=="__main__":
     Performance.SESSIONS.pop( Performance.SESSIONS.index("EATMD 13-01") )
     Performance.SESSIONS.pop( Performance.SESSIONS.index("EATMD 13-02") )
     Performance.SESSIONS.pop( Performance.SESSIONS.index("WFS 13-01") )
+    Performance.SESSIONS.pop( Performance.SESSIONS.index("WFS 13-02") )
     Performance.SESSIONS.pop( Performance.SESSIONS.index("WFS 13-06") )
 
-    for tune in Tune.list( key=Tune.get_popularity ):
-        print '%s\n\n' % tune
+    #for tune in Tune.list( key=Tune.get_popularity ):
+    #    print '%s\n\n' % tune
 
-    for tune in Tune.list( key=Tune.get_popularity ):
-        print "%s %s\n " % (Tune.get_popularity(tune), tune.last_name)
+    #for tune in Tune.list( key=Tune.get_popularity ):
+    #    print "%s %s\n " % (Tune.get_popularity(tune), tune.last_name)
+
+    print '''---
+title: Session tunes
+categories: colour
+tags: folk music tunes
+layout: post
+bg: "url(/2013/patterns/chequers_teal.png)"
+fg: "#000"
+---
+
+These are the most popular tunes played at Walthamstow folk session
+'''
+
+    print '''<table><tr><th></th>'''
+
+    for session in Performance.SESSIONS:
+        print '''<th>%s</th>''' % session
+
+    print '''</tr>'''
+
+    twice = []
+    once = []
+    for tune in reversed(list(Tune.list( key=Tune.get_popularity ))):
+        pop = Tune.get_popularity(tune)
+        if pop[0]>2:
+            print '''<tr><td>%s</td>''' % tune.last_name
+
+            for i,session in enumerate(Performance.SESSIONS):
+                if pop[len(pop)-i-1]:
+                    print '''<td class="col_%s">&#x2713;</td>''' % ((i%7)+1)
+                else:
+                    print '''<td class="grey">&#x274c;</td>'''
+            print '''</tr>'''
+        elif pop[0]==2:
+            twice.append(tune)
+        elif pop[0]==1:
+            once.append(tune)
+    print '''</table>'''
+
+    print '''\n%s tunes have been played twice: %s.''' % (len(twice), ', '.join(sorted([tune.last_name for tune in twice])))
+
+    print '''\n%s more tunes have been played only once.''' % len(once)
+
+    print '''\nThe source data and indexer script can be found [on github](https://github.com/colourcountry/tunes/tree/master/src)'''
+

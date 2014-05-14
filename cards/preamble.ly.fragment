@@ -10,7 +10,7 @@
   }
 }
 
-#(set-global-staff-size 13)
+#(set-global-staff-size 12)
 
 #(set! paper-alist (cons '("poker card" . (cons (* 3.5 in) (* 2.5 in))) paper-alist))
 #(set! paper-alist (cons '("bridge card" . (cons (* 3.5 in) (* 2.25 in))) paper-alist))

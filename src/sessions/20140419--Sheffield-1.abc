@@ -80,7 +80,7 @@ K:Gm
 P:A
 DFGF DFGF |1,3 DFGA BAGF DFGF DFGF DCB,C B,A,G,2 :|2,4 DFGA B3c dcBc BAGF DFGA G2 :|
 P:B
-Bc| dcG cBG B2-BABc BABc dcF cBF B2-BABc dcGc dcE cBE-EABc BABc dcBc BAGF DFGF G2 :|
+Bc| dcG cBG B2-BABc BABc dcF cBF B2-BABc dcGc dcE cBE B2-BABc BABc dcBc BAGF DFGF G2 :|
 
 X:SSF 13-19 108
 T:Twin Sisters
@@ -136,6 +136,7 @@ P:A
 cB| AGAB AGEG AGAB cBcd |1,3 efge dedc B2G2 G2cB :|2,4 efge dedB c2A2 A2 :|
 P:B
 eg| a2ab ageg |1,3 agab agef gage dedc B2G2 G2 :|2 agab aged cBcd edcB c2A2 A2 :|
+P:coda
 cB| AGAB cBcd eged cBAG AcBd cedB c2A2 A2 ||
 
 X:SSF 13-19 113
@@ -161,6 +162,7 @@ P:A
 D| GFG AGA Bde dBA BAB GAB |1,3 AGE E2 :|2,4 AGF G2 :|
 P:B
 f| gfe fed ege dBA |1,3 Bee dBA Bee e2 :|2 Bee dBG AGF G2 :|
+P:coda
 f| gfg aga bge dBA BAB GAB AGF G2 ||
 
 X:SSF 13-19 115
@@ -169,7 +171,7 @@ N:Wm Mittel MS, New Romney, Kent, 1799 (vmp WM.068)
 M:4/4
 K:D
 P:A
-de| f2d2 d2B2 |1,3 A2F2 F2D2 FGA2 ABd2 e4-e2 :|2,4 A2F2 F2D2 A2d2 e3f d4-d2 :|
+de| f2d2 d2B2 A2F2 F2D2 |1,3 FGA2 ABd2 e4-e2 :|2,4 A2d2 e3f d4-d2 :|
 P:B
 de| f2f2 f3g e2e2 e3f d2d2 d3e c2^A2 F4 B2c2 d2e2 f2d2 B2g2 f2B2 c2^A2 B4-B2 :|
 P:C
@@ -258,7 +260,7 @@ P:A
 e3e e2d2 c3d cBA2 |1,3 a3b agef gede gedc :|2,4 agab aged egab a4 :|
 P:B
 ABAG EGAB cBcd eged cBAc BAG2 EGAB A4 :|
-P:Cx4
+P:C
 A,3A, A,B,C2 D4 DCA,C D3E DCA,C DEDC A,2G,2 :|
 
 X:SSF 13-19 128
