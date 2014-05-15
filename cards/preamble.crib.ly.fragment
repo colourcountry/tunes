@@ -10,36 +10,33 @@
   }
 }
 
+#(set-global-staff-size 13)
+
 #(set! paper-alist (cons '("poker card" . (cons (* 3.5 in) (* 2.5 in))) paper-alist))
 #(set! paper-alist (cons '("bridge card" . (cons (* 3.5 in) (* 2.25 in))) paper-alist))
 #(set! paper-alist (cons '("1080p 300dpi" . (cons (* 6.4 in) (* 3.6 in))) paper-alist))
-#(set! paper-alist (cons '("a4/4" . (cons (* 210 mm) (* 74 mm))) paper-alist))
 
 \header {
   tagline = ""  % removed
 } 
 
-% use 12 for '1080p' size
-#(set-global-staff-size 14)
 \paper {
-#(set-paper-size "a4/4")
 
-ragged-bottom = ##t
-
+#(set-paper-size "1080p 300dpi")
 
 #(define top-margin (* 5 mm))
 #(define bottom-margin (* 7 mm))
 
 
 print-page-number = ##f
+ragged-bottom = ##t
+  
   
 scoreTitleMarkup = \markup {
-  \column{
   \fill-line {
     \line {
-      \fontsize #4 \bold  
+      \bold  
       \fromproperty #'header:piece      
-      \normalsize
       \normal-text
       \italic
       \fromproperty #'header:meter
@@ -50,12 +47,6 @@ scoreTitleMarkup = \markup {
       \bold
       \fromproperty #'header:opus
     }
-  }
-  \fill-line {
-    \line {
-        \vspace #1
-    }
-  }
   }
 } 
 
@@ -81,4 +72,6 @@ makeDoublePercent =
    "Make a percent repeat the same length as NOTE."
    (make-music 'DoublePercentEvent
                'length (ly:music-length note)))
+
+
 

@@ -219,7 +219,14 @@ d2 | e>fg2a2 f>af2e2 e>fg2e2 e6 e4(3c>BA d4(3B>AG B3dF2 {F}G4 |]
 % WFS 14-01 47 = WFS 13-10 23 Bonny Kate into
 % WFS 14-01 48 = WFS 13-10 22 Harper's Frolic
 
-% WFS 14-01 49 Lemonville
+X:WFS 14-01 49
+T:Lemonville
+M:6/8
+K:D
+P:A
+f2g| aba afd fgf fdA ded dAF G3 e2f gag gec efe ecA cBA gfe |1 f3 :|2 d3 ||
+P:B
+A2G| FGA ABc ded def gag gfe B3 e2d cea a3 cea a3 |1 cea gfe fdB :|2 cba gfe d3 |]
 
 X:WFS 14-01 50
 T:Quarryman

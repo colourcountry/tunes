@@ -129,7 +129,7 @@ class Tune:
         self.performances.append(performance)
         self.names.update( (performance.given_name, performance.apparent_name) )
         self.names.discard(None)
-        self.last_name = performance.apparent_name or performance.given_name
+        self.last_name = performance.apparent_name or performance.given_name or "Unknown"
         self.ext_references.update(performance.ext_references)
         self.ext_references.discard(None)
         self.ext_references.discard('')
@@ -137,6 +137,12 @@ class Tune:
         self.ext_performances.discard(None)
         self.ext_performances.discard('')
         performance.tune = self
+
+    def get_index_name(self):
+        if self.last_name.lower().startswith("the "):
+            return self.last_name[4:]
+        else:
+            return self.last_name
 
     def get_id(self):
         return self.id
@@ -160,9 +166,56 @@ class Tune:
 
         return appearances
 
+
+
+def output_jekyll(sessions):
+    print '''---
+title: Session tunes
+categories: colour
+tags: folk music tunes
+layout: post
+bg: "url(/2013/patterns/chequers_teal.png)"
+fg: "#000"
+---
+
+These are the most popular tunes played at Walthamstow folk session
+'''
+
+    print '''<table><tr><th></th>'''
+
+    for session in sessions:
+        print '''<th>%s</th>''' % session
+
+    print '''</tr>'''
+
+    twice = []
+    once = []
+    for tune in reversed(list(Tune.list( key=Tune.get_popularity ))):
+        pop = Tune.get_popularity(tune)
+        if pop[0]>2:
+            print '''<tr><td>%s</td>''' % tune.last_name
+
+            for i,session in enumerate(Performance.SESSIONS):
+                if pop[len(pop)-i-1]:
+                    print '''<td class="col_%s">&#x2713;</td>''' % ((i%7)+1)
+                else:
+                    print '''<td class="grey">&#x274c;</td>'''
+            print '''</tr>'''
+        elif pop[0]==2:
+            twice.append(tune)
+        elif pop[0]==1:
+            once.append(tune)
+    print '''</table>'''
+
+    print '''\n%s tunes have been played twice: %s.''' % (len(twice), ', '.join(sorted([tune.last_name for tune in twice])))
+
+    print '''\n%s more tunes have been played only once.''' % len(once)
+
+    print '''\nThe source data and indexer script can be found [on github](https://github.com/colourcountry/tunes/tree/master/src)'''
+
 if __name__=="__main__":
     try:
-        infile = sys.argv[1]
+        infile = sys.argv[2]
     except IndexError:
         infile = "index.csv"
 
@@ -194,59 +247,39 @@ if __name__=="__main__":
             previous = p[0]
 
 
-    Performance.SESSIONS.pop( Performance.SESSIONS.index("EATMD 13-01") )
-    Performance.SESSIONS.pop( Performance.SESSIONS.index("EATMD 13-02") )
-    Performance.SESSIONS.pop( Performance.SESSIONS.index("WFS 13-01") )
-    Performance.SESSIONS.pop( Performance.SESSIONS.index("WFS 13-02") )
-    Performance.SESSIONS.pop( Performance.SESSIONS.index("WFS 13-06") )
+    if len(sys.argv)<2:
+        print '''
+Syntax: indexer.py <target> <indexfile>
 
-    #for tune in Tune.list( key=Tune.get_popularity ):
-    #    print '%s\n\n' % tune
+target =
+    wfs
+    info
+    filenames
 
-    #for tune in Tune.list( key=Tune.get_popularity ):
-    #    print "%s %s\n " % (Tune.get_popularity(tune), tune.last_name)
+indexfile defaults to 'index.csv'
 
-    print '''---
-title: Session tunes
-categories: colour
-tags: folk music tunes
-layout: post
-bg: "url(/2013/patterns/chequers_teal.png)"
-fg: "#000"
----
-
-These are the most popular tunes played at Walthamstow folk session
 '''
+        raise SystemExit
 
-    print '''<table><tr><th></th>'''
+    elif sys.argv[1]=='wfs':
+        # build the page showing most popular tunes at walthamstow
+        # pop non-WFS sessions completely as they don't count towards popularity
+        for i in range(len(Performance.SESSIONS)-1,-1,-1):
+            if not Performance.SESSIONS[i].startswith("WFS"):
+                pass#Performance.SESSIONS.pop(i)
+            elif Performance.SESSIONS[i] in ["WFS 13-01", "WFS 13-02", "WFS 13-06"]:
+                # incomplete coverage
+                Performance.SESSIONS.pop(i)
 
-    for session in Performance.SESSIONS:
-        print '''<th>%s</th>''' % session
+        output_jekyll(Performance.SESSIONS)
 
-    print '''</tr>'''
+    elif sys.argv[1]=='info':
+        for tune in Tune.list( key=Tune.get_popularity ):
+            print '%s\n\n' % tune
 
-    twice = []
-    once = []
-    for tune in reversed(list(Tune.list( key=Tune.get_popularity ))):
-        pop = Tune.get_popularity(tune)
-        if pop[0]>2:
-            print '''<tr><td>%s</td>''' % tune.last_name
+    elif sys.argv[1]=='filenames':
+        for tune in Tune.list( key=Tune.get_index_name ):
+            if Tune.get_popularity(tune)[0]>1:
+                print "split/%s.abc" % tune.id
 
-            for i,session in enumerate(Performance.SESSIONS):
-                if pop[len(pop)-i-1]:
-                    print '''<td class="col_%s">&#x2713;</td>''' % ((i%7)+1)
-                else:
-                    print '''<td class="grey">&#x274c;</td>'''
-            print '''</tr>'''
-        elif pop[0]==2:
-            twice.append(tune)
-        elif pop[0]==1:
-            once.append(tune)
-    print '''</table>'''
-
-    print '''\n%s tunes have been played twice: %s.''' % (len(twice), ', '.join(sorted([tune.last_name for tune in twice])))
-
-    print '''\n%s more tunes have been played only once.''' % len(once)
-
-    print '''\nThe source data and indexer script can be found [on github](https://github.com/colourcountry/tunes/tree/master/src)'''
 

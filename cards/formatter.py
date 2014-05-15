@@ -1455,7 +1455,7 @@ if __name__=="__main__":
                         no_repeats=True
                     )
                 else:
-                    z=tune.render_ly(page_break=False)
+                    z=tune.render_ly(page_break=True)
                 ly_file.write( z.encode('utf-8') )
                 ab_file.write( tune.as_ab().encode('utf-8') )
             except NotImplementedError, e:

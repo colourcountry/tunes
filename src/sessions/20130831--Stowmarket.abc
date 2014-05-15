@@ -542,13 +542,23 @@ P:B
 B2G2 c4 B2G2 A4 BcdB c2Bc d2D2 g4 :|
 
 X:EATMD 13-02 11
+T:Jenny Lind Polka
+M:2/4
+K:D
+P:A
+{A/G/}| FA GB Af f/e/f |1,3 Ge e/d/e Fd d :|2,4 ge e/g/f/e/ df d :|
+P:B
+gf e/g/f/e/ dB B/A/B |1,3 cA A/G/A BG G2 :|2,4 cA A/c/B/A/ GB G :|
+
+X:EATMD 13-02 12
 T:Brighton Camp
 M:4/4
+L:1/4
 K:G
 P:A
-gf| e2dc B2A2 |1,3 B2G2 E2D2 G2G2 GABc dedc :|2,4 B2G2 E2G2 FGA2 D2EF G4 G2 :|
+g/f/| ed/c/ BA |1,3 BG ED GG G/A/B/c/ d/e/d/c/ B :|2,4 BG EG F/G/A DE/F/ G2 G :|
 P:B
-dc| B2d2 e2f2 g2d2 B2dc B2D2 E2F2 G4 F2 || [P:(A2)] :|
+d/c/| Bd ef gd Bd/c/ Bd ef g2 f || [P:(A2)] :|
 
 X:EATMD 13-02 13
 T:Coleford Jig

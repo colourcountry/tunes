@@ -6,9 +6,9 @@ Z:<djl@colourcountry.net>
 M:6/8
 K:G
 P:A
-BAG BAG |1 B2{c}d ded :|2 A2A A3 :|3 Bcd e3 d2g dBG A3 G3 :|
+BAG BAG |1,4 Bcd ded :|2,5 A2A A3 :|3,6 Bcd e3 d2g dBG A3 G3 :|
 P:B
-B2d d2B |1 c2e e2c :|2 c2A A3 :|3 c2e e3 d2g dBG A3 G3 :|
+B2d d2B |1,4 c2e e2c :|2,5 c2A A3 :|3,6 c2e e3 d2g dBG A3 G3 :|
 
 X:WFS 13-07 02
 T:Captain Lanoe's Quick March
@@ -81,12 +81,12 @@ X:WFS 13-07 08
 T:Off To California
 S:Walthamstow folk session 2013-07-09
 Z:<djl@colourcountry.net>
-M:6/8
+M:4/4
 K:G
 P:A
-DEF| G2F G2B A2G E2D G2B d2g e3 def g2f g2d e2d B2G |1 A2B A2G E3 :|2 ABA G2F G3 
+(3DEF| G>F G>B A>G E>D G>B d>g e2 (3def g>f g>d e>d B>G |1 A>B A>G E2 :|2 (3ABA G>F G2
 P:B
-B2d| g2f e2g f2e d2f e2d e2f e2d B2G g2f g2d e2d B2G A2B A2G E3x3 [P:(A2)] :|
+B>d| g>f e>g f>e d>f e>d e>f e>d B>G g>f g>d e>d B>G A>B A>G E2 [P:(A2)] :|
 
 X:WFS 13-07 09
 T:Horses Brawl
@@ -157,7 +157,7 @@ K:G
 P:A
 G3A B2B2 c2B2 c2A2 |1,3 G3A B2G2 F2A2 F2D2 :|2,4 B2d2 cBAG F2A2 F2D2 :|
 P:B
-EFc2 c3G E2c2 G2E2 |1,3 FAd2 d3A F2d2 A2F2 :|2,4 B2d2 cBAG F2A2 F2D2 :|
+EGc2 c3G E2c2 G2E2 |1,3 FAd2 d3A F2d2 A2F2 :|2,4 B2d2 cBAG F2A2 F2D2 :|
 
 X:WFS 13-07 15
 T:La Roulante
@@ -185,12 +185,12 @@ X:WFS 13-07 17
 T:Amoco Stomp
 S:Walthamstow folk session 2013-07-09
 Z:<djl@colourcountry.net>
-M:4/4
+M:2/4
 K:Em
 P:A
-E2EF G2A2 BcBA B4 A2F2 FGAF |1,3 G2E2 E2D2 :|2,4 G2E2 E4 :|
+EE/F/ GA B/c/B/A/ B2 AF F/G/A/F/ |1,3 GE ED :|2,4 GE E2 :|
 P:B
-F2FG A2c2 B2GA B4 e2ge d2GA |1,3 B2A2 A4 :|2,4 B2c2 B4 :|
+FF/G/ Ac BG/A/ B2 eg/e/ dG/A/ |1,3 BA A2 :|2,4 Bc B2 :|
 
 X:WFS 13-07 18
 T:Jack Robinson
@@ -207,12 +207,13 @@ X:WFS 13-07 19
 T:Three Around Three
 S:Walthamstow folk session 2013-07-09
 Z:<djl@colourcountry.net>
-M:4/4
+M:2/2
+L:1/4
 K:G
 P:A
-d2BA G2G2 A2BA G2D2 |1,3 EDEF G2AB c2B2 B2A2 :|2,4 EDEF G2Ac B2A2 G4 :|
+dB/A/ GG AB/A/ GD |1,3 E/D/E/F/ GA/B/ cB BA :|2,4 E/D/E/F/ GA/c/ BA G2 :|
 P:B
-d2ef gfed |1,3 e2e2 e4 d2B2 B2AG FGAB A4 :|2,4 e2e2 e2d2 efg2 fga2 g4 g4 :|
+de/f/ g/f/e/d/ |1,3 ee e2 dB BA/G/ F/G/A/B/ A2 :|2,4 ee ed e/f/g f/g/a g2 g2 :|
 
 X:WFS 13-07 20
 T:Great North Run '86
@@ -222,9 +223,9 @@ Z:<djl@colourcountry.net>
 M:4/4
 K:G
 P:A
-G2G2 FGAF GABc d2Bd |1,3 e2ce d2B2 ABAG E2D2 |2,4 e2ce dBGB A2F2 G4 :|
+G2G2 FGAF GABc d2Bd |1,3 e2ce d2B2 ABAG E2D2 |2,4 e2ce dBGB A2F2 G2 :|
 P:B
-f| g2eg f2d2 e2ce d2B2 e2ce d2B2 ABAG E2D2 [P:(A2)] :|
+f2| g2eg f2d2 e2ce d2B2 e2ce d2B2 ABAG E2D2 [P:(A2)] :|
 
 X:WFS 13-07 21
 T:Hesleyside Reel

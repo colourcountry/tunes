@@ -50,7 +50,9 @@ DED F2A d2f ecA |1,3 G2B F2A E2F GFE :|2,4 Bgf edc d3 d3 :|
 P:B
 f2e | a2f d2f A2a agf g2e c2e A2g gfe f2d g2e a2f bag fed Adc d3 d3 :|
 
-X:WFS 14-04 23
+% WFS 14-04 23 = WFS 13-01 05
+
+X:WFS 13-01 05
 T:Waiting For The Federals
 M:2/4
 K:G
