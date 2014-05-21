@@ -1,12 +1,6 @@
 #!/usr/bin/python
 
-import re, os, sys
-
-PAUSE_ON_ERROR = False
-REMOVE_KEY_SIGNATURES = False
-CRIB = False
-LIMIT = None
-BUCKET_SIZE = 500
+import re, os, sys, argparse
 
 def log_to_stderr(format, *args):
     # Log with prejudice. Attempt to get something printable out of whatever is supplied.
@@ -561,17 +555,6 @@ class AbcNote:
 
     @classmethod
     def from_string(c_lass, strg):
-        # remove decorations
-        # (FIXME: convert to inline object of some kind? trouble is we have to do this here as they may contain note names)
-        strg = re.sub('[!]([^!]*)[!]', r'', strg)
-        # chords
-        strg = re.sub('["]([^"]*)["]', r'', strg)
-        # old style chords/decorations, can't tell which but don't support either
-        # (do this last as + is legal within chords and decorations)
-        strg = re.sub('[+]([^+]*)[+]', r'', strg)
-
-
-
         m = c_lass.RE.split(strg)
         s = []
         for i in range(0,len(m),6):
@@ -625,7 +608,19 @@ class AbcField:
         m = c_lass.RE.split(strg)
         s = []
         for i in range(0,len(m),3):
-            s.extend(AbcNote.from_string(m[i]))
+
+            # look for "xxx", !xxx!, +xxx+ and replace with the corresponding inline field notation
+            mm = re.sub('[+]([^+]*)[+]',r'[+:\1]', m[i])
+            mm = re.sub('["]([^"]*)["]',r'[":\1]', mm)
+            mm = re.sub('[!]([^!]*)[!]',r'[!:\1]', mm)
+
+            if mm == m[i]:
+                # none, so safe to pass to note handler
+                s.extend(AbcNote.from_string(mm))
+            else:
+                # pass back through here handler
+                s.extend(c_lass.from_string(mm))
+
             if len(m)>i+2:
                 field = c_lass(m[i+1],c_lass.value_from_string(m[i+1],m[i+2]))
                 s.append(field)
@@ -680,6 +675,8 @@ class AbcField:
             return r'\time %s' % self.value.as_moment()
         elif self.what == AbcField.KEY:
             return r'\key %s' % self.value.as_ly()
+        elif self.what == AbcField.CHORD_NAME:
+            return r'<>^\markup { \sans \small "%s" } ' % self.value
         else:
             raise NotImplementedError("inline field: %s" % self)
 
@@ -804,7 +801,7 @@ class Phrase:
 
     def render_ly(self, key=None, partial=None, bar_limit=None, no_repeats=False):
 
-        #if key == self.key and not REMOVE_KEY_SIGNATURES:
+        #if key == self.key and not ARGS.no_key_signatures:
         #    ly = ''
         #else:
         #    ly = '\key %s\n' % self.key.as_ly()
@@ -862,9 +859,11 @@ class Phrase:
                     if ticks > self.time:
                         # bar can't be longer than time signature
                         cur_bar_nr += 1
+
                         if cur_bar_length != self.time:
                             cur_bar_length = self.time
                             cur_bar = [r'\set Timing.measureLength = #(ly:make-moment %s)' % cur_bar_length.as_moment()] + cur_bar
+
                         tune_ly += ' '.join(cur_bar + [bar_check, '\n'])
                         ticks = ticks_elapsed
                         cur_bar = []
@@ -1025,34 +1024,37 @@ class Tune:
         HEADER_IGNORED: "header",
         DECORATION_IGNORED: "decoration",
         CHORD_NAME_IGNORED: "chord name",
-        PLUS_IGNORED: "chord name or decoration (with +)",
+        PLUS_IGNORED: "item in +plus+ (either chord name in old format, or decoration)",
         SLUR_IGNORED: "slur",
         TRILL_IGNORED: "trill",
         CUSTOM_TRILL_IGNORED: "custom trill",
     }
 
     def __init__(self):
-
         self.status = Tune.OK
         self.phrases = []
         self.fields = {}
-        self.name = u'(no name)'
         self.ref = None
 
     def get_header(self, key, idx=0):
         if key not in self.fields:
             return u''
-
+        
         x = self.fields[key][idx]
         return x
-                
+
+    def get_header_list(self, key):
+        if key not in self.fields:
+            return []
+        
+        x = self.fields[key]
+        return x
+
+    def get_name(self):
+        return self.get_header(AbcField.TUNE_TITLE) or u'(Unknown)'
 
     def set_ref(self, item):
         self.ref = item.get_clean_value()
-
-    def set_name(self, item):
-        self.name = item.get_clean_value()
-        assert isinstance(self.name, unicode)
 
     def add_header(self, item):
         if item.what not in self.fields:
@@ -1134,7 +1136,7 @@ class Tune:
 
             if not continuation:
                 s += "\\time %s\n" % phrase.time.as_moment()
-                if not REMOVE_KEY_SIGNATURES:
+                if not ARGS.no_key_signatures:
                     s += "\\key %s\n" % phrase.key.as_ly()
 
             phrase_ly, leftover_duration = phrase.render_ly(key, None, bar_limit, no_repeats)
@@ -1142,8 +1144,22 @@ class Tune:
             key = phrase.key
             continuation = True
 
-        assert isinstance(self.name, unicode)
-        assert isinstance(self.get_header('meter'), unicode)
+        piece = self.get_name().replace('"',"'")
+
+        origin = self.get_header_list(AbcField.ORIGIN)
+        source = self.get_header_list(AbcField.SOURCE)
+        if origin and not ARGS.no_origin:
+            if source and not ARGS.no_source:
+                opus = (', '.join(origin) +" via "+ ', '.join(source)).replace('"',"'")
+            else:
+                opus = ', '.join(origin).replace('"',"'")
+        elif source and not ARGS.no_source:
+            opus = ', '.join(source).replace('"',"'")
+        else:
+            opus = ""
+
+        meter = self.get_header(AbcField.RHYTHM).replace('"',"'")
+
         s += end + r'''
 }}
 \header{
@@ -1151,7 +1167,17 @@ class Tune:
     opus = "%s"
     meter = "%s"
 }}
-''' % (self.name.replace('"',"'"), '', self.get_header('meter').replace('"',"'"))
+''' % (piece, opus, meter)
+
+        # Treat a blank N: line as a paragraph break
+        endnotes = '\n'.join(self.get_header_list(AbcField.NOTES)).replace('"',"'")
+
+        if endnotes and not ARGS.no_endnotes:
+            s += r'''
+\markup {
+    \justify-string #"%s"
+}
+''' % endnotes
 
         if page_break:
             s += '\\pageBreak\n'
@@ -1219,8 +1245,6 @@ class Tune:
                 if isinstance(item, AbcField):
                     if item.what == AbcField.REFERENCE:
                         tune.set_ref( item )
-                    elif item.what == AbcField.TUNE_TITLE:
-                        tune.set_name( item )
                     elif item.what == AbcField.METER:
                         cur_time = item.value
                     elif item.what == AbcField.PARTS:
@@ -1240,11 +1264,11 @@ class Tune:
                     elif item.what ==  AbcField.DIRECTIVE:
                         update_status(Tune.DIRECTIVE_IGNORED)
                         continue
-                    elif item.what ==  AbcField.CHORD_NAME:
-                        update_status(Tune.CHORD_NAME_IGNORED)
-                        continue
                     elif item.what ==  AbcField.DECORATION:
                         update_status(Tune.DECORATION_IGNORED)
+                        continue
+                    elif item.what ==  AbcField.CHORD_NAME and ARGS.no_chords:
+                        update_status(Tune.CHORD_NAME_IGNORED)
                         continue
                     elif item.what ==  AbcField.PLUS:
                         update_status(Tune.PLUS_IGNORED)
@@ -1284,7 +1308,7 @@ class Tune:
                         raise NotImplementedError("non-abc object (type %s) %s" % (repr(type(item)), repr(item)))
 
                     if cur_phrase is None:
-                        cur_phrase = Phrase(u"%s %s" % (tune.name, cur_phrase_id),
+                        cur_phrase = Phrase(u"%s %s" % (tune.get_name(), cur_phrase_id),
                                             cur_key, cur_time, cur_unit)
                         cur_phrase.extend(queued_headers)
                         tune.phrases.append((cur_phrase_id,cur_phrase))
@@ -1312,8 +1336,9 @@ class Tune:
 
 
 class ABCollection:
-    def __init__(self, include_duplicates=False):
-        self.tunes = []
+    def __init__(self, include_duplicates=False, ids=None):
+        self.ids = ids
+        self.tunes = {}
         self.tune_check = {}
         self.include_duplicates = include_duplicates
 
@@ -1323,7 +1348,8 @@ class ABCollection:
         abc = ""
         finished_ab = None
         ab = ""
-        x_line = "" # only used when reporting a duplicate
+        prev_x_line = ""
+        x_line = ""
         pause = False
         for line in fileobj.readlines()+["X::"]:
             try:
@@ -1332,7 +1358,7 @@ class ABCollection:
                 line = line.decode('iso-8859-1')
 
             if line.startswith("X:") or line.startswith("[X:"):
-                if pause and PAUSE_ON_ERROR:
+                if pause and ARGS.interactive:
                     pause = raw_input("continue?")
                     if "yes".startswith(pause):
                         pause = False
@@ -1345,6 +1371,7 @@ class ABCollection:
                 else:
                     ab = line
                 abc = line
+                prev_x_line = x_line
                 x_line = line
             else:
                 abc += line
@@ -1364,17 +1391,26 @@ class ABCollection:
                 # normalize space
                 finished_ab = re.sub(r'[\r\n\t ]+', ' ', finished_ab.strip())
 
-                # use entire tune after X: as its own id
+                tune_id = prev_x_line.strip()[2:]
+
+                # use entire tune after X: as its own id for duplicate checking purposes
                 check_id = re.sub("^[[]X:[^]]*[]]","",finished_ab)
 
-                if check_id in self.tune_check:
-                    log_to_stderr("%% Skipped %s as exactly duplicated %s", x_line.strip(), self.tune_check[check_id])
+                if self.ids is not None and tune_id not in self.ids:
+                    if ARGS.verbose:
+                        log_to_stderr("%% Skipped %s as not in supplied tune list", tune_id)
+                elif check_id in self.tune_check:
+                    log_to_stderr("%% Skipped %s as exactly duplicated %s", tune_id, self.tune_check[check_id])
                 else:
+                    if ARGS.verbose:
+                        log_to_stderr("%% Formatting %s", tune_id)
                     tune = Tune.from_string(finished_ab, original_abc)
 
                     if tune:
                         self.tune_check[check_id] = tune.ref
-                        self.tunes.append(tune)
+                        if tune_id not in self.tunes:
+                            self.tunes[tune_id] = []
+                        self.tunes[tune_id].append(tune)
                         count += 1
                         if limit is not None and count>=limit:
                             break
@@ -1390,7 +1426,17 @@ class ABCollection:
 
 
     def get_tunes(self):
-        return self.tunes
+        tune_list = []
+        if self.ids is None:
+            for id in sorted(self.tunes.keys()):
+                tune_list.extend(self.tunes[id])
+        else:
+            for id in self.ids:
+                if id in self.tunes:
+                    tune_list.extend(self.tunes[id])
+                else:
+                    sys.stderr.write("%% WARNING: Tune with ID %s was not found in the sources\n" % id)
+        return tune_list
 
     def get_phrases(self):
         p = {}
@@ -1411,28 +1457,73 @@ class ABCollection:
 
 
 if __name__=="__main__":
+    parser = argparse.ArgumentParser(description="Compiles PDFs from a library of ABC files, optionally specifying which tunes to include. Outputs a valid ABC file containing any tunes that were not successfully converted. You can also supply '-' to take tune IDs from standard input, one per line")
+
+    parser.add_argument("-s", "--source-dir", help="Directory to find ABC files", default="data")
+    parser.add_argument("-d", "--dest-dir", help="Directory to save PDF files", default="out")
+    parser.add_argument("-p", "--preamble", help="Lilypond fragment to append tunes to", default="preamble.ly.fragment")
+    parser.add_argument("-c", "--crib", help="Format as crib sheet (only the first 2 bars of each tune, implies -T -C -W -N -S -O)", action="store_true")
+    parser.add_argument("-b", "--break", help="Add page break after each tune", action="store_true")
+    parser.add_argument("-i", "--interactive", help="Prompt after encountering a tune with errors", action="store_true")
+    parser.add_argument("-n", "--tunes-per-pdf", help="Split into separate PDFs each containing this number of tunes", type=int)
+    parser.add_argument("-x", "--max-tunes", help="Stop processing after this number of tunes", type=int)
+    parser.add_argument("-K", "--no-key-signatures", help="Omit key signatures (print explicit accidentals)", action="store_true")
+    parser.add_argument("-C", "--no-chords", help="Omit chord names", action="store_true")
+    parser.add_argument("-W", "--no-words", help="Omit words (W:) (Currently always on)", action="store_true")
+    parser.add_argument("-N", "--no-endnotes", help="Omit tune endnotes (N:)", action="store_true")
+    parser.add_argument("-S", "--no-source", help="Omit tune source (S:)", action="store_true")
+    parser.add_argument("-O", "--no-origin", help="Omit tune origin (O:)", action="store_true")
+    parser.add_argument("-v", "--verbose", help="Output more information to stderr", action="store_true")
+    parser.add_argument("ids", nargs="*", metavar="ID", help="Which tune IDs to include in the output (default: all)")
+
+    ARGS = parser.parse_args()
+
+    if ARGS.ids == ["-"]:
+        sys.stderr.write("% Enter tune IDs one per line or finish with EOF (Ctrl-D). Nothing specified = format entire collection\n")
+        ARGS.ids = [line.strip() for line in sys.stdin.readlines()]
+
+    if ARGS.crib:
+        ARGS.no_chords = True
+        ARGS.no_words = True
+        ARGS.no_endnotes = True
+        ARGS.no_source = True
+        ARGS.no_origin = True
 
     PHRASES = {}
+    TUNES = ABCollection(ids=ARGS.ids)
 
-    TUNES = ABCollection()
+    if ARGS.verbose:
+        log_to_stderr("%% Called formatter with arguments %s", vars(ARGS))
 
-    for (path, dirs, files) in os.walk('data'):
+    for (path, dirs, files) in os.walk(ARGS.source_dir):
+        if ARGS.verbose:
+            log_to_stderr("%% Looking for .abc files in %s", path)
         for filename in files:
-            data = open(os.path.join(path,filename), 'r')
-            count = TUNES.add_data(data, LIMIT)
-            log_to_stderr("%% Finished %s , found %s tunes.\n\n",filename, count)
+            if filename.endswith(".abc"):
+                data = open(os.path.join(path,filename), 'r')
+                count = TUNES.add_data(data, ARGS.max_tunes)
+                if ARGS.verbose:
+                    log_to_stderr("%% Scanned %s , found %s tune%s.\n",filename, count, '' if count==1 else 's')
     # PHRASES.update(abfile.get_phrases())
 
+    all_tunes = TUNES.get_tunes()
 
-    if CRIB:
-        PREAMBLE = open("preamble.crib.ly.fragment","r").read()
+    if not all_tunes:
+        raise SystemExit("% No tunes found, nothing to do.")
     else:
-        PREAMBLE = open("preamble.ly.fragment","r").read()
+        if ARGS.ids:
+            if ARGS.verbose:
+                log_to_stderr("%% Found %s tunes of %s requested.", len(all_tunes), len(ARGS.ids))
+        else:
+            log_to_stderr("%% Found %s tunes.", len(all_tunes))
 
+    PREAMBLE = open(ARGS.preamble,"r").read()
 
-        
-    for i in range(0,len(TUNES.tunes),BUCKET_SIZE):
-        tuneset = TUNES.tunes[i:i+BUCKET_SIZE]
+    if not ARGS.tunes_per_pdf:
+        ARGS.tunes_per_pdf = len(all_tunes)
+
+    for i in range(0,len(all_tunes),ARGS.tunes_per_pdf):
+        tuneset = all_tunes[i:i+ARGS.tunes_per_pdf]
         ly_filename = 'tunes%s.ly' % i
         ly_file = open(os.path.join('out',ly_filename),'w')
         ly_file.write(PREAMBLE)
@@ -1441,7 +1532,7 @@ if __name__=="__main__":
         ab_file = open(os.path.join('out',ab_filename),'w')
         for tune in tuneset:
             try:
-                if CRIB:
+                if ARGS.crib:
                     z=tune.render_ly(\
                         phrase_identifier=r'''    \set Score.repeatCommands = #'((volta #f)) 
 \bar "" \stopStaff 
@@ -1459,7 +1550,7 @@ if __name__=="__main__":
                 ly_file.write( z.encode('utf-8') )
                 ab_file.write( tune.as_ab().encode('utf-8') )
             except NotImplementedError, e:
-                log_to_stderr("%% Couldn't render the following tune (%s): %s\n",tune.name or '(unknown)', str(e))
+                log_to_stderr("%% Couldn't render the following tune (%s): %s\n",tune.get_name(), str(e))
                 sys.stderr.write(tune.src.encode('utf-8'))
           
 

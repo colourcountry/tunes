@@ -26,7 +26,6 @@
 
 ragged-bottom = ##t
 
-
 #(define top-margin (* 5 mm))
 #(define bottom-margin (* 7 mm))
 

@@ -142,7 +142,7 @@ g| fed d2c Bcd G2B ABc DEF |1,3 GBd d2 :|2,4 G3-G2 :|
 
 % Into...
 
-X:BFS 14-04 15
+X:BFS 14-04 17
 T:Louisberg Square
 H:Bob Cann (1916-1990) recorded this as Uncle's Jig (West Country Melodeon, 1975)
 M:6/8
@@ -153,7 +153,7 @@ P:B
 K:D
 A2d c2e d2f agf e2f gfe |1,3 d2f A3 :|2,4 d3 d3 :|
 
-X:BFS 14-04 16
+X:BFS 14-04 18
 T:The Warksburn
 H:attr. Robert Whinham (18xx)
 M:3/4
@@ -163,7 +163,7 @@ D2| G2B2e2 d2B2G2 c4E2 E4G2 F2G2A2 E2F2D2 |1 G4B2 D4 :|2 G6-G4 ||
 P:B
 d2| e4d2 g4B2 d2c2B2 A4B2 c4A2 f4e2 e2d2c2 B4c2 d4B2 g4f2 e2A2A2 A4B2 c2B2A2 d2c2A2 G6-G4 |]
 
-% BFS 14-04 17 Elsey's Waltz = WFS 13-02 01
+% BFS 14-04 19 Elsey's Waltz = WFS 13-02 01
 
 X:WFS 13-02 01
 T:Elsey's Waltz
@@ -175,7 +175,7 @@ P:B
 e2| f3gfe d2e2f2 g2B2g2 f4A2 f3gfe d2c2d2 d2A2f2 e4 || [P:(A2)] :|
 
 
-X:BFS 14-04 18
+X:BFS 14-04 20
 T:The Queen's Delight
 H:Collected in Bucknell, Oxon
 B:Bacon (The Morris Ring),1974
@@ -186,9 +186,9 @@ d2G d2{c}B cBc ABc d2G d2c BcA G3 :|
 P:B
 cBc cBc ABc def gfg eag gfe def g2g gfe d2c B2c d2G d2c BcA G3 :|
 
-% Into BFS 14-04 19 Paddy Carey's
+% Into BFS 14-04 21 Paddy Carey's
 
-X:BFS 14-04 20
+X:BFS 14-04 22
 T:Worcester Hornpipe
 H:Sharp, 1907
 B:Hardcore English, 2007, p26-4
@@ -201,7 +201,7 @@ Bc| d2B2 GFGd e2c2 cBce d2B2 GFGB AGFE D2Bc d2B2 GFGd edef g2fe dgfe dcBA G2B2 G
 
 % Into...
 
-X:BFS 14-04 21
+X:BFS 14-04 23
 T:Gloucester Hornpipe (2)
 B:A version is in O'Neill's (1907), as "The Man From Newry"
 M:4/4
@@ -211,7 +211,7 @@ G2g2 g2dB cBcd egfe |1,3 dBGB edcB ABcA GFED :|2,4 dBGB ecAF G2B2 G3 ||
 P:B
 B2BA Bcd2 e2ed efge |1,3 dBGB edcB ABcA GFED :|2,4 dBGB ecAF G2B2 G4 ||
 
-X:BFS 14-04 22
+X:BFS 14-04 24
 T:Clee Hill
 B:Hardcore English, 2007, p32-2
 N:attr. Dennis Crowther (-2009)
@@ -222,9 +222,9 @@ F6G2 A6F2 A2d2c2B2 A4F4 E6F2 G6A2 |1 B2cBA2G2 F6D2 :|2 B2A2B2c2 d6 ||
 P:B
 e2| f2AAf2A2 f6A2 A2B2c2d2 c4B4 |1 g2BBg2B2 g6A2 A2B2c2d2 e2c2B2A2 :|2 B2c2d2cB A2d2f4 f2e2B2c2 d8 ||
 
-% Into BFS 14-04 23 Oh Joe
+% Into BFS 14-04 25 Oh Joe
 
-X:BFS 14-04 24
+X:BFS 14-04 26
 T:The Opera Hat
 H:Also in anonymous Staffordshire MS, Early 19C (vmp ST.24)
 M:6/8
@@ -236,7 +236,7 @@ e2e efg f2e d2f :|3 e2d c2B A2G F2E ||
 P:C
 F3 GFG A3-A2A B2d c2e |1 d2f ecA :|2 d3-d2 ||
 
-X:BFS 14-04 25
+X:BFS 14-04 27
 T:John of Paris
 H:Also in Joshua Gibbons MS, 1823 (vmp JGi.163)
 M:6/8
@@ -246,7 +246,7 @@ B2B BAB d2B BAB c2e g2e d2B BAB c2A AGA |1,3 B2G G2B A2B A2G F2E D3 :|2,4 B2G G2
 P:B
 d2c Bcd e2f g2a b2a gfe d2c Bcd e2e ecA d2d dBG c2A B2G FGA d2c || [P:(A2)] |]
 
-X:BFS 14-04 26
+X:BFS 14-04 28
 T:The Queen's Highway / Centenary March
 O:Scotland?
 M:4/4
@@ -256,7 +256,7 @@ FG| A2A>B AFED f2fd edBd |1,3 A2A>B AF DF E2EF E2 :|2,4 A2de fedc d2dc d2 ||
 P:B
 de| f2fe d2fa g2f2 e2fg afdB AFGF E2EF E2FG ADFA dFAd fagf edcB Aagf gedc d2dc d2 |]
 
-X:BFS 14-04 27
+X:BFS 14-04 29
 T:Glise de Sherbrook / The Big Ship
 O:Quebec
 B:Kennedy (Fiddlers Tune Book), 1954 (vol 2,p.25)
@@ -268,7 +268,7 @@ D2| GFGA BABc dedc B4 |1 cdcB A2d2 BcBA G2 :|2 c2A2 F2D2 G4 G2 ||
 P:B
 d2| g2gf e2e2 dedc B4 |1 cdcB A4 dedc B2 :|2 c2A2 F2D2 G4 G2 |]
 
-X:BFS 14-04 28
+X:BFS 14-04 30
 T:The Green Ship
 H:Also in J.Winder MS,Wyresdale,Lancs.,1789 (vmp JWDM.41)
 M:4/4
@@ -278,7 +278,7 @@ B2e2 fgfe B2e2 g4 B2Bc d2d2 cBce d4 B2e2 fgfe B2e2 g3f gbag fagf g2e2 e2 :|
 P:B
 dc| B2G2 G3A B2G2 BdcB c2A2 A3B c2A2 cedc B2G2 G3A B2d2 g4 gbag fagf g2e2 e2 :|
 
-X:BFS 14-04 29
+X:BFS 14-04 21
 T:?
 M:6/8
 K:G
@@ -289,7 +289,7 @@ GDG BAG GDG BAG AEA cAc e6 d^cd f2e d^cd f2e |1 ded cdc B6 :|2 ded cBA G2 |]
 
 % Into... 
 
-X:BFS 14-04 30
+X:BFS 14-04 32
 T:Peter's Peerie Boat
 O:Shetland
 C:Tam Anderson (-1991)
@@ -300,9 +300,9 @@ dcd D3 EFG ABc |1 dcd Bed c2A A3 :|2 d2F GFE F2D D3 ||
 P:B
 dcd fed cBc edc BAB dcB A3-A2F GFG BAG F2A d3 |1 E2A c2B A3 ABc:|2 fed edc d6 |]
 
-% Into BFS 14-04 31 = EATMD 13-01 16 (01:24)
+% Into BFS 14-04 33 = EATMD 13-01 16 (01:24)
 
-X:BFS 14-04 32
+X:BFS 14-04 34
 T:Alexandra Park
 O:Scotland?
 B:Kerr (Merry Melodies), 187x
@@ -313,11 +313,11 @@ P:A
 P:B
 A2FD B2GE c2AF d2BG edcB cBAG |1 AGFE D4 :|2 FGAF G2 |]
 
-% BFS 14-04 33 = WFS 13-07 18 Jack Robinson
+% BFS 14-04 35 = WFS 13-07 18 Jack Robinson
 
 % Into...
 
-X:BFS 14-04 34
+X:BFS 14-04 36
 T:Argiers 
 N:AKA (Playford 4+) "The Wedding Night"
 H:Also in Playford 1st ed, 1651 (in D)
@@ -328,9 +328,9 @@ GABc A3G F2D2 D4 |1,3 d2A2 d3c B2G2 G4 :|2,4 EFG2 FGA2 G4 G4 :|
 P:B
 FGA2 FGA2 d2A2 d2A2 FGA2 FGA2 d2A2 d2A2 d2cB c4 B2AG A2D2 EFG2 FGA2 G4 G4 :|
 
-% BFS 14-04 35 = EATMD 13-01 50 (in G)
+% BFS 14-04 37 = EATMD 13-01 50 (in G)
 
-X:BFS 14-04 36
+X:BFS 14-04 38
 T:Grimstock
 H:Also in Playford 1st ed, 1651
 M:6/8
@@ -340,7 +340,7 @@ g2f g2d efg f2e Bcd e2d |1,3 cdB A3 :|2,4 cBA G3 :|
 P:B
 G2A BGA BGA BGA G2A BGA BGA G3 :|
 
-X:BFS 14-04 37
+X:BFS 14-04 39
 T:Lilliburlero
 H:Also in Playford 8th ed, 1690
 M:6/8
@@ -350,7 +350,7 @@ GAG B2B ABA c3 BdG c2B AGF G3 :|
 P:B
 g2f g2d de=f e2d def gde dcB A2d edc Bcd edc Bcd egG c2B AGF G3 :|
 
-X:BFS 14-04 38
+X:BFS 14-04 40
 T:?
 M:6/8
 K:G
@@ -361,7 +361,7 @@ d3 G2A B2c d2B e3 A2B c2d e2c d3 G2F G2A B2A GFE D2B A3 G3 :|
 
 % Into...
 
-X:BFS 14-04 39
+X:BFS 14-04 41
 T:Harry Cox's Schottische
 H:attr. Harry Cox (-1971)
 B:Hardcore English, 2007, p88-1
@@ -374,7 +374,7 @@ A| B2A GFE D6 |1,3 G2F G2B A3-A2 :|2,4 E2A G2F G3-G2 :|
 
 % Into...
 
-X:BFS 14-04 40
+X:BFS 14-04 42
 T:Rigs of Marlow (morris version)
 H:See also Rakes of Mallow
 M:12/8
@@ -386,7 +386,7 @@ gfe d2c B2c d3 |1,3 gfe d2c B2c A3 :|2,4 G2G A2F G3-G2 :|
 
 % Into...
 
-X:BFS 14-04 41
+X:BFS 14-04 43
 T:The Clog
 M:12/8
 K:G
@@ -395,9 +395,9 @@ AAA A2G F2G A2B |1,3 cBc e2d B3 G3 :|2,4 cBc e2F G6 :|
 P:B
 d2g g2g f2A A2B |1,3 cBc e2d B3 G3 :|2 cBc e2F G6 :| [P:(A2)] |]
 
-% BFS 14-04 42 The Man in the Moon, into...
+% BFS 14-04 44 The Man in the Moon, into...
 
-X:BFS 14-04 43
+X:BFS 14-04 45
 T:?
 M:3/4
 K:G
@@ -406,7 +406,7 @@ d2c2| B3AG2 B2c2d2 A6-A2d2c2 B3AG2 E2D2EF G6-G2 :|
 P:B
 {B2}d2| g6 g2f2e2 d6 d4c2 |1 B3AG2 B2c2d2 A6-A2 :|2 B3AG2 E2A2F2 G6-G2 |]
 
-X:BFS 14-04 44
+X:BFS 14-04 46
 T:?
 M:3/4
 K:G
@@ -415,9 +415,9 @@ GA| G2D2Bc B2A2Bc d2c2B2 A3Bc2 d2G2AB A2G2E2 G6-G4 :|
 P:B
 {A2}G2| F2A2A2 A2G2F2 E2c2B2 A3Bc2 d2G2AB A3GA2 G6-G4 :|
 
-% Into BFS 14-04 45 = EATMD 13-01 20 Ville de Quebec
+% Into BFS 14-04 47 = EATMD 13-01 20 Ville de Quebec
 
-X:BFS 14-04 46
+X:BFS 14-04 48
 T:William Taylor's Table Top Hornpipe
 C:Dave Shepherd (1954-)
 M:4/4
@@ -427,7 +427,7 @@ E2E2 EFGE FGFE D4 |1,3 B2B2 ABAG FEDE FGAF :|2,4 BAGF EGFD E4 E4 :|
 P:B
 BGEG B2B2 AFDF A2A2 |1,3 GFED E2EG FEDE FGAF :|2,4 GFED EGFD E4 E4 :|
 
-X:BFS 14-04 47
+X:BFS 14-04 49
 T:?
 M:4/4
 K:Edor
@@ -436,7 +436,7 @@ E2B2 BAGF E2E2 d4 dBcA BAGF E4 E4 :|
 P:B
 BcdB e2e2 Bcd2 e2Bc d2d2 c2c2 BcBG F4 || [P:(A2)] :|
 
-X:BFS 14-04 48
+X:BFS 14-04 50
 T:Gilderoy
 B:McGibbon (Scots Tunes, book III), 1762
 M:4/4
@@ -448,7 +448,7 @@ ef| g3a gfef gfec d4 edcB ABcA BGE2 E4 || [P:(A2)] :|
 
 % Into...
 
-X:BFS 14-04 49
+X:BFS 14-04 51
 T:Jacky Tar
 N:'B' and 'C' parts of "Come ashore Jolly Tar And Your Trousers On"
 B:Hardcore English, 2007, p16-2
@@ -460,7 +460,7 @@ e2ef g2fe d2B2 B3B |1,3 ABde faef d2A2 A2Bd :|2,4 AGFE DEFA G2E2 E2 :|
 P:B
 GA| BGEG BGEG BAGF E2FG AFDF AFDF AGFE D2EF GFGE g2fe dBGB d2cB AGFE DEFA G2E2 E2 :|
 
-X:BFS 14-04 50
+X:BFS 14-04 52
 T:?
 M:4/4
 K:G
@@ -469,7 +469,7 @@ GF |E2GF E2GF E2e2 B3A |1,3 G2E2 EFGE F2D2 D2 :|2,4 G2E2 FED2 E4 E2 :|
 P:B
 B2e2 efge f2d2 d2gf |1,3 e2B2 B2cB AGFG ABcA :|2,4 e2B2 A2GF E4 E2 :|
 
-X:BFS 14-04 51
+X:BFS 14-04 53
 T:?
 M:4/4
 K:G
@@ -482,9 +482,9 @@ D2D2 D2GF E2E2 E2cA |1,3 F2F2 FDEF GFGA B2G2 :|2,4 F2F2 FDEF G4 G2 :|
 P:D
 GA| B2B2 B2GA B2B2 B2GA Bgfe dcB2 AGAB A4 B2B2 BGAB c2c2 c4 dgfe dcBA A4 G2 :|
 
-% BFS 14-04 52 = WFS 14-03 19 Astley's Ride, into BFS 14-04 53 = WFS 14-01 24 Buttered Peas
+% BFS 14-04 54 = WFS 14-03 19 Astley's Ride, into BFS 14-04 55 = WFS 14-01 24 Buttered Peas
 
-X:BFS 14-04 54
+X:BFS 14-04 56
 T:Lord of the Dance
 M:4/4
 K:G
@@ -493,7 +493,7 @@ D2| G2GA B2Bc dedc B2B2 |1,3 A2A2 A3B cBAG F2D2 :|2,4 A2A2 B2BA G2G2 G2 :|
 P:B
 d4 B3A BcBA G4 B2Bc d2cB A2A2 A2D2 G2G2 G3A BABc d2cB A2A2 B2BA G2G2 G2 :|
 
-X:BFS 14-04 55
+X:BFS 14-04 57
 T:?
 M:4/4
 K:D
@@ -504,7 +504,7 @@ D2E2| F2F2F2EF G2G2G2FG |1,3 A2A2ABAG F2E2 :|2,4 ABAGF2E2 D4 :|
 
 % Into...
 
-X:BFS 14-04 56
+X:BFS 14-04 58
 T:Maclotte
 M:4/4
 K:D
@@ -513,11 +513,11 @@ D3EF2E2 D2E2F2G2 |1,3 A2F2D2F2 E4E4 :|2,4 A2F2D2F2 E4D4 :|
 P:B
 A2Bcd2cB A2F2A2F2 |1,3 A2Bcd2cB A2F2E4 :|2,4 A2F2D2F2 E4D4 :| 
 
-% BFS 14-04 57 Michael Turner's Waltz
+% BFS 14-04 59 Michael Turner's Waltz
 
-% BFS 14-04 58 Andrew Kerr, into BFS 14-04 59 Long Room at Scarborough
+% BFS 14-04 60 Andrew Kerr, into BFS 14-04 61 Long Room at Scarborough
 
-X:BFS 14-04 60
+X:BFS 14-04 62
 T:Cheshire Waltz
 M:3/4
 H:Also in Joshua Gibbons MS, 1823 (vmp JGi.084)
@@ -529,7 +529,7 @@ d2|e2gedc Bcd2f2 egecGE C2E2G2 c4e2 f3edc B2dcBA G4 || [P:(A2)] ||
 P:C
 {F2}| E2G2c2 c3BA2 B2d2g2 f6 |1,3 f4f2 A2d2c2 B3cBA G4 :|2,4 f4f2 A2d2cB c6 c6 :|
 
-X:BFS 14-04 61
+X:BFS 14-04 63
 T:Northern Schottische
 H:attr. John Barry
 M:4/4
@@ -541,9 +541,9 @@ d2| c2F2 F2e2 d2G2 G2g2 |1,3 f2A>B c2e2 d2G>A B>dc>B :|2,4 f2A>B c>de>f g2G2 G2 
 P:C
 A2| B2B2 B2A>G F>EF>G A2-A>B c2c2 c2B>A |1,3 G>FG>A B2 :|2,4 G2B2 G2 :|
 
-% BFS 14-04 62 = EATMD 13-02 13 Coleford Jig, Into...
+% BFS 14-04 64 = EATMD 13-02 13 Coleford Jig, Into...
 
-X:BFS 14-04 62
+X:BFS 14-04 65
 T:Stringers Hornpipe
 H:Also in John Clare (1793-1864) MS (vmp JC.158)
 M:4/4
@@ -553,7 +553,7 @@ F2FA d2d2 efge dcBA |1,3 B2GB A2F2 EFGA GFED :|2,4 fefg afdf gece d4 :|
 P:B
 f2fd e2ec Bcde dcBA B2GB A2F2 EFGA GFED || [P:(A2)] :|
 
-X:BFS 14-04 63
+X:BFS 14-04 66
 T:Marmalade Polka
 B:Kirkpatrick and Harris (Opus Pocus), 1988
 M:4/4
@@ -563,9 +563,9 @@ D2| G2G2 GABc d4 d2B2 |1,3 c4 c2A2 B4 B2 :|2,4 c2A2 A2F2 A2G2 G2 :|
 P:B
 d2| e2d2 B2G2 G2F2 F4 e2d2 c2A2 A2G2 G2Bd g2g2 g2ag f2e2 e4 d2d2 c2F2 A2G2 G2 :|
 
-% Into BFS 14-04 64 Jenny Lind Polka
+% Into BFS 14-04 67 Jenny Lind Polka
 
-X:BFS 14-04 65
+X:BFS 14-04 68
 T:The Cotillion
 B:Hardcore English (2007), p31-3
 B:Johnson (200 Favourite Country Dances 5), 1750, as The Louisa
@@ -580,7 +580,7 @@ E4 F4 GFGA B2c2 B2AG A2GF G6 :|
 
 % Into...
 
-X:BFS 14-04 66
+X:BFS 14-04 69
 T:?
 M:4/4
 K:G
@@ -589,9 +589,9 @@ D2| GABc d2g2 d2BA G2AB c2E2 E2AG FGEF D2D2 E2C2 C2c2 c2E2 E2c2 Bcd2 D2F2 G4 G2 
 P:B
 F2| G2D2 D2G2 B2G2 Bcd2 c2A2 A2a2 a2A2 ABc2 B2G2 c2A2 |1 d2B2 efg2 fga2 A2^c2 d4 d2 :|2 d2B2 e2c2 Bcd2 D2F2 G4 G2 :|
 
-% BFS 14-04 67 Orange in Bloom (in G)
+% BFS 14-04 70 Orange in Bloom (in G)
 
-X:BFS 14-04 68
+X:BFS 14-04 71
 T:Dear Tobacco
 H:Also in Matthew Betham of Towcett MS, 17xx (aka Docker MS)
 B:Charlton Memorial Tunebook, 1956
@@ -604,7 +604,7 @@ B2e2 e2f2 gfed e4 B2e2 e2f2 g2e2 f2d2 a2d2 d2e2 dcBA d4 F2A2 A2Bc d2c2 B2A2 :|
 
 % Into...
 
-X:BFS 14-04 69
+X:BFS 14-04 72
 T:Trip To Cartmell
 H:Also in Browne MS, c1800 (vmp BF11.10)
 M:4/4
@@ -616,7 +616,7 @@ d2| c2A2 A2c2 B2G2 G2B2 |1,3 c2A2 A2fg a2e2 e2 :|2,4 c2A2 A2Bc d4-d2 :|
 
 % Into...
 
-X:BFS 14-04 70
+X:BFS 14-04 73
 T:Lady Susan Stewart's Reel
 O:Scotland?
 M:4/4
@@ -626,7 +626,7 @@ E2B2 B2d2 c2A2 B2G2 E2B2 B2d2 d2D2 F2D2 E2B2 B2d2 c2A2 B2c2 d2B2 edcB A2D2 F2D2 
 P:B
 E2d2 cde2 c2A2 B2G2 E2d2 cde2 D2FG A2F2 E2d2 cde2 c2A2 B2c2 d2B2 edcB A2D2 F2D2 :|
 
-X:BFS 14-04 71
+X:BFS 14-04 74
 T:?
 M:4/4
 K:Em
@@ -635,9 +635,9 @@ D2| EFG2 G2F2 E4 E2D2 E3D E2F2 GFGA GFED EFG2 G2F2 E4 E2D2 E3D E2F2 G4 G2 :|
 P:B
 D2| Bcd2 d2c2 B2A2 A4 BABc d2D2 BABc d2D2 EFG2 G2F2 E4 E2D2 E3D E2F2 G4 G2 :|
 
-% BFS 14-04 72 = EATMD 13-08 09 Mount Hills
+% BFS 14-04 75 = EATMD 13-08 09 Mount Hills
 
-X:BFS 14-04 73
+X:BFS 14-04 76
 T:Cumberland Waltz
 B:Hardcore English, 2007, p82-2
 M:3/4
@@ -649,7 +649,7 @@ A2| f4f2 e4d2 c4B2 G4A2 BcB2A2 BcB2A2 |1,3 BcB2A2 F4 :|2,4 A2c2e2 d4 :|
 
 % Into...
 
-X:BFS 14-04 74
+X:BFS 14-04 77
 T:Westmoreland
 B:Playford, 6th edn, 1686
 B:Hardcore English, 2007, p87-2
@@ -660,7 +660,7 @@ c2| B3AG2 F2E2D2 E2F2G2 F4G2 A3Bc2 B2c2d2 e2f2g2 f2e2d2 g4g2 g2d2B2 c4B2 A3Bc2 B
 P:B
 a2| b2a2g2 a2g2f2 g2f2e2 d2e2f2 g2f2e2 d2c2B2 A6 d4c2 B3AB2 G2g2B2 c4B2 A3Bcd B2G2B2 A2F2D2 G6 G4 :|
 
-X:BFS 14-04 75
+X:BFS 14-04 78
 T:Fanny Power
 C:Turlough O'Carolan (1670-1738)
 M:6/4
@@ -670,11 +670,11 @@ D2| G4G2 G2A2B2 c4B2 A4G2 F4E2 D4E2 F4G2 A4c2 B3AG2 B2c2d2 e4A2 A4G2 F3ED2 D2E2F
 P:B
 Bc| d4d2 d2B2d2 G4G2 G2B2d2 e4e2 e2c2e2 A4A2 A2B2c2 d4d2 e2f2g2 f2g2a2 d4c2 B3AG2 A3GF2 G6 G4 :|
 
-% BFS 14-04 76 The Dusty Miller, into BFS 14-04 77 Three Rusty Swords
+% BFS 14-04 79 The Dusty Miller, into BFS 14-04 80 Three Rusty Swords
 
-% BFS 14-04 78 = WFS 14-03 26 Josefins Dopvals
+% BFS 14-04 81 = WFS 14-03 26 Josefins Dopvals
 
-X:BFS 14-04 79
+X:BFS 14-04 82
 T:Å Jenta Å Ja
 O:Sweden
 M:3/4
@@ -684,7 +684,7 @@ B2A>BG2 B2A>BG2 A2A>GF>G A>GF>ED2 B2A>BG2 B2A>BG2 A2A>GF>G A2G2G2 :|
 P:B
 G>Bd2d2 c2e>dc>B ABc2c2 B2d>cB>A G>AB2B2 A>Bc>BA>G F>GA>DE>F A2G2G2 :|
 
-X:BFS 14-04 80
+X:BFS 14-04 83
 T:?
 M:4/4
 K:D
@@ -693,7 +693,7 @@ D2DE D2DE D2d2 FGAF |1,3 E2EF E2EF EFGA BGFE :|2,4 G2BG F2AF EFGABcd2 :|
 P:B
 dcdA dcdA dcdA F2ED |1,3 e^deA e^def gfed c2BA :|2,4 EGBG F2AF EFGA Bcd2 :|
 
-X:BFS 14-04 81
+X:BFS 14-04 84
 T:Kate Dalrymple
 O:Scotland
 M:4/4
@@ -703,9 +703,9 @@ D2DF E2EF D2DF E2EF D2dc BAGF E2A2 F2D2 :|
 P:B
 A2AB AGFG A2d2 A2FG A2d2 A2d2 A2d2 A2F2 G2BG F2dF E2EF AGFE D2dc BAGF E2A2 F2D2 :|
 
-% BFS 14-04 82 = WFS 13-10 36 Jamaica
+% BFS 14-04 85 = WFS 13-10 36 Jamaica
 
-X:BFS 14-04 83
+X:BFS 14-04 86
 T:The British Toper
 C:Nathaniel Kynaston, 1716
 B:Walsh, Twenty Four New Country Dances for the Year 1716
@@ -716,7 +716,7 @@ P:A
 P:B
 B2c2| d4 d4 e2d2 c2B2 c4 c4 d2c2 B2A2 G4 A4 B4 c4 d2c2 B2A2 G4 :|
 
-X:BFS 14-04 84
+X:BFS 14-04 87
 T:Orlando's Return
 M:4/4
 K:G
@@ -725,7 +725,7 @@ D2| GFGA G2A2 BABc B2c2 |1,3 d2G2 c2B2 AGFE D2 :|2,4 d2G2 cBA2 G4 :|
 P:B
 B2c2| d4 d4 c2e2 A4 B2G2 c2B2 AGFE D2 || [P:(A2)] :|
 
-X:BFS 14-04 85
+X:BFS 14-04 88
 T:Prince William's March
 B:Walsh, 1731
 B:Hardcore English, 2007, p46-3
@@ -736,7 +736,7 @@ G4 B4 A6 c2 B4 G4 GFGA G2A2 B2G2 D2B2 A6G2 F2d2 d2^c2 d4 |1 dcBA :|
 P:B
 B2c2 | d4 e3d c2B2 A3B c2B2 A2G2 F2E2 D4 G2FG A2G2 B2AB c4 B2G2 A2F2 G4 :|
 
-X:BFS 14-04 86
+X:BFS 14-04 89
 T:Doctor Fauster's Tumblers
 B:Walsh, 1735
 B:Hardcore English, 2007, p34-2

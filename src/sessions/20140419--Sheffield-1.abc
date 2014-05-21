@@ -1,6 +1,6 @@
 % "Ceilidh and Contra" session
 
-X:SSF 13-19 101
+X:SSF 14-19 101
 T:Bluebell Polka
 H:attr. Frank Stanley
 B:Kerr, Merry Melodies, c1880s
@@ -18,7 +18,7 @@ P:D
 K:Em
 E2E2 EFG2 E2E2 EFG2 |1,3 F2FG FED2 FEFG FED2 :|2 F2F2 FED2 E4 E4 :|4 F2F2 FED2 E4 D2 ||
 
-X:SSF 13-19 102
+X:SSF 14-19 102
 T:Boys of Bluehill
 O:Irish/American
 B:O'Neill, Dance Music of Ireland: 1001 Gems, 1907
@@ -30,9 +30,9 @@ dB| BAFA DAFA BABd e2de fagf egfe |1,3 dfed B2 :|2,4 d2f2 d2 :|
 P:B
 fg| afdf a2gf efga b2ag fagf egfe dfed B2 || [P:(A2)] :|
 
-% Into SSF 13-19 103 Off To California
+% Into SSF 14-19 103 Off To California
 
-X:SSF 13-19 104
+X:SSF 14-19 104
 T:Trumpet Hornpipe
 N:aka Captain Pugwash
 H:John Moore MS, c1837-1840
@@ -43,7 +43,7 @@ P:A
 P:B
 Bc|(3dddd2 (3dddd2 efgf edcB cded cBAG FGAF D2EF (3GGGG2 (3BBBB2 (3cccc2 (3^c^c^c^c2 dgfe dcBA G2B2 G2 :|
 
-X:SSF 13-19 105
+X:SSF 14-19 105
 T:Hogmanay Jig
 O:Scotland
 C:Andrew Rankine
@@ -55,7 +55,7 @@ de| fgf fgf e2d d2e fgf fed c2B B3 cdc cde B2A A3 |1,3 Ace a2g g2f f :|2,4 Ace a
 P:B
 de| fgf efe ded cdc BcB BAB c2B A3 gag fgf efe ded |1,3 cdc BcB A3-A :|2,4 cBA ABc d3-d :|
 
-X:SSF 13-19 106
+X:SSF 14-19 106
 T:Julia Delaney
 O:Ireland
 N:Recorded by The Bothy Band, 1975
@@ -70,7 +70,7 @@ de| f2fe fagf ecgc acec |1,3 fede fagf edce d2 :|2,4 fedf edcB Add^c d2 :|
 
 % Into..
 
-X:SSF 13-19 107
+X:SSF 14-19 107
 T:Catharsis
 C:Amy Cann
 O:Vermont
@@ -82,7 +82,7 @@ DFGF DFGF |1,3 DFGA BAGF DFGF DFGF DCB,C B,A,G,2 :|2,4 DFGA B3c dcBc BAGF DFGA G
 P:B
 Bc| dcG cBG B2-BABc BABc dcF cBF B2-BABc dcGc dcE cBE B2-BABc BABc dcBc BAGF DFGF G2 :|
 
-X:SSF 13-19 108
+X:SSF 14-19 108
 T:Twin Sisters
 N:Not the one collected by Maud Karpeles (which is in 6/8 and used for Upton Stick Dance)
 B:Raven, 1000 English Country Dance Tunes, 1999
@@ -93,7 +93,7 @@ D2| G2B2 ABcA B2g2 d4 cBAc B2G2 |1,3 ABAG E2 :|2,4 A2F2 G2 :|
 P:B
 g2g2 f2d2 efge d4 |1,3 cBAc B2G2 ABAG E2D2 :|2 cBAc BAGB A2F2 G2 :| [P:(A2)] ||
 
-X:SSF 13-19 109
+X:SSF 14-19 109
 T:The Charming Fellow
 B:Thompson, Compleat Collection of 200 Favourite Country Dances, 1788 (vol.5, p. 31)
 M:4/4
@@ -103,7 +103,7 @@ G2B2 cBAG FGAB AFED |1,3 G2B2 cBAG B2d2 d4 :|2,4 EFGE AGFE D2G2 G4 :|
 P:B
 B2d2 BdBG F2A2 FAFD B2d2 BdBG B2d2 d4 B2d2 edcB cBAG GFED EFGE AGFE D2G2 G4 :|
 
-X:SSF 13-19 110
+X:SSF 14-19 110
 T:Sheepskin And Beeswax
 C:La Bottine Souriante
 O:Quebec
@@ -116,7 +116,7 @@ a2ab a2ga bagf e2ef gefd efed |1,3 Beed BAA2 :|2,4 BedB A4 :|
 
 % Into...
 
-X:SSF 13-19 111
+X:SSF 14-19 111
 T:?
 M:2/2
 K:D
@@ -126,7 +126,7 @@ P:B
 A2FA dFAd fAdf a2FG A2FA d2Ad c2B2 B2GF
 E3F G2A2 c4 c2B2 A2cB AGFE |1 F2D2 F2G2 :|2 D2F2 D4 ||
 
-X:SSF 13-19 112
+X:SSF 14-19 112
 T:Loch Leven Castle
 O:Scotland
 B:Kerr, Merry Melodies, c1880s
@@ -139,7 +139,7 @@ eg| a2ab ageg |1,3 agab agef gage dedc B2G2 G2 :|2 agab aged cBcd edcB c2A2 A2 :
 P:coda
 cB| AGAB cBcd eged cBAG AcBd cedB c2A2 A2 ||
 
-X:SSF 13-19 113
+X:SSF 14-19 113
 T:My Darling Asleep
 O:Ireland
 B:O'Neill, Music of Ireland: 1850 Melodies, 1903
@@ -152,7 +152,7 @@ A| F2A BAA F2A BAA F2A def gfg eag || [P:(A2)] :|
 
 % Into...
 
-X:SSF 13-19 114
+X:SSF 14-19 114
 T:Donnybrook Fair
 O:Ireland
 B:Roche, Collection, 1913
@@ -165,7 +165,7 @@ f| gfe fed ege dBA |1,3 Bee dBA Bee e2 :|2 Bee dBG AGF G2 :|
 P:coda
 f| gfg aga bge dBA BAB GAB AGF G2 ||
 
-X:SSF 13-19 115
+X:SSF 14-19 115
 T:Donald Of Dundee
 N:Wm Mittel MS, New Romney, Kent, 1799 (vmp WM.068)
 M:4/4
@@ -177,7 +177,7 @@ de| f2f2 f3g e2e2 e3f d2d2 d3e c2^A2 F4 B2c2 d2e2 f2d2 B2g2 f2B2 c2^A2 B4-B2 :|
 P:C
 c2| d3e d2f2 g2f2 e2d2 |1,3 d2B2 B2A2 A2F2 F2A2 :|2,4 d2B2 c2^A2 B4-B2 :|
 
-X:SSF 13-19 116
+X:SSF 14-19 116
 T:Battered Hake
 C:Colin Cotter
 M:4/4
@@ -187,9 +187,9 @@ d2cd e2c2 d2B2 A2A2 |1,3 B2G2 GABG A2F2 E2D2 :|2,4 B2G2 c2A2 d2B2 e2c2 :|
 P:B
 DEFG A2A2 DEFG A2A2 |1,3 EFGA B2B2 EFGA B2B2 :|2 B2G2 GABG A2F2 E2D2 :|4 B2G2 c2A2 d2B2 e2c2 ||
 
-% Into SSF 13-19 117 The Sloe
+% Into SSF 14-19 117 The Sloe
 
-X:SSF 13-19 118
+X:SSF 14-19 118
 T:Bouchard's Hornpipe
 C:Mike Springer
 O:California
@@ -203,7 +203,7 @@ fg| a2ab agfa gfef g2ag f2df gfed cdec A2A2 B3A BcdB AGFA d2A2 d2f2 edc2 d4-d2 :
 
 % Into...
 
-X:SSF 13-19 119
+X:SSF 14-19 119
 T:Pays De Haut
 O:Québec?
 M:4/4
@@ -213,7 +213,7 @@ f2| afaf d2ef gfge c2ef gfge cABc |1,3 defg a2 :|2,4 d2f2 d2 :|
 P:B
 AG| FAdA FAdA GBdB GBdB |1,3 ABcd efec defg a2 :|2,4 ABcd efge d2f2 d2 :|
 
-X:SSF 13-19 120
+X:SSF 14-19 120
 T:The Scottish Schottische
 O:Faeroe Islands?
 M:4/4
@@ -224,7 +224,7 @@ P:A
 P:B
 d2| g2dB G2d2 g2f<g e4 agfg d2BG AGAB cdef fgdB G2d2 g2f<g e3c BdcB AcBA G2B2 G4 :|
 
-X:SSF 13-19 121
+X:SSF 14-19 121
 T:?
 M:4/4
 K:A
@@ -233,9 +233,9 @@ A2cA e3e fede cABc d2fe f3e fagb gefg a2ec cAce a2ga f4 e2dc B2A2 zAG2 A4 :|
 P:B
 A2cA G3A B3d cBAB Acea f3e dcBc defg a2ec B3c defd BGE2 Acea fedc BAGB A4 :|
 
-% SSF 13-19 122 Three Rusty Swords, into SSF 13-19 123 Old Lancashire Hornpipe
+% SSF 14-19 122 Three Rusty Swords, into SSF 14-19 123 Old Lancashire Hornpipe
 
-X:SSF 13-19 124
+X:SSF 14-19 124
 T:?
 M:4/4
 K:G
@@ -248,9 +248,9 @@ B2c2| d2de d2c2 |1,3 B4 B3c d2g2 f2e2 e2d2 :|2,4 B4-B2AB c2A2 G2F2 G4 G2 :|
 P:D
 B2| A3B c2A2 Bcd2 d2B2 A3B c2A2 Bcde d2B2 e2e2 efge d2d2 d2de d2c2 B2A2 G4 G2 :|
 
-% SSF 13-19 125 Rakes of Mallow, into SSF 13-19 126 Soldier's Joy
+% SSF 14-19 125 Rakes of Mallow, into SSF 14-19 126 Soldier's Joy
 
-X:SSF 13-19 127
+X:SSF 14-19 127
 T:Elzic's Farewell
 C:Harvey G. Elswick, 1889
 B:Krassen, Appalachian Fiddle, 1983
@@ -263,7 +263,7 @@ ABAG EGAB cBcd eged cBAc BAG2 EGAB A4 :|
 P:C
 A,3A, A,B,C2 D4 DCA,C D3E DCA,C DEDC A,2G,2 :|
 
-X:SSF 13-19 128
+X:SSF 14-19 128
 T:?
 M:4/4
 R:swung
@@ -273,7 +273,7 @@ P:A
 P:B
 (3DEF| GFGE CEGB AGAF DFAc BABG cBAG AGFE D2 (3DEF GFGE-EGC2 DCDB,-B,DG,2 A,G,A,B, CA,DC B,2G,2 G,4 :|
 
-X:SSF 13-19 129
+X:SSF 14-19 129
 T:Drummond Castle
 O:Scotland
 H:Drummond Castle MS, 1734
@@ -287,7 +287,7 @@ c2c edc d2d f2d cBc edc Bdg dBG c2c edc deg a3 ege deg edB A3 :|
 
 % Into...
 
-X:SSF 13-19 130
+X:SSF 14-19 130
 T:The Stool Of Repentance
 O:Scotland
 N:William Dixon MS, 1733
@@ -298,7 +298,7 @@ a2e c2e agf edc |1,3 a2f f2g a2g f2e :|2,4 d2e f2e fac B2A :|
 P:B
 cAA eAA cAA edc dBB fBB dBB fed cAA eAA aga edc d2c d2e fac B2A :|
 
-X:SSF 13-19 131
+X:SSF 14-19 131
 T:Mouse In The Kitchen
 M:6/8
 K:A
@@ -307,7 +307,7 @@ c3 cde |1,3 dcA F2A E2E EFA B3 Bcd :|2,4 dcA F2a afe fec ecB B2A :|
 P:B
 B3 BAB |1,3 c2e cBA B2B BAB cea-a2A :|2,4 c2e cea afe fec ecB B2A :|
 
-X:SSF 13-19 132
+X:SSF 14-19 132
 T:Harvest Home / Cork Hornpipe
 M:4/4
 K:D
@@ -316,7 +316,7 @@ DAFA DAFA defe dcBA |1,3 eAfA gAfA (3efe(3dcB (3ABA(3GFE :|2,4 eAfA gece d2f2 d2
 P:B
 cd| e4 f4 g2f2 e4 e2f2 g2f2 (3efe(3dcB (3ABA(3GFE || [P:(A2)] :|
 
-X:SSF 13-19 133
+X:SSF 14-19 133
 T:?
 M:4/4
 K:G
@@ -327,7 +327,7 @@ F2| E4 G4 c4-c2B2 |1,3 ABAG F2AB AGF2 E2D2 :|2 ABAG FDEF G4 G2 :| E4 G4 c4-c2Bc 
 
 % Into...
 
-X:SSF 13-19 134
+X:SSF 14-19 134
 T:?
 M:4/4
 K:G
@@ -336,7 +336,7 @@ GA| BcBA G2E2 G2E2 D4 |1,3 E2G2 B3c B2A2-A2 :|2,4 E2G2 B4 A2G2-G2 :|
 P:B
 GA| Bd2B d3g edBc d2d2 |1,3 g4 g3d e2d2-d2 :|2,4 B3d BAGB A2G2-G2 :|
 
-X:SSF 13-19 135
+X:SSF 14-19 135
 T:?
 M:6/8
 K:G
@@ -345,7 +345,7 @@ E|B,2E G2A BAG FED C2F G2A BAG BAG FDD A2D FEF AGF |1 GFE BAG F3-F2 :|2 GFE FED 
 P:B
 B|Bef gfe |1,3 cef gfe dfg agf gfe e2 :|2,4 c2g a2^a b2g fgf e3-e2 :|
 
-X:SSF 13-19 136
+X:SSF 14-19 136
 T:?
 M:3/4
 K:G
@@ -356,7 +356,7 @@ d2|d4d2 e2d2Bc d4B2 B2A4 || [P:(A2)] :|
 
 % Into...
 
-X:SSF 13-19 137
+X:SSF 14-19 137
 T:En Avant Blonde
 O:Brittany/Louisiana?
 M:3/4
@@ -366,7 +366,7 @@ E2G3A B4B2 D2F3G A4AB A2G2F2 E3FG2 F2FEFD E4 :|
 P:B
 GA|B2GABc B2A2G2 A2FGAB A2G2F2 B2GABc B2A2G2 F3EDF E4 :|
 
-X:SSF 13-19 138
+X:SSF 14-19 138
 T:Laura
 H:Hardy family MS, late 1800s
 B:Callaghan, Hardcore English, 2007, p.41-2
@@ -379,7 +379,7 @@ FEFG A2F2 GFGA B2d2 |1,3 c2e2 B2d2 AGAB A2 :|2,4 c2e2 d2F2 G4 G2 :|
 
 % Into...
 
-X:SSF 13-19 139
+X:SSF 14-19 139
 T:Petronella
 O:Scotland?
 B:Kerr, First Collection of Merry Melodies, 1870s
@@ -392,7 +392,7 @@ dA|F2fd A2af g2ga gfed |1,3 cdec A2a2 f2fg fe :| cdec A2dc d4 d2 :|
 
 % Into...
 
-X:SSF 13-19 140
+X:SSF 14-19 140
 T:?
 M:4/4
 K:G
@@ -401,11 +401,11 @@ B2G2 E3D EFGA B2G2 cBce d2B2 |1,3 c2cB A4 :|2,4 cBA2 G4 :|
 P:B
 d2g2 e4 dcde d2B2 c2cB ABc2 |1,3 d2e2 d4 :|2,4 B2A2 G4 :|
 
-% SSF 13-19 141 Lemonville, into SSF 13-19 142 The Quarryman
+% SSF 14-19 141 Lemonville, into SSF 14-19 142 The Quarryman
 
-% SSF 13-19 143 Pippa Sandford's 
+% SSF 14-19 143 Pippa Sandford's 
 
-X:SSF 13-19 144
+X:SSF 14-19 144
 T:Barham Down
 B:Playford, 11th ed., 1701
 M:3/2
@@ -415,6 +415,6 @@ A2GF E2D2 A2d2 A2GF G2A2 E4 A2GF E2D2 A2c2 d2ef gfec d4 :|
 P:B
 a2f2 d2a2 f2d2 g2B2 e2B2 c4 d2cB AGFE FGA2 |1 B2cd cdec defg :|2 B2cd cdec d4 ||
 
-% SSF 13-19 145 Mount Hills
+% SSF 14-19 145 Mount Hills
 
-% SSF 13-19 146 Doctor Fauster's Tumblers
+% SSF 14-19 146 Doctor Fauster's Tumblers

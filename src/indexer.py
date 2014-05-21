@@ -1,6 +1,6 @@
 #!/usr/bin/python
 
-import sys, csv, re
+import sys, csv, re, argparse
 
 
 class Performance:
@@ -14,7 +14,6 @@ class Performance:
         c_lass.PERFORMANCES[new.id] = new
         if new.session not in c_lass.BY_SESSION:
             c_lass.SESSIONS.append(new.session)
-            c_lass.SESSIONS.sort()
             c_lass.BY_SESSION[new.session] = []
         c_lass.BY_SESSION[new.session].append(new)
 
@@ -168,7 +167,7 @@ class Tune:
 
 
 
-def output_jekyll(sessions):
+def output_jekyll(out_tunes,sessions):
     print '''---
 title: Session tunes
 categories: colour
@@ -214,19 +213,27 @@ These are the most popular tunes played at Walthamstow folk session
     print '''\nThe source data and indexer script can be found [on github](https://github.com/colourcountry/tunes/tree/master/src)'''
 
 if __name__=="__main__":
-    try:
-        infile = sys.argv[2]
-    except IndexError:
-        infile = "index.csv"
+
+    parser = argparse.ArgumentParser()
+
+    parser.add_argument("-s", "--source", help="CSV tune index file to read", default="index.csv")
+    parser.add_argument("-f", "--filter", metavar="PREFIX", help="Only look at sessions whose ID begins with PREFIX")
+    parser.add_argument("-k", "--sort-key", help="Sort results by this key", choices=["popularity","name"], default="popularity")
+    parser.add_argument("-p", "--popularity", help="Minimum popularity (over the filtered sessions)",type=int)
+    parser.add_argument("-P", "--max-popularity", help="Maximum popularity (over the filtered sessions)",type=int)
+    parser.add_argument("-r", "--reverse", help="Reverse order of results", action="store_true")
+    parser.add_argument("format", help="Format of desired output", choices=["ids","info","jekyll","popularity"])
+
+    ARGS = parser.parse_args()
 
     header = True
     date = '?'
     location = '?'
     previous = '?'
-    for p in csv.reader(file(infile,'r')):
+    for p in csv.reader(file(ARGS.source,'r')):
         if header:
             header = False
-        else:
+        elif len(p)>=10:
             if p[1]: date = p[1]
             if p[2]: location = p[2]
             if p[3]=='yes':
@@ -245,41 +252,48 @@ if __name__=="__main__":
                                   ext_performances=p[9],
                                   remarks=p[10])
             previous = p[0]
+        else:
+            sys.stderr.write("WARNING: short line %s\n" % p)
 
 
-    if len(sys.argv)<2:
-        print '''
-Syntax: indexer.py <target> <indexfile>
-
-target =
-    wfs
-    info
-    filenames
-
-indexfile defaults to 'index.csv'
-
-'''
-        raise SystemExit
-
-    elif sys.argv[1]=='wfs':
-        # build the page showing most popular tunes at walthamstow
-        # pop non-WFS sessions completely as they don't count towards popularity
+    if ARGS.filter:
         for i in range(len(Performance.SESSIONS)-1,-1,-1):
-            if not Performance.SESSIONS[i].startswith("WFS"):
-                pass#Performance.SESSIONS.pop(i)
-            elif Performance.SESSIONS[i] in ["WFS 13-01", "WFS 13-02", "WFS 13-06"]:
-                # incomplete coverage
+            if not Performance.SESSIONS[i].startswith(ARGS.filter):
                 Performance.SESSIONS.pop(i)
 
-        output_jekyll(Performance.SESSIONS)
+    if ARGS.sort_key=='name':
+        KEY = Tune.get_index_name
+    else:
+        KEY = Tune.get_popularity
 
-    elif sys.argv[1]=='info':
-        for tune in Tune.list( key=Tune.get_popularity ):
-            print '%s\n\n' % tune
+    out_tunes = []
+    for tune in Tune.list( key=KEY ):
+        if not ARGS.popularity or Tune.get_popularity(tune)[0]>=ARGS.popularity:
+            if not ARGS.max_popularity or Tune.get_popularity(tune)[0]<ARGS.max_popularity:
+                out_tunes.append(tune)
 
-    elif sys.argv[1]=='filenames':
-        for tune in Tune.list( key=Tune.get_index_name ):
-            if Tune.get_popularity(tune)[0]>1:
-                print "split/%s.abc" % tune.id
+    if ARGS.reverse:
+        out_tunes.reverse()
+
+    if ARGS.format=='jekyll':
+        output_jekyll(out_tunes,Performance.SESSIONS)
+
+    elif ARGS.format=='info':
+        for tune in out_tunes:
+           print '%s\n\n' % tune
+
+    elif ARGS.format=='ids':
+        for tune in out_tunes:
+            print tune.id
+
+    elif ARGS.format=='popularity':
+        for tune in out_tunes:
+            p = Tune.get_popularity(tune)
+
+            ticks = ''
+            for column in p[1:]:
+                ticks += 'y ' if column else '. '
+
+            print p[0],ticks,tune.id,tune.get_index_name()
 
 

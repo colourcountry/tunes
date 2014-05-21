@@ -10,11 +10,12 @@
   }
 }
 
-#(set-global-staff-size 13)
+#(set-global-staff-size 14)
 
 #(set! paper-alist (cons '("poker card" . (cons (* 3.5 in) (* 2.5 in))) paper-alist))
 #(set! paper-alist (cons '("bridge card" . (cons (* 3.5 in) (* 2.25 in))) paper-alist))
 #(set! paper-alist (cons '("1080p 300dpi" . (cons (* 6.4 in) (* 3.6 in))) paper-alist))
+#(set! paper-alist (cons '("a4/4" . (cons (* 210 mm) (* 74 mm))) paper-alist))
 
 \header {
   tagline = ""  % removed
@@ -22,7 +23,7 @@
 
 \paper {
 
-#(set-paper-size "1080p 300dpi")
+#(set-paper-size "a4/4")
 
 #(define top-margin (* 5 mm))
 #(define bottom-margin (* 7 mm))

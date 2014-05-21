@@ -1,4 +1,6 @@
 X:WFS 13-10 01
+S:Walthamstow session 2013-10-09
+Z:<djl@colourcountry.net>
 M:2/4
 K:G
 P:A
@@ -9,6 +11,8 @@ g>f| ed Bc d g>f ed GA B3
 d| ec g>f ed BG AG GA G3 |]
 
 X:WFS 13-10 03
+S:Walthamstow session 2013-10-09
+Z:<djl@colourcountry.net>
 M:2/4
 K:G
 P:A
@@ -18,6 +22,8 @@ Bd de/f/ g/f/g/f/ gd |1 Bd dB c/B/A/B/ A2 :|2 Bd A>c BG G2 :|
 
 X:WFS 13-10 04
 T:Uncle Bernard's Polka
+S:Walthamstow session 2013-10-09
+Z:<djl@colourcountry.net>
 M:4/4
 L:1/4
 K:G
@@ -28,6 +34,8 @@ P:B
 
 X:WFS 13-10 05
 T:Jamie Allen
+S:Walthamstow session 2013-10-09
+Z:<djl@colourcountry.net>
 M:2/4
 K:G
 P:A
@@ -37,6 +45,8 @@ B/A/| Gg g>f ed cB Aa a>g fd ef g>a g/f/e d2 B>c dd c/B/A G3 :|
 
 X:WFS 13-10 06
 T:The Lincolnshire Poacher
+S:Walthamstow session 2013-10-09
+Z:<djl@colourcountry.net>
 M:6/8
 K:D
 P:A
@@ -47,6 +57,8 @@ f2e| d2d dcB A2G F2A d2d e2c d3
 
 X:WFS 13-10 07
 T:The Keel Row
+S:Walthamstow session 2013-10-09
+Z:<djl@colourcountry.net>
 M:2/4
 K:G
 P:A
@@ -56,6 +68,8 @@ Bd dg e2 dc |1,3 B2 GB AF D2 :|2,4 BG AF G4 :|
 
 X:WFS 13-10 08
 T:Kafoozalum
+S:Walthamstow session 2013-10-09
+Z:<djl@colourcountry.net>
 M:2/4
 K:G
 P:A
@@ -65,15 +79,20 @@ BG DG BG B2 |1,3 cA FA cA c :|2,4 GA BG A2 G2 :|
 
 X:WFS 13-10 09
 T:Bear Dance
+S:Walthamstow session 2013-10-09
+Z:<djl@colourcountry.net>
+O:Flemish
 M:2/4
-K:G
+K:Em
 P:A
-BE E2 BE E>F GG FG A3G/A/ BB AA GG F2 E/F/G FD E4 :|
+"Em" BE E2 BE E>F GG FG "D"A3G/A/ "G"BB "D"AA "C"GG "Bm"F2 "Em"E/F/G "D"FD "Em"E4 :|
 P:B
-E/F/G E/F/G FD D2 E/F/G E/F/G A3G/A/ BB AA GG F2 E/F/G FD E4 :|
+"Em"E/F/G E/F/G "D"FD D2 "Em"E/F/G E/F/G "D"A3G/A/ "G"BB "D"AA "C"GG "Bm"F2 "Em"E/F/G "D"FD "Em"E4 :|
 
 X:WFS 13-10 13
 T:Rogue's March
+S:Walthamstow session 2013-10-09
+Z:<djl@colourcountry.net>
 M:6/8
 K:G
 P:A
@@ -83,6 +102,8 @@ g3 f3 e3 def g2g f2f e2e d2c [P:(A2)] :|
 
 X:WFS 13-10 14
 T:Salmon Tails Up The Water
+S:Walthamstow session 2013-10-09
+Z:<djl@colourcountry.net>
 M:2/4
 K:G
 P:A
@@ -92,24 +113,30 @@ Bd dc/B/ ce e2 |1 dB AB/A/ GE D2 :|2 f| gf ed ef g2 :|3 dB AB/A/ GE DE/F/ || [P:
 
 X:WFS 13-10 15
 T:Winster Gallop
+S:Walthamstow session 2013-10-09
+Z:<djl@colourcountry.net>
 M:2/4
 K:G
 P:A
-GB GB GB d2 A>c BA GB d2 ce fe dB d2 A>c BA G2 G2 :|
+"G"GB GB GB d2 "D"A>c BA "G"GB d2 "C"ce fe "G"dB d2 "D"A>c BA "G"G2 G2 :|
 P:B
-gf/f/ ed gf/f/ ed gf/f/ ed cB A2 fe d2 fe d2 d2 A>c BA G2 :|
+"G"gf/f/ ed gf/f/ ed gf/f/ ed "D"cB A2 "D"fe d2 fe d2 d2 A>c "G"BA G2 :|
 
 X:WFS 13-10 16
 T:Rakes of Mallow
+S:Walthamstow session 2013-10-09
+Z:<djl@colourcountry.net>
 M:2/4
 K:G
 P:A
-GB GB |1,3 GB c/B/A/G/ FA FA FA d/c/B/A/ :|2,4 G/A/B/c/ d2 c/B/A/G/ F/G/A/c/ BG G2 :|
+"G"GB GB GB c/B/A/G/ "D"FA FA FA d/c/B/A/ "G"GB GB G/A/B/c/ d2 "D"c/B/A/G/ F/G/A/c/ "G"BG G2 :|
 P:B
-gf/e/ dc Bc d2 |1,3 gf/e/ dc Bc A2 :|2,4 c/B/A/G/ F/G/A/c/ BG G2 :|
+"G"gf/e/ dc Bc d2 |1,3 "G"gf/e/ dc Bc "D"A2 :|2,4 "D"c/B/A/G/ F/G/A/c/ "G"BG G2 :|
 
 X:WFS 13-10 17
 T:Willafjord
+S:Walthamstow session 2013-10-09
+Z:<djl@colourcountry.net>
 K:D
 P:A
 A2FA2DFA B2GB2DGB |1,3 A2FA2DFA EFGAGFED :|2,4 ABcd efge f2d2 d4 :|
@@ -118,6 +145,8 @@ e2|f2df2Adf geaf gfed |1,3 f2df2Adf e2ce2Ace :|2,4 ABcd efge f2d2 d4 :|
 
 X:WFS 13-10 18
 T:Donkey Riding
+S:Walthamstow session 2013-10-09
+Z:<djl@colourcountry.net>
 M:2/4
 K:G
 P:A
@@ -127,15 +156,21 @@ e2 d>d cd B2 |1,3 BA AG/A/ BA A2 :|2,4 BA dd g2 g2 :|
 
 X:WFS 13-10 19
 T:Bobby Shaftoe
+S:Walthamstow session 2013-10-09
+Z:<djl@colourcountry.net>
 M:2/4
 K:G
 P:A
-GG Gc Bd BG |1,3 DD DG FA FD :|2,4 Ac AF G2 G2 :|
+"G"GG Gc Bd BG |1,3 "D"DD DG FA FD :|2,4 "D"Ac AF "G"G2 G2 :|
 P:B
-Bd BG Bd B2 |1,3 Ac AF Ac A2 :|2,4 Ac AF G2 G2 :|
+"G"Bd BG Bd B2 |1,3 "D"Ac AF Ac A2 :|2,4 "D"Ac AF "G"G2 G2 :|
 
 X:WFS 13-10 21
 T:Lannigan's Ball
+S:Walthamstow session 2013-10-09
+O:Ireland
+N:"Brothers of York" has a similar B part.
+Z:<djl@colourcountry.net>
 M:6/8
 K:G
 P:A
@@ -145,16 +180,26 @@ e2f gfe fag fed |1,3 e2f gfe fBB B3 :|2,4 e2B cBA BGE E3 :|
 
 X:WFS 13-10 22
 T:Harper's Frolic
+S:Walthamstow session 2013-10-09
+H:1762 (Harrison and Wall MS)
+N:Often followed by "Bonny Kate"
+Z:<djl@colourcountry.net>
 M:2/2
 L:1/4
 K:D
 P:A
-A/G/| FA DA/G/ FA Dd cd ec |1,3 d/c/d/e/ f2 :|2,4 d2 d2 :|
+A/G/| FA DA/G/ FA Dd cd ec |1,3 d/c/d/e/ f2 :|2,4 d2 d :|
 P:B
-e| fd/d/ df ge/e/ eg |1,3 fd/d/ df e/d/c/B/ A2 :|2,4 fd ec d2 d2 :|
+e| fd/d/ df ge/e/ eg |1,3 fd/d/ df e/d/c/B/ A2 :|2,4 fd ec d2 d :|
 
 X:WFS 13-10 23
-T:Bonnie Kate
+T:Bonny Kate
+S:Walthamstow session 2013-10-09
+N:Often follows "Harper's Frolic"
+H:1758 (Johnson 8)
+B:Callaghan, Hardcore English, 2007, p.30-2
+B:Johnson, 200 Favourite Country Dances, vol.8, 1758
+Z:<djl@colourcountry.net>
 M:2/4
 K:G
 g>f g>f gd dB c/d/e dc BG GA BG GA/B/ cA Ac B/c/d cB |1 Ad ef :|2 A4
@@ -163,6 +208,8 @@ BG GA/B/ cA dB ec cd/e/ fd de/f/ g>f g/f/e de/f/ gB c/d/e dc |1 BG GA :|2 BG G2
 
 X:WFS 13-10 24
 T:The Bonny Breast Knot
+S:Walthamstow session 2013-10-09
+Z:<djl@colourcountry.net>
 M:2/4
 K:G
 P:A
@@ -172,6 +219,8 @@ B/c/| d>e d>e d/c/B/A/ G |1,3 AA/B/ c/B/c/d/ eA AB/c/ :|2,4 AA DE/F/ G2 G :|
 
 X:WFS 13-10 25
 T:Young Collins
+S:Walthamstow session 2013-10-09
+Z:<djl@colourcountry.net>
 M:2/4
 K:G
 P:A
@@ -181,6 +230,8 @@ ED E/F/G AA G>A BA B/c/d ee d/c/B/A/ [P:(A)] |]
 
 X:WFS 13-10 26
 T:Spootiskerry
+S:Walthamstow session 2013-10-09
+Z:<djl@colourcountry.net>
 M:4/4
 K:G
 P:A
@@ -189,6 +240,8 @@ P:B
 ef| g2ed edB2 BABG E2DE GABd eged |1 B2A2 A2 :|2 B2G2 G2 :|3 B2A2 A2BA [P:(A2)] :|
 
 X:WFS 13-10 27
+S:Walthamstow session 2013-10-09
+Z:<djl@colourcountry.net>
 M:4/4
 K:G
 P:A
@@ -197,7 +250,9 @@ P:B
 Bd| g2gf gdBd e2d2 d2ef gdgf gdBd c2A2 A2BA [P:(A)] :|
 
 X:WFS 13-10 28
-T:Morpeth Rant (New)
+T:Morpeth Rant
+S:Walthamstow session 2013-10-09
+Z:<djl@colourcountry.net>
 M:4/4
 K:G
 P:A
@@ -206,7 +261,9 @@ P:B
 A2| dfaf dfaf gfef g2ef |1,3 gfed cdeg fefg a2 :|2,4 gfed cAag f2d2 d4 :|
 
 X:WFS 13-10 29
-T:Morpeth Rant (Old)
+T:Old Morpeth Rant
+S:Walthamstow session 2013-10-09
+Z:<djl@colourcountry.net>
 K:G
 P:A
 D2| G2DB, G,B,DB, G,CEC G,B,DB, G2AB cABG |1,3 F2A2 AcBA :|2,4 D2G2 G2 :|
@@ -215,6 +272,8 @@ B1d1| gfed B2GB cBAG F2D2 ECEG cBAG F2D2 D2 | ECEG cBAG FDFA dcBA Ggfg dBcA G2G2
 
 X:WFS 13-10 31
 T:Idbury Hill
+S:Walthamstow session 2013-10-09
+Z:<djl@colourcountry.net>
 M:4/4
 K:Edor
 P:A
@@ -224,6 +283,8 @@ B3c d2B2 edcB A4 B2Bc d2B2 e4 B4 || [P:(A2)] :|
 
 X:WFS 13-10 32
 T:I'll Go And Enlist For A Sailor
+S:Walthamstow session 2013-10-09
+Z:<djl@colourcountry.net>
 M:2/4
 K:Edor
 P:A
@@ -233,6 +294,8 @@ e2 f>e dB B>c dd dF/G/ A/B/A/F/ D2 || [P:(A2)] :|
 
 X:WFS 13-10 33
 T:Navvy On The Line
+S:Walthamstow session 2013-10-09
+Z:<djl@colourcountry.net>
 M:4/4
 R:swung
 K:G
@@ -243,6 +306,8 @@ AG| FADF A2GF GBDG B2AG FADF A2GF GDEF GABc || [P:(A2)] :|
 
 X:WFS 13-10 36
 T:Jamaica
+S:Walthamstow session 2013-10-09
+Z:<djl@colourcountry.net>
 M:2/4
 K:G
 P:A
@@ -252,6 +317,8 @@ gg fe/d/ |1,3 ee de/f/ gg f/g/a e2 d2 |2,4 ee dB c/d/e dc/B/ A2 G2 :|
 
 X:WFS 13-10 39
 T:Man In The Moon
+S:Walthamstow session 2013-10-09
+Z:<djl@colourcountry.net>
 M:3/4
 K:G
 P:A
@@ -261,6 +328,8 @@ B2c2| d6 d6 c2A2B2 c6 B3ABc d2B2G2 E2F2G2 A2F2D2 || [P:(A2)] |]
 
 X:WFS 13-10 41
 T:Portsmouth
+S:Walthamstow session 2013-10-09
+Z:<djl@colourcountry.net>
 L:1/4
 K:G
 P:A
@@ -270,6 +339,8 @@ d| g>a b/a/g/f/ gd Bd gB c/B/A/G/ A3 || [P:(A2)] :|
 
 X:WFS 13-10 43
 T:Speed The Plough
+S:Walthamstow session 2013-10-09
+Z:<djl@colourcountry.net>
 L:1/4
 K:G
 P:A
@@ -279,6 +350,8 @@ gg ge/f/ gf/e/ dB ce/c/ Bd/B/ |1,3 cA A2 :|2,4 cA G2 :|
 
 X:WFS 13-10 44
 T:Liverpool Hornpipe
+S:Walthamstow session 2013-10-09
+Z:<djl@colourcountry.net>
 M:4/4
 K:D
 P:A
