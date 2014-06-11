@@ -224,7 +224,7 @@ Z:<djl@colourcountry.net>
 M:4/4
 K:G
 P:A
-G2G2 FGAF GABc d2Bd |1,3 e2ce d2B2 ABAG E2D2 |2,4 e2ce dBGB A2F2 G2 :|
+G2G2 FGAF GABc d2Bd |1,3 e2ce d2B2 ABAG E2D2 :|2,4 e2ce dBGB A2F2 G2 :|
 P:B
 f2| g2eg f2d2 e2ce d2B2 e2ce d2B2 ABAG E2D2 [P:(A2)] :|
 
@@ -235,9 +235,9 @@ Z:<djl@colourcountry.net>
 M:4/4
 K:G
 P:A
-GA| B2dB AGA2 GABc d2 [1,3ef | gfge dBGd e2A2 A2 :|2,4 ef| gfge dBGA B2A2 G2 :|
+GA| B2dB AGA2 GABc d2ef |1,3 gfge dBGd e2A2 A2 :|2,4 gfge dBGA B2A2 G2 :|
 P:B
-d2| edef gfge dBGB d2d2 edef gfge dBGB A2x2 [P:(A2)] :|
+d2| edef gfge dBGB d2d2 edef gfge dBGB A2 [P:(A2)] :|
 
 X:WFS 13-07 22
 T:Galopede
@@ -246,8 +246,8 @@ Z:<djl@colourcountry.net>
 M:4/4
 K:G
 P:A
-dc| B2Bc A2AB G2G2 G2 [1,3 AB| cBcd edcB A2A2 A2 :|2,4 AB| cBAG FGAF G4 G2 :|
+dc| B2Bc A2AB G2G2 G2AB |1,3 cBcd edcB A2A2 A2 :|2,4 cBAG FGAF G4 G2 :|
 P:B
-Bc| d2gf e2e2 dcBc A2 [1,3 Bc| d2gf edcB A2A2 A2 :|2,4 dc| B2Bc A2AB G2G2 G2 :|
+Bc| d2gf e2e2 |1,3 dcBc A2Bc d2gf edcB A2A2 A2 :|2,4 dc| dcBc A2dc B2Bc A2AB G2G2 G2 :|
 P:C
 Bc| d2dd d2g2 d2dd d2g2 |1,3 d2d2 edcB A2A2 A2 :|2,4 edcB AcBA G4 G2 :|

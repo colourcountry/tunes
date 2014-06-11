@@ -1480,7 +1480,7 @@ if __name__=="__main__":
 
     if ARGS.ids == ["-"]:
         sys.stderr.write("% Enter tune IDs one per line or finish with EOF (Ctrl-D). Nothing specified = format entire collection\n")
-        ARGS.ids = [line.strip() for line in sys.stdin.readlines()]
+        ARGS.ids = sys.stdin.readlines()
 
     if ARGS.crib:
         ARGS.no_chords = True
@@ -1489,8 +1489,15 @@ if __name__=="__main__":
         ARGS.no_source = True
         ARGS.no_origin = True
 
+    ids = []
+    for id in ARGS.ids:
+        try:
+            ids.append( id[:id.index('#')].strip() )
+        except ValueError:
+            ids.append( id.strip() )
+
     PHRASES = {}
-    TUNES = ABCollection(ids=ARGS.ids)
+    TUNES = ABCollection(ids=ids)
 
     if ARGS.verbose:
         log_to_stderr("%% Called formatter with arguments %s", vars(ARGS))

@@ -13,7 +13,10 @@ dcB BAG FAc e3 |1,3 d2{e}d cdc B3 A3 :|2,4 d2{e}d cBA G6 :|
 % Into...
 
 X:BFS 14-04 02
-T:Voulez-vous Danser / The Portuguese Dance / Oats, Peas and Beans / Oh For The Life Of A Soldier
+T:Voulez-vous Danser
+T:The Portuguese Dance
+T:Oats, Peas and Beans
+T:Oh For The Life Of A Soldier
 M:6/8
 B:Wilson (Companion to the Ball Room), 1816. 
 H:Recast by Muthuswamy Dikshitar (1775-1835) as "Shakti sahita Ganapatim"
@@ -63,7 +66,16 @@ GBd g2d edc B2A GBd g2d edB A3 GBd g2d edB ABd ege dBG AGF G2 :|
 % BFS 14-04 09 The Sloe, into...
 
 X:BFS 14-04 10
-T:Kerry Polka #1 / Mist on the Glen / Rhubarb Sandwich / Pat Horgan's #1 / Cercle circassien / Cercle rosbif / The Ballydesmond #3 / Shoe The Donkey / Cathy's Favourite / Andy Boyle's
+T:Kerry Polka #1
+T:Mist on the Glen
+T:Rhubarb Sandwich
+T:Pat Horgan's #1
+T:Cercle circassien
+T:Cercle rosbif
+T:The Ballydesmond #3
+T:Shoe The Donkey
+T:Cathy's Favourite
+T:Andy Boyle's
 M:2/4 
 H:Comment by ConorW on thesession.org/tunes/1410:
 H:Roche and Giblin both printed this tune in 1927 and 1928 respectively. Both have no title and are the same versions so perhaps Giblin was copying from Roche.
@@ -247,7 +259,8 @@ P:B
 d2c Bcd e2f g2a b2a gfe d2c Bcd e2e ecA d2d dBG c2A B2G FGA d2c || [P:(A2)] |]
 
 X:BFS 14-04 28
-T:The Queen's Highway / Centenary March
+T:The Queen's Highway
+T:Centenary March
 O:Scotland?
 M:4/4
 K:D
@@ -257,7 +270,8 @@ P:B
 de| f2fe d2fa g2f2 e2fg afdB AFGF E2EF E2FG ADFA dFAd fagf edcB Aagf gedc d2dc d2 |]
 
 X:BFS 14-04 29
-T:Glise de Sherbrook / The Big Ship
+T:The Big Ship
+T:Glise de Sherbrook
 O:Quebec
 B:Kennedy (Fiddlers Tune Book), 1954 (vol 2,p.25)
 N:Recorded by Joseph Allard (1873-1947), 1928
@@ -388,7 +402,7 @@ gfe d2c B2c d3 |1,3 gfe d2c B2c A3 :|2,4 G2G A2F G3-G2 :|
 
 X:BFS 14-04 43
 T:The Clog
-M:12/8
+M:6/8
 K:G
 P:A
 AAA A2G F2G A2B |1,3 cBc e2d B3 G3 :|2,4 cBc e2F G6 :|
