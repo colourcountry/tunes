@@ -20,9 +20,7 @@ K:Am
 P:A
 "Am"efed c2A2 "G"B2G2 "Am"A4 |1 A3B c2d2 "D"e2^f2 "C"g4 :|2 "Em"B3A G2B2 "D"A4 "Am"A4
 P:B
-"C"g4 e2c2 "D"d4 "Am"A4 "C"g2g2 e2c2 "D"d4 "Em"B4
-P:(A2)
-x8 |]
+"C"g4 e2c2 "D"d4 "Am"A4 "C"g2g2 e2c2 "D"d4 "Em"B4 || [P:(A2)] ||
 
 X:3
 T:?
@@ -31,7 +29,7 @@ M:3/8
 L:1/8
 K:G
 [P:A] D| GAB c2A Bdg |1 edc BcA :|2 edc cBA G2
-[P:B] d| g2d cde d2B |1 ABc def :|2 cBA dBA G2 |]
+[P:B] d| g2d cde d2B |1 ABc def :|2 ABc cBA G2 |]
 
 
 X:4
@@ -82,3 +80,86 @@ P:A
 "D"A2A "C"B>cd "D"A2A "G"B>cd |1,3 "F"c2d "C"ec2 "G"dcB "A"A3 :|2,4 "F"c2d "C"ge2 "G"dcB "A"A3 :|
 P:B
 "D"a2f "C"g2e "D"f>ed "F"c2d |1,3 "C"ec2 "G"d2c "Em"B>AG "A"A3 :|2,4 "C"ge2 "G"d2e "A"d>B^c "D"d3 :|
+
+X:9
+T:Colomb
+M:4/4
+K:Em
+P:A
+E2e2 e2BA GABA d2A2 |1,3 A2cB G2GA B3A BAF2 :|2,4 A2cB GFGA F2E2 E4 :|
+P:B
+E2e2 e3f g2fe d2A2 |1,3 A2cB G2GA B3c BAF2 :|2,4 A2cB GFGA F2E2 E4 :|
+
+X:10
+T:
+M:6/8
+K:G
+P:A
+G>AG d2G G>AG d2G |1,3 c2c BAG FGA A2G :|2,4 c2c BAG FGA G :| AB
+P:B
+c2c cBc e2c ABc |1,3 d2d def gfe dcB :|2,4 d2c BAG FGA G3 :|
+
+X:11
+T:Coomaree
+M:3/2
+N:swung
+K:Ador
+P:A
+Aede dcAG AcdB |1 Aede dcef gDBG :|2 AFAc BAGF EAAG ||
+P:B
+Aede dcAG AcdB |1 Aede dcef gDBG :|2 AFAc egec BdBG ||
+P:C
+Aede dcAG AcdB    Aede dceg gDBG agab c'gec gdBG fagf egfe dccB ||
+
+X:12
+T:
+M:6/8
+K:G
+P:A
+d| gdB ecA dBG FGA |1,3 Bcd efg aeg fe :|2,4 Bcd efg DGF G2 :|
+P:B
+K:D
+A| dcd ecA fef gec |1,3 afd bag fed cB :|2 afd BAG ABc d2 :|4 afd BAG ABc def ||
+
+X:13
+T:The Stok
+M:6/8
+K:G
+P:A
+DEG DEG A2G E2G |1,3 DEG DEG A2B A3 :|2,4 B2d cBG A2G E2G :|
+P:B
+d3 B3 A2G DEG |1,3 DEG B2G A2B A3 :|2,4 DEG B2G A2G G3 :|
+
+X:14
+M:3/2
+K:Am
+P:A
+"Am"edcB |"G"d2B2 G4 "Am"cBAG |1,3 "Em"B2G2 E4 :|2,4 "Em"B2G2 "A"A4 :|
+P:B
+"F"aged |"C"c2de "G"d4 "Am"cBAG |1,3 "Em"B2G2 E4 :|2,4 "Em"B2G2 "A"A4 :|
+
+X:15
+M:3/4
+K:Am
+P:A
+"Em"G3AB2 "D"d3ef2 "C"g2f2e2 "G"d6 |1,3 "F"d3ec2 "Am"dcA4 "Em"G2A4 "D"A6 :|2,4 "F"e2d4 "Am"dcA4 "D"A6 :|
+P:B
+"Am"a6 "G"b3ab2 "F"c'3bc'2 "C/E"c6 "D"d6 "C"e3de2 "Am"a3ga2 "Em"G6-G6 
+"Am"A6 "G"B3AB2 "F"c3Bc2 "C/E"g6 "F"e2d4 "Am"dcA4 "D"A6 :|
+
+X:16
+T:Ropemakers Hornpipe
+K:G
+P:A
+BA| G2dc B2G2 G2dc BGBd e2A2 A2ed cBAB cdef g2G2 G2dc BAGF EDEF GABc A2GA B2G2 |1 G2 :|2 GAGF ||
+P:B
+E2EF GABc dBG2 G2AG FGAB cdef g2G2 GAGF E2EF GABc |1 dBG2 G2FG AB^cd efga f2d2 BdBG :|2 dBGF EDEF GABc A2GA B2G2 G2 ||
+
+X:17
+T:
+K:G
+P:A
+d2G2 G2AB cdeg f2d2 |1,3 g2fe d2B2 edcB A2Bc :|2,4 g2fe dcBA B2G2 G4
+P:B
+?
+
