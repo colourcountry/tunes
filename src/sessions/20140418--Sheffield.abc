@@ -1,0 +1,342 @@
+X:SSF 14-18 01
+T:
+M:4/4
+K:Em
+P:A
+EDEF GFGA BABd e2ef |1,3 gfeg fedf edB^c dBAF :|2,4 gfeg fede fagf E4 :|
+P:B
+geBe geBe gece gece |1,3 afdB ABdf afdB ABde :|2,4 afdB ABde fagf E4 :|
+
+% Into SSF 14-18 02 = WFS 13-10 26 Spootiskerry, into SSF 14-18 03 = WFS 13-10 17 Willafjord
+
+X:SSF 14-18 04
+T:Maiden Lane
+M:4/4
+K:G
+P:A
+d3c BAG2 g2f2 g2d2 g2f2 g2dc B2A2 G4 :|
+P:B
+ABcd e2A2 c2B2 A4 e2d2 e2dc BABc A4 :|
+P:C
+d2Bc d2Bc dcBA B2G2 d2Bc dedc B2A2 G4 :|
+
+% Into SSF 14-18 05 = Mount Hills
+
+X:SSF 14-18 06
+T:?
+M:6/8
+K:G
+P:A
+G2d BAB c2A FED BAG E2E DEF G3 :|
+P:B
+Bcd e2e ABc d2d Bcd e2e ABc def g2d BAB c2a FED BAG E2E DEF G3 :|
+
+% Into SSF 14-18 07 = BFS 14-04 08 Upton Stick Dance
+
+% SSF 14-18 08 = WFS 14-01 41 Flower of Edinburgh
+
+X:SSF 14-18 09
+T:
+M:6/8
+K:G
+P:A
+D|EDE FEF GBG D2D |1,3 EcB AGF FGA D2 :|2,4 EcB AGF F2G Z2 :|
+P:B
+d|gfg agf g3 d2d |1,3 egf edB BAG A2 :|2,4 egf edB-Bgf e2d cBA B2B ced B2B cBc dag f2g Z2 :|
+
+% Into...
+
+X:SSF 14-18 10
+T:Kid on the Mountain
+M:9/8
+K:G
+P:A
+E2E FEF G2F E2E c2B AFD E2E FEF G2A BAG FAG FED :|
+P:B
+B2B AGF G2D GAB dge dcA B2B AGF G2A BAG FAG FED :|
+P:C
+gfg efe e2f gfg efg afd gfg efe g2a bag fag fed :|
+P:D
+eBB e2f gfg eBB efg afd eBB e2f g2a bag fag fed :|
+P:E
+edB dBA G2D GAB dge dBA edB AGF G2A BAG FAG FED :|
+
+X:SSF 14-18 11
+T:
+M:4/4
+K:A
+P:A
+A_2CE D2FA E2GB A2cA |1,3 BAcA dAcA B2cB AFEC :|2,4 Bcde fgaf ecB2 A4 :|
+P:B
+a2ae fece b2bg agfe gebe gfeg fedf e2e2 
+a2ae fece fgag fece defg afec BABc A4 :|
+
+% Into...
+
+X:SSF 14-18 12
+T:
+M:4/4
+K:G
+P:A
+a2AA ABAF EFAB c2Bc |1,3 d2BB BcBA Bcde fefg :|2,4 dcde fgaf ecB2 A2 :| AB ||
+P:B
+c2ec fcec c2ec fedc |1,3 d2fd gdfd d2fd gfed :|2,4 Bcde fgaf ecB2 A2 :|
+
+% Into...
+
+X:SSF 14-18 13
+T:
+M:4/4
+K:D
+P:A
+fedf edcB A2FA DAFA |1,3 B2GB DBGB A2FA DAFA :|2,4 B2Bd cABc dfec d2 :|
+P:B
+f2f2 fedf g2g2 g3f |1,3 edcB ABcd eaa^g a3g :|2,4  edcB ABcd edc2 d2 :|
+
+X:SSF 14-18 14
+T:
+M:9/8
+K:G
+P:A
+G2G GAB ABc B2B Bcd cd^d ecG geG Bcd |1,3 cBA FAF DEF :|2,4 cBA FAF G3 :|
+P:B
+D3 G3 F3 A3 G3 G2g fed cBA Bcd |1,2,3 cBA FAF DEF :|4 [P:(A2)] ||
+
+% Into...
+
+X:SSF 14-18 15
+T:
+M:9/8
+K:Em
+P:A
+B2E G2E F3 B2E G2E FED B2E G2E FGA B2d d2B AFD :|
+P:B
+B2d e2f g3 B2d g2e dBA B2d e2f g2a b2a g2e dBA :|
+P:C
+B3 B2A G2A B3 BAB dBA B3 B2A G2A B2d g2e dBA :|
+
+X:SSF 14-18 16
+T:Ouvrez la Porte
+M:7/8
+K:Gm
+P:A
+d2de dcB c2cB dcB c2cB dcB G2FG BcB :|
+P:B
+GAGA BAG B2cB d2c d2de dcB c2cB dcB G2GA BAG B2ce d2c d2dg dcB c2cB dcB :|
+
+X:SSF 14-18 17
+T:The Blarney Pilgrim
+M:6/8
+K:G
+P:A
+DED DEG ABA ABc BAG AGE |1,3 G2A GED :|2,4 GED D2 :|
+P:B
+d|d2d dBG A2A BAG d2d dBG ABA GBd g2e dBG AGA BGG BcB AGE |1 GED D2 :|2 GED DEG
+P:C
+ADD BDD A2D ABc BAG AGE |1,3 G2A GED :|2,4 GED D2 :| 
+
+X:SSF 14-18 18
+M:
+K:G
+P:A
+e3e-edeg e2d2 d2GA B2B2 cBAG |1,3 e2d2 d4 :|2,4 E2F2 G4 :|
+P:B
+AGFG ABcA BAGd g2d2 |1,3 e2e2 dBGA B2A2 A4 :|2,4 e2e2 dBGA B2A2 G4 :|
+
+% Into SSF 14-18 19 = WFS 13-11 19 Rochdale Coconut Dance
+
+% 1:00h
+
+X:SSF 14-18 20
+M:4/4
+K:Em
+P:A
+EGBG E2B^c dd^cB F3A-|1,3 AGFE D2AG FEDE FGED :|2,4 AGFE DEFG E2ED E2D2 :|
+P:B
+E3E-EFGE F3F-FGAF G3G-GABG |1,3 A2A2 BAGF :|2,4 A2A2 A2GA :|
+
+X:SSF 14-18 21
+M:3/4
+K:D
+P:A
+D2FEFG A2GFED |1,3 E2EDEF E6 :|2,4 E2EFED D6 :| C2
+P:B
+B_3ddc dAGFED A_2d3c A4F2 G3FGA |1,3 G2GFED CDE2EF EDC3B_ :|2,4 BAGFED E2EDEF G2FEDE :|
+
+% Into...
+
+X:SSF 14-18 22
+M:3/4
+K:Bm
+P:A
+de| f2fedf ecAcbA |1,3 GBdGBd AceA :|2,4 GFEefd B4 :|
+P:B
+Bc| dBfedc A4AB =c2cBAc BGE2de fBgBab f4f2 edcefd B4 :|
+
+X:SSF 14-18 23
+T:Mouse In The Kitchen
+M:6/8
+K:A
+P:A
+c3 cde |1,3 dcA F2A E2E EFA B3 Bcd :|2,4 dcA F2a afe fec ecB B2A :|
+P:B
+B3 BAB |1,3 c2e cBA B2B BAB cea-a2A :|2,4 c2e cea afe fec ecB B2A :|
+
+% Into...
+
+X:SSF 14-18 24
+T:The Stool Of Repentance
+O:Scotland
+N:William Dixon MS, 1733
+M:6/8
+K:A
+P:A
+a2e c2e agf edc |1,3 a2f f2g a2g f2e :|2,4 d2e f2e fac B2A :|
+P:B
+cAA eAA cAA edc dBB fBB dBB fed cAA eAA aga edc d2c d2e fac B2A :|
+
+X:SSF 14-18 25
+M:6/8
+K:D
+P:A
+A| dfd ecA BcB AFE |1,3 DED FDG DAD BDc :|2,4 DFD GDG ABc d2 :|
+P:B
+c| BFA BFA Bde fed |1,3 BFA BFA cBA FA :|2,4 B2B cBA FAc B2A :|
+
+% Into...
+
+X:SSF 14-18 26
+M:6/8
+K:A
+P:A
+a2a bag eaf ged |1,3 c2A BAG EFG ABA :|2,4 c2A BAG EFG A3 :|
+P:B
+e2e dBA e2e dBA |1,3 GAB DBA GAB DBG :|2 GAB DBA EFG A2A :| e2e ded cdc BcB A2A BAG EFG A3 :| 
+
+% Into...
+
+X:SSF 14-18 27
+M:6/8
+K:Dm
+P:A
+D2D FED A2A-A2B cBA dcB |1,3 cBA GFE :|2 A2 G2 E2 :|4 A3 d2e 
+P:B
+f2f fed _B3 d2e |1,3 feg fed ^cAd AeA :|2,4 feg feC d3 d2e :|
+
+% Into SSF 14-18 28 = EATMD 13-01 49 The Fiery Clock Face
+
+% Into...
+
+X:SSF 14-18 28
+T:St George's Day
+M:6/8
+K:Dm
+P:A
+A|d2A e2A f3 def |1,3 g2f e2d cde ABc :|2,4 gfe ABc d3 :|
+P:B
+f2a afa b2g g2f e2g gfg a2g f2e d2f e2g f2a def efg ABc d3 :|
+
+% SSF 14-18 29 = WFS 13-12 19 Linky Lanky, into SSF 14-18 30 = WFS 13-12 25 Wisbech
+
+% SSF 14-18 31 = WFS 14-05 18 Sportsman's Hornpipe, into SSF 14-18 32 = EATMD 13-01 02 Radstock Jig
+
+X:SSF 14-18 33
+T:
+M:6/8
+K:G
+P:A
+d2g gfg e2g fga bgg gfg |1,3 e2g f2e :|2,4 e2f g3 :|
+P:B
+d2g f2g eee e2f gfe dBG A2A A2B GBd d2B c2A d2c B2G E2F G3 :| F3
+P:C
+E3 F3 G3 A3 |1,3 Bee e2f e3-e2 :|2 B2A G2F G2F E2D :| f g2g gfe d2g B2d c3 B2A G3-G2
+
+% SSF 14-18 34 = EATMD 13-02 06
+
+% SSF 14-18 35 = EATMD 13-02 13 Coleford Jig
+
+X:SSF 14-18 36
+T:
+M:
+K:Gm
+P:A
+D|GAB ABc B2A GAB A2G FGA |1,3 G2G D3 :|2,4 G3-G2 :|
+P:B
+A|B3 d2B c2B A3 B2A GAB A2A D3 |1 [P:(A2)] :|2 GAB ABc Bcd edC BcB ABA G3-G2 ||
+
+% SSF 14-18 37 = WFS 13-10 32 I'll Go And Enlist For A Sailor
+
+X:SSF 14-18 38
+T:
+M:
+K:
+P:A
+G2e2 G2FE DEFA B2F2 |1,3 G2e2 G2FE DEF2-F4 :|2,4 GABG FGAF D2E2 E4 :|
+P:B
+e2ge c2e2 defd B2f2 e2ge c2e2 def2-f4 e2ge c2e2 defd B4 A2cA F2AF D2E2 E4 :|
+
+X:SSF 14-18 39
+T:Sheriff's Ride
+M:4/4
+K:Em
+P:A
+BA| G2E2 E2FG AGF2 E2B2 e2e2 e2fe d2B2 B3^c d2d2 d2B^c d=ccB A2EF G2B2 dcBA BGE2 E2 :|
+P:B
+e2e2 e2fe d2B2 B3d e2e2 e2fe dcB2 B3^c d2d2 d2B^c d=ccB A2EF G2B2 dcBA BGE2 E2 :|
+
+X:SSF 14-18 40
+T:Come Ashore Jolly Tar And Your Trousers On
+M:4/4
+K:Em
+P:A
+BA| GFGE g2=fe dBGB d2cB |1,3 AGFE D2d^c d2A2 A2 :|2,4 AGFE DEFA G2E2 E2 :|
+P:B
+e2ef g2=fe d2B2 B3B |1,3 ABde faef d2A2 A2Bd :|2,4 AGFE DEFA G2E2 E2 :|
+P:C
+GA| BGEG BAGF E4-E2FG AFDF AFDF AGFE D2EF || [P:(A2)] :|
+
+X:SSF 14-18 41
+T:
+M:
+K:Gm
+P:A
+G2GA B2Bd c2ce dcBA |1,3 G2GA B2d2 =efe2 e2d2 :|2,4 G2GA B2G2 AG^F2 G4 :|
+P:B
+g2g2 f2gf edc2 d4 |1,3 edce-edce d2d2 e2^f2 :|2,4 cdcB A2G2 AG^F2 G4 :|
+
+% 2:00h
+
+X:SSF 14-18 
+T:
+M:
+K:
+P:A
+P:B
+
+X:SSF 14-18 
+T:
+M:
+K:
+P:A
+P:B
+
+X:SSF 14-18 
+T:
+M:
+K:
+P:A
+P:B
+
+X:SSF 14-18 
+T:
+M:
+K:
+P:A
+P:B
+
+X:SSF 14-18 
+T:
+M:
+K:
+P:A
+P:B
