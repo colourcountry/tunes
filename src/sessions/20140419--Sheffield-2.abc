@@ -57,17 +57,7 @@ FG| AFDF AFDF :|1,4 Adcd B2AG :|2,5 G2F2 E2FG :|3,6 Adcd B2de f2f2 edc2 d4 d2 :|
 P:B
 e| f2d2 f2d2 :|1,4 edcd e4 :|2,5 edcB A4 :|3,6 edcd e2d2 f2d2 e2c2 d4 d2 :|
 
-X:SSF 14-19 206
-T:Hunt the Squirrel
-B:Playford, 14th edn, 1709 (Barlow 531)
-M:6/8
-K:G
-P:A
-G2d d2e d3 B3 :|1,3 GAB A3 GAB A3 :|2,4 GAB A3 G6 :|
-P:B
-c2d edc c2d edc c2d e2f g3 f2e dB2 dB2 dB2 dB2 GAB A3 G6 :|
-
-% Into SSF 14-19 207 Grimstock
+% SSF 14-19 206 = SSF 14-18 54 Hunt The Squirrel, into SSF 14-19 207 = BFS 14-04 38 Grimstock
 
 % SSF 14-19 208 = SSF 14-19 108 Twin Sisters, into SSF 14-19 209 = SSF 14-19 109 The Charming Fellow
 
@@ -94,21 +84,7 @@ B2Bc BAGB d2d2 B4 |1,3 cdcB A4 dedc B4 :|2,4 cBcB A2F2 G2 ||
 P:B
 {d2e2f2}| g2f2 efge d2d2 B4 |1,3 cdcB A4 dedc B4 :|2,4 cBcB A2F2 G2 ||
 
-X:SSF 14-19 212
-T:Gathering Peascods
-B:Playford, 1st ed., 1651 (Barlow 27)
-M:4/4
-K:G
-P:A
-d4 d2d2 B2c2 d4 e2d2 c2B2 A6B2 A2G2 G2F2 G8 :|
-P:B
-K:D
-F2D2 F2G2 A6A2 G2B2 A2G2 F6F2 E2D2 D2C2 D6 :|
-P:C
-K:G
-d2|B2G2 G2AB c6d2 B2G2 G2AB |1,3 c6 :|2,4 c3d e2dc B2cB A2F2 G6 :|
-
-% Into..
+% SSF 14-19 212 = SSF 14-18 65 Gathering Peascods, into..
 
 X:SSF 14-19 213
 T:
@@ -328,18 +304,9 @@ AG|FAd2 d2cB cdef g2ag |1,3 f2d2 dfaf gfed cB :|2,4 fedf efge f2d2 d2 :|
 P:B
 dc|Bcde fede fedc B2cB ABcd edcd edcB A2 || [P:(A2)] :|
 
-% Into SSF 14-19 246 Old Morpeth Rant
+% Into SSF 14-19 246 = WFS 13-10 29 Old Morpeth Rant
 
-X:SSF 14-19 247
-T:Maiden Lane
-M:4/4
-K:G
-P:A
-d3c BAG2 g2f2 g2d2 g2f2 g2dc B2A2 G4 :|
-P:B
-ABcd e2A2 c2B2 A2e2 e2A2 e2dc BABc A4 :|
-P:C
-d2Bc d2Bc dcBA B2G2 d2Bc dedc B2A2 G4 :|
+% SSF 14-19 247 = SSF 14-18 04 Maiden Lane
 
 % SSF 14-19 248 = EATMD 13-02 09 Mount Hills
 
@@ -448,15 +415,4 @@ DED2 A2FA B2GB A2F2 |1,3 FED2 A2F2 G2E2 E4 :|2,4 FGAF GAB2 A2D2 D2 :|
 P:C
 {c2}| d3A AGF2 d3A AGF2 |1,3 d4 AGF2 G2E2 E2 :|2,4 FGAF GAB2 A2D2 D2 :|
 
-% SSF 14-19 265 Paddy Carey's , into...
-
-X:SSF 14-19 266
-T:Morgan Rattler
-M:6/8
-K:D
-P:A
-AGF EFG FEF D3 |1,3 AGF EFG B2A Bcd :|2 def edc B2A Bcd :|4 dcB edc B2A Bcd ||
-P:B
-d2e fed |1,3 c2d ecA d2e fed f2e fga :|2,4 c2d efg agf edc B2A Bcd :|
-P:C
-D2D dcd |1,3 E2E efe D2D dcd B2A Bcd :|2,4 E2E efg agf edc B2A Bcd :|
+% SSF 14-19 265 Paddy Carey's , into SSF 14-19 266 = SSF 14-18 43 Morgan Rattler
