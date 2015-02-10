@@ -7,7 +7,8 @@ EDEF GFGA BABd e2ef |1,3 gfeg fedf edB^c dBAF :|2,4 gfeg fede fagf E4 :|
 P:B
 geBe geBe gece gece |1,3 afdB ABdf afdB ABde :|2,4 afdB ABde fagf E4 :|
 
-% Into SSF 14-18 02 = WFS 13-10 26 Spootiskerry, into SSF 14-18 03 = WFS 13-10 17 Willafjord
+% Into SSF 14-18 02 = WFS 13-10 26 Spootiskerry,
+% into SSF 14-18 03 = WFS 13-10 17 Willafjord
 
 X:SSF 14-18 04
 T:Maiden Lane
@@ -236,9 +237,11 @@ A|d2A e2A f3 def |1,3 g2f e2d cde ABc :|2,4 gfe ABc d3 :|
 P:B
 f2a afa b2g g2f e2g gfg a2g f2e d2f e2g f2a def efg ABc d3 :|
 
-% SSF 14-18 29 = WFS 13-12 19 Linky Lanky, into SSF 14-18 30 = WFS 13-12 25 Wisbech
+% SSF 14-18 29 = WFS 13-12 19 Linky Lanky,
+% into SSF 14-18 30 = WFS 13-12 25 Wisbech
 
-% SSF 14-18 31 = WFS 14-05 18 Sportsman's Hornpipe, into SSF 14-18 32 = EATMD 13-01 02 Radstock Jig
+% SSF 14-18 31 = WFS 14-05 18 Sportsman's Hornpipe,
+% into SSF 14-18 32 = EATMD 13-01 02 Radstock Jig
 
 X:SSF 14-18 33
 T:
@@ -321,7 +324,8 @@ D2D dcd |1,3 E2E efe D2D dcd B2A Bcd :|2,4 E2E efg agf edc B2A Bcd :|
 
 % SSF 14-18 44 = EATMD 13-01 14 The Wheatsheaf Tavern
 
-% SSF 14-18 45 = WFS 13-07 12 Paddy Carey's, into SSF 14-18 46 = WFS 13-07 13 Spirit of the Dance
+% SSF 14-18 45 = WFS 13-07 12 Paddy Carey's,
+% into SSF 14-18 46 = WFS 13-07 13 Spirit of the Dance
 
 % SSF 14-18 47 = EATMD 13-01 16 Young Scotty
 
@@ -348,7 +352,8 @@ d/c/| BG GD E2 DG |1,3 FG cB A/G/F/E/ D :|2,4 FG B/A/G/F/ G2-G :|
 P:B
 A| B2 Ad B2 Ad |1,3 BG FG A/G/F/E/ D :|2,4 BA/G/ AG/F/ G2-G :|
 
-% SSF 14-18 52 = WFS 14-01 31 Because He Was A Bonny Lad, into SSF 14-18 53 = WFS 14-01 32 Welcome To The Town Again
+% SSF 14-18 52 = WFS 14-01 31 Because He Was A Bonny Lad,
+% into SSF 14-18 53 = WFS 14-01 32 Welcome To The Town Again
 
 X:SSF 14-18 54
 T:Hunt the Squirrel
@@ -389,7 +394,9 @@ P:B
 g3f efg2 f2e2 ^d4 ^def2 B2f2 g2f efg2 f2e2 ^d4-d2e2 e4 
 E4 EFGE FGA2 G4 GABG ABc2 B3A Bcd2 D2B2 A3G A2B2 G2 :| A2
 
-% SSF 14-18 62 = EATMD 13-02 02 The Dusty Miller, into SSF 14-18 63 = EATMD 13-02 03 Punchinello's Hornpipe / The Three Rusty Swords, into SSF 14-18 64 = EATMD 13-02 04 Old Lancashire Hornpipe
+% SSF 14-18 62 = EATMD 13-02 02 The Dusty Miller,
+% into SSF 14-18 63 = EATMD 13-02 03 Punchinello's Hornpipe / The Three Rusty Swords,
+% into SSF 14-18 64 = EATMD 13-02 04 Old Lancashire Hornpipe
 
 X:SSF 14-18 65
 T:Gathering Peascods
@@ -406,6 +413,350 @@ K:G
 d2|B2G2 G2AB c6d2 B2G2 G2AB |1,3 c6 :|2,4 c3d e2dc B2cB A2F2 G6 :|
 
 % 3:03h
+
+X:SSF 14-18 66
+T:
+M:
+K:
+P:A
+B|BGAB GF/G/EB BGAB G2E
+P:B
+G|FDEF GF/G/EG |1 FDEF G3 :|2 FDEF E2
+
+% Into...
+
+X:SSF 14-18 67
+T:
+M:
+K:
+P:A
+B/c/dde d3c |1 BGGA F>ED2 :|2 BGAF G3
+P:B
+A|BGGA BGcA |1 BGGA F>ED2 :|2 BGAF G3
+
+% Into SSF 14-18 68 = WFS 13-07 09 Horses Brawl
+
+X:SSF 14-18 69
+T:
+M:
+K:
+P:A
+GA| B2D DED E2G e3 |1,3 d2B BAG B2A A :|2,4 dcB ABA G3-G :|
+P:B
+Bc| d2d def g2g gfe d2B BAG B3A A || [P:(A2)] :|
+
+X:SSF 14-18 70
+T:
+M:
+K:
+P:A
+D| GFG BAB d3 efg |1,3 dBG GAB E3-E2 :|2,4 dBG ABA G3-G :|
+P:B
+Bc| d2d def g2g gfe dBG GAB E3-E2 || [P:(A2)] :|
+
+X:SSF 14-18 71
+T:
+M:
+K:
+P:A
+D2GFG2 D2BAB2 |1,3 cBAGFG AGFEDE :|2 cBAGFA G4FE :|4 cBAGFA G3 ||
+P:B
+ABc| d2dedc B2G2AB |1,3 c2cdcB A4 :|2,4 cBAGFA G3 :|
+
+X:SSF 14-18 72
+T:
+M:
+K:Em
+P:A
+efe| c2cefe B2B2AG |1,3 F2BAGF G2E :|2,4 F2BAGF E3 :|
+P:B
+EFGABc D2a2f2 |1,3 G2GABG F2D2F2 :|2,4 G2GBAF E3 :|
+
+X:SSF 14-18 73
+T:
+M:
+K:D
+P:A
+dfd cec BcB B2A dfd cec BcB B2A ege dfd cec c2B |1 A2A ABc dcB A3 :|2 A2A ABc d2A A2 ||
+P:B
+G| F2F FAd f3-f2d e2d c2d g3-g2f eee e2d ccc c2B |1 A2A ABc dcB A2 :|2 AAA ABc d2A ABc ||
+
+% Into...
+
+X:SSF 14-18 74
+T:
+M:
+K:D
+P:A
+F2F F2G F2E DEF G2G G2A G2F GBd c2c c2d cBA GFE |1 DFA B2A AFD E3 :|2 DFA f2e d3-d2 ||
+P:B
+e|f2f f2f fec dcB A2A A2B A2F FAd c2c c2d cBA GFE |1 DFA B2A F2A d2 :|2 DFA f2e d3-d2 ||
+
+X:SSF 14-18 75
+T:
+M:
+K:G
+P:A
+DGGA B2BG c2cA BGFE DGGA Bcdd ecAF G4 :|
+P:B
+egfe d3d cedc c2B2 ABcA Bcdd |1 ecAG F2ED :|2 ecAf G4 ||
+
+% SSF 14-18 76 = WFS 13-07 15 L.N.B. Polka
+
+X:SSF 14-18 77
+T:
+M:
+K:
+P:A
+A>=AA DFA dcB AFA G>FE c>BA |1,3 GFG A/B/cB :|2,4 GFE D4 :|
+P:B
+AF/A/F/A dcB AF/A/F/A dcB GE/G/E/G cBA |1,3 GFG A/B/cB :|2,4 GFE D4 :|
+
+X:SSF 14-18 78
+T:
+M:
+K:
+P:A
+DG GF/G/ AF GA/B/ cA/c/ BG |1,3 A/B/A/G/ F/E/D :|2,4 AF G2 :|
+P:B
+Bc/d/ Bc/d/ BG F2 |1,3 GA/B/ c/B/A/G/ EF ED :|2,4 F/G/A/B/ c/B/A/G/ EF G2 :|
+
+% Into SSF 14-18 79 = WFS 13-07 18 Jack Robinson,
+% into SSF 14-18 80 = BFS 14-04 36 Argiers,
+% into SSF 14-18 81 = WFS 14-01 11 Old Tom Of Oxford
+
+X:SSF 14-18 82
+T:Dark Girl Dressed In Blue
+M:
+K:D
+P:A
+A3G F2G2 ABcA B4 :|1,3 A3G F2G2 Addc d4 :|2,4 A2d2 cdec d2 d :|
+P:B
+e| f2f2 g2fe d2cb A4 f2f2 g2fe d4-d2e2 f2f2 g2fe d2cb A2B2 c3B-B2A2 G3F-F2G2 :|
+
+%      SSF 14-18 83 = WFS 13-07 11 Enrico,
+% into SSF 14-18 84 = WFS 14-04 33 Foul Weather Call
+
+%      SSF 14-18 85 = WFS 13-10 36 Jamaica
+
+X:SSF 14-18 86
+T:
+M:
+K:
+P:A
+def edc Bcd A2F |1,3 GAB Ade fdf e2c :|2,4 GAB Adf e2c d3 :|
+P:B
+e|f2f def fed e2c d2d B2d fed c2A BAB dcB ABc d2e |1 fef agf fed e2 :|2 fef def eBc d3 :|
+
+% Into...
+
+X:SSF 14-18 87
+T:
+M:
+K:D
+P:A
+d2D DEF EFG ABc |1,3 dcd Bcd CAA ABC :|2,4 dAF GFE FDD D2c :| 
+P:B
+d2d fed c2c edc B2B dcB A3 F2F G2B BAG |1 F2A d2D E2G B2C C2E ABc :|2 F2A a2g fed edc d3-d2 :|
+
+% 4:03h
+
+%      SSF 14-18 88 = WFS 13-07 03 The Moon And Seven Stars,
+% into SSF 14-18 89 = WFS 13-07 02 Captain Lanoe's Quick March
+
+%      SSF 14-18 90 = BFS 14-04 39 Lilliburlero
+
+X:SSF 14-18 91
+T:
+M:
+K:Em
+P:A
+E2E EFG GFE EFG GFE EFG GFE E2D EFG GFE |1 FGA A3 FGA A2A BcB AGF :|2 F2A A2A BcB AGF E6 :| 
+P:B
+e2 d2 B3-BcB |1,3 A2A ABA G2F E2D :|2,4 A2A G2F E3-E2D :|
+
+% SSF 14-18 92 = WFS 13-10 21 Lannigan's Ball
+
+X:SSF 14-18 93
+T:Walter Bulwer's No.2
+M:4/4
+K:G
+P:A
+{E2}| D2G2 G2FG A2E2 E4 |1,3 FGA2 FGA2 B2G2 G2FE :|2,4 FGA2 D2EF G4 G2 :|
+P:B
+FG| A2A2 B2B2 A2A2 F4 |1,3 G2G2 E4 A2FE DE :|2,4 G2G2 EGFE D4 D2 :|
+
+% Into...
+
+X:SSF 14-18 94
+T:Walter Bulwer's No.1
+M:4/4
+K:G
+P:A
+{Bc}| dcBd g3f |1,3 e2A2 A2AB cBAc f3e d2B2 B2 :|2,4 e2A2 A2G2 FGAB cdef g4 g2 :|
+P:B
+K:D
+fg| a2fg a2fg agf2 e4 |1,3 e2a2 gfe2 dcde f2 :|2,4 e2a2 gfe2 d4 d2 :|
+
+% SSF 14-18 95 = WFS 13-10 14 Salmon Tails Up The Water
+
+% SSF 14-18 96 = BFS 14-04 88 Prince William's March (in C)
+
+X:SSF 14-18 97
+T:
+M:
+N:swung, normally in C
+K:G
+P:A
+GFGA GDB,C DEDB, G,2GA B2B2 BAGA BdcB AcBA GFGA GDB,C D2B,2 C2B,C D2GA BAGA B2A2 G8
+P:B
+B,DGD B,2B,D E2C2 C2EC A,2A2 ABAG F2E2 D2DC B,DG2 GBAG E2A2 A2AB cBAG FDEF G2B2 G4
+
+% SSF 14-18 98 = WFS 13-11 11 Believe Me, if All Those Endearing Young Charms
+
+X:SSF 14-18 99
+T:
+M:
+K:
+P:A
+BGdB cAec BGdB de/f/gd BGdb cAec BGBc/d/ e2d :|
+P:B
+f|gdBd eAAf gdBd e2df gdBd eAAc BGB/c/d e2d :|
+
+X:SSF 14-18 100
+T:
+M:
+N:swung
+K:
+P:A
+ge|d2GA B2A2 d2G2 G2ge d2GA B2AG B2A2 A2ge d2GA B2GA B2d2 g3e d2de dBGB A2G2 G2 :|
+P:B
+g2ga gdB2 e2ed efg2 |1,3 d2de dBGA B2A2 A4 :|2,4 d2de dBGB A2G2 G4 :|
+
+% Into...
+
+X:SSF 14-18 101
+T:
+M:
+N:swung
+K:
+P:A
+B3B B2B2 ABAG E2D2 |1,3 G3B d2d2 e2dB a2g2 :|2,4 G2B2 dedb a2g2 g4 :|
+P:B
+d3d d2B2 AcBA G2Bd |1,3 e3e e2eB AcBA GABc  :|2,4 g3e dBAG A2G2 G4 :|
+
+X:SSF 14-18 102
+T:
+M:
+K:
+P:A
+D|G2G BAG A2G E2D |1,3,5 c2B cde d2c B2A :|2,6 EG2 G2F G3 G2 :|4 EA2 A2G ABc B2A ||
+P:B
+D|G2A B2c d3 d2e =f3 =f2e =f6 e3 e2d e2^f g3e d3 d2e d2B A2G c2B c2d e2d c2B A3 A2B A3 E2F G3 G2A G2E D2B A3 A3B A2G E2F ||
+
+%      SSF 14-18 103 = EATMD 13-02 12 Brighton Camp
+
+%      SSF 14-18 103 = WFS 13-10 36 Jamaica
+
+% 5:01h
+
+X:SSF 14-18 
+T:
+M:
+K:
+P:A
+P:B
+
+X:SSF 14-18 
+T:
+M:
+K:
+P:A
+P:B
+
+X:SSF 14-18 
+T:
+M:
+K:
+P:A
+P:B
+
+X:SSF 14-18 
+T:
+M:
+K:
+P:A
+P:B
+
+X:SSF 14-18 
+T:
+M:
+K:
+P:A
+P:B
+
+X:SSF 14-18 
+T:
+M:
+K:
+P:A
+P:B
+
+X:SSF 14-18 
+T:
+M:
+K:
+P:A
+P:B
+
+X:SSF 14-18 
+T:
+M:
+K:
+P:A
+P:B
+
+X:SSF 14-18 
+T:
+M:
+K:
+P:A
+P:B
+
+X:SSF 14-18 
+T:
+M:
+K:
+P:A
+P:B
+
+X:SSF 14-18 
+T:
+M:
+K:
+P:A
+P:B
+
+X:SSF 14-18 
+T:
+M:
+K:
+P:A
+P:B
+
+X:SSF 14-18 
+T:
+M:
+K:
+P:A
+P:B
+
+X:SSF 14-18 
+T:
+M:
+K:
+P:A
+P:B
 
 X:SSF 14-18 
 T:

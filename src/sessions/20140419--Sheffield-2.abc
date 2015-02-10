@@ -370,26 +370,8 @@ D2G2 D2GD F2E2 F2E2 |1,3 D2G2 D2GD F2G2 A4 :|2 D4 D2EF G2F2 G4 :|4 D2D2 d3c B2A2
 P:B
 GA| B3A G2B2 c3B A2c2 |1,3 B3A G2BG AGFE D2 :|2,4 B2G2 A2F2 G4 G2 :|
 
-X:SSF 14-19 260
-T:Walter Bulwer's No.2
-M:4/4
-K:G
-P:A
-{E2}| D2G2 G2FG A2E2 E4 |1,3 FGA2 FGA2 B2G2 G2FE :|2,4 FGA2 D2EF G4 G2 :|
-P:B
-FG| A2A2 B2B2 A2A2 F4 |1,3 G2G2 E4 A2FE DE :|2,4 G2G2 EGFE D4 D2 :|
-
-% Into...
-
-X:SSF 14-19 261
-T:Walter Bulwer's No.1
-M:4/4
-K:G
-P:A
-{Bc}| dcBd g3f |1,3 e2A2 A2AB cBAc f3e d2B2 B2 :|2,4 e2A2 A2G2 FGAB cdef g4 g2 :|
-P:B
-K:D
-fg| a2fg a2fg agf2 e4 |1,3 e2a2 g2e2 dcde f2 :|2,4 e2a2 gfec d4 d2 :|
+%      SSF 14-19 260 = SSF 14-18 93 Walter Bulwer's No.2,
+% into SSF 14-19 261 = SSF 14-18 94 Walter Bulwer's No.1
 
 % SSF 14-19 262 = WFS 13-07 22 Galopede (but AABC), into...
 
