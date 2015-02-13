@@ -632,7 +632,7 @@ class AbcField:
             value = value.strip().lower()
             if value == 'c':
                value = Duration(4,4)
-            elif value == 'c|':
+            elif value == 'c|' or not value:
                value = Duration(2,2)
             else:
                 value = Duration.from_string(value)
@@ -1051,7 +1051,7 @@ class Tune:
         return x
 
     def get_name(self):
-        return self.get_header(AbcField.TUNE_TITLE) or u'(Unknown)'
+        return self.get_header(AbcField.TUNE_TITLE) or self.get_header(AbcField.REFERENCE)
 
     def set_ref(self, item):
         self.ref = item.get_clean_value()
@@ -1114,9 +1114,11 @@ class Tune:
                     ly_id = ly_id[1:-1]
                     if "%s" in phrase_identifier:
                         # phrase is repeated
-                        # return to normal bar length and draw a repeat mark with the appropriate markup
-                        s += '\\set Timing.measureLength = #(ly:make-moment %s)' % (phrase.time.as_moment())
-                        s += '\\makeDoublePercent s%s \\bar "" \\mark %s s%s' % (phrase.time.as_ly(), phrase_identifier % ly_id, phrase.time.as_ly())
+                        # insert a special bar of 1/1 and draw a repeat mark with the appropriate markup
+                        s += '\\set Timing.measureLength = #(ly:make-moment 1/1) '
+                        s += '\\makeDoublePercent s1 \\bar "" \\mark %s s1 ' % (phrase_identifier % ly_id)
+                        s += '\\set Timing.measureLength = #(ly:make-moment %s) ' % (phrase.time.as_moment())
+                        # return to normal bar length 
                     else:
                         # crib mode, ignore repeated section
                         pass
@@ -1234,7 +1236,7 @@ class Tune:
             tune.src = ab
 
         cur_key = Key.from_string('C')
-        cur_time = Duration.from_string('4/4')
+        cur_time = Duration.from_string('2/2')
         cur_unit = Duration.from_string('1/8')
         cur_phrase_id = 'A'
         cur_phrase = None

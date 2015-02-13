@@ -1,6 +1,6 @@
 % English session downstairs at the Shakespeare
 
-X:SSF 14-19 201
+X:SSF 14-19b 01
 T:Albert Falmer's Bonfire Tune
 B:Callaghan, Hardcore English, 2007, p.13-1
 M:2/4
@@ -12,7 +12,7 @@ e|ff/e/ ff g/e/f e2 g/f/e/d/ c/A/B/c/ d/e/f/d/ A || [P:(A2)] :|
 
 % Into...
 
-X:SSF 14-19 202
+X:SSF 14-19b 02
 T:The Swiss Boy
 O:Germany
 C:Ignaz Moscheles
@@ -24,7 +24,7 @@ FG|A2FG A2FG A2fe d2FA G2ed cABc |1,3 d2de f2 :|2,4 d4 d2 :|
 P:B
 F2|G3G G2EG FAde fdAF G3G G2EG FAde f2 || [P:(A2)] :|
 
-X:SSF 14-19 203
+X:SSF 14-19b 03
 T:Church Street
 O:Ireland
 B:Callaghan, Hardcore English, 2007, p.32-1
@@ -37,7 +37,7 @@ g4 f4 c4-c2d2 e2fe d2c2 B4-B2c2 d3e d2B2 A4-A2BA |1 G2B2 c2^c2 d4 e2f2 :|2 G2g2 
 
 % Into...
 
-X:SSF 14-19 204
+X:SSF 14-19b 04
 T:Red Wing
 M:4/4
 K:G
@@ -47,7 +47,7 @@ P:B
 g2 g2f2| e8-e2g2 f2e2 d4 B4-B2d2 e2d2 |1 d4 A4-A2d2 e2d2 d4 B4-B2 :|2 d4 A4-A2c2 B2A2 G3A B2A2 G4 |]
 
 
-X:SSF 14-19 205
+X:SSF 14-19b 05
 T:Soldiers' Joy (?)
 M:4/4
 R:swung
@@ -57,11 +57,11 @@ FG| AFDF AFDF :|1,4 Adcd B2AG :|2,5 G2F2 E2FG :|3,6 Adcd B2de f2f2 edc2 d4 d2 :|
 P:B
 e| f2d2 f2d2 :|1,4 edcd e4 :|2,5 edcB A4 :|3,6 edcd e2d2 f2d2 e2c2 d4 d2 :|
 
-% SSF 14-19 206 = SSF 14-18 54 Hunt The Squirrel, into SSF 14-19 207 = BFS 14-04 38 Grimstock
+% SSF 14-19b 06 = SSF 14-18 54 Hunt The Squirrel, into SSF 14-19b 07 = BFS 14-04 38 Grimstock
 
-% SSF 14-19 208 = SSF 14-19 108 Twin Sisters, into SSF 14-19 209 = SSF 14-19 109 The Charming Fellow
+% SSF 14-19b 08 = SSF 14-19a 08 Twin Sisters, into SSF 14-19b 09 = SSF 14-19a 09 The Charming Fellow
 
-X:SSF 14-19 210
+X:SSF 14-19b 10
 T:Willy Taylor's High Tea
 C:Michelle Soinne
 M:4/4
@@ -75,7 +75,7 @@ P:coda
 
 % Into...
 
-X:SSF 14-19 211
+X:SSF 14-19b 11
 T:Grand Chain
 M:4/4
 K:G
@@ -84,9 +84,9 @@ B2Bc BAGB d2d2 B4 |1,3 cdcB A4 dedc B4 :|2,4 cBcB A2F2 G2 ||
 P:B
 {d2e2f2}| g2f2 efge d2d2 B4 |1,3 cdcB A4 dedc B4 :|2,4 cBcB A2F2 G2 ||
 
-% SSF 14-19 212 = SSF 14-18 65 Gathering Peascods, into..
+% SSF 14-19b 12 = SSF 14-18 65 Gathering Peascods, into..
 
-X:SSF 14-19 213
+X:SSF 14-19b 13
 T:
 M:4/4
 K:G
@@ -95,9 +95,9 @@ B2d2 d2d2 B3c d4 e2d2 c2B2 A4-A2B2 c3d efg2 G3A Bcd2 c2B2 A2FA G4 G2 :|
 P:B
 d4 d2d2 e2f2 g4 B4 B2G2 A2B2 c4 B3A GAB2 c3B ABc2 d3c Bcd2 e2d2 c2B2 A2G2 G2F2 G4 G2 :|
 
-% SSF 14-19 214 The Sloe, into..
+% SSF 14-19b 14 The Sloe, into..
 
-X:SSF 14-19 215
+X:SSF 14-19b 15
 T:The Little Diamond
 O:Ireland?
 M:2/4
@@ -107,7 +107,7 @@ A>B AF D/E/F-Fc/B/ A>B AF GF E2 DE FG AB cd ed ec d2 d :|
 P:B
 d>e| fd ge fd cB |1,3 Ad cd fe e :|2,4 Ad ec d2 d ||
 
-X:SSF 14-19 216
+X:SSF 14-19b 16
 T:Beatrice Hill's Three-handed Reel
 B:Callaghan, Hardcore English, 2007, p.27-3
 M:4/4
@@ -119,7 +119,7 @@ A2| B2AF DFAB A2G2 G2EF GFED CDEF |1,3 G2FE FG :|2,4 E2D2 D2 :|
 
 % Into...
 
-X:SSF 14-19 217
+X:SSF 14-19b 17
 T:
 M:4/4
 K:D
@@ -128,7 +128,7 @@ DEFG A2F2 G2BG FED2 DEFG A2d2 cBGE D4 :|
 P:B
 ECA,E-ECA,2 G2G2 FGA2 ECA,E-ECA,F GFE2 D4 :|
 
-X:SSF 14-19 218
+X:SSF 14-19b 18
 T:
 M:4/4
 K:Dmix
@@ -139,7 +139,7 @@ DED2 DEFG A2G2 FED2 |1,3 DEFG AGF2 E2c2 B2G2 :|2,4 ABAF E2E2 D4 D4 :|
 
 % Into...
 
-X:SSF 14-19 219
+X:SSF 14-19b 19
 T:
 M:4/4
 K:Dmix
@@ -148,7 +148,7 @@ P:A
 P:B
 {e2}| f2a2 g2e2 d^cdB A4 |1,3 f2f2 g2e2 d4 d2 :|2,4 c3 B3 A2 G3 F3 :|
 
-X:SSF 14-19 220
+X:SSF 14-19b 20
 T:Robertson's Reel
 C:Tom Anderson
 M:4/4
@@ -158,13 +158,13 @@ GA| B2AB d2BA GAGE D2GA |1,3 B2AB dBG2 A4 A2 :|2,4 BABd AGAB G6 :|
 P:B
 Bc| d2Bd g2f2 edBc d2Bc d2Bd g2f2 e4 e2ef g2G2 G2BA GAGE D2GA BABd AGAB G6 :|
 
-% Into SSF 14-19 221 Great North Run '86
+% Into SSF 14-19b 21 Great North Run '86
 
-% SSF 14-19 222 = SSF 14-19 115 Donald of Dundee
+% SSF 14-19b 22 = SSF 14-18 157 Donald of Dundee
 
-% SSF 14-19 223 Liliburlero
+% SSF 14-19b 23 Liliburlero
 
-X:SSF 14-19 224
+X:SSF 14-19b 24
 T:
 M:4/4
 K:D
@@ -175,7 +175,7 @@ d2c2 B2cB A2F2 FGAF |1,3 G2E2 EFG2 B2A2 F2D2 :|2,4 G2E2 CDEC D4 D4 :|
 
 % Into...
 
-X:SSF 14-19 225
+X:SSF 14-19b 25
 T:Grandpa's
 M:4/4
 K:G
@@ -184,9 +184,9 @@ AG| F2A2 B2c2 dcde f2fa |1,3 g2f2 e2d2 c2B2 A2 :|2,4 g2f2 e2Bc d4 d2 :|
 P:B
 e2d2 e3f g2f2 e3f g2f2 e2d2 c2B2 A2 || [P:(A2)] :|
 
-% SSF 14-19 226 Michael Turner's Waltz
+% SSF 14-19b 26 Michael Turner's Waltz
 
-X:SSF 14-19 227
+X:SSF 14-19b 27
 T:
 M:6/8
 K:G
@@ -197,11 +197,11 @@ P:B
 P:C
 gdc BAG ABc def gfg efg faf def g2d e2c d2B ABc BAB dBG cAF G2 :|
 
-% SSF 14-19 228 Coleford Jig
+% SSF 14-19b 28 Coleford Jig
 
 % Into...
 
-X:SSF 14-19 229
+X:SSF 14-19b 29
 T:
 M:4/4
 K:D
@@ -210,7 +210,7 @@ FG|A2A2 A2FA |1 BcdB A2 :|2 BAGF E2 :|3 BcdB A2d2 cdef geBc d4 d2 :|
 P:B
 de|f2f2 f2f2 gfed cBAG |1,3 FAdf gfed cdef e2 :|2,4 FAdf geBc d2d2 d2 :|
 
-X:SSF 14-19 230
+X:SSF 14-19b 30
 T:The Rakes of Rochester
 M:4/4
 K:G
@@ -219,9 +219,9 @@ dc|B2G2 G2D2 E4 D2G2 |1,3 F2G2 c2B2 B4 A2 :|2,4 F2G2 cAGF G4-G2 :|
 P:B
 A2|B2B2 A2d2 B2B2 A2d2 |1,3 B2B2 c2B2 AGFE D2 :|2,4 B2G2 A2GF G4 G2 :|
 
-% SSF 14-19 231 = SSF 14-19 139 Petronella, into...
+% SSF 14-19b 31 = SSF 14-19a 39 Petronella, into...
 
-X:SSF 14-19 232
+X:SSF 14-19b 32
 T:Harliquin Air
 B:Callaghan, Hardcore English, 2007, p.37-2
 M:4/4
@@ -231,22 +231,13 @@ d2A2 A2d2 |1,3 cdec A2A2 B2G2 G2E2 FGAF D4 :|2,4 cdec A2g2 f2ed c2d2 e8 :|
 P:B
 e2a2 a2e2 fgfe d2dc B2g2 g2B2 cdcB A4 e2a2 a2g2 fedc d2AG F2d2 e2c2 d8 :|
 
-% Into...
+% Into SSF 14-19b 33 = SSF 14-18 143
 
-X:SSF 14-19 233
-T:
-M:4/4
-K:D
-P:A
-d4 c2B2 A6F2 G2F2 E2G2 FGEF D2A2 d4 c2d2 e6f2 gfed c2Bc d6 :|
-P:B
-e2| f2f2 f2f2 g4 g2f2 e2e2 e2e2 a6g2 f2e2 d2ag f2e2 d2a2 bagf e2c2 d6 :|
+% SSF 14-19b 34 = WFS 13-07 15 La Roulante
 
-% SSF 14-19 234 = WFS 13-07 15 La Roulante
+% SSF 14-19b 35 = BFS 14-04 69, into SSF 14-19b 36 = EATMD 13-02 11 Brighton Camp
 
-% SSF 14-19 235 = BFS 14-04 69, into SSF 14-19 236 = EATMD 13-02 11 Brighton Camp
-
-X:SSF 14-19 237
+X:SSF 14-19b 37
 T:The Gallant Weaver
 C:Robert Burns(?)
 M:4/4
@@ -256,36 +247,15 @@ P:A
 P:B
 e2|f2gf e2fe dfed cBA2 BcdB cdef g2f2 e2 || [P:(A2)] :|
 
-% SSF 14-19 238 = WFS 13-07 04 Jenny Lind Polka, into SSF 14-19 239 = WFS 14-04 30 The Quaker
+% SSF 14-19b 38 = WFS 13-07 04 Jenny Lind Polka, into SSF 14-19b 39 = WFS 14-04 30 The Quaker
 
-% SSF 14-19 240 Oh Joe
+% SSF 14-19b 40 Oh Joe
 
-% SSF 14-19 241 = EATMD 13-01 15 Doncaster Races
+% SSF 14-19b 41 = EATMD 13-01 15 Doncaster Races
 
-X:SSF 14-19 242
-T:Drops of Brandy
-N:In Wm. Mittell's MS, 1799 (vmp WM.080)
-M:9/8
-K:G
-P:A
-d2c BGB BGB |1,3 d2c BGB cBA :|2,4 cBc A2B cBA :|
-P:B
-GBd gdB gdB |1,3 GBd gdB cBA :|2,4 cBc A2B cBA :|
+% SSF 14-19b 42 = SSF 14-18 117, into SSF 14-19b 43 = SSF 14-18 118
 
-% Into...
-
-X:SSF 14-19 243
-T:The Foxhunter's
-O:Ireland
-B:Roche, vol.1, 1912
-M:9/8
-K:G
-P:A
-B2B BAB c2A B2B BAG A2G B2B BAB cde dBG GAB A2G :|
-P:B
-e2A edc Bcd e2A A2B cde def gfe def g2G GAB A2G :|
-
-X:SSF 14-19 244
+X:SSF 14-19b 44
 T:Archie's Fancy
 C:Billy Pigg
 M:3/4
@@ -295,7 +265,7 @@ Bc| d2g3d B2g3d f2e2c2 |1,3 E4AB c2A2F2 D2F2A2 e2d2c2 B4 :|2,2 E4AB c2a3g f2e2f2
 P:B
 Bc| d2b3a g2d2B2 c2a3g f4AB c2a2g2 f2e2f2 |1,3 g2b2g2 d4 :|2,4 g2d2B2 G4 :|
 
-X:SSF 14-19 245
+X:SSF 14-19b 45
 T:Jock Wilson of Fenton
 M:4/4
 K:D
@@ -304,13 +274,13 @@ AG|FAd2 d2cB cdef g2ag |1,3 f2d2 dfaf gfed cB :|2,4 fedf efge f2d2 d2 :|
 P:B
 dc|Bcde fede fedc B2cB ABcd edcd edcB A2 || [P:(A2)] :|
 
-% Into SSF 14-19 246 = WFS 13-10 29 Old Morpeth Rant
+% Into SSF 14-19b 46 = WFS 13-10 29 Old Morpeth Rant
 
-% SSF 14-19 247 = SSF 14-18 04 Maiden Lane
+% SSF 14-19b 47 = SSF 14-18 04 Maiden Lane
 
-% SSF 14-19 248 = EATMD 13-02 09 Mount Hills
+% SSF 14-19b 48 = EATMD 13-02 09 Mount Hills
 
-X:SSFx 14-19 249
+X:SSFx 14-19b 49
 T:Morning Star
 N:Chingford version
 M:4/4
@@ -320,7 +290,7 @@ P:A
 P:B
 GABc d2d2 |1 egfe dcBA :|2 egfe d4 :|3 egfe dBG2 ABcA FGAF G4 G2 :|
 
-X:SSF 14-19 250
+X:SSF 14-19b 50
 T:
 M:6/8
 K:G
@@ -329,9 +299,9 @@ B2A| GBd g2g fga g2d e2e ege d2B BAB cBc cBc Bdg dBG E2E FEF G3 :|
 P:B
 B2G| AAA A2B cBA B2d AAA A2B cBA B2d e2c cdc Bdg dBG E2E FEF G3 :|
 
-% Into SSF 14-19 251 = BFS 14-04 16 Tars Of The Victory
+% Into SSF 14-19b 51 = BFS 14-04 16 Tars Of The Victory
 
-X:SSF 14-19 252
+X:SSF 14-19b 52
 T:Hot Punch
 O:Scotland
 B:Kerr, Merry Melodies(?), c1880s (as "Orange and Blue")
@@ -342,11 +312,11 @@ a2g| f2d dcd Bcd A2d f2d faf |1 d3 def g2e efe b2e e2d cBA c2B A3 :|2 d3 f2g afa
 P:B
 a2g| f2a aga fga a2g f2d faf |1 d3 e2f g2e ede c2e e2d cBA c2B A3 :|2 d3 f2g afa geg fdf e2d c2c ABc d3 :|
 
-% Into... SSF 14-19 253 = BFS 14-04 17 Louisberg Square
+% Into... SSF 14-19b 53 = BFS 14-04 17 Louisberg Square
 
-% SSF 14-19 254 = BFS 14-04 22 Worcester Hornpipe, into SSF 14-19 255 = EATMD 13-01 09 Gloucester Hornpipe
+% SSF 14-19b 54 = BFS 14-04 22 Worcester Hornpipe, into SSF 14-19b 55 = EATMD 13-01 09 Gloucester Hornpipe
 
-X:SSF 14-19 256
+X:SSF 14-19b 56
 T:The Ball
 N:In Wm. Mittell's MS, 1799 (vmp WM.102)
 M:6/8
@@ -356,11 +326,11 @@ d|B2G A2F GFG D2D |1,3 E2E c2B B3 A2 :|2,4 E2c A2F G3-G2 :|
 P:B
 B|A2D c2A BdB G2G A2D c2B B3 A2d edc A2f g2d B2G E2c A2F G3-G2 :|
 
-% Into SSF 14-19 257 = WFS 13-07 03 The Moon And Seven Stars
+% Into SSF 14-19b 57 = WFS 13-07 03 The Moon And Seven Stars
 
-% SSF 14-19 258 = WFS 13-07 18 Jack Robinson, into...
+% SSF 14-19b 58 = WFS 13-07 18 Jack Robinson, into...
 
-X:SSF 14-19 259
+X:SSF 14-19b 59
 T:Not For Joe
 N:Not to be confused with Arthur Lloyd's "Not For Joseph"
 M:4/4
@@ -370,12 +340,12 @@ D2G2 D2GD F2E2 F2E2 |1,3 D2G2 D2GD F2G2 A4 :|2 D4 D2EF G2F2 G4 :|4 D2D2 d3c B2A2
 P:B
 GA| B3A G2B2 c3B A2c2 |1,3 B3A G2BG AGFE D2 :|2,4 B2G2 A2F2 G4 G2 :|
 
-%      SSF 14-19 260 = SSF 14-18 93 Walter Bulwer's No.2,
-% into SSF 14-19 261 = SSF 14-18 94 Walter Bulwer's No.1
+%      SSF 14-19b 60 = SSF 14-18 93 Walter Bulwer's No.2,
+% into SSF 14-19b 61 = SSF 14-18 94 Walter Bulwer's No.1
 
-% SSF 14-19 262 = WFS 13-07 22 Galopede (but AABC), into...
+% SSF 14-19b 62 = WFS 13-07 22 Galopede (but AABC), into...
 
-X:SSF 14-19 263
+X:SSF 14-19b 63
 T:
 M:4/4
 K:G
@@ -386,7 +356,7 @@ gfe2 dcB2 |1,3 c2c2 d3c BAG2 c2e2 d4 d4 :|2,4 c2c2 B4 B3c B2A2 G4 G4 :|
 
 % 2:40:38
 
-X:SSF 14-19 264
+X:SSF 14-19b 64
 T:
 M:4/4
 K:D
@@ -397,4 +367,4 @@ DED2 A2FA B2GB A2F2 |1,3 FED2 A2F2 G2E2 E4 :|2,4 FGAF GAB2 A2D2 D2 :|
 P:C
 {c2}| d3A AGF2 d3A AGF2 |1,3 d4 AGF2 G2E2 E2 :|2,4 FGAF GAB2 A2D2 D2 :|
 
-% SSF 14-19 265 Paddy Carey's , into SSF 14-19 266 = SSF 14-18 43 Morgan Rattler
+% SSF 14-19b 65 Paddy Carey's , into SSF 14-19b 66 = SSF 14-18 43 Morgan Rattler
