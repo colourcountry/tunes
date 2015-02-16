@@ -54,6 +54,7 @@ class Performance:
                         apparent_name='',
                         ext_references='',
                         ext_performances='',
+                        derived_name='',
                         remarks=''):
 
         # Treat empty strings as None
@@ -71,7 +72,16 @@ class Performance:
 
         self.given_name = given_name.strip() or None
         self.same_as = same_as.strip() or None
-        self.apparent_name = apparent_name.strip() or None
+        if apparent_name == 'FALSE' or apparent_name == '#N/A' or apparent_name == '0':
+            # the openoffice macro deriving the name failed in some way
+            self.apparent_name = None 
+        else:
+            self.apparent_name = apparent_name.strip() or None
+        if derived_name == 'FALSE' or derived_name == '#N/A' or derived_name == '0':
+            # the openoffice macro deriving the name failed in some way
+            self.derived_name = None 
+        else:
+            self.derived_name = derived_name.strip() or None
         self.ext_references = set(ext_references.strip().split(',')) or None
         self.ext_performances = set(ext_performances.strip().split(',')) or None
         self.remarks = remarks.strip() or None
@@ -106,7 +116,7 @@ class Tune:
     def __init__(self, performance):
         self.id = performance.id
         self.performances = []
-        self.last_name = "?"
+        self.last_name = None
         self.names = set()
         self.ext_references = set()
         self.ext_performances = set()
@@ -115,7 +125,7 @@ class Tune:
         
 
     def __str__(self):
-        s = '%s %s\n' % (self.id, tuple(self.names))
+        s = '%s %s %s\n' % (self.id, self.get_index_name(), tuple(self.names))
         for p in sorted(self.performances, key=Performance.get_id):
             s += '    %s\n' % str(p)
         if self.ext_references:
@@ -126,9 +136,12 @@ class Tune:
 
     def add_performance(self, performance):
         self.performances.append(performance)
-        self.names.update( (performance.given_name, performance.apparent_name) )
+        self.names.update( (performance.given_name, performance.apparent_name, performance.derived_name) )
         self.names.discard(None)
-        self.last_name = performance.apparent_name or performance.given_name or "Unknown"
+
+        if performance.derived_name:
+            self.last_name = performance.derived_name
+
         self.ext_references.update(performance.ext_references)
         self.ext_references.discard(None)
         self.ext_references.discard('')
@@ -138,7 +151,9 @@ class Tune:
         performance.tune = self
 
     def get_index_name(self):
-        if self.last_name.lower().startswith("the "):
+        if not self.last_name:
+            return '(%s)' % self.id
+        elif self.last_name.lower().startswith("the "):
             return self.last_name[4:]
         else:
             return self.last_name
@@ -250,7 +265,8 @@ if __name__=="__main__":
                                   apparent_name=p[7],
                                   ext_references=p[8],
                                   ext_performances=p[9],
-                                  remarks=p[10])
+                                  derived_name=p[10],
+                                  remarks=p[11])
             previous = p[0]
         else:
             sys.stderr.write("WARNING: short line %s\n" % p)

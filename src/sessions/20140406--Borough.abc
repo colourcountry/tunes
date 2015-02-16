@@ -207,7 +207,7 @@ B:Hardcore English, 2007, p26-4
 M:4/4
 K:G
 P:A
-D2| G2G2 GBd2 e2ef g2fe |1,3 dBGB dBGB cAFA cAFA :|2,4 dgfe dcBA G2B2 G2 ||
+D2| G2G2 GBd2 e2ef g2fe |1,3 dBGB dBGB cAFA cAFA :|2,4 dgfe dcBA G2B2 G2 :|
 P:B
 Bc| d2B2 GFGd e2c2 cBce d2B2 GFGB AGFE D2Bc d2B2 GFGd edef g2fe dgfe dcBA G2B2 G2 :|
 
@@ -219,9 +219,9 @@ B:A version is in O'Neill's (1907), as "The Man From Newry"
 M:4/4
 K:G
 P:A
-G2g2 g2dB cBcd egfe |1,3 dBGB edcB ABcA GFED :|2,4 dBGB ecAF G2B2 G3 ||
+G2g2 g2dB cBcd egfe |1,3 dBGB edcB ABcA GFED :|2,4 dBGB ecAF G2B2 G4 :|
 P:B
-B2BA Bcd2 e2ed efge |1,3 dBGB edcB ABcA GFED :|2,4 dBGB ecAF G2B2 G4 ||
+B2BA Bcd2 e2ed efge |1,3 dBGB edcB ABcA GFED :|2,4 dBGB ecAF G2B2 G4 :|
 
 X:BFS 14-04 24
 T:Clee Hill
@@ -265,7 +265,7 @@ O:Scotland?
 M:4/4
 K:D
 P:A
-FG| A2A>B AFED f2fd edBd |1,3 A2A>B AF DF E2EF E2 :|2,4 A2de fedc d2dc d2 ||
+FG| A2A>B AFED f2fd edBd |1,3 A2A>B AF DF E2EF E2 :|2,4 A2de fedc d2dc d2 :|
 P:B
 de| f2fe d2fa g2f2 e2fg afdB AFGF E2EF E2FG ADFA dFAd fagf edcB Aagf gedc d2dc d2 |]
 
@@ -293,7 +293,7 @@ P:B
 dc| B2G2 G3A B2G2 BdcB c2A2 A3B c2A2 cedc B2G2 G3A B2d2 g4 gbag fagf g2e2 e2 :|
 
 X:BFS 14-04 31
-T:?
+T:
 M:6/8
 K:G
 P:A
@@ -310,9 +310,9 @@ C:Tam Anderson (-1991)
 M:6/8
 K:D
 P:A
-dcd D3 EFG ABc |1 dcd Bed c2A A3 :|2 d2F GFE F2D D3 ||
+dcd D3 EFG ABc |1 dcd Bed c2A ABc :|2 d2F GFE F2D D3 ||
 P:B
-dcd fed cBc edc BAB dcB A3-A2F GFG BAG F2A d3 |1 E2A c2B A3 ABc:|2 fed edc d6 |]
+dcd fed cBc edc BAB dcB A3-A2F GFG BAG |1 F2A d3 E2G B2C C2E ABc:|2 F2A a2g fed edc d6 |]
 
 % Into BFS 14-04 33 = EATMD 13-01 16 (01:24)
 
@@ -365,7 +365,7 @@ P:B
 g2f g2d de=f e2d def gde dcB A2d edc Bcd edc Bcd egG c2B AGF G3 :|
 
 X:BFS 14-04 40
-T:?
+T:
 M:6/8
 K:G
 P:A
@@ -412,7 +412,7 @@ d2g g2g f2A A2B |1,3 cBc e2d B3 G3 :|2 cBc e2F G6 :| [P:(A2)] |]
 % BFS 14-04 44 The Man in the Moon, into...
 
 X:BFS 14-04 45
-T:?
+T:
 M:3/4
 K:G
 P:A
@@ -421,7 +421,7 @@ P:B
 {B2}d2| g6 g2f2e2 d6 d4c2 |1 B3AG2 B2c2d2 A6-A2 :|2 B3AG2 E2A2F2 G6-G2 |]
 
 X:BFS 14-04 46
-T:?
+T:
 M:3/4
 K:G
 P:A
@@ -442,7 +442,7 @@ P:B
 BGEG B2B2 AFDF A2A2 |1,3 GFED E2EG FEDE FGAF :|2,4 GFED EGFD E4 E4 :|
 
 X:BFS 14-04 49
-T:?
+T:
 M:4/4
 K:Edor
 P:A
@@ -456,7 +456,7 @@ B:McGibbon (Scots Tunes, book III), 1762
 M:4/4
 K:Am
 P:A
-A2AB cBcd efec d2cd |1,3 edcB ABcA BGE2 E4 :|2,4 eaga edcB c2A2 A2 ||
+A2AB cBcd efec d2cd |1,3 edcB ABcA BGE2 E4 :|2,4 eaga edcB c2A2 A2 :|
 P:B
 ef| g3a gfef gfec d4 edcB ABcA BGE2 E4 || [P:(A2)] :|
 
@@ -475,7 +475,7 @@ P:B
 GA| BGEG BGEG BAGF E2FG AFDF AFDF AGFE D2EF GFGE g2fe dBGB d2cB AGFE DEFA G2E2 E2 :|
 
 X:BFS 14-04 52
-T:?
+T:
 M:4/4
 K:G
 P:A
@@ -484,7 +484,7 @@ P:B
 B2e2 efge f2d2 d2gf |1,3 e2B2 B2cB AGFG ABcA :|2,4 e2B2 A2GF E4 E2 :|
 
 X:BFS 14-04 53
-T:?
+T:
 M:4/4
 K:G
 P:A
@@ -496,7 +496,7 @@ D2D2 D2GF E2E2 E2cA |1,3 F2F2 FDEF GFGA B2G2 :|2,4 F2F2 FDEF G4 G2 :|
 P:D
 GA| B2B2 B2GA B2B2 B2GA Bgfe dcB2 AGAB A4 B2B2 BGAB c2c2 c4 dgfe dcBA A2G2 G2 :|
 
-% BFS 14-04 54 = WFS 14-03 19 Astley's Ride, into BFS 14-04 55 = WFS 14-01 24 Buttered Peas
+% BFS 14-04 54 = WFS 14-03 19 Astley's Ride, into BFS 14-04 55 = WFS 13-10 03 Buttered Peas
 
 X:BFS 14-04 56
 T:Lord of the Dance
@@ -508,7 +508,7 @@ P:B
 d4 B3A BcBA G4 B2Bc d2cB A2A2 A2D2 G2G2 G3A BABc d2cB A2A2 B2BA G2G2 G2 :|
 
 X:BFS 14-04 57
-T:?
+T:
 M:4/4
 K:D
 P:A
@@ -641,7 +641,7 @@ P:B
 E2d2 cde2 c2A2 B2G2 E2d2 cde2 D2FG A2F2 E2d2 cde2 c2A2 B2c2 d2B2 edcB A2D2 F2D2 :|
 
 X:BFS 14-04 74
-T:?
+T:
 M:4/4
 K:Em
 P:A
@@ -699,7 +699,7 @@ P:B
 G>Bd2d2 c2e>dc>B ABc2c2 B2d>cB>A G>AB2B2 A>Bc>BA>G F>GA>DE>F A2G2G2 :|
 
 X:BFS 14-04 83
-T:?
+T:
 M:4/4
 K:D
 P:A

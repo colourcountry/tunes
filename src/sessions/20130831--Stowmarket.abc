@@ -101,7 +101,7 @@ P:B
 d2d2 d3e dcBA G4 |1,3 A2A2 D2D2 A2Bc d4 :|2,4 A2A2 D2EF G4 G4 :|
 
 X:EATMD 13-01 13
-T:?
+T:
 K:G
 P:A
 GFGA BABc d2d2 B4 |1,3 c2A2 A4 F2D2 D4 :|2,4 c2A2 F2D2 F2G2 G4 :|
@@ -150,7 +150,7 @@ P:C
 gfef g2a2 g2f2 e2d2 Bcd2 efg2 G2F2 E2D2 E2C2 c2A2 B2G2 dcBA B2d2 A2BA G6 :|
 
 X:EATMD 13-01 18
-T:?
+T:
 M:3/4
 K:G
 P:A
@@ -179,7 +179,7 @@ P:B
 Bc| d2B2e2 d4GA B2G2c2 B4gf e3fgf e2d2B2 |1 e2c2B2 A4 :|2 c2B2A2 G4 |]
 
 X:EATMD 13-01 21
-T:?
+T:
 M:3/4
 K:G
 P:A
@@ -204,7 +204,7 @@ P:B
 Bc| dBGB dBGB ecGc ecGc gfed efga f2d2 d2B2 [P:(A2)] :|
 
 X:EATMD 13-01 24
-T:?
+T:
 K:G
 P:A
 G2G2{F} E2D2 G2G2 A2GA |1,3 B2B2 GAGA BAGA E2D2 :|2,4 B2d2 cBAG E2F2 G4 :|
@@ -220,7 +220,7 @@ P:B
 FDFA dAFD G2FD A,2D2 CDEF GECE |1,3 DEFG A4 :|2,4 E2D2 D4 :|
 
 X:EATMD 13-01 27
-T:?
+T:
 K:D
 P:A
 fedB A2F2 GFGA B4 gfed cABc |1,3 edcB A4 :|2,4 d2f2 d4 :|
@@ -228,7 +228,7 @@ P:B
 F2A2 d3c B2B2 e2f gfed cABc |1,3 edcB A4 :|2,4 e2d2 d4 :|
 
 X:EATMD 13-01 28
-T:?
+T:
 M:6/8
 K:G
 P:A
@@ -271,7 +271,7 @@ P:B
 B| d2d e2e d2e dBG d2d e2e dBG A3 d2d e2e d2g g2f e2d ^cB^c d3 d2x [P:(A1)] [P:(A2)] |]
 
 X:EATMD 13-01 34
-T:?
+T:
 M:6/8
 K:G
 P:A
@@ -289,7 +289,7 @@ P:B
 a2| b2g2b2 a4f2 g2e2g2 f3ga2 b2g2b2 a2f2d2 g2f2e2 d4x [P:(A)] |]
 
 X:EATMD 13-01 36
-T:?
+T:
 K:C
 P:A
 G2 | c2c2 B2G2 c2c2 d2d2 |1,3 e2e2 d2f2 g3a gfed :|2,4 e2g2 f2e2 e4d4 :|
@@ -297,7 +297,7 @@ P:B
 g2gg g2e2 g2f2 f4 e2e2 d2d2 |1,3 cdefgabc' :|2,4 e2e2 d2d2 cege c4 :|
 
 X:EATMD 13-01 37
-T:?
+T:
 K:C
 P:A
 c2e2 c2e2 d2g2 gfed |1,3 c2e2 c2e2 dcBA G4 :|2,4 c2e2 d2gf e2c2 c4 :|
@@ -305,7 +305,7 @@ P:B
 d^cd^c d2f2 e2c2 c2e2 |1,3 dcBA G2B2 c2e2 d4 :|2,4 dcBA GAB2 c2e2 c4 :|
 
 X:EATMD 13-01 38
-T:?
+T:
 K:G
 P:A
 D2| GBGA FADA GBGB D2D2 |1,3 E2e2 edcB cBAG GFED :|2,4 Eedc BAGF A2G2 G2 :|
@@ -313,7 +313,7 @@ P:B
 Bc| dBdB dBdB edcB c2AB cAcA cAcA dcBA B2x2 [P:(A2)] :|
 
 X:EATMD 13-01 40
-T:?
+T:
 K:D
 P:A
 dAFE D3d cAEC D2EF |1,3 GABA GFED C2B,2 A,4{ABc} :|2,4 GBAG FEDC E2D2 D4 :|
@@ -378,7 +378,7 @@ P:B
 d'2c' bc'b gab c'2b a2g f2e d2e f2g a2c' bc'b gab c'2b a2g f2d e2f g3 :|
 
 X:EATMD 13-01 50
-T:?
+T:
 K:C
 P:A
 c2c2 c2GE F2FE D4 |1,3 B,CDE FEFD CDEF GABG :|2,4 B,CDE GFED C2E2 C2 :|
@@ -402,7 +402,7 @@ P:B
 d3c| B2B2 d2BA G2G2 B2GF E2E2F2G2 c6B2 c2e2A3B c2e2A3G F2G2F2E2 D4d4 e2d2B2G2 D6G2 F2G2A2B2 c8 d2c2A2F2 d2c2A2F2 D2D2E2F2 G6 |]
 
 X:EATMD 13-01 54
-T:?
+T:
 K:G
 P:A
 G2G2 G2FG A2A2 A4 GFED E2F2 |1,3 GABc dcBA :|2,4 G4 :|
@@ -410,7 +410,7 @@ P:B
 G2A2| B2B2 B2AB c2c2 c4 A2A2 A2GA B2B2 BcdB [P:(A2)] :|
 
 X:EATMD 13-01 55
-T:?
+T:The New-Rigged Ship
 M:6/8
 K:G
 P:A
@@ -419,7 +419,7 @@ P:B
 d2B d2B G2G G3 |1,3 e2c e2c A2A ABc :|2,4 A2A DEF G3 G3 :|
 
 X:EATMD 13-01 56
-T:?
+T:
 M:6/8
 K:G
 P:A
@@ -428,7 +428,7 @@ P:B
 D| BAB cBc d3 B2c |1,3 dcB BAG A3-A2 :|2,4 dcB AGA G3-G2 :|
 
 X:EATMD 13-01 57
-T:?
+T:
 M:6/8
 K:G
 P:A
@@ -437,7 +437,7 @@ P:B
 B3 d3 e2d B2G ABA E2F |1,3 A2G D3 :|2,4 G6 :|
 
 X:EATMD 13-01 58
-T:?
+T:Penny On The Water
 K:G
 P:A
 G2G2 G2G2 FGAF G3A B2B2 B2B2 ABcA B4
@@ -445,7 +445,7 @@ P:B
 cdec A2A2 BcdB G2G2 ABcA FDEF |1,3 GABc d4 :|2,4 G2B2 G4 :|
 
 X:EATMD 13-01 59
-T:?
+T:
 K:G
 P:A
 DEDG B2B2 DEDG B2B2 cBAG FDEF |1,3 AGFE D4 :|2,4 G2B2 G2 :|
@@ -513,7 +513,9 @@ P:B
 BGB dBd efg dBG |1,3 BGB dBG FGA A2c :|2,4 EFG ABc BGG G3 :|
 
 X:EATMD 13-02 07
-T:
+T:The Old Horned Sheep
+O:Ireland
+B:Ryan’s Mammoth Collection (1883), under the title “The Boss.”
 M:6/8
 K:G
 P:A

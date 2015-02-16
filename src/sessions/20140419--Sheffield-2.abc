@@ -137,16 +137,7 @@ A2B2 c2B2 A2F2 FED2 |1,3 A2B2 c2B2 Ad-d^c d4 :|2,4 ABAF E2E2 D4 D4 :|
 P:B
 DED2 DEFG A2G2 FED2 |1,3 DEFG AGF2 E2c2 B2G2 :|2,4 ABAF E2E2 D4 D4 :|
 
-% Into...
-
-X:SSF 14-19b 19
-T:
-M:4/4
-K:Dmix
-P:A
-{G2}| A3G F2G2 ABc2 B2G2 |1,3 A3G F2G2 Ad-d^c d4 :|2,4 A2d2 ^cdec d4 d2 :|
-P:B
-{e2}| f2a2 g2e2 d^cdB A4 |1,3 f2f2 g2e2 d4 d2 :|2,4 c3 B3 A2 G3 F3 :|
+% Into SSF 14-19b 19 = SSF 14-18 083 Dark Girl Dressed In Blue
 
 X:SSF 14-19b 20
 T:Robertson's Reel
@@ -210,14 +201,7 @@ FG|A2A2 A2FA |1 BcdB A2 :|2 BAGF E2 :|3 BcdB A2d2 cdef geBc d4 d2 :|
 P:B
 de|f2f2 f2f2 gfed cBAG |1,3 FAdf gfed cdef e2 :|2,4 FAdf geBc d2d2 d2 :|
 
-X:SSF 14-19b 30
-T:The Rakes of Rochester
-M:4/4
-K:G
-P:A
-dc|B2G2 G2D2 E4 D2G2 |1,3 F2G2 c2B2 B4 A2 :|2,4 F2G2 cAGF G4-G2 :|
-P:B
-A2|B2B2 A2d2 B2B2 A2d2 |1,3 B2B2 c2B2 AGFE D2 :|2,4 B2G2 A2GF G4 G2 :|
+% SSF 14-19b 30 = SSF 14-18 052 The Rakes of Rochester
 
 % SSF 14-19b 31 = SSF 14-19a 39 Petronella, into...
 
@@ -253,7 +237,7 @@ e2|f2gf e2fe dfed cBA2 BcdB cdef g2f2 e2 || [P:(A2)] :|
 
 % SSF 14-19b 41 = EATMD 13-01 15 Doncaster Races
 
-% SSF 14-19b 42 = SSF 14-18 117, into SSF 14-19b 43 = SSF 14-18 118
+% SSF 14-19b 42 = SSF 14-18 119 Drops Of Brandy, into SSF 14-19b 43 = SSF 14-18 120 The Foxhunter's
 
 X:SSF 14-19b 44
 T:Archie's Fancy

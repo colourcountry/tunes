@@ -1,11 +1,12 @@
 X:SSF 14-18 001
 T:
 M:4/4
+R:slight swing
 K:Em
 P:A
-EDEF GFGA BABd e2ef |1,3 gfeg fedf edB^c dBAF :|2,4 gfeg fede fagf E4 :|
+EDEF GFGA BABd e2ef |1,3 gfeg fedf edB^c dBAF :|2,4 gfeg fede fagf e4 :|
 P:B
-geBe geBe gece gece |1,3 afdB ABdf afdB ABde :|2,4 afdB ABde fagf E4 :|
+geBe geBe gece gece |1,3 afdB ABdf afde fagf :|2,4 afdB ABde fagf e4 :|
 
 % Into SSF 14-18 002 = WFS 13-10 26 Spootiskerry,
 % into SSF 14-18 003 = WFS 13-10 17 Willafjord
@@ -24,20 +25,22 @@ d2Bc d2Bc dcBA B2G2 d2Bc dedc B2A2 G4 :|
 % Into SSF 14-18 005 = EATMD 13-08 09 Mount Hills
 
 X:SSF 14-18 006
-T:?
+T:
 M:6/8
 K:G
 P:A
 G2d BAB c2A FED BAG E2E DEF G3 :|
 P:B
-Bcd e2e ABc d2d Bcd e2e ABc def g2d BAB c2a FED BAG E2E DEF G3 :|
+Bcd e2e ABc d2d Bcd e2e ABc def g2d BAB c2A FED BAG E2E DEF G3 :|
 
 % Into SSF 14-18 007 = BFS 14-04 08 Upton Stick Dance
 
 % SSF 14-18 008 = WFS 14-01 41 Flower of Edinburgh
 
 X:SSF 14-18 009
-T:
+T:30 Year Jig
+O:Sweden
+C:Roger Tallroth (1958-)
 M:6/8
 K:G
 P:A
@@ -63,7 +66,9 @@ P:E
 edB dBA G2D GAB dge dBA edB AGF G2A BAG FAG FED :|
 
 X:SSF 14-18 011
-T:
+T:The Dawn
+O:Ireland
+N:Cf. The Miller's Reel
 M:4/4
 K:A
 P:A
@@ -75,7 +80,7 @@ a2ae fece fgag fece defg afec BABc A4 :|
 % Into...
 
 X:SSF 14-18 012
-T:
+T:The Mason's Apron
 M:4/4
 K:A
 P:A
@@ -86,7 +91,9 @@ AB| c2ec fcec c2ec fedc |1,3 d2fd gdfd d2fd gfed :|2,4 Bcde fgaf ecB2 A2 :|
 % Into...
 
 X:SSF 14-18 013
-T:
+T:Saint Anne's Reel
+O:French Canadian
+B:Walsh, 'Session Tunes'
 M:4/4
 K:D
 P:A
@@ -106,15 +113,16 @@ D3 G3 F3 A3 G3 G2g fed cBA Bcd |1,3 cBA FAF DEF :|2 cBA FAF G3 :| [P:(A2)] ||
 % Into...
 
 X:SSF 14-18 015
-T:
+T:The Butterfly
+C:The Bothy Band, 1975
 M:9/8
 K:Em
 P:A
-B2E G2E F3 B2E G2E FED B2E G2E FGA B2d d2B AFD :|
+"Em"B2E G2E "D"F3 "Em"B2E G2E "D"FED "Em"B2E G2E "D"FGA "G"B2d "D"d2B AFD :|
 P:B
-B2d e2f g3 B2d g2e dBA B2d e2f g2a b2a g2e dBA :|
+"Em"B2d "C"e2f "G"g3 B2d "D"g2e dBA "Em"B2d "C"e2f "G"g2a "Bm"b2a g2e dBA :|
 P:C
-B3 B2A G2A B3 BAB dBA B3 B2A G2A B2d g2e dBA :|
+"Em"B3 "A"B2A G2A "C"B3 BAB "D"dBA "Em"B3 "A"B2A G2A "C"B2d g2e "D"dBA :|
 
 X:SSF 14-18 016
 T:Ouvrez la Porte
@@ -160,9 +168,9 @@ X:SSF 14-18 021
 M:3/4
 K:D
 P:A
-D2FEFG A2GFED |1,3 E2EDEF E6 :|2,4 E2EFED D6 :| C2
+D2FEFG A2GFED |1,3 E2EDEF E6 :|2,4 E2EFED D6 :|
 P:B
-B,3ddc dAGFED A,2d3c A4F2 G3FGA |1,3 G2GFED CDE2EF EDC3B, :|2,4 BAGFED E2EDEF G2FEDE :|
+{C2}| B,3ddc dAGFED A,2d3c A4F2 G3FGA |1 G2GFED CDE2EF EDC3B, :|2 BAGFED E2EDEF G2FEDE ||
 
 % Into...
 
@@ -170,9 +178,9 @@ X:SSF 14-18 022
 M:3/4
 K:Bm
 P:A
-de| f2fedf ecAcbA |1,3 GBdGBd AceA :|2,4 GFEefd B4 :|
+de| f2fedf ecAcBA |1,3 GBdGBd AceA :|2,4 GFEefd B4 :|
 P:B
-Bc| dBfedc A4AB =c2cBAc BGE2de fBgBab f4f2 edcefd B4 :|
+Bc| dBfedc A4AB =c2=cBA=c BGE2de fBgBab f4f2 edcefd B4 :|
 
 X:SSF 14-18 023
 T:Mouse In The Kitchen
@@ -202,17 +210,20 @@ K:D
 P:A
 A| dfd ecA BcB AFE |1,3 DED FDG DAD BDc :|2,4 DFD GDG ABc d2 :|
 P:B
-c| BFA BFA Bde fed |1,3 BFA BFA cBA FA :|2,4 B2B cBA FAc B2A :|
+c| BFA BFA Bde fed |1,3 BFA BFA cBA FA :|2,4 B2B cBA FAc B2 :|
 
 % Into...
 
 X:SSF 14-18 026
+T:The Cliffs Of Moher
+O:Ireland
+B:Levey (Dance Music of Ireland, 2nd Collection), 1873; No. 34, p. 14.
 M:6/8
-K:A
+K:Ador
 P:A
 a2a bag eaf ged |1,3 c2A BAG EFG ABA :|2,4 c2A BAG EFG A3 :|
 P:B
-e2e dBA e2e dBA |1,3 GAB DBA GAB DBG :|2 GAB DBA EFG A2A :| e2e ded cdc BcB A2A BAG EFG A3 :| 
+e2e dBA e2e dBA |1,3 GAB dBA GAB dBG :|2 GAB dBG EFG A2A :| e2e ded cdc BcB A2A BAG EFG A3 :| 
 
 % Into...
 
@@ -252,7 +263,7 @@ d2g gfg e2g fga bgg gfg |1,3 e2g f2e :|2,4 e2f g3 :|
 P:B
 d2g f2g eee e2f gfe dBG A2A A2B GBd d2B c2A d2c B2G E2F G3 :| F3
 P:C
-E3 F3 G3 A3 |1,3 Bee e2f e3-e2 :|2 B2A G2F G2F E2D :| f g2g gfe d2g B2d c3 B2A G3-G2
+E3 F3 G3 A3 |1,3 Bee e2f e3-e2 :|2 B2A G2F G2F E2D :| f| g2g gfe d2g B2d c3 B2A G3-G2
 
 %       SSF 14-18 035 = EATMD 13-02 06
 
@@ -260,12 +271,12 @@ E3 F3 G3 A3 |1,3 Bee e2f e3-e2 :|2 B2A G2F G2F E2D :| f g2g gfe d2g B2d c3 B2A G
 
 X:SSF 14-18 037
 T:
-M:
+M:6/8
 K:Gm
 P:A
 D|GAB ABc B2A GAB A2G FGA |1,3 G2G D3 :|2,4 G3-G2 :|
 P:B
-A|B3 d2B c2B A3 B2A GAB A2A D3 |1 [P:(A2)] :|2 GAB ABc Bcd edC BcB ABA G3-G2 ||
+A|B3 d2B c2B A3 B2A GAB A2A D3 |1 || x[P:(A2)]x || :|2 GAB ABc Bcd edc BcB ABA G3-G2 ||
 
 %       SSF 14-18 038 = WFS 13-10 32 I'll Go And Enlist For A Sailor
 
@@ -274,7 +285,7 @@ T:
 M:
 K:Em
 P:A
-G2e2 G2FE DEFA B2F2 |1,3 G2e2 G2FE DEF2-F4 :|2,4 GABG FGAF D2E2 E4 :|
+G2e2 E2FE DEFA B2F2 |1,3 G2e2 G2FE DEF2-F4 :|2,4 GABG FGAF D2E2 E4 :|
 P:B
 e2ge c2e2 defd B2f2 e2ge c2e2 def2-f4 e2ge c2e2 defd B4 A2cA F2AF D2E2 E4 :|
 
@@ -305,9 +316,9 @@ T:
 M:
 K:Gm
 P:A
-G2GA B2Bd c2ce dcBA |1,3 G2GA B2d2 =efe2 e2d2 :|2,4 G2GA B2G2 AG^F2 G4 :|
+G2GA B2Bd c2ce dcBA |1,3 G2GA B2d2 =ef=e2 =e2d2 :|2,4 G2GA B2G2 AG^F2 G4 :|
 P:B
-g2g2 f2gf edc2 d4 |1,3 edce-edce d2d2 e2^f2 :|2,4 cdcB A2G2 AG^F2 G4 :|
+g2g2 f2gf =edc2 d4 |1,3 =edc=e-=edc=e d2d2 =e2^f2 :|2,4 cdcB A2G2 AG^F2 G4 :|
 
 % 2:00h
 
@@ -335,18 +346,18 @@ D2D dcd |1,3 E2E efe D2D dcd B2A Bcd :|2,4 E2E efg agf edc B2A Bcd :|
 
 X:SSF 14-18 050
 T:
-M:
+M:4/4
 K:G
 P:A
-G,/A,/B,/C/ D/C/B,/A,/ G,G FG A2 B2 c/B/A/G/ F/G/A/c/ dB c2 Bc/B/ AG FG/F/ EG/E/ |1 D2 D/C/B,/A,/ :|2 D4
+G,A,B,C DCB,A, G,2G2 F2G2 A4 B4 cBAG FGAc d2B2 c4 B2cB A2G2 F2GF E2GE |1 D4 DCB,A, :|2 D8
 P:B
-D/E/F/G/ A/G/F/E/ DF Ac/A/ G/A/B/c/ d/C/B/A/ GB dB c/B/c/d/ e/d/c/B/ c/B/A/G/ A/B/c/d/ e/d/c/B/ A/B/A/G/ Fd d2 
-d/B/G/B/ d/B/G/B/ AF D2 d/B/G/B/ d/B/G/B/ AF D2 GA Bc dg-g/f/e/d/ Bc/B/ AB/A/ G2 G2 
+DEFG AGFE D2F2 A2cA GABc dcBA G2B2 d2B2 cBcd edcB cBAG ABcd edcB ABAG F2d2 d4 
+dBGB dBGB A2F2 D4 dBGB dBGB A2F2 D4 G2A2 B2c2 d2g2-gfed B2cB A2BA G4 G4 
 
 %       SSF 14-18 051 = EATMD 13-01 17 The Shepherd And Shepherdess
 
 X:SSF 14-18 052
-T:
+T:The Rakes Of Rochester
 M:2/4
 K:G
 P:A
@@ -371,14 +382,7 @@ c2d edc c2d edc c2d e2f g3 f2e dB2 dB2 dB2 dB2 GAB A3 G6 :|
 
 % SSF 14-18 057 = WFS 13-11 01 The Curly-Headed Ploughboy
 
-X:SSF 14-18 058
-T:
-M:4/4
-K:D
-P:A
-{A2}| FGAF GABG EGBA F2d2 |1,3 cded c2AB-BABc B2 :|2,4 cded cABc e2dc d
-P:B
-Ade| f2f2 g2ga-agfg adfa |1,3 b2ba gfed cdef e :|2,4 b2ba gfed cdec d :|
+% SSF 14-18 058 = WFS 14-03 27
 
 % SSF 14-18 059 = WFS 13-07 05 Michael Turner's Waltz
 
@@ -387,7 +391,9 @@ Ade| f2f2 g2ga-agfg adfa |1,3 b2ba gfed cdef e :|2,4 b2ba gfed cdec d :|
 % SSF 14-18 061 = SSF 14-18 004 Maiden Lane
 
 X:SSF 14-18 062
-T:
+T:Hole in the Wall
+C:Henry Purcell
+B:Playford part II 2nd ed., 1698 (Barlow 377)
 M:3/2
 K:G
 P:A
@@ -417,7 +423,8 @@ d2|B2G2 G2AB c6d2 B2G2 G2AB |1,3 c6 :|2,4 c3d e2dc B2cB A2F2 G6 :|
 % 3:03h
 
 X:SSF 14-18 067
-T:
+T:Nonesuch
+B:Playford, 1st ed., 1651 (Barlow 71)
 M:2/4
 K:Em
 P:A
@@ -440,7 +447,7 @@ A|BGGA BGcA |1 BGGA F>ED2 :|2 BGAF G3
 
 X:SSFx 14-18 070
 T:
-M:
+M:6/8
 K:G
 P:A
 GA| B2D DED E2G e3 |1,3 d2B BAG B2A A :|2,4 dcB ABA G3-G :|
@@ -451,7 +458,7 @@ Bc| d2d def g2g gfe d2B BAG B3A A || [P:(A2)] :|
 
 X:SSFx 14-18 071
 T:
-M:
+M:6/8
 K:G
 P:A
 D| GFG BAB d3 efg |1,3 dBG GAB E3-E2 :|2,4 dBG ABA G3-G :|
@@ -459,8 +466,9 @@ P:B
 Bc| d2d def g2g gfe dBG GAB E3-E2 || [P:(A2)] :|
 
 X:SSF 14-18 072
-T:
-M:
+T:Lumpy Custard
+N:Lester's 68
+M:3/4
 K:G
 P:A
 D2GFG2 D2BAB2 |1,3 cBAGFG AGFEDE :|2 cBAGFA G4FE :|4 cBAGFA G3 ||
@@ -468,17 +476,18 @@ P:B
 ABc| d2dedc B2G2AB |1,3 c2cdcB A4 :|2,4 cBAGFA G3 :|
 
 X:SSF 14-18 073
-T:
-M:
+T:Mazurka Limousin
+M:3/4
 K:Em
 P:A
 efe| c2cefe B2B2AG |1,3 F2BAGF G2E :|2,4 F2BAGF E3 :|
 P:B
-EFGABc D2a2f2 |1,3 G2GABG F2D2F2 :|2,4 G2GBAF E3 :|
+EFGABc d2A2F2 |1,3 G2GABG F2D2F2 :|2,4 G2GBAF E3 :|
 
 X:SSF 14-18 074
-T:
-M:
+T:Bouchard's Quadrille
+C:Philippe Bruneau 1993?
+M:6/8
 K:D
 P:A
 dfd cec BcB B2A dfd cec BcB B2A ege dfd cec c2B |1 A2A ABc dcB A3 :|2 A2A ABc d2A A2 ||
@@ -489,7 +498,7 @@ G| F2F FAd f3-f2d e2d c2d g3-g2f eee e2d ccc c2B |1 A2A ABc dcB A2 :|2 AAA ABc d
 
 X:SSF 14-18 075
 T:
-M:
+M:6/8
 K:D
 P:A
 F2F F2G F2E DEF G2G G2A G2F GBd c2c c2d cBA GFE |1 DFA B2A AFD E3 :|2 DFA f2e d3-d2 ||
@@ -497,28 +506,30 @@ P:B
 e|f2f f2f fec dcB A2A A2B A2F FAd c2c c2d cBA GFE |1 DFA B2A F2A d2 :|2 DFA f2e d3-d2 ||
 
 X:SSF 14-18 076
-T:
+T:Long Odds
+B:Thomas Preston "Twenty-Four Country Dances of the Year" 1791
 M:
 K:G
 P:A
 DGGA B2BG c2cA BGFE DGGA Bcdd ecAF G4 :|
 P:B
-egfe d3d cedc c2B2 ABcA Bcdd |1 ecAG F2ED :|2 ecAf G4 ||
+egfe d3d cedc c2B2 ABcA Bcdd |1 ecAG F2ED :|2 ecAF G4 ||
 
 %      SSF 14-18 077 = WFS 13-07 15 L.N.B. Polka
 
 X:SSF 14-18 078
-T:
-M:
+T:Valse Gitane
+C:Montbel
+M:3/4
 K:Ddor
 P:A
-A>=AA DFA dcB AFA G>FE c>BA |1,3 GFG A/B/cB :|2,4 GFE D4 :|
+A3=AA2 D2F2A2 d2c2B2 A2F2A2 G3FE2 c3BA2 |1,3 G2F2G2 ABc2B2 :|2,4 G2F2E2 D6 :|
 P:B
-AF/A/F/A dcB AF/A/F/A dcB GE/G/E/G cBA |1,3 GFG A/B/cB :|2,4 GFE D4 :|
+A2FAFA d2c2B2 A2FAFA d2c2B2 GEGEG c2B2A2 |1,3 G2F2G2 ABc2B2 :|2,4 G2F2E2 D6 :|
 
 X:SSF 14-18 079
-T:
-M:
+T:Panic Polka
+M:2/4
 K:G
 P:A
 DG GF/G/ AF GA/B/ cA/c/ BG |1,3 A/B/A/G/ F/E/D :|2,4 AF G2 :|
@@ -544,7 +555,8 @@ e| f2f2 g2fe d2cB A4 f2f2 g2fe d6e2 f2f2 g2fe d2cB A2B2 c3B-B2A2 G3F-F2G2 :|
 %      SSF 14-18 086 = WFS 13-10 36 Jamaica
 
 X:SSF 14-18 087
-T:
+T:A. M. Shinnie
+C:Angus Fitchet (1910-1998)
 M:6/8
 K:D
 P:A
@@ -552,16 +564,7 @@ def edc Bcd A2F |1,3 GAB Ade fdf e2c :|2,4 GAB Adf e2c d3 :|
 P:B
 e|f2f def fed e2c d2d B2d fed c2A BAB dcB ABc d2e |1 fef agf fed e2 :|2 fef def eBc d3 :|
 
-% Into...
-
-X:SSF 14-18 088
-T:
-M:6/8
-K:D
-P:A
-d2D DEF EFG ABc |1,3 dcd Bcd cAA ABc :|2,4 dAF GFE FDD D2 :|
-P:B
-c|d2d fed c2c edc B2B dcB A3 F2F G2B BAG |1 F2A d2D E2G B2C C2E AB :|2 F2A a2g fed edc d3-d2 :|
+% Into SSF 14-18 088 = BFS 14-04 32 Peter's Peerie Boat
 
 % 4:03h
 
@@ -572,12 +575,12 @@ c|d2d fed c2c edc B2B dcB A3 F2F G2B BAG |1 F2A d2D E2G B2C C2E AB :|2 F2A a2g f
 
 X:SSF 14-18 092
 T:
-M:
+M:6/8
 K:Em
 P:A
 E2E EFG GFE EFG GFE EFG GFE E2D EFG GFE |1 FGA A3 FGA A2A BcB AGF :|2 F2A A2A BcB AGF E6 :| 
 P:B
-e2 d2 B3-BcB |1,3 A2A ABA G2F E2D :|2,4 A2A G2F E3-E2D :|
+e3 d3 B3-BcB |1,3 A2A ABA G2F E2D :|2,4 A2A G2F E3-E2D :|
 
 % SSF 14-18 093 = WFS 13-10 21 Lannigan's Ball
 
@@ -607,9 +610,10 @@ fg| a2fg a2fg agf2 e4 |1,3 e2a2 gfe2 dcde f2 :|2,4 e2a2 gfe2 d4 d2 :|
 % SSF 14-18 097 = BFS 14-04 88 Prince William's March (in C)
 
 X:SSF 14-18 098
-T:
+T:Turkey In The Straw
+B:"The Roche Collection of Traditional Irish Music, Volume III", 1927, #215 (p.81)
 M:4/4
-N:swung, normally in C
+R:swung, normally in C
 K:G
 P:A
 GFGA GDB,C DEDB, G,2GA B2B2 BAGA BdcB AcBA GFGA GDB,C D2B,2 C2B,C D2GA BAGA B2A2 G4 ||
@@ -619,18 +623,19 @@ B,DGD B,2B,D E2C2 C2EC A,2A2 ABAG F2E2 D2DC B,DG2 GBAG E2A2 A2AB cBAG FDEF G2B2 
 % SSF 14-18 099 = WFS 13-11 11 Believe Me, if All Those Endearing Young Charms
 
 X:SSF 14-18 100
-T:
-M:
+T:Mrs. Dundas McQueen
+B:Kerr's Merry Melodies, ~1870
+M:2/4
 K:G
 P:A
-BGdB cAec BGdB de/f/gd BGdb cAec BGBc/d/ e2d :|
+BGdB cAec BGdB de/f/gd BGdB cAec BGBc/d/ e2d :|
 P:B
 f|gdBd eAAf gdBd e2df gdBd eAAc BGB/c/d e2d :|
 
 X:SSF 14-18 101
 T:
 M:
-N:swung
+R:swung
 K:G
 P:A
 ge|d2GA B2A2 d2G2 G2ge d2GA B2AG B2A2 A2ge d2GA B2GA B2d2 g3e d2de dBGB A2G2 G2 :|
@@ -640,23 +645,23 @@ g2ga gdB2 e2ed efg2 |1,3 d2de dBGA B2A2 A4 :|2,4 d2de dBGB A2G2 G4 :|
 % Into...
 
 X:SSF 14-18 102
-T:
+T:Gypsy Princess
 M:
-N:swung
+R:swung
 K:G
 P:A
-B3B B2B2 ABAG E2D2 |1,3 G3B d2d2 e2dB a2g2 :|2,4 G2B2 dedb a2g2 g4 :|
+B3B B2B2 ABAG E2D2 |1,3 G3B d2d2 e2dB A2G2 :|2,4 G2B2 dedB A2G2 G4 :|
 P:B
 d3d d2B2 AcBA G2Bd |1,3 e3e e2eB AcBA GABc  :|2,4 g3e dBAG A2G2 G4 :|
 
 X:SSF 14-18 103
 T:
-M:
+M:6/8
 K:G
 P:A
 D|G2G BAG A2G E2D |1,3,5 c2B cde d2c B2A :|2,6 EG2 G2F G3 G2 :|4 EA2 A2G ABc B2A ||
 P:B
-D|G2A B2c d3 d2e =f3 =f2e =f6 e3 e2d e2^f g3e d3 d2e d2B A2G c2B c2d e2d c2B A3 A2B A3 E2F G3 G2A G2E D2B A3 A3B A2G E2F ||
+D|G2A B2c d3 d2e =f3 =f2e =f6 e3 e2d e2^f g2e d3 d2e d2B A2G c2B c2d e2d c2B A3 A2B A3 E2F G3 G2A G2E D2B A3 A3B A2G E2F ||
 
 %      SSF 14-18 104 = EATMD 13-02 12 Brighton Camp
 %      SSF 14-18 105 = WFS 13-10 36 Jamaica
@@ -683,7 +688,7 @@ AGFA d2d2 BAGB d2d2 |1,3 edef g2d2 c2B2 A4 :|2,4 edef g2dg b2a2 g4 :|
 X:SSF 14-18 111
 T:
 M:
-K:A
+K:Amix
 P:A
 BccB AcBA FBAF E2BB |1,3 BABc dBB2 ABcd efed :|2,4 BABc dBed c2A2 A4 :|
 P:B
@@ -692,7 +697,7 @@ a2ab a=ged cAce a=gef =geae =gedc B=GBd =gef=g =gaab a=ged cAce a2ee efec dBed B
 % Into...
 
 X:SSF 14-18 112
-T:?
+T:
 M:2/2
 K:D
 P:A
@@ -725,7 +730,7 @@ e2| f2ff e2f2 g4-g2f2 e2ef gfe2 a4-a2ag f2e2 d2ag f2e2 d2a2 bagf edce d4-d2 :|
 
 X:SSF 14-18 115
 T:
-M:
+M:3/4
 K:Em
 P:A
 B3B2B A2d2c2 B3B2B A2G2F2 G3A2G F2E2D2 E6-E6 :|
@@ -737,7 +742,7 @@ T:
 M:
 K:D
 P:A
-D3E FEFG ABA2 F4 G2G2 E4 F2F2 D4 :|2 G2G2 E4 D4-D2 ||
+D3E FEFG ABA2 F4 |1,3 G2G2 E4 F2F2 D4 :|2,4 G2G2 E4 D4-D2 ||
 P:B
 de| f2d2 A2FA-ABA2 F2AG-GFG2 E2GF-FEF2 D4 f2d2 A2FA-AGA2 F3G-GEFG ABc2 d4-d2 :|
 
@@ -773,7 +778,7 @@ e2A edc Bcd e2A A2B cde def gfe def g2G GAB A2G :|
 X:SSF 14-18 122
 T:
 M:
-N:swung
+R:swung
 K:G
 P:A
 D2|G2G2 GABc dBdg dBGD E2ED EFGB A2AB AFD2 CB,CD EFGA GABc defg dBGB cAFA G2B2 G2 :|
@@ -785,7 +790,9 @@ dc|BdGd BdGd AdFd AdFd GBEB GBEB FADA FADA E2CD EFGA GABc defg dBGB cAFA G2B2 G2
 %      SSF 14-18 124 = WFS 13-07 03 The Moon And Seven Stars
 
 X:SSF 14-18 125
-T:
+T:Battle Of The Somme
+C:Pipe Major William Lawrie (1882-1916)
+B:"Army Manual of Bagpipe Tunes and Drum Beatings. Music for Massed Pipes and Drums, Book 2" 1934
 M:9/8
 K:G
 P:A
@@ -814,11 +821,12 @@ P:B
 a|b2g a2f gfe d3 b2g f2g a3-aga b2g a2f gfe d2c Bcd def g3 :|
 
 X:SSF 14-18 128
-T:
-M:
+T:Captain Webb
+C:Jim Parker (1934-)
+M:6/8
 K:G
 P:A
-B2B BcB B2A A2B c2c cdc B3-B2c |1 d2d ed^c d2B G2A B2B BAG A3-A :|2 BAB c2B A2G E2E DGA BAG A2 G3 ||
+B2B BcB B2A A2B c2c cdc B3-B2c |1 d2d ed^c d2B G2A B2B BAG A6 :|2 BAB c2B A2G E2E DGA BAG A3 G3 ||
 P:B
 e^d=d c2c e^d=d c2c e^d=d c2G A2A c3 BAB c2B A2G E2E DGA BAG A2 G2 :|
 
@@ -835,14 +843,15 @@ P:B
 de| fgf efe ded cdc BcB BAB c2B A3 gag fgf efe ded |1,3 cdc BcB A3-A :|2,4 cBA ABc d3-d :|
 
 X:SSF 14-18 130
-T:
+T:Over The Hills And Far Away
+B:D'Urfey, 'Wit & Mirth, or Pills to Purge Melancholy' (1719-20)
 M:
-N:swung
+R:swung
 K:G
 P:A
 GABA GABA G2E2 E2D2 GABA GAB2 c2A2 A4 GABA GABA G2E2 c4 E2D2 D2AB c2A2 A2 :|
 P:B
-{Bc}|d2dc B2A2 G2E2 E4 d2dc B2AB c2A2 A4 d2dc B2A2 G2E2 c4 E2D2 D2AB c2A2 A2 :|
+Bc|d2dc B2A2 G2E2 E4 d2dc B2AB c2A2 A4 d2dc B2A2 G2E2 c4 E2D2 D2AB c2A2 A2 :|
 
 % SSF 14-18 131 = WFS 13-10 28 Morpeth Rant (new), into...
 
@@ -854,13 +863,13 @@ K:A
 P:A
 eAAe AAeA AAeA efed c2AB cAeA ccAc dedc B4 BABc |1 B2ee efed c2A2 AcBA E2A2 ABcd :|2 e2d2 c2B2 Afed c2B2 A2c2 B2A2 ||
 P:B
-a4 f4 d3c def2 e2e2 efec BAc2 B2A2 B2B2 BABc e2d2 c2B2 |1 cAcd ecef e2c2 B2A2 :|2 Afed C2B2 A4 ABcd ||
+a4 f4 d3c def2 e2e2 efec BAc2 B2A2 B2B2 BABc e2d2 c2B2 |1 cAcd ecef e2c2 B2A2 :|2 Afed c2B2 A4 ABcd ||
 
 % Into...
 
 X:SSF 14-18 133
-T:
-M:
+T:Fisher's Hornpipe
+M:4/4
 K:D
 P:A
 dAFD GBAG FDFD GBAG |1 FDFD GBAG FDFD EABc :|2 FAdf ecAc dAFE D4 ||
@@ -874,13 +883,13 @@ T:Four Up
 M:
 K:Em
 P:A
-E2EF G2GA BAGB-BAGB A2AB AGFA |1,3 G2F2 E2D2 :|2,4 G2F2 E4 ||
+E2EF G2GA BAGB-BAGB A2AB AGFA |1,3 G2F2 E2D2 :|2,4 G2F2 E4 :|
 P:B
-c2c2 c4 B2dc BAG2 A2AB AGFA |1,3 GABc d4 :|2,4 G2E2 E4 ||
+c2c2 c4 B2dc BAG2 A2AB AGFA |1,3 GABc d4 :|2,4 G2E2 E4 :|
 
 X:SSF 14-18 136 
 T:
-M:
+M:6/8
 K:G
 P:A
 G2d dcB A2B c2c |1,3 BAG GAB A2G FED :|2,4 BAG c2B AGF G3 :|
@@ -895,19 +904,20 @@ F2G AFD F2G ABc |1,3 d2B d2B dBG dBG :|2,4 dBG c2B AGF G3 :|
 %      SSFx 14-18 140 = EATMD 13-01 26 Yarmouth Breakdown (in G)
 
 X:SSF 14-18 141
-T:
-M:
+T:Jiggery Pokerwork
+M:6/8
 K:Em
 P:A
-B^AB GEB ^ABG EB^A |1,3 BGE cGE dBG gdB :|2,4 =A2d d2B BAG E3 :|
-P:B
 E2F GFE B2c A3 |1,3 G2B E2B BAG FED :|2,4 A2B G2B-BGF E3 :|
+P:B
+B^AB GEB ^ABG EB^A |1,3 BGE cGE dBG gdB :|2,4 =A2d d2B BAG E3 :|
 
 % Into...
 
 X:SSF 14-18 142
-T:
-M:
+T:Jump At The Sun
+C:John Kirkpatrick 1972
+M:6/8
 K:Em
 P:A
 {D}| EGB ^A2B EGB ^A2B |1,3 eBB eBB BAG F2 :|2,4 eBB cBA G2F E2 :|
@@ -919,24 +929,24 @@ e2e gfe f2f agf |1,3 gee gfe fBB c2B :|2,4 eBB cBA G2F E2 :|
 X:SSF 14-18 143
 T:Horizonto
 C:Paul James
-M:
+M:6/8
 K:Em
 P:A
-BcB ABG AFG EFD B,2E EFG F2F DEF G2G-GAG F2F DEF GFE FED |1 BED E3 :|2 E6 ||
+BcB ABG AFG EFD B,2E EFG F2F DEF G2G-GAG F2F DEF GFE FED |1 B,ED E3 :|2 E6 ||
 P:B
-C2C EFG C2C EFG |1,3 B,2B EFG B,2B EFG :|2 BcB ABG AFG EFD :|4 ^C2C EFG ^C2C EFG ||
+C2C EFG C2C EFG |1,3 B,2B, EFG B,2B, EFG :|2 BcB ABG AFG EFD :|4 ^C2^C EFG ^C2^C EFG ||
 P:C
-c2B-BAG F3-FGA B2A-AGF E3-EFG A2G-GFE ^D3-DEF GFG AGA B3 GAB 
-c2d2c2 F3-FGA B2c2B2 E3-EFG A2G-GFE ^D3-DEF GFE FE^D E6
+c2B-BAG F3-FGA B2A-AGF E3-EFG A2G-GFE ^D3-^DEF GFG AGA B3 GAB 
+c2d2c2 F3-FGA B2c2B2 E3-EFG A2G-GFE ^D3-^DEF GFE FE^D E6
 
 X:SSF 14-18 144
 T:
-M:
+M:4/4
 K:D
 P:A
-B4 c3B cdA2-Addc b2ab cdec d2cB A2A2 |1 B4 c3B cdB2-Bdef gfed cdec d2cB A4 :|2 B4 c3B cdB2-Bdef gfed cdec defg ||
+B4 c3B cdA2-Addc B2AB cdec d2cB A2A2 |1 B4 c3B cdB2-Bdef gfed cdec d2cB A4 :|2 B4 c3B cdB2-Bdef gfed cdec defg ||
 P:B
-a2f2 g3f e3d efd2- |1,3 ddef gfed cdec defg :|2 d2B2 B2AB cdec defg :|4 d2B2 B2AB cdec d2cB A4 ||
+a2f2 g3f e3d efd2- |1,3 ddef gfed cdec defg :|2 d2B2 B2AB cdec defg :|4 [M:6/4] d2B2 B2AB cdec | d2cB A4 ||
 
 %      SSF 14-18 145 = EATMD 13-01 31 From Night Till Morn
 
@@ -959,40 +969,46 @@ e2| f2f2 f2f2 g4 g2f2 e2e2 e2e2 a6g2 f2e2 d2ag f2e2 d2a2 bagf e2c2 d6 :|
 % SSF 14-18 150 = WFS 14-01 11 Old Tom Of Oxford
 
 X:SSF 14-18 151
-T:
-M:
+T:The Rose Tree
+B:According to Alfred Moffat the tune is in the Thompson's '24 Country dances for the Year 1764' under the title "The Irish Lilt"
+N:http://mudcat.org/thread.cfm?threadid=4396
+M:2/4
 K:D
 P:A
-d2B2 A2F2 ABAF A4 |1,3 a2d2 e2de f2e2 e4 :|2,4 d2df e2de f2d2 d4 :|
+dB AF A/B/A/F/ A2 |1,3 Ad ed/e/ fe e2 :|2,4 dd/f/ ed/e/ fd d2 :|
 P:B
-e2| f2e f2g2 a3a g2f2 e2b2 b2a2 b2e2 e2fe || [P:(A2)] ||
+e| f>e fg a>a gf eb ba be ef/e/ || [P:(A2)] :|
 
 X:SSF 14-18 152
-T:
+T:Banbury Bill
+C:Jinky Wells(?)
+N:Morris tune from Bampton
+N:http://www.magpielane.co.uk/sleevenotes/oxford_ramble/banbury_bill.htm
 M:
 K:D
 P:A
-D3E F2D2 G2A2 B2G2 E2F2 GBAG F2G2 A2Bc d2A FED d2e2 f3f gfed B2c2 d4 d4 :|
+D3E F2D2 G2A2 B2G2 E2F2 GBAG F2G2 A2Bc d2A2 FED2 d2e2 f3f gfed B2c2 d4 d4 :|
 P:B
-d2e2 f3d c2d2 e3c b2c2 d2ed c2B2 A4 d2A FED d2e2 f3f gfed B2c2 d4 d4 :|
+d2e2 f3d c2d2 e3c B2c2 d2ed c2B2 A4 d2A2 FED2 d2e2 f3f gfed B2c2 d4 d4 :|
 
 X:SSF 14-18 153
 T:
 M:
 K:D
 P:A
-DFAc dcde fdcd B2AF GABc dAAA BAGF FDE2 DFAc dcde fded Adfg afdf gece e2dc d2AG :|
+DFAc dcde fdcd B2AF GABc dAAA BAGF FDE2 DFAc dcde fded Adfg afdf gece e2dc d2A :|
 P:B
-FADA FADA FAdc BAGF GBEB GBEB GBed cbAG FADA FADA FAdc dffg afdf gece e2dc d2AG :|
+{G} |FADA FADA FAdc BAGF GBEB GBEB GBed cBAG FADA FADA FAdc dffg afdf gece e2dc d2A :|
 
 % Into SSF 14-18 154 = EATMD 13-01 10 Watson's Hornpipe
 
 X:SSF 14-18 155
-T:
-M:
+T:Captain White
+B:Kerr (Merry Melodies), c. 1875, vol. 1; No. 9, p. 28
+M:6/8
 K:D
 P:A
-DFA d3f edc B2d A2d F2A |1,3 AGF e3 :|2,4 ABc d3 :|
+DFA d2f edc B2d A2d F2A |1,3 AGF E3 :|2,4 ABc d3 :|
 P:B
 efe a2f efe a2f efe dcB |1,3 A2B c2d :|2 A3 f3 :|4 A2G F2E ||
 P:C
@@ -1002,7 +1018,7 @@ A2f fef d2A A2A A2f fef g2e e2e A2f fef d2A A2A |1 Bcd e2d c2B A2A :|2 Bcd e2c d
 
 X:SSF 14-18 156
 T:
-M:
+M:6/8
 K:G
 P:A
 d2d B2c dcB A2F G2G A2A |1,3 dcB ABc :|2,4 c2A G3 :|
@@ -1013,20 +1029,20 @@ ABA d2B ABA F2A ABA G2E |1,3 GFE F2D :|2,4 GFE D3 :|
 
 X:SSF 14-18 157
 T:
-M:
+M:2/4
 K:G
 P:A
-de| d2D2 G2A2 B3A G2AB |1,3 c2cB A2AG FGAB A2A2 :|2,4 cBAG FGAF G4 G2 :|
+d/e/| dD GA B>A GA/B/ |1,3 cc/B/ AA/G/ F/G/A/B/ AA :|2,4 c/B/A/G/ F/G/A/F/ G2 G :|
 P:B
-AB| A2D2 D2E2 F3E D3AB A2D2 G2A2 B4-B2B2
-B2B2 e2B2 c4-c2B2 ABAG FGAF G2E2 E4
-B2B2 e2B2 c4-c2B2 A2A2 d2A2 B4-B2c2 d2d2 g2d2 edcB A4 edcB cBAF G4 G2
+A/B/| AD DE F>E DA/B/ AD GA B3B
+BB eB c3B A/B/A/G/ F/G/A/F/ GE E2
+BB eB c3B AA dA B3c dd gd e/d/c/B/ A2 e/d/c/B/ c/B/A/F/ G2 G
 
 %      SSF 14-18 158 = BFS 14-04 53
 
 X:SSF 14-18 159
 T:
-M:
+M:2/4
 K:G
 P:A
 D|G>F GA BG GB A2 F2 |1,3 Gd c/B/A :|2,4 G3 :|
@@ -1035,7 +1051,7 @@ B|AG FG A3B AG FE |1 D3 :|2 Dd ^c=c ||
 P:C
 BB c/B/c/e/ d2 Bd |1,3 dC CB BA A2 |2, dc BA G3 ||
 
-%      SSF 14-18 160 = SSF 14-18 057
+%      SSF 14-18 160 = WFS 14-03 27
 
 X:SSF 14-18 161
 T:
@@ -1063,15 +1079,18 @@ T:
 M:3/4
 K:G
 P:A
-G3AGE D2E2F2 G2GFGA B2A2G2 A4ec B3GAF G4D4
+G3AGE D2E2F2 G2GFGA B2A2G2 A4ec B3GAF G6 D6
 P:B
-d4B2 c4fe d4 d2e2f2 e3fec A4 A2B2c2 d6 d2e2f2 g4g2 f4f2 e3gfe d4d2 e3gfe d4c2 B3AG2 A4DE
+d4B2 c4fe d6 d2e2f2 e3fec A3ABc d6 d2e2f2 |
+g4g2 f4f2 e3gfe d4d2 e3gfe d4c2 B3AG2 A4DE
 D3GGF G3BAG A3cBA B4D2 E3DE2 F4A2 G2BGD2 G6
 P:C
-d2^c3d d2DEFG B2^A3B G4D2 G4F3E E4D2 |1 C2B3A A4G2 :|2 D2FGAF G4
+d2^c3d d2DEFG B2^A3B G4D2 G4F3E E4D2 |1 c2B3A A4G2 :|2 D2FGAF G6
 
 X:SSF 14-18 164
-T:
+T:Whinham's
+C:Robert Whinham (1814-1893)
+B:Northumbrian Pipers' Tunebook
 M:
 K:G
 P:A
@@ -1093,33 +1112,36 @@ g2B2 d2g2 f2A2 c2e2 |1,3 d2D2 d2B2 cBAB cdef :|2,4 d2B2 d3c B2A2 G4 :|
 
 X:SSF 14-18 171
 T:
-M:
+M:4/4
+R:swung
 K:G
 P:A
-G2D2 d2d>e d>cB>A G2B2 A2A2 A2-A>B c>AB>G E2D2
-G2d2 d2-d>e d>cB>A G2B>c d>BG>B c>AF>A A2G2 G4
+G2D2 d2de dcBA G2B2 A2A2 A3B cABG E2D2
+G2d2 d3e dcBA G2Bc dBGB cAFA A2G2 G4
 P:B
-d2d2 d2e>f g>fe>d e4 e>dc>B c>BA>G F>GA>E D2B2
-c4 B4 A>GA>B G2B>c d>BG>B c>AF>A A2G2 G4
+d2d2 d2ef gfed e4 edcB cBAG FGAE D2B2
+c4 B4 AGAB G2Bc dBGB cAFA A2G2 G4
 
 % Into...
 
 X:SSF 14-18 172
 T:
-M:
+M:4/4
+R:swung
 K:G
 P:A
-G2G2 G>BA>G F>Ad2 d2-d>c B>dB>G A>cA>F |1,3 G>GF>E D4 :|2,4 G2g2 G4 :|     
+{D2}|G2G2 GBAG FAd2 d3c BdBG AcAF |1,3 GGFE D4 :|2,4 G2g2 G4 :|     
 P:B
-d2d2 d2e>d d2c>b c2A>B c2c2 c2d>c c2B>A B2D2 || [P:(A2)] ||
+d2d2 d2ed d2cB c2AB c2c2 c2dc c2BA B2 || [P:(A2)] ||
 
 X:SSF 14-18 173
 T:
-M:
+M:3/4
+R:swung
 K:D
 P:A
-D>F|A2A2F>A d2d2e>f |1,3 g>fe>dc>B A>BA>F :|2,4 g>fe>dc>e d2d2 :|
+DF|A2A2FA d2d2ef |1,3 gfedcB ABAF :|2,4 gfedce d2d2 :|
 P:B
-c>d| e2d>cB>A f2f2e>f g2g>fe>d e4c>d e2d>cB>A f2f2A2 B2B>dc>e d4 :|
+cd| e2dcBA f2f2ef g2gfed e4cd e2dcBA f2f2A2 B2Bdce d4 :|
 P:C
-A2|A2(3fed(3dcB A2F2A2 |1,3 B2g>fe>d d2c2F>G :|2,4 B2B>dc>e d4 :|
+A2|A2(3fed(3dcB A2F2A2 |1,3 B2gfed d2c2FG :|2,4 B2Bdce d4 :|

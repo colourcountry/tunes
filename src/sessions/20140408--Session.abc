@@ -50,8 +50,7 @@ DED F2A d2f ecA |1,3 G2B F2A E2F GFE :|2,4 Bgf edc d3 d3 :|
 P:B
 f2e | a2f d2f A2a agf g2e c2e A2g gfe f2d g2e a2f bag fed Adc d3 d3 :|
 
-% WFS 14-04 23 = WFS 13-01 05
-
+% WFS 14-04 23 =
 X:WFS 13-01 05
 T:Waiting For The Federals
 M:2/4
@@ -101,9 +100,9 @@ T:Hunting The Hare
 M:6/8
 K:D
 P:A
-d2D FGA Bed cBA d2D FGA Bdc d3{e} :|
+{c}| d2D FGA Bed cBA d2D FGA Bdc d3 :|
 P:B
-fed fed fed fed ecd ecd egf e3{c} || [P:A2] |]
+{e}| fed fed fed fed ecd ecd egf e3 || [P:(A2)] |]
 
 % WFS 14-04 36 Oscar Woods' Jig
 
@@ -127,15 +126,16 @@ T:
 M:3/4
 K:Em
 P:A
-EGBEGB c2cBAG F2FAGF |1,3 G2E2D2 :|2,4 E6{d2} :|
+EGBEGB c2cBAG F2FAGF |1,3 G2E2D2 :|2,4 E4 :|
 P:B
-e2edc2 B2BAG2 F2FAGF |1,3 G2E2d2 :|2,4 E6{d2} :|
+{d2}| e2edc2 B2BAG2 F2FAGF |1,3 G2E2 :|2,4 E6 :|
 
 X:WFS 14-04 42
 T:
 M:4/4
+N:TODO check B (3 repts?)
 K:G
 P:A
-G2GB AGFD EDEF G2dB |1,3 c2ce dbGb cBce defd :|2,4 c2cA B2G2 F2G2-G4{D2} :| x{B2} ||
+{D2}| G2GB AGFD EDEF G2dB |1,3 c2ce dBGB cBce defd :|2,4 c2cA B2G2 F2G2 z2 :|
 P:B
-c2cA B2d2 dedc A2AB |1,2 c2cA B2G2 GFD2 E4 :|3 c2cA B2G2 F2G2-G4{D2}
+{B2}| c2cA B2d2 dedc A2AB |1,2 c2cA B2G2 GFD2 E4 :|3 c2cA B2G2 F2G2 z2

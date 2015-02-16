@@ -195,7 +195,7 @@ P:B
 d2| g2dB G2d2 g2f<g e4 agfg d2BG AGAB cdef fgdB G2d2 g2f<g e3c BdcB AcBA G2B2 G4 :|
 
 X:SSF 14-19a 21
-T:?
+T:
 M:4/4
 K:A
 P:A
@@ -206,7 +206,7 @@ A2cA G3A B3d cBAB Acea f3e dcBc defg a2ec B3c defd BGE2 Acea fedc BAGB A4 :|
 % SSF 14-19a 22 Three Rusty Swords, into SSF 14-19a 23 Old Lancashire Hornpipe
 
 X:SSF 14-19a 24
-T:?
+T:
 M:4/4
 K:G
 P:A
@@ -231,15 +231,15 @@ e3e e2d2 c3d cBA2 |1,3 a3b agef gede gedc :|2,4 agab aged egab a4 :|
 P:B
 ABAG EGAB cBcd eged cBAc BAG2 EGAB A4 :|
 P:C
-A,3A, A,B,C2 D4 DCA,C D3E DCA,C DEDC A,2G,2 :|
+{G,2}| A,3A, A,B,C2 D4 DCA,C D3E DCA,C DEDC A,2 :|
 
 X:SSF 14-19a 28
-T:?
+T:
 M:4/4
 R:swung
 K:G
 P:A
-{(3DEF}| G2g2 d3c |1,3 BcdB G2AB cBcd cBAG d^cde d=cBA :|2,4 BcdB G2GF EcBA dedc B2G2 G2 :|
+(3DEF| G2g2 d3c |1,3 BcdB G2AB cBcd cBAG d^cde d=cBA :|2,4 BcdB G2GF EcBA dedc B2G2 G2 :|
 P:B
 (3DEF| GFGE CEGB AGAF DFAc BABG cBAG AGFE D2 (3DEF GFGE-EGC2 DCDB,-B,DG,2 A,G,A,B, CA,DC B,2G,2 G,4 :|
 
@@ -287,7 +287,7 @@ P:B
 cd| e4 f4 g2f2 e4 e2f2 g2f2 (3efe(3dcB (3ABA(3GFE || [P:(A2)] :|
 
 X:SSF 14-19a 33
-T:?
+T:
 M:4/4
 K:G
 P:A
@@ -298,7 +298,7 @@ F2| E4 G4 c4-c2B2 |1,3 ABAG F2AB AGF2 E2D2 :|2 ABAG FDEF G4 G2 :| E4 G4 c4-c2Bc 
 % Into...
 
 X:SSF 14-19a 34
-T:?
+T:
 M:4/4
 K:G
 P:A
@@ -307,7 +307,7 @@ P:B
 GA| Bd2B d3g edBc d2d2 |1,3 g4 g3d e2d2-d2 :|2,4 B3d BAGB A2G2-G2 :|
 
 X:SSF 14-19a 35
-T:?
+T:
 M:6/8
 K:G
 P:A
@@ -316,7 +316,7 @@ P:B
 B|Bef gfe |1,3 cef gfe dfg agf gfe e2 :|2,4 c2g a2^a b2g fgf e3-e2 :|
 
 X:SSF 14-19a 36
-T:?
+T:
 M:3/4
 K:G
 P:A
@@ -363,7 +363,7 @@ dA|F2fd A2af g2ga gfed |1,3 cdec A2a2 f2fg fe :| cdec A2dc d4 d2 :|
 % Into...
 
 X:SSF 14-19a 40
-T:?
+T:
 M:4/4
 K:G
 P:A
