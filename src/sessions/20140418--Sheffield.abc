@@ -138,11 +138,11 @@ T:The Blarney Pilgrim
 M:6/8
 K:G
 P:A
-DED DEG ABA ABc BAG AGE |1,3 G2A GED :|2,4 GED D2 :|
+D2D-DEG A3-ABc BAG AGE |1,3 G2A GED :|2,4 GED D3 :|
 P:B
-d|d2d dBG A2A BAG d2d dBG ABA GBd g2e dBG AGA BGG BcB AGE |1 GED D2 :|2 GED DEG
+d3 dBG A2A BAG d3 dBG ABA GBd g2e dBG AGA BGE BcB AGE |1 GED D3 :|2 GED DEG
 P:C
-ADD BDD A2D ABc BAG AGE |1,3 G2A GED :|2,4 GED D2 :| 
+A3 B3 A3-ABc BAG AGE |1,3 G2A GED :|2,4 GED D3 :| 
 
 X:SSF 14-18 018
 M:4/4
@@ -281,11 +281,11 @@ A|B3 d2B c2B A3 B2A GAB A2A D3 |1 || x[P:(A2)]x || :|2 GAB ABc Bcd edc BcB ABA G
 %       SSF 14-18 038 = WFS 13-10 32 I'll Go And Enlist For A Sailor
 
 X:SSF 14-18 039
-T:
+T:Mr Moore's
 M:
 K:Em
 P:A
-G2e2 E2FE DEFA B2F2 |1,3 G2e2 G2FE DEF2-F4 :|2,4 GABG FGAF D2E2 E4 :|
+G2e2 E2FE DEFA B2F2 |1,3 G2e2 E2FE DEF2-F4 :|2,4 GABG FGAF D2E2 E4 :|
 P:B
 e2ge c2e2 defd B2f2 e2ge c2e2 def2-f4 e2ge c2e2 defd B4 A2cA F2AF D2E2 E4 :|
 
@@ -545,7 +545,7 @@ T:Dark Girl Dressed In Blue
 M:4/4
 K:D
 P:A
-A3G F2G2 ABcA B4 :|1,3 A3G F2G2 Addc d4 :|2,4 A2d2 cdec d2 d :|
+A3G F2G2 ABcA B4 |1,3 A3G F2G2 Addc d4 :|2,4 A2d2 cdec d2 d :|
 P:B
 e| f2f2 g2fe d2cB A4 f2f2 g2fe d6e2 f2f2 g2fe d2cB A2B2 c3B-B2A2 G3F-F2G2 :|
 
@@ -807,9 +807,9 @@ T:Theme from 'Blackadder'
 M:4/4
 K:G
 P:A
-D2|G3D GDGB ^C6A2|c3A cBAG G4F2 :|
+D2|G3D GDGB ^c6A2|c3A cBAG G4F2 :|
 P:B
-d2|d4 B2d2 d4 G2d2 c2B2 A2G2 d6d2 d2B2 d2 d4 G2G2 A2B2 c2e2 D6
+d2|d4 B2d2 d4 G2d2 c2B2 A2G2 d6d2 d2B2 d2 d4 G2G2 A2B2 c2e2 d6
 
 X:SSF 14-18 127
 T:The Perfect Cure

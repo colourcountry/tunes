@@ -1,0 +1,354 @@
+% SSF 14-19c 03 = WFS 13-06 06
+
+X:SSF 14-21 01
+M:6/8
+K:D
+P:A
+A,DE F2F G2F E3 |1,3 F2D DEF G2F E3 :|2,4 F2D G2F E3 D3 :|
+P:B
+ABc d2A c2B A3 |1,3 A2F DEF G2F E3 :|2,4 A2F DEF E3 D3 :|
+
+% Into...
+
+X:SSF 14-21 02
+M:6/8
+K:D
+P:A
+A2d dcd BAG A3 |1,3 A2d e2f g2f e3 :|2,4 A2d def gec d2 :|
+P:B
+f|aga f2f gfg e2e |1,3 A2d e2f g2f e3 :|2,4 A2d def gec d2 :|
+
+%      SSF 14-21 03 = BFS 14-04 69 The Trip To Brighton, 
+% into SSF 14-21 04 = SSF 14-18 050
+
+X:SSF 14-21 05
+M:4/4
+K:G
+P:A
+B/A/| G>A Bd e/d/e/d/ BA/G/ |1,3 BA AG/A/ BA A :|2,4 BA/G/ ED/E/ GE E :|
+P:B
+d| e/d/e/d/ Bd e/d/e/d/ BA/G/ |1,3 BA AG/A/ BA A :|2,4 BA/G/ ED/E/ GE E :|
+
+%      SSF 14-21 06 = BFS 14-04 20 The Queen's Delight (in D)
+
+%      SSF 14-21 07 = SSF 14-19b 03 Church Street,
+% into SSF 14-21 08 = WFS 13-06 05 Scan Tester's #1
+
+%      SSF 14-21 09 = SSF 14-18 044 Morgan Rattler, into...
+
+X:SSF 14-21 10
+M:6/8
+K:G
+P:A
+{ef}| GFG G2A BAB dBG ABc e2g-geg fed edg-g2d BAB dBG cBc ABc ed_d =d :|
+P:B
+{BA}| GBd g2f e3 dBG Ace g2f e2 dcA Bcd g2f e2 dBG cBc ABc ed_d =d :|
+
+X:SSF 14-21 11
+M:9/8
+K:Am
+P:A
+A3 c2e-edc B2 GAB B2G A3 c2e-edc B2B GAB A3 :|
+P:B
+ag^f edc B3 g3 B3 e2a-ag^f edc B2B GAB A3 :|
+
+% Into...
+
+X:SSF 14-21 12
+T:Shooting
+M:9/8
+K:G
+P:A
+{A}| G2G BAG Bcd |1,3 ABA A2B c2 :|2,4 G2G AcA G2 :|
+P:B
+e|d2c BAG Bcd |1,3 ABA A2B c2 :|2,4 ABA G2A G3 :| 
+
+X:SSF 14-21 13
+T:Sweep's Hornpipe
+M:4/4
+K:G
+P:A
+G2BG E2cA FGAF G2Bd dcAc cBGB ABcA GFED G2BG ABcA BcdB cdef gfgd ecAF G2B2 G2 :|
+P:B
+Bc|dedB g2Bc dedB G2Bd dcAc cBGB ABcA GFED G2BG ABcA BcdB cdef gfgd ecAF G2B2 G2 :|
+
+% Into SSF 14-21 14 = BFS 14-04 23 Gloucester Hornpipe (2)
+
+%      SSF 14-21 15 = WFS 13-07 21 Hesleyside Reel,
+% into SSF 14-21 16 = WFS 13-10 28 Morpeth Rant (new)
+
+%      SSF 14-21 17 = WFS 13-07 20 Great North Run '86
+
+X:SSF 14-21 18
+T:Round The World For Sport
+M:6/8
+K:G
+P:A
+{D}| G2G GFG A2A ABc |1,3 B2B BAG BGE E2 :|2,4 BAG DEF GEE E2 :|
+P:B
+e2f gfe fag fed |1,3 e2f gfe fdB B3 :|2,4 e2B cBA BGE E2 :|
+P:C
+G2E B2E GEE E2F G2E A2G FDD D2F G2E A2F B2G d2B A2c BAB GEE E2 :|
+
+X:SSF 14-21 19
+T:Knocknaboul Polka No. 2
+M:2/4
+K:D
+P:A
+F2E2| D2F2 FGFE D2F2 F3D C,2E EFED C,2E A,4 D2F2 FGFE D2F2 A2d2 cBAG F2E2 D4 :|
+P:B
+{c}| d3c d3c d2 e3d |1,3 cbA2 A3B c2d2 e3 :|2,4 cBAF G2E2 D4 :|
+P:C
+E2| F3E F3G A2G2 E3D C,2A,2 A,2C,2 C,2D2 E4 F3E F3G A2G2 E2d2 cBAF G2E2 D4 :|
+
+% Into SSF 14-21 20 = BFS 14-04 28 Centenary March
+
+%      SSF 14-21 21 = WFS 13-07 03 The Moon And Seven Stars
+
+X:SSF 14-21 22
+T:
+M:4/4
+K:G
+P:A
+G3F E3F G2A2 B2G2 c2B2 A2G2 F2E2 F2D2 G3F E3F G2A2 B2e2 dB3 A3B G4 :|
+P:B
+A3G F3G A2A2 Z4 d3c B3c D2D2 Z4 d2e2 d3c dcBc B3c dedc BABc D2D2 Z4
+e4 d4 c4 B4 A2cB A2G2 F2E2 G2D2 G3F E3F G2A2 B2e2 dB3 A3B G4 
+
+X:SSF 14-21 23
+M:4/4
+K:Em
+P:A
+E3D E2F2 G2G2 F2GA :|1,3 B2Bc BAGF E2Bc BAGF :|2,4 B2Bc BAGF E2 :|
+P:B
+F2G2A2 |B3c BAGF G2A2 B4 c2c2 BAGF E4 D4 E2DE F2EF G2FG A2GA B3c BAGF E2 :|
+
+% Into...
+
+X:SSF 14-21 24
+M:4/4
+K:G
+P:A
+B2G2 D2(3FAc B3c BGAc B2G2 D2G2 F2G2 A2^A2 B2G2 D2Ac B3c BGA2 BcdB c2F2 G4
+
+X:SSF 14-21 25
+M:6/8
+K:D
+P:A
+{A2G}| FAd fed dcB A2G |1,3 FAd dcd e3 :|2,4 FAd e2c d3 :|
+P:B
+f| e3 efg f3 fed |1,3 e2e gfe dcB A2 :|2 Bcd gfe d2c d3 :| [P:(A2)] ||
+
+% Into...
+
+X:SSF 14-21 26
+M:6/8
+K:G
+P:A
+{DEF}| G2G FGA GFG ABc B2B ABc dcB DEF G2G FGA B2B ABc dcB DEF G3 :|
+P:B
+B2c| d2d g2f e2c A2c BAG d2B ABc def g2d f2e dcB c2A B2d DEF G3 :|
+
+% 1:04h
+
+X:SSF 14-21 27
+T:Roger de Coverley
+M:9/8
+K:G
+P:A
+G2G G2e dBG E2A ABG FED G2G G2e def g2G GAG FED 
+P:B
+dBd ece dBG E2A ABG FED dBd ece def g2G GAG FED
+P:C
+g2d f2e dBG E2A ABG FED g2d f2e def g2G GAG FED
+P:D
+d2B cBA B2G E2A ABG FED d2B cBA Bcd g2G GAG FED
+
+X:SSF 14-21 28
+T:Easter Thursday
+B:Offord, John Of The Green, 2008, p.2
+M:3/2
+K:Dm
+P:A
+"Dm"D4 DEF2 E2D2 "A5"E2A2-A2c2 "D/F#"B2A2 "G5"B4 Bcd2 "C"c2B2 "F"c2F2-F2c2 B2A2 "Gm"GAB2 "Dm"AGF2 "C"GFE2 "Gm"FED2 "A5"FGA2 "D8"D4 :|
+P:B
+"Dm"agfe f2a2 d2a2 "Gm"bagf "C"e2g2 c2g2 "F"agfe "G5"d2f2 B2f2 "E5"gfed "A5"^c2e2 A3G "Dm"F2"C"G2-G2"F"A2-A2"Gm"B2-B2"A5"A2-A2D2 E2^C2 :|
+
+% Into...
+
+X:SSF 14-21 29
+M:3/2
+K:Am
+P:A
+"Am"c2A2 A2E2 c4 c2A2 A2c2 BcdB c2A2 A2E2 c4 B2G2 G2D2 BcdB
+P:B
+c4 d2f2 e3d c2A2 A2c2 BcdB c2c2 d2f2 e3c B2G2 G2c2 BcdB
+P:C
+e2g2 c2e2 g2c2 g2e2 c2e2 d2B2 e2g2 c2e2 g2c2 B2G2 G2D2 BcdB
+
+X:SSF 14-21 30
+M:4/4
+K:Am
+P:A
+c2cB A3c BAGA BcdB c2cB A3c BAG2 A4 :|
+P:B
+c2cd e3d cBcd edcB c2cd e3d cBcd edcB || [P:(A)] :|
+
+%      SSF 14-21 31 = SSF 14-18 020
+
+X:SSF 14-21 31
+M:6/8
+K:Dm
+P:A
+dcd A2G FAF D2A |1,3 def e2d ^ce^c A3 :|2,4 def ed^c d3-d2 :|
+P:B
+e|f2a-agf e2a-aga |1,3 def e2d ^ce^c A2 :|2 fed fg^g a2f d2 :| [P:(A2)] ||
+
+% Into...
+
+X:SSF 14-21 32
+T:Les Poules Huppées
+T:Crested Hens
+M:6/8
+K:Dm
+P:A
+D2D FED A3-A2B |1,3 cBA dcB cBA GFE :|2,4 cBA dcB A3 :|
+P:B
+d2e| f2f-fed B3-Bde |1,3 feg fed c2d e3 :|2,4 fed edc d3 :|
+
+%      SSF 14-21 33 = SSF 14-19a 31 Mouse In The Kitchen,
+% into SSF 14-21 34 = SSF 14-19a 30 The Stool Of Repentance
+
+%      SSF 14-21 35 = EATMD 13-02 03 Punchinello's Hornpipe / The Three Rusty Swords
+
+X:SSF 14-21 36
+T:Tripping Upstairs
+M:6/8
+K:D
+P:A
+{A}| FAd GBd FAd fed cBc ABc |1,2,3,4 dfe d2 :|
+P:B
+{c}| dBB fBB dBB fed cAA eAA cAA edc dBB fBB dBB fed cBc ABc dfe d3 :|
+
+% Into...
+
+X:SSF 14-21 37
+M:6/8
+K:D
+P:A
+{E}| DFA DGB EGB AFE DFA DGB AGF EFE DFA DGB EGB AFD ABA GFE FGE D2 :|
+P:B
+A| dcd BAG FGA FED dcd BAG FAF E2A dcd BAG FAG FED DFA DGB AFE D2 :|
+
+X:SSF 14-21 38
+T:(fix me)
+M:6/8
+K:D
+P:A
+DFA GBA-AFA d2D DFA G2f edc d3 DFA GBA-AFA def a2a f2f edc d2
+P:B
+e2b a3 efc d2c a2a g2g fed g2g a2a g2e fed def g2e fdf edc d2
+P:B2
+b2 a3 geg f2a d'3 g2e fed e2g d'3 a2f geg def geg fdf edc d2
+
+% Into SSF 14-21 39 = SSF 14-19a 29 Drummond Castle,
+% into...
+
+X:SSF 14-21 40
+T:Humours Of Glendart
+M:6/8
+K:D
+P:A
+A|BAF AFD FEF DFA |1,3 BAF A2F FEE E2 :|2,4 dcB AFE FDD D2 :|
+P:B
+A|def d2B ABA AFA def d2f ede fdB def d2B ABA ABc dcB AFE FDD D2 :|
+
+X:SSF 14-21 41
+T:The Tenpenny Pit
+T:The Three Little Drummers
+M:6/8
+K:Ador
+P:A
+eAA eAA BcB GBd eAA eAA def gfg eAA eAA BcB GAB e2f gdB BAG A3 :|
+P:B
+e2a aga bge ged |1,3 e2a aga bge g3 :|2,4 e2f gdB BAG A3 :|
+
+% Into SSF 14-21 42 = SSF 14-18 017 The Blarney Pilgrim
+
+X:SSF 14-21 42
+T:Chassepain
+C:Gilles Chabenat
+M:4/4
+K:D
+P:A
+dAAd =c>BAB |1,3 EFGB AEFD :|2,4 EFGA Bcd2 :|
+P:B
+BGEd-dBGe-ecAB cdc/B/A BGEd-dBGe-ecAF GAFd :|
+
+% Into...
+
+X:SSF 14-21 43
+M:4/4
+K:Em
+P:A
+E2B2 e3g f>edB edCB E2B2 e3g f>ede B4 :|
+P:B
+ed-de G3B A>BAB A>BAG ed-de G3c BGcB GcBG :|
+
+X:SSF 14-21 44
+M:4/4
+K:Em
+P:A
+B2E2 EFGA BABD-DC-CB A2d2 AFDE FEDF-FGFD E2B2 B2EF GABA-A2FA G2G2 FEDF E2E2 E4
+P:B
+bgeb gebg ebge bge2 a2a2 f2f2 dcdA-ABAF G2G2 EBGE BGBe-e2ef gfeg fedf e2E2 E4 
+
+%      SSF 14-21 45 = SSF 14-19b 32 Harliquin Air,
+% into SSF 14-21 46 = SSF 14-18 148
+
+%      SSF 14-21 47 = WFS 14-01 11 Old Tom Of Oxford,
+% into SSF 14-21 48 = WFS 13-10 28 Morpeth Rant (new),
+% into SSF 14-21 49 = WFS 13-10 14 Salmon Tails Up The Water
+
+% 2:05h
+
+%      SSF 14-21 50 = WFS 14-18 014,
+% into SSF 14-21 51 = WFS 14-18 015 The Butterfly
+
+X:SSF 14-21 52
+M:6/8
+P:A
+A2a e2f ged edB c2A ABc fag fed ega e2f ged edb c2c Ace dcB A2 :|
+P:B
+G| ABc c2d ecA ABc B2B BcB d3 BdG Ace a3 ged edb c2c Ace dcB A2 :|
+
+% Into SSF 14-21 53 = SSF 14-18 025
+
+%      SSF 14-21 54 = EATMD 13-02 09 Mount Hills
+
+X:SSF 14-21 53
+M:3/4
+P:A
+FBFABc d2c2BA B2-BB-BA |1,2,3 BcBAGA :|4 BcBcde ||
+P:B
+f2d2Bf g2fgef g2fged ca-aa-ag f2d2B2 g2fgef gfedcd c^a-^a^a-^a^a
+b2f2D2 g2fgef g2fged ca-aa-ag f2d2B2 g2fgef gfedcd c2BAGA ||
+
+X:SSF 14-21 54
+T:Mr. Isaac's Maggot
+B:Playford, 9th ed., 1695 (Barlow 365)
+M:3/2
+P:A
+a4 f4 e4 def2 e2d2 c2A2 |1,3 A2d2 d2c2 B4 B2e2 e2d2 c2A2 :|2,4 A2d2 d2c2 B2gf e2d2 e2f2 d4 ||
+P:B
+DE|F2A2 A2B2 A4 |1 F2A2 A2BC d2A2 :|2 F2A2 A2BC d4 ||
+P:C
+a2ga b2ag a2ga |1 bagf edcB c2A2 :|2 bagf efga f2d2 ||
+P:D
+f2 g2 a2 |1 A2d2 d2c2 B2A2 :|2 A2f2 e2c2 d4 ||
+
+%      SSF 14-21 55 = SSF 14-18 144
+
+%      SSF 14-21 56 = EATMD 13-01 31 From Night Till Morn
+
+% 2:32h

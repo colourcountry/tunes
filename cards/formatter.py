@@ -1152,24 +1152,32 @@ class Tune:
         source = self.get_header_list(AbcField.SOURCE)
         if origin and not ARGS.no_origin:
             if source and not ARGS.no_source:
-                opus = (', '.join(origin) +" via "+ ', '.join(source)).replace('"',"'")
+                arranger = (', '.join(origin) +" via "+ ', '.join(source)).replace('"',"'")
             else:
-                opus = ', '.join(origin).replace('"',"'")
+                arranger = ', '.join(origin).replace('"',"'")
         elif source and not ARGS.no_source:
-            opus = ', '.join(source).replace('"',"'")
+            arranger = ', '.join(source).replace('"',"'")
         else:
-            opus = ""
+            arranger = ""
 
-        meter = self.get_header(AbcField.RHYTHM).replace('"',"'")
+        if ARGS.no_ref:
+            opus = ""
+        else:
+            opus = self.ref
+
+        meter = ""
+        if not ARGS.no_rhythm:
+            meter = self.get_header(AbcField.RHYTHM).replace('"',"'")
 
         s += end + r'''
 }}
 \header{
     piece = "%s"
+    arranger = "%s"
     opus = "%s"
     meter = "%s"
 }}
-''' % (piece, opus, meter)
+''' % (piece, arranger, opus, meter)
 
         # Treat a blank N: line as a paragraph break
         endnotes = '\n'.join(self.get_header_list(AbcField.NOTES)).replace('"',"'")
@@ -1464,7 +1472,7 @@ if __name__=="__main__":
     parser.add_argument("-s", "--source-dir", help="Directory to find ABC files", default="data")
     parser.add_argument("-d", "--dest-dir", help="Directory to save PDF files", default="out")
     parser.add_argument("-p", "--preamble", help="Lilypond fragment to append tunes to", default="preamble.ly.fragment")
-    parser.add_argument("-c", "--crib", help="Format as crib sheet (only the first 2 bars of each tune, implies -T -C -W -N -S -O)", action="store_true")
+    parser.add_argument("-c", "--crib", help="Format as crib sheet (only the first 2 bars of each tune, implies -T -C -W -N -R -S -O -X)", action="store_true")
     parser.add_argument("-b", "--break", help="Add page break after each tune", action="store_true")
     parser.add_argument("-i", "--interactive", help="Prompt after encountering a tune with errors", action="store_true")
     parser.add_argument("-n", "--tunes-per-pdf", help="Split into separate PDFs each containing this number of tunes", type=int)
@@ -1473,8 +1481,10 @@ if __name__=="__main__":
     parser.add_argument("-C", "--no-chords", help="Omit chord names", action="store_true")
     parser.add_argument("-W", "--no-words", help="Omit words (W:) (Currently always on)", action="store_true")
     parser.add_argument("-N", "--no-endnotes", help="Omit tune endnotes (N:)", action="store_true")
+    parser.add_argument("-R", "--no-rhythm", help="Omit tune rhythm (R:)", action="store_true")
     parser.add_argument("-S", "--no-source", help="Omit tune source (S:)", action="store_true")
     parser.add_argument("-O", "--no-origin", help="Omit tune origin (O:)", action="store_true")
+    parser.add_argument("-X", "--no-ref", help="Omit tune reference (X:)", action="store_true")
     parser.add_argument("-v", "--verbose", help="Output more information to stderr", action="store_true")
     parser.add_argument("ids", nargs="*", metavar="ID", help="Which tune IDs to include in the output (default: all)")
 
@@ -1490,6 +1500,8 @@ if __name__=="__main__":
         ARGS.no_endnotes = True
         ARGS.no_source = True
         ARGS.no_origin = True
+        ARGS.no_rhythm = True
+        ARGS.no_ref = True
 
     ids = []
     for id in ARGS.ids:

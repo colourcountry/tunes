@@ -254,6 +254,7 @@ GABc d3d d2e2 d4 e2d2 g2d2 d2ec B2A2 [P:(A1)] [P:(A2)] |]
 
 X:EATMD 13-01 32
 T:South Downs
+C:Jim Harding
 M:6/8
 K:G
 P:A
@@ -353,12 +354,15 @@ P:B
 D2|E2E2D2C2 B,2D4E2 F2F2E2D2 C2E4F2 G4c2B2 B2A6 G2G2F2D2 C4C2 :|
 
 X:EATMD 13-01 47
-M:6/8
+T:George Green's Slow College Hornpipe
+N:Lester's 005
+M:4/4
+R:swung
 K:C
 P:A
-GAB| c2e d2c B3 GAB c2e d2c B3 g3 f2e d2c B2G A2B |1 d2c B2A G3 :|2 c3 e3 c3
+(3GAB| cedc B2(3GAB cedc B2 g2 fedc BGAB |1 dcBA G2 :|2 c2 e2 c2
 P:B
-e3 g3 e3 g3 a2g f2e d6 f2e d2c B2G A2B d2c B2A G3 x3 [P:(A2)] |]
+e2 g2 e2 g2 agfe d4 fedc BGAB dcBA G2 || [P:(A2)] |]
 
 X:EATMD 13-01 48
 M:6/8
