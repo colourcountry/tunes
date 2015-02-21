@@ -1,12 +1,10 @@
-% SSF 14-19c 03 = WFS 13-06 06
-
 X:SSF 14-21 01
 M:6/8
 K:D
 P:A
 A,DE F2F G2F E3 |1,3 F2D DEF G2F E3 :|2,4 F2D G2F E3 D3 :|
 P:B
-ABc d2A c2B A3 |1,3 A2F DEF G2F E3 :|2,4 A2F DEF E3 D3 :|
+ABc d2A =c2B A3 |1,3 A2F DEF G2F E3 :|2,4 A2F DEF E3 D3 :|
 
 % Into...
 
@@ -22,7 +20,7 @@ f|aga f2f gfg e2e |1,3 A2d e2f g2f e3 :|2,4 A2d def gec d2 :|
 % into SSF 14-21 04 = SSF 14-18 050
 
 X:SSF 14-21 05
-M:4/4
+M:2/4
 K:G
 P:A
 B/A/| G>A Bd e/d/e/d/ BA/G/ |1,3 BA AG/A/ BA A :|2,4 BA/G/ ED/E/ GE E :|
@@ -40,15 +38,15 @@ X:SSF 14-21 10
 M:6/8
 K:G
 P:A
-{ef}| GFG G2A BAB dBG ABc e2g-geg fed edg-g2d BAB dBG cBc ABc ed_d =d :|
+{ef}| gfg-g2A BAB dBG ABc e2g-geg fed edg-g2d BAB dBG cBc ABc ed^c =d :|
 P:B
-{BA}| GBd g2f e3 dBG Ace g2f e2 dcA Bcd g2f e2 dBG cBc ABc ed_d =d :|
+{BA}| GBd g2f e3 dBG Ace g2f e3 dcA Bcd g2f e3 dBG cBc ABc ed^c =d :|
 
 X:SSF 14-21 11
-M:9/8
+M:3/8
 K:Am
 P:A
-A3 c2e-edc B2 GAB B2G A3 c2e-edc B2B GAB A3 :|
+A3 c2e-edc B2B GAB B2G A3 c2e-edc B2B GAB A3 :|
 P:B
 ag^f edc B3 g3 B3 e2a-ag^f edc B2B GAB A3 :|
 
@@ -112,14 +110,14 @@ K:G
 P:A
 G3F E3F G2A2 B2G2 c2B2 A2G2 F2E2 F2D2 G3F E3F G2A2 B2e2 dB3 A3B G4 :|
 P:B
-A3G F3G A2A2 Z4 d3c B3c D2D2 Z4 d2e2 d3c dcBc B3c dedc BABc D2D2 Z4
-e4 d4 c4 B4 A2cB A2G2 F2E2 G2D2 G3F E3F G2A2 B2e2 dB3 A3B G4 
+A3G F3G A2A2 z4 d3c B3c d2d2 z4 d2e2 d3c dcBc B3c dedc BABc d2d2 z4
+e4 d4 c4 B4 A2cB A2G2 F2E2 F2D2 G3F E3F G2A2 B2e2 dB3 A3B G4 
 
 X:SSF 14-21 23
 M:4/4
 K:Em
 P:A
-E3D E2F2 G2G2 F2GA :|1,3 B2Bc BAGF E2Bc BAGF :|2,4 B2Bc BAGF E2 :|
+E3D E2F2 G2G2 F2GA |1,3 B2Bc BAGF E2Bc BAGF :|2,4 B2Bc BAGF E2 :|
 P:B
 F2G2A2 |B3c BAGF G2A2 B4 c2c2 BAGF E4 D4 E2DE F2EF G2FG A2GA B3c BAGF E2 :|
 
@@ -135,7 +133,7 @@ X:SSF 14-21 25
 M:6/8
 K:D
 P:A
-{A2G}| FAd fed dcB A2G |1,3 FAd dcd e3 :|2,4 FAd e2c d3 :|
+A2G| FAd fed dcB A2G |1,3 FAd dcd e3 :|2,4 FAd e2c d3 :|
 P:B
 f| e3 efg f3 fed |1,3 e2e gfe dcB A2 :|2 Bcd gfe d2c d3 :| [P:(A2)] ||
 
@@ -145,7 +143,7 @@ X:SSF 14-21 26
 M:6/8
 K:G
 P:A
-{DEF}| G2G FGA GFG ABc B2B ABc dcB DEF G2G FGA B2B ABc dcB DEF G3 :|
+DEF| G2G FGA GFG ABc B2B ABc dcB DEF G2G FGA B2B ABc dcB DEF G3 :|
 P:B
 B2c| d2d g2f e2c A2c BAG d2B ABc def g2d f2e dcB c2A B2d DEF G3 :|
 
@@ -180,7 +178,7 @@ X:SSF 14-21 29
 M:3/2
 K:Am
 P:A
-"Am"c2A2 A2E2 c4 c2A2 A2c2 BcdB c2A2 A2E2 c4 B2G2 G2D2 BcdB
+c2A2 A2E2 c4 c2A2 A2c2 BcdB c2A2 A2E2 c4 B2G2 G2D2 BcdB
 P:B
 c4 d2f2 e3d c2A2 A2c2 BcdB c2c2 d2f2 e3c B2G2 G2c2 BcdB
 P:C
@@ -216,8 +214,8 @@ D2D FED A3-A2B |1,3 cBA dcB cBA GFE :|2,4 cBA dcB A3 :|
 P:B
 d2e| f2f-fed B3-Bde |1,3 feg fed c2d e3 :|2,4 fed edc d3 :|
 
-%      SSF 14-21 33 = SSF 14-19a 31 Mouse In The Kitchen,
-% into SSF 14-21 34 = SSF 14-19a 30 The Stool Of Repentance
+%      SSF 14-21 33 = SSF 14-18 023 Mouse In The Kitchen,
+% into SSF 14-21 34 = SSF 14-18 024 The Stool Of Repentance
 
 %      SSF 14-21 35 = EATMD 13-02 03 Punchinello's Hornpipe / The Three Rusty Swords
 
@@ -241,7 +239,8 @@ P:B
 A| dcd BAG FGA FED dcd BAG FAF E2A dcd BAG FAG FED DFA DGB AFE D2 :|
 
 X:SSF 14-21 38
-T:(fix me)
+T:
+N:FIXME
 M:6/8
 K:D
 P:A
@@ -275,7 +274,7 @@ e2a aga bge ged |1,3 e2a aga bge g3 :|2,4 e2f gdB BAG A3 :|
 
 % Into SSF 14-21 42 = SSF 14-18 017 The Blarney Pilgrim
 
-X:SSF 14-21 42
+X:SSF 14-21 43
 T:Chassepain
 C:Gilles Chabenat
 M:4/4
@@ -287,57 +286,60 @@ BGEd-dBGe-ecAB cdc/B/A BGEd-dBGe-ecAF GAFd :|
 
 % Into...
 
-X:SSF 14-21 43
-M:4/4
-K:Em
-P:A
-E2B2 e3g f>edB edCB E2B2 e3g f>ede B4 :|
-P:B
-ed-de G3B A>BAB A>BAG ed-de G3c BGcB GcBG :|
-
 X:SSF 14-21 44
+M:2/4
+K:Em
+P:A
+E2B2 e3g f>edB edcB E2B2 e3g f>ede B4 :|
+P:B
+ed2e G3B A>BAB A>BAG ed2e G3c BGcB GcBG :|
+
+X:SSF 14-21 45
 M:4/4
 K:Em
 P:A
-B2E2 EFGA BABD-DC-CB A2d2 AFDE FEDF-FGFD E2B2 B2EF GABA-A2FA G2G2 FEDF E2E2 E4
+B2E2 EFGA BABd-dc2B A2d2 AFDE FEDF-FGFD E2B2 B2EF GABA-A2FA G2G2 FEDF E2E2 E4
 P:B
-bgeb gebg ebge bge2 a2a2 f2f2 dcdA-ABAF G2G2 EBGE BGBe-e2ef gfeg fedf e2E2 E4 
+bgeb gebg ebge bge2 a2a2 f2f2 d^cdA-ABAF G2G2 EBGE BGBe-e2ef gfeg fedf e2E2 E4 
 
-%      SSF 14-21 45 = SSF 14-19b 32 Harliquin Air,
-% into SSF 14-21 46 = SSF 14-18 148
+%      SSF 14-21 46 = SSF 14-19b 32 Harliquin Air,
+% into SSF 14-21 47 = SSF 14-18 148
 
-%      SSF 14-21 47 = WFS 14-01 11 Old Tom Of Oxford,
-% into SSF 14-21 48 = WFS 13-10 28 Morpeth Rant (new),
-% into SSF 14-21 49 = WFS 13-10 14 Salmon Tails Up The Water
+%      SSF 14-21 48 = WFS 14-01 11 Old Tom Of Oxford,
+% into SSF 14-21 49 = WFS 13-10 28 Morpeth Rant (new),
+% into SSF 14-21 50 = WFS 13-10 14 Salmon Tails Up The Water
 
 % 2:05h
 
-%      SSF 14-21 50 = WFS 14-18 014,
-% into SSF 14-21 51 = WFS 14-18 015 The Butterfly
-
-X:SSF 14-21 52
-M:6/8
-P:A
-A2a e2f ged edB c2A ABc fag fed ega e2f ged edb c2c Ace dcB A2 :|
-P:B
-G| ABc c2d ecA ABc B2B BcB d3 BdG Ace a3 ged edb c2c Ace dcB A2 :|
-
-% Into SSF 14-21 53 = SSF 14-18 025
-
-%      SSF 14-21 54 = EATMD 13-02 09 Mount Hills
+%      SSF 14-21 51 = SSF 14-18 014,
+% into SSF 14-21 52 = SSF 14-18 015 The Butterfly
 
 X:SSF 14-21 53
-M:3/4
+M:6/8
+K:Ador
 P:A
-FBFABc d2c2BA B2-BB-BA |1,2,3 BcBAGA :|4 BcBcde ||
+A2a e2f ged edB c2A ABc fag fed ega e2f ged edB c2c Ace dcB A2 :|
 P:B
-f2d2Bf g2fgef g2fged ca-aa-ag f2d2B2 g2fgef gfedcd c^a-^a^a-^a^a
-b2f2D2 g2fgef g2fged ca-aa-ag f2d2B2 g2fgef gfedcd c2BAGA ||
+G| ABc c2d ecA ABc B2B BcB d3 BdG Ace a3 ged edB c2c Ace dcB A2 :|
 
-X:SSF 14-21 54
+% Into SSF 14-21 54 = SSF 14-18 025
+
+%      SSF 14-21 55 = EATMD 13-02 09 Mount Hills
+
+X:SSF 14-21 56
+M:3/4
+K:Bm
+P:A
+FBFABc d2c2BA B2-BB2A |1,2,3 BcBAGA :|4 BcBcde ||
+P:B
+f2d2Bf g2fgef g2fged ca2a2g f2d2B2 g2fgef gfedcd c^a2^a2^a
+b2f2d2 g2fgef g2fged ca2a2g f2d2B2 g2fgef gfedcd c2BAGA ||
+
+X:SSF 14-21 57
 T:Mr. Isaac's Maggot
 B:Playford, 9th ed., 1695 (Barlow 365)
 M:3/2
+K:D
 P:A
 a4 f4 e4 def2 e2d2 c2A2 |1,3 A2d2 d2c2 B4 B2e2 e2d2 c2A2 :|2,4 A2d2 d2c2 B2gf e2d2 e2f2 d4 ||
 P:B
@@ -347,8 +349,170 @@ a2ga b2ag a2ga |1 bagf edcB c2A2 :|2 bagf efga f2d2 ||
 P:D
 f2 g2 a2 |1 A2d2 d2c2 B2A2 :|2 A2f2 e2c2 d4 ||
 
-%      SSF 14-21 55 = SSF 14-18 144
+%      SSF 14-21 58 = SSF 14-18 144
 
-%      SSF 14-21 56 = EATMD 13-01 31 From Night Till Morn
+%      SSF 14-21 59 = EATMD 13-01 31 From Night Till Morn
 
-% 2:32h
+%      SSF 14-21 60 = SSF 14-18 020
+
+X:SSF 14-21 61
+T:Da Slockit Light
+O:Shetland
+C:Tom Anderson, 1969
+M:4/4
+K:D
+P:A
+FE|D3F A2d2 fedc d2A2 |1,3 B2d2 A2d2 BAGF EGFE :|2,4 B2G2 AGFE D4 :|
+P:B
+g2|f2a2 e2c2 d3e dcBA |1 f2a2 e2^g2 a6 :|2 B2G2 AGFE D4 :|3 B2d2 A2d2 BAGF EGFE || [P:(A2)] ||
+
+X:SSF 14-21 62
+M:4/4
+R:swung
+K:G
+P:A
+BA| G2GA B2AG E2GA B<dc<e d2ef gfed dcBc d<g BG A2GA B2AG E2GA B<dc<e d2ef gfed dcBc d<g
+P:B
+BA| G2ga b2bg agaf g2fe d2dd edce dcBc d<gBG A2ga b2bg agaf gfe2 d2dd edce dcBc d<g
+
+X:SSF 14-21 63
+M:6/8
+K:Em
+P:A
+EGB EGB c2c B3 |1,3 cde dcB AGA B3 :|2,4 cde dcB AGF E3 :|
+P:B
+efg f2e ded B3 |1,3 cde dcB AGA B3 :|2,4 cde dcB AGF E3 :|
+
+% Into SSF 14-21 64 = SSF 14-18 142 Jump At The Sun
+
+X:SSF 14-21 65
+M:4/4
+K:Gdor
+P:A
+G,B,B,D G2FG AGFA G2GE F2AF BFAF BAGF GFDF G2BG AGBG F2AF BFAF BAGF DFGA BcAB G4 :|
+P:B
+g2dg fgdg g2dg fdcA |1,3 g2dg fgg2 gabg agfd :|2,4 BAGF DFGA BcAB G4 :|
+
+% Into..
+
+X:SSF 14-21 66
+M:4/4
+K:Ddor
+P:A
+D2DF ADFA DFAD GFEC A,2A,C EA,CE A,CEG AGEF D2DF ADFA DFAD FGAB c2Gc Ecde |1 fedc dcAF :|2 fedc dcAc ||
+P:B
+d2fd gdfd d2fd gfec |1,3 d2fd gdfd e2fe gfec :|2 gabg agg2 eff2 edcA :|4 cege agfd gfec dcAF ||
+
+%      SSF 14-21 67 = WFS 13-10 23 Bonny Kate
+
+%      SSF 14-21 68 = EATMD 13-01 05 The Sloe
+
+%      SSF 14-21 69 = WFS 13-07 15 L.N.B. Polka,
+% into SSF 14-21 70 = WFS 13-11 19 Rochdale Coconut Dance
+
+% 3:05h
+
+%      SSF 14-21 71 = SSF 14-18 039 
+
+%      SSF 14-21 72 = WFS 13-11 30 Black Joak
+
+%      SSF 14-21 73 = SSF 14-18 055 Hunt The Squirrel
+
+%      SSF 14-21 74 = SSF 14-18 068 La Mourisque
+
+%      SSF 14-21 75 = BFS 14-04 38 Grimstock
+
+X:SSF 14-21 76
+T:Childgrove
+B:Playford, 11th ed., 1701 (Barlow 426)
+M:2/4
+K:Em
+P:A
+Beef g2fe |1,3 agfe f>edcB :|2,4 agfd e4 :|
+P:B
+bggb affa |1,3 geeg fdB2 :|2,4 agfd e4 :|
+
+X:SSF 14-21 77
+M:6/8
+K:D
+P:A
+dAA fAA dAA fAA B2e e2d efd BdB A2A A2F A2B d2e |1,3 f3 fed e6 :|2,4 f3 edB d6 :|
+P:B
+a3 faa eaa def g3 f3 efe edB A3 A2F A2B d2e |1,3 f3 fed e6 :|2,5 f3 edB d6 :|
+
+% Into...
+
+X:SSF 14-21 78
+M:6/8
+K:G
+P:A
+GAG EDE GA^A Bde ged ege |1,3 dBG ABA :|2,4 dBA G3 :|
+P:B
+ged edg-gfd e2d cBA BAG ABA GED [P:(A2)] :|
+
+X:SSF 14-21 79
+M:4/4
+K:Ador
+P:A
+A2AB c2BA GBGF EFGE |1,3 A2E2 B2dB c2cB cBA^G :|2,4 A2E2 B2dB c2BG A4 :|
+P:B
+c2cd e2ed cBcd e3f |1,3 e2de =f2e2 d2dc BdcB :|2,4 e2de =fedc BdcB A2 :|
+
+%      SSF 14-21 80 = WFS 14-05 18 Sportsman's Hornpipe
+
+X:SSF 14-21 81
+T:Gypsy Hornpipe
+B:Hardcore
+R:swung
+M:4/4
+K:G
+P:A
+d2|gfed edBd ed(3efg B2BA |1,3 GFGA BABd e2A2 A2 :|2,4 GFGA BcBA G2E2 E2 :|
+P:B
+gf|e2B2 B2gf e2B2 B2gf edef gfga b2e2 e2ga bgaf g2gf ed(3efg B2BA GFGA BcBA G2E2 E2 :|
+
+%      SSF 14-21 82 = WFS 13-07 19 Three Around Three,
+% into SSF 14-21 83 = WFS 14-03 24 Maggie In The Wood
+
+%      SSF 14-21 84 = SSF 14-18 001
+
+X:SSF 14-21 85
+K:A
+P:A
+A2AA BABc e2AA Bcea f2fa afec |1,3 BABc BAFA :|2,4 BABc A4 :|
+P:B
+a2ee agba ^c3b baee f2fa afec |1,3 fefa fecA :|2,4 BABc A4 :| 
+
+%      SSFx 14-21 86 = ? too many saxophones 
+
+X:SSF 14-21 87
+T:Holtwood
+R:slightly swung
+C:Jess Arrowsmith, 199x
+K:A
+P:A
+a2gf e2e2 f2ed cdec |1,3 d2ed cdec dcbd cBA2 :|2,4 d2ed cBA2 BAG2 A4 :|
+P:B
+B3B B2B2 ABcA B4 |1,2,3 BABc dcde fedc dcBA |4 a2g2 f2e2 d2c2 B2A2
+
+X:SSF 14-21 88
+T:
+K:Ador
+P:A
+A2AB c2BA c2BA B2G2 A2AB c2BA BGE2 E2G2 A2AB c2BA c2BA e2ef g2fe def2 e4 e4 :|
+P:B
+g3f efg2 f3e def2 e3d cde2 d2c2 B2cB A2AB c2BA c2BA e2ef g2fe def2 e4 e4 :|
+
+%      SSF 14-21 89 = SSF 14-21 63,
+% into SSF 14-21 90 = SSF 14-18 092,
+% into...
+
+X:SSF 14-21 91
+T:Edwin's #2
+N:Joe Wass has this via Nic Hurst, http://www.folktunefinder.com/blog/entry/29/
+M:6/8
+K:G
+P:A
+G2G DEG DEG E2D |1,3 DEG DEG A3-AGE :|2,4 B2B BAG A3-A ||
+P:B
+Bd|e3 e2d eg2 e2d c2c BAG |1,3 ABA A :|2 ABA G :|4 ABA AGE G2G DEG DEG E2D B2B AGF G3-G ||

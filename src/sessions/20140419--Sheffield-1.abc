@@ -104,7 +104,7 @@ eAAA BAGB AGAa gfef gefd efed |1,3 Beed BAA2 :|2,4 BedB A4 :|
 P:B
 a2ab a2ga bagf e2ef gefd efed |1,3 Beed BAA2 :|2,4 BedB A4 :|
 
-% Into... SSF 14-19a 11 = SSF 14-18 110
+% Into... SSF 14-19a 11 = SSF 14-18 112
 
 X:SSF 14-19a 12
 T:Loch Leven Castle
@@ -210,13 +210,13 @@ T:
 M:4/4
 K:G
 P:A
-Bc| dedc BcBA G2B2 G2AB |1,3 c2c2 A2AB c2c2 A2 :|2,4 c2A2 G2F2 G4 G2 :|
+Bc| dedc BcBA G2B2 G2AB |1,3 c2c2 A2AB c2c2 A2 :|2,4 c2A2 G2F2 G6 :|
 P:B
 G2| FAcA FAcA GBdB GBdB FAcA FAcA GBdB GBdg e2e2 efge d2d2 d2de d2c2 B2A2 G4 :|
 P:C
-B2c2| d2de d2c2 |1,3 B4 B3c d2g2 f2e2 e2d2 :|2,4 B4-B2AB c2A2 G2F2 G4 G2 :|
+B2c2| d2de d2c2 |1,3 B4 B3c d2g2 f2e2 e2d2 :|2,4 B4-B2AB c2A2 G2F2 G4 :|
 P:D
-B2| A3B c2A2 Bcd2 d2B2 A3B c2A2 Bcde d2B2 e2e2 efge d2d2 d2de d2c2 B2A2 G4 G2 :|
+B2| A3B c2A2 Bcd2 d2B2 A3B c2A2 Bcde d2B2 e2e2 efge d2d2 d2de d2c2 B2A2 G6 :|
 
 % SSF 14-19a 25 Rakes of Mallow, into SSF 14-19a 26 Soldier's Joy
 
@@ -323,7 +323,7 @@ K:G
 P:A
 D2|G2GABG A2ABcA |1,3 Bdgedc B2A2A2 :|2,4 BdgdcA G4 :|
 P:B
-d2|d4d2 e2d2Bc d4B2 B2A4 || [P:(A2)] :|
+d2|d4d2 e2d2Bc d4B2 B2A4 [P:(A2)] :|
 
 % Into...
 

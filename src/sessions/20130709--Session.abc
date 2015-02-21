@@ -102,7 +102,8 @@ d2cB A2B2 c2BAGAB2 |1,3 A2G2 F2G2 A4 A4 :|2,4 A2G2 G2F2 G4 G4 :|
 P:C
 _B2AG _B2AG F2G2 A4 D2E2 F2G2 |1,3 A2B2 A2G2 :|2,4 G2F2 G4 :|
 
-X:WFS 13-07 10
+% WFS 13-07 10 =
+X:WFS 13-01 04
 T:Staten Island Ferry
 S:Walthamstow session 2013-07-09
 Z:<djl@colourcountry.net>

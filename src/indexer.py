@@ -10,12 +10,15 @@ class Performance:
 
     @classmethod
     def register(c_lass, **defn):
-        new = c_lass(**defn)
-        c_lass.PERFORMANCES[new.id] = new
-        if new.session not in c_lass.BY_SESSION:
-            c_lass.SESSIONS.append(new.session)
-            c_lass.BY_SESSION[new.session] = []
-        c_lass.BY_SESSION[new.session].append(new)
+        if defn['id']:
+            new = c_lass(**defn)
+            c_lass.PERFORMANCES[new.id] = new
+            if new.session not in c_lass.BY_SESSION:
+                c_lass.SESSIONS.append(new.session)
+                c_lass.BY_SESSION[new.session] = []
+            c_lass.BY_SESSION[new.session].append(new)
+        else:
+            sys.stderr.write("% WARNING: null id")
 
     @classmethod
     def list(c_lass):
@@ -60,7 +63,11 @@ class Performance:
         # Treat empty strings as None
         
         self.id = id.strip() or None
-        self.session = re.match('(.*) [0-9]+$',self.id).group(1)
+
+        if self.id:
+            self.session = re.match('(.*) [0-9]+$',self.id).group(1)
+        else:
+            self.session = None
 
         self.date = date.strip() or None
         self.location = location.strip() or None

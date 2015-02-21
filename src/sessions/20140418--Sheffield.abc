@@ -108,7 +108,7 @@ K:G
 P:A
 G2G GAB ABc B2B Bcd cd^d ecG geG Bcd |1,3 cBA FAF DEF :|2,4 cBA FAF G3 :|
 P:B
-D3 G3 F3 A3 G3 G2g fed cBA Bcd |1,3 cBA FAF DEF :|2 cBA FAF G3 :| [P:(A2)] ||
+D3 G3 F3 A3 G3 G2g fed cBA Bcd |1,3 cBA FAF DEF :|2 cBA FAF G3 :| [P:(A2)] 
 
 % Into...
 
@@ -170,7 +170,7 @@ K:D
 P:A
 D2FEFG A2GFED |1,3 E2EDEF E6 :|2,4 E2EFED D6 :|
 P:B
-{C2}| B,3ddc dAGFED A,2d3c A4F2 G3FGA |1 G2GFED CDE2EF EDC3B, :|2 BAGFED E2EDEF G2FEDE ||
+{C2}| B,3ddc dAGFED A,2d3c A4F2 G3FGA |1 G2GFED CDE2EF EDC3B, :|2 BAGFED E2EDEF G2FEDE 
 
 % Into...
 
@@ -208,7 +208,7 @@ X:SSF 14-18 025
 M:6/8
 K:D
 P:A
-A| dfd ecA BcB AFE |1,3 DED FDG DAD BDc :|2,4 DFD GDG ABc d2 :|
+A| dfd ecA BcB AFE |1,3 DED FDG DAD BDc :|2,4 DFD GDA-ABc d2 :|
 P:B
 c| BFA BFA Bde fed |1,3 BFA BFA cBA FA :|2,4 B2B cBA FAc B2 :|
 
@@ -231,9 +231,9 @@ X:SSF 14-18 027
 M:6/8
 K:Dm
 P:A
-D2D FED A2A-A2B cBA dcB |1,3 cBA GFE :|2 A2 G2 E2 :|4 A3 d2e 
+D2D FED A2A-A2B cBA dcB |1,3 cBA GFE :|2 A2 G2 E2 :|4 A3 d2
 P:B
-f2f fed _B3 d2e |1,3 feg fed ^cAd AeA :|2,4 feg feC d3 d2e :|
+e|f2f fed _B3 d2e |1,3 feg fed ^cAd AeA :|2,4 feg fe^c d3 d2 :|
 
 % Into SSF 14-18 028 = EATMD 13-01 49 The Fiery Clock Face
 
@@ -263,7 +263,7 @@ d2g gfg e2g fga bgg gfg |1,3 e2g f2e :|2,4 e2f g3 :|
 P:B
 d2g f2g eee e2f gfe dBG A2A A2B GBd d2B c2A d2c B2G E2F G3 :| F3
 P:C
-E3 F3 G3 A3 |1,3 Bee e2f e3-e2 :|2 B2A G2F G2F E2D :| f| g2g gfe d2g B2d c3 B2A G3-G2
+E3 F3 G3 A3 |1,3 Bee e2f e3-e2 :|2 B2A G2F G2F E2D :| f| g2g gfe d2g B2d c3 B2A G3-G3
 
 %       SSF 14-18 035 = EATMD 13-02 06
 
@@ -276,12 +276,12 @@ K:Gm
 P:A
 D|GAB ABc B2A GAB A2G FGA |1,3 G2G D3 :|2,4 G3-G2 :|
 P:B
-A|B3 d2B c2B A3 B2A GAB A2A D3 |1 || x[P:(A2)]x || :|2 GAB ABc Bcd edc BcB ABA G3-G2 ||
+A|B3 d2B c2B A3 B2A GAB A2A D3 |1 GAB ABc B2A GAB A2G FGA G3-F2 :|2 GAB ABc Bcd edc BcB ABA G3-G2 
 
 %       SSF 14-18 038 = WFS 13-10 32 I'll Go And Enlist For A Sailor
 
 X:SSF 14-18 039
-T:Mr Moore's
+T:
 M:
 K:Em
 P:A
@@ -309,7 +309,7 @@ BA| GFGE g2=fe dBGB d2cB |1,3 AGFE D2d^c d2A2 A2 :|2,4 AGFE DEFA G2E2 E2 :|
 P:B
 e2ef g2=fe d2B2 B3B |1,3 ABde faef d2A2 A2Bd :|2,4 AGFE DEFA G2E2 E2 :|
 P:C
-GA| BGEG BAGF E4-E2FG AFDF AFDF AGFE D2EF || [P:(A2)] :|
+GA| BGEG BAGF E4-E2FG AFDF AFDF AGFE D2EF  [P:(A2)] :|
 
 X:SSF 14-18 042
 T:
@@ -329,7 +329,7 @@ T:Morgan Rattler
 M:6/8
 K:D
 P:A
-AGF EFG FEF D3 |1,3 AGF EFG B2A Bcd :|2 def edc B2A Bcd :|4 dcB edc B2A Bcd ||
+AGF EFG FEF D3 |1,3 AGF EFG B2A Bcd :|2 def edc B2A Bcd :|4 dcB edc B2A Bcd 
 P:B
 d2e fed |1,3 c2d ecA d2e fed f2e fga :|2,4 c2d efg agf edc B2A Bcd :|
 P:C
@@ -435,7 +435,8 @@ G|FDEF GF/G/EG |1 FDEF G3 :|2 FDEF E2
 % Into...
 
 X:SSF 14-18 068
-T:
+T:La Mourisque
+C:Tielman Susato, 1551
 M:2/4
 K:G
 P:A
@@ -452,7 +453,7 @@ K:G
 P:A
 GA| B2D DED E2G e3 |1,3 d2B BAG B2A A :|2,4 dcB ABA G3-G :|
 P:B
-Bc| d2d def g2g gfe d2B BAG B3A A || [P:(A2)] :|
+Bc| d2d def g2g gfe d2B BAG B2A A  [P:(A2)] :|
 
 % Into...
 
@@ -463,7 +464,7 @@ K:G
 P:A
 D| GFG BAB d3 efg |1,3 dBG GAB E3-E2 :|2,4 dBG ABA G3-G :|
 P:B
-Bc| d2d def g2g gfe dBG GAB E3-E2 || [P:(A2)] :|
+Bc| d2d def g2g gfe dBG GAB E3-E2  [P:(A2)] :|
 
 X:SSF 14-18 072
 T:Lumpy Custard
@@ -471,7 +472,7 @@ N:Lester's 68
 M:3/4
 K:G
 P:A
-D2GFG2 D2BAB2 |1,3 cBAGFG AGFEDE :|2 cBAGFA G4FE :|4 cBAGFA G3 ||
+D2GFG2 D2BAB2 |1,3 cBAGFG AGFEDE :|2 cBAGFA G4FE :|4 cBAGFA G3 
 P:B
 ABc| d2dedc B2G2AB |1,3 c2cdcB A4 :|2,4 cBAGFA G3 :|
 
@@ -490,9 +491,9 @@ C:Philippe Bruneau 1993?
 M:6/8
 K:D
 P:A
-dfd cec BcB B2A dfd cec BcB B2A ege dfd cec c2B |1 A2A ABc dcB A3 :|2 A2A ABc d2A A2 ||
+dfd cec BcB B2A dfd cec BcB B2A ege dfd cec c2B |1 A2A ABc dcB A3 :|2 A2A ABc d2A A2 
 P:B
-G| F2F FAd f3-f2d e2d c2d g3-g2f eee e2d ccc c2B |1 A2A ABc dcB A2 :|2 AAA ABc d2A ABc ||
+G| F2F FAd f3-f2d e2d c2d g3-g2f eee e2d ccc c2B |1 A2A ABc dcB A2 :|2 AAA ABc d2A ABc 
 
 % Into...
 
@@ -501,9 +502,9 @@ T:
 M:6/8
 K:D
 P:A
-F2F F2G F2E DEF G2G G2A G2F GBd c2c c2d cBA GFE |1 DFA B2A AFD E3 :|2 DFA f2e d3-d2 ||
+F2F F2G F2E DEF G2G G2A G2F GBd c2c c2d cBA GFE |1 DFA B2A AFD E3 :|2 DFA f2e d3-d2 
 P:B
-e|f2f f2f fec dcB A2A A2B A2F FAd c2c c2d cBA GFE |1 DFA B2A F2A d2 :|2 DFA f2e d3-d2 ||
+e|f2f f2f fec dcB A2A A2B A2F FAd c2c c2d cBA GFE |1 DFA B2A F2A d2 :|2 DFA f2e d3-d2 
 
 X:SSF 14-18 076
 T:Long Odds
@@ -513,7 +514,7 @@ K:G
 P:A
 DGGA B2BG c2cA BGFE DGGA Bcdd ecAF G4 :|
 P:B
-egfe d3d cedc c2B2 ABcA Bcdd |1 ecAG F2ED :|2 ecAF G4 ||
+egfe d3d cedc c2B2 ABcA Bcdd |1 ecAG F2ED :|2 ecAF G4 
 
 %      SSF 14-18 077 = WFS 13-07 15 L.N.B. Polka
 
@@ -616,7 +617,7 @@ M:4/4
 R:swung, normally in C
 K:G
 P:A
-GFGA GDB,C DEDB, G,2GA B2B2 BAGA BdcB AcBA GFGA GDB,C D2B,2 C2B,C D2GA BAGA B2A2 G4 ||
+GFGA GDB,C DEDB, G,2GA B2B2 BAGA BdcB AcBA GFGA GDB,C D2B,2 C2B,C D2GA BAGA B2A2 G4 
 P:B
 B,DGD B,2B,D E2C2 C2EC A,2A2 ABAG F2E2 D2DC B,DG2 GBAG E2A2 A2AB cBAG FDEF G2B2 G4
 
@@ -659,9 +660,9 @@ T:
 M:6/8
 K:G
 P:A
-D|G2G BAG A2G E2D |1,3,5 c2B cde d2c B2A :|2,6 EG2 G2F G3 G2 :|4 EA2 A2G ABc B2A ||
+D|G2G BAG A2G E2D |1,3,5 c2B cde d2c B2A :|2,6 EG2 G2F G3 G2 :|4 EA2 A2G ABc B2A 
 P:B
-D|G2A B2c d3 d2e =f3 =f2e =f6 e3 e2d e2^f g2e d3 d2e d2B A2G c2B c2d e2d c2B A3 A2B A3 E2F G3 G2A G2E D2B A3 A3B A2G E2F ||
+D|G2A B2c d3 d2e =f3 =f2e =f6 e3 e2d e2^f g2e d3 d2e d2B A2G c2B c2d e2d c2B A3 A2B A3 E2F G3 G2A G2E D2B A3 A2B A2G E2F 
 
 %      SSF 14-18 104 = EATMD 13-02 12 Brighton Camp
 %      SSF 14-18 105 = WFS 13-10 36 Jamaica
@@ -704,18 +705,18 @@ P:A
 ABc| dAFD GBAG FDEF DABc dfed cBAG |1,3 FDEF G :|2 FABc d :|4 FABc d2cB
 P:B
 A2FA dFAd fAdf a2FG A2FA d2Ad c2B2 B2GF
-E3F G2A2 c4 c2B2 AdcB AGFE |1 DAAd BAFG :|2 DDFA d ||
+E3F G2A2 c4 c2B2 AdcB AGFE |1 DAAd BAFG :|2 DDFA d 
 
 % Into...
 
 X:SSF 14-18 113
 T:
-M:
+M:2/4
 K:A
 P:A
-AAcA eAcA EAce BAcA EAce fefg |1 aeed cABc :|2 agfe c ||
+AAcA eAcA EAce BAcA EAce fefg |1 aeed cABc :|2 agfe c
 P:B
-efg|agae agae f2ed cefg |1 a2g2 f2ed feed c :|2 aAcA f2ed f2ed c2B2 B2A2 ||
+efg|agae agae f2ed cefg |1 a2g2 f2ed feed c :|2 aAcA f2ed f2ed c2B2 B2A2
 
 X:SSF 14-18 114
 T:The Shropshire Lass
@@ -735,16 +736,16 @@ K:Em
 P:A
 B3B2B A2d2c2 B3B2B A2G2F2 G3A2G F2E2D2 E6-E6 :|
 P:B
-B2AGAB c4G2 F2G2A2 B4GF E2F2G2 A4G2 |1 F2d3c B6 :|2 F2E2D2 E6 ||
+B2AGAB c4G2 F2G2A2 B4GF E2F2G2 A4G2 |1 F2d3c B6 :|2 F2E2D2 E6 
 
 X:SSF 14-18 116
 T:
 M:
 K:D
 P:A
-D3E FEFG ABA2 F4 |1,3 G2G2 E4 F2F2 D4 :|2,4 G2G2 E4 D4-D2 ||
+D3E FEFG ABA2 F4 |1,3 G2G2 E4 F2F2 D4 :|2,4 G2G2 E4 D6 
 P:B
-de| f2d2 A2FA-ABA2 F2AG-GFG2 E2GF-FEF2 D4 f2d2 A2FA-AGA2 F3G-GEFG ABc2 d4-d2 :|
+de| f2d2 A2FA-ABA2 F2AG-GFG2 E2GF-FEF2 D4 f2d2 A2FA-AGA2 F3G-GEFG ABc2 d6 :|
 
 %      SSF 14-18 117 = WFS 13-06 06 Roxburgh Castle
 
@@ -798,7 +799,7 @@ K:G
 P:A
 BdB| G3 F2G AGE E3 D3 EGE D3 G2B A3 G3-G3 :|
 P:B
-GFG| A3 D3 AGA B3 G3 GAB c3 d2c BdB A3-A3 || [P:(A)] ||
+GFG| A3 D3 AGA B3 G3 GAB c3 d2c BdB A3-A3  [P:(A)] 
 
 % 6:02h
 
@@ -826,7 +827,7 @@ C:Jim Parker (1934-)
 M:6/8
 K:G
 P:A
-B2B BcB B2A A2B c2c cdc B3-B2c |1 d2d ed^c d2B G2A B2B BAG A6 :|2 BAB c2B A2G E2E DGA BAG A3 G3 ||
+B2B BcB B2A A2B c2c cdc B3-B2c |1 d2d ed^c d2B G2A B2B BAG A6 :|2 BAB c2B A2G E2E DGA BAG A3 G3 
 P:B
 e^d=d c2c e^d=d c2c e^d=d c2G A2A c3 BAB c2B A2G E2E DGA BAG A2 G2 :|
 
@@ -861,9 +862,9 @@ M:
 C:M
 K:A
 P:A
-eAAe AAeA AAeA efed c2AB cAeA ccAc dedc B4 BABc |1 B2ee efed c2A2 AcBA E2A2 ABcd :|2 e2d2 c2B2 Afed c2B2 A2c2 B2A2 ||
+eAAe AAeA AAeA efed c2AB cAeA ccAc dedc B4 BABc |1 B2ee efed c2A2 AcBA E2A2 ABcd :|2 e2d2 c2B2 Afed c2B2 A2c2 B2A2 
 P:B
-a4 f4 d3c def2 e2e2 efec BAc2 B2A2 B2B2 BABc e2d2 c2B2 |1 cAcd ecef e2c2 B2A2 :|2 Afed c2B2 A4 ABcd ||
+a4 f4 d3c def2 e2e2 efec BAc2 B2A2 B2B2 BABc e2d2 c2B2 |1 cAcd ecef e2c2 B2A2 :|2 Afed c2B2 A4 ABcd 
 
 % Into...
 
@@ -872,7 +873,7 @@ T:Fisher's Hornpipe
 M:4/4
 K:D
 P:A
-dAFD GBAG FDFD GBAG |1 FDFD GBAG FDFD EABc :|2 FAdf ecAc dAFE D4 ||
+dAFD GBAG FDFD GBAG |1 FDFD GBAG FDFD EABc :|2 FAdf ecAc dAFE D4 
 P:B
 ecAc efge fdAd fgaf ecAc efgf edcB A4 BGDG BdcB AFDF A2A2 A2cd ecAc dAFE D4 :|
 
@@ -932,21 +933,21 @@ C:Paul James
 M:6/8
 K:Em
 P:A
-BcB ABG AFG EFD B,2E EFG F2F DEF G2G-GAG F2F DEF GFE FED |1 B,ED E3 :|2 E6 ||
+BcB ABG AFG EFD B,2E EFG F2F DEF G2G-GAG F2F DEF GFE FED |1 B,ED E3 :|2 E6 
 P:B
-C2C EFG C2C EFG |1,3 B,2B, EFG B,2B, EFG :|2 BcB ABG AFG EFD :|4 ^C2^C EFG ^C2^C EFG ||
+C2C EFG C2C EFG |1,3 B,2B, EFG B,2B, EFG :|2 BcB ABG AFG EFD :|4 ^C2^C EFG ^C2^C EFG 
 P:C
 c2B-BAG F3-FGA B2A-AGF E3-EFG A2G-GFE ^D3-^DEF GFG AGA B3 GAB 
 c2d2c2 F3-FGA B2c2B2 E3-EFG A2G-GFE ^D3-^DEF GFE FE^D E6
 
 X:SSF 14-18 144
 T:
-M:4/4
+M:2/4
 K:D
 P:A
-B4 c3B cdA2-Addc B2AB cdec d2cB A2A2 |1 B4 c3B cdB2-Bdef gfed cdec d2cB A4 :|2 B4 c3B cdB2-Bdef gfed cdec defg ||
+B4 c3B cdA2-Addc B2AB cdec d2cB A2A2 |1 B4 c3B cdB2-Bdef gfed cdec d2cB A4 :|2 B4 c3B cdB2-Bdef gfed cdec defg 
 P:B
-a2f2 g3f e3d efd2- |1,3 ddef gfed cdec defg :|2 d2B2 B2AB cdec defg :|4 [M:6/4] d2B2 B2AB cdec | d2cB A4 ||
+a2f2 g3f e3d efd2- |1,3 ddef gfed cdec defg :|2 d2B2 B2AB cdec defg :|4 d2B2 B2AB cdec | d2cB A4 
 
 %      SSF 14-18 145 = EATMD 13-01 31 From Night Till Morn
 
@@ -977,7 +978,7 @@ K:D
 P:A
 dB AF A/B/A/F/ A2 |1,3 Ad ed/e/ fe e2 :|2,4 dd/f/ ed/e/ fd d2 :|
 P:B
-e| f>e fg a>a gf eb ba be ef/e/ || [P:(A2)] :|
+e| f>e fg a>a gf eb ba be ef/e/  [P:(A2)] :|
 
 X:SSF 14-18 152
 T:Banbury Bill
@@ -996,9 +997,9 @@ T:
 M:
 K:D
 P:A
-DFAc dcde fdcd B2AF GABc dAAA BAGF FDE2 DFAc dcde fded Adfg afdf gece e2dc d2A :|
+DFAc dcde fdcd B2AF GABc dAAA BAGF FDE2 DFAc dcde fded Adfg afdf gece e2dc d2 :|
 P:B
-{G} |FADA FADA FAdc BAGF GBEB GBEB GBed cBAG FADA FADA FAdc dffg afdf gece e2dc d2A :|
+AG |FADA FADA FAdc BAGF GBEB GBEB GBed cBAG FADA FADA FAdc dffg afdf gece e2dc d2 :|
 
 % Into SSF 14-18 154 = EATMD 13-01 10 Watson's Hornpipe
 
@@ -1010,9 +1011,9 @@ K:D
 P:A
 DFA d2f edc B2d A2d F2A |1,3 AGF E3 :|2,4 ABc d3 :|
 P:B
-efe a2f efe a2f efe dcB |1,3 A2B c2d :|2 A3 f3 :|4 A2G F2E ||
+efe a2f efe a2f efe dcB |1,3 A2B c2d :|2 A3 f3 :|4 A2G F2E 
 P:C
-A2f fef d2A A2A A2f fef g2e e2e A2f fef d2A A2A |1 Bcd e2d c2B A2A :|2 Bcd e2c d3 d3 ||
+A2f fef d2A A2A A2f fef g2e e2e A2f fef d2A A2A |1 Bcd e2d c2B A2A :|2 Bcd e2c d3 d3 
 
 % Into...
 
@@ -1047,9 +1048,9 @@ K:G
 P:A
 D|G>F GA BG GB A2 F2 |1,3 Gd c/B/A :|2,4 G3 :|
 P:B
-B|AG FG A3B AG FE |1 D3 :|2 Dd ^c=c ||
+B|AG FG A3B AG FE |1 D3 :|2 Dd ^c=c 
 P:C
-BB c/B/c/e/ d2 Bd |1,3 dC CB BA A2 |2, dc BA G3 ||
+BB c/B/c/e/ d2 Bd |1,3 dc cB BA A2 |2, dc BA G3 
 
 %      SSF 14-18 160 = WFS 14-03 27
 
@@ -1058,9 +1059,9 @@ T:
 M:4/4
 K:D
 P:A
-DEFG A2A2-Adec d2ef g2e2 f2d2 |1,3 cdec AGFE :|2,4 cdec d4 :|
+DEFG A2A2-Adec d2ef g2e2 f2d2 |1,3 cdec AGFE :|2,4 cdec d2 :|
 P:B
-fg|a2f2 f2ef g2e2 e2de f3d c2d2 edcB A4 d2ef g2ab affe f3a gfed cdec |1 d2f2 de :|2 dBAG FGFE ||
+fg|a2f2 f2ef g2e2 e2de f3d c2d2 edcB A4 d2ef g2ab affe f3a gfed cdec |1 d2f2 de :|2 dBAG FGFE 
 
 X:SSF 14-18 162
 T:Donald Of Dundee
@@ -1080,12 +1081,11 @@ M:3/4
 K:G
 P:A
 G3AGE D2E2F2 G2GFGA B2A2G2 A4ec B3GAF G6 D6
-P:B
 d4B2 c4fe d6 d2e2f2 e3fec A3ABc d6 d2e2f2 |
 g4g2 f4f2 e3gfe d4d2 e3gfe d4c2 B3AG2 A4DE
 D3GGF G3BAG A3cBA B4D2 E3DE2 F4A2 G2BGD2 G6
-P:C
-d2^c3d d2DEFG B2^A3B G4D2 G4F3E E4D2 |1 c2B3A A4G2 :|2 D2FGAF G6
+P:B
+d2^c3d d2DEFG B2^A3B G4D2 G2F3E E4D2 |1 c2B3A A4G2 :|2 D2FGAF G6
 
 X:SSF 14-18 164
 T:Whinham's
@@ -1130,9 +1130,9 @@ M:4/4
 R:swung
 K:G
 P:A
-{D2}|G2G2 GBAG FAd2 d3c BdBG AcAF |1,3 GGFE D4 :|2,4 G2g2 G4 :|     
+{D2}|G2G2 GBAG FAd2 d3c BdBG AcAF |1,3 GGFE D4 :|2,4 G2g2 G2 :|
 P:B
-d2d2 d2ed d2cB c2AB c2c2 c2dc c2BA B2 || [P:(A2)] ||
+d2d2 d2ed d2cB c2AB c2c2 c2dc c2BA B2  [P:(A2)] :|
 
 X:SSF 14-18 173
 T:
