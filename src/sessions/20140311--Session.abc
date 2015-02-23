@@ -1,4 +1,4 @@
-% WFS 14-03 01 Winster Gallop
+%      WFS 14-03 01 Winster Gallop
 
 X:WFS 14-03 02
 T:
@@ -9,20 +9,14 @@ G2BA G2BA GABc d3c B3c dBGA |1,3 BdcB A4 :|2,4 B2A2 G2 ||
 P:B
 Bc| d2gf e3d cdec d3c B3c dBGA |1,3 BdcB A2 :|2,4 B2A2 G2 |]
 
-% WFS 14-03 03 Bear Dance
+%      WFS 14-03 03 = WFS 13-10 09 Bear Dance
 
-% WFS 14-03 04 Brighton Camp
+%      WFS 14-03 04 = EATMD 13-02 12 Brighton Camp
 
-% WFS 14-03 05 Newcastle, into WFS 14-03 06 Portsmouth
+%      WFS 14-03 05 = WFS 13-11 16 Newcastle,
+% into WFS 14-03 06 = WFS 13-10 41 Portsmouth
 
-X:WFS 14-03 07
-T:Bobby Shaftoe
-M:4/4
-K:G
-P:A
-GGGc BdBG |1,3 DDDG FAFD :|2,4 AcAF G2G2 ||
-P:B
-BdBG BdB2 |1,3 AcAF AcA2 :|2,4 AcAF G2G2 |]
+%      WFS 14-03 07 = WFS 13-10 19 Bobby Shaftoe
 
 X:WFS 14-03 08
 T:Wheatley Processional
@@ -33,9 +27,11 @@ e2| dBA>G EED2 |1 GBAG A2 :|2 GBAG/A/ BAG ||
 P:B
 G/A/| Bdg>e dBAG/A/ Bdgd e2x2 [P:(A2)]
 
-% WFS 14-03 09 The Keel Row, into WFS 14-03 10 Kafoozalum
+%      WFS 14-03 09 = WFS 13-10 07 The Keel Row,
+% into WFS 14-03 10 = WFS 13-10 08 Kafoozalum
 
-% WFS 14-03 11 The Dusty Miller, into WFS 14-03 12 Old Lancashire Hornpipe
+%      WFS 14-03 11 The Dusty Miller,
+% into WFS 14-03 12 Old Lancashire Hornpipe
 
 X:WFS 14-03 13
 T:Slängpolska efter Byss-Calle
@@ -46,7 +42,7 @@ d3B G2G2 BABd A2B2 G2G2 BABd cBce d2Bd cBAG |1,3 FGAB AGFE D4 :|2,4 FGAB A4 G4 |
 P:B
 d2d2 d2ef g2g2 g2fe d2ef g2B2 cBce d2Bd cBAG |1,3 FGAB AGFE D4 :|2,4 FGAB A4 G4 ||
 
-% WFS 14-03 14 Jamie Allen, into WFS 14-03 15 Uncle Bernard's Polka, into WFS 14-03 16 Jenny Lind's Polka
+%      WFS 14-03 14 Jamie Allen, into WFS 14-03 15 Uncle Bernard's Polka, into WFS 14-03 16 Jenny Lind's Polka
 
 X:WFS 14-03 17
 T:Double Lead Through
@@ -79,9 +75,9 @@ af| d2d2 d2cd e2e2 e2fe dcBA B2c2 |1,3 defg agfe :|2,4 d4 d2{e2} ||
 P:B
 f2f2 f2ef g2g2 gagf e2e2 e2de f2f2 fgaf [P:(A2)] :|
 
-% WFS 14-03 20 = EATMD 13-01 30 Lodge Road
+%      WFS 14-03 20 = EATMD 13-01 30 Lodge Road
 
-% WFS 14-03 21 Rakes of Mallow, into WFS 14-03 22 Bonnie Kate, into WFS 14-03 23 Salmon Tails, into...
+%      WFS 14-03 21 Rakes of Mallow, into WFS 14-03 22 Bonnie Kate, into WFS 14-03 23 Salmon Tails, into...
 
 X:WFS 14-03 24
 T:Maggie in the Wood
@@ -150,7 +146,7 @@ BcBA GFGB dcBc A4 DEFG A2B2 |1,3 cBAc B4 :|2,4 cAFA G4 :|
 P:B
 B2d2 E2FG AGFE D4 DEFG A2B2 |1,3 cBAc B2G2 :|2,4 cAFA G4 :|
 
-% WFS 14-03 31 = EATMD 13-01 50
+%      WFS 14-03 31 = EATMD 13-01 50
 
 X:WFS 14-03 32
 T:The Crookit Bawbee
@@ -161,7 +157,8 @@ BA|G2B2d2 g3fe2 d2A2c2 cB3d2 G3Bd2 c2e2g2 B3cA2 G4D2 B3AG2 G3AB2 c3de2 dB3d2 g3c
 P:B
 B3AB2 c3Bc2 f3ed2 dB3G2 |1 G3FD2 G3FG2 B3AG2 A4GA :|2 EG3G2 DG3G2 FA3F2 G6 ||
 
-% WFS 14-03 33 South Downs, into WFS 14-03 34 = EATMD 13-01 15 Doncaster Races
+%      WFS 14-03 33 = EATMD 13-01 32 South Downs,
+% into WFS 14-03 34 = EATMD 13-01 15 Doncaster Races
 
-% WFS 14-03 35 Michael Turner's Waltz
+%      WFS 14-03 35 Michael Turner's Waltz
 

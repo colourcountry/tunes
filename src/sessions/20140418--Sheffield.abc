@@ -1,5 +1,7 @@
 X:SSF 14-18 001
 T:
+S:Sheffield Sessions Festival, Shakespeare, 2014-04-18
+Z:<djl@colourcountry.net>
 M:4/4
 R:slight swing
 K:Em
@@ -374,7 +376,7 @@ B:Playford, 14th edn, 1709 (Barlow 531)
 M:6/8
 K:G
 P:A
-G2d d2e d3 B3 :|1,3 GAB A3 GAB A3 :|2,4 GAB A3 G6 :|
+G2d d2e d3 B3 |1,3 GAB A3 GAB A3 :|2,4 GAB A3 G6 :|
 P:B
 c2d edc c2d edc c2d e2f g3 f2e dB2 dB2 dB2 dB2 GAB A3 G6 :|
 
@@ -1029,7 +1031,8 @@ P:C
 ABA d2B ABA F2A ABA G2E |1,3 GFE F2D :|2,4 GFE D3 :|
 
 X:SSF 14-18 157
-T:
+T:St. Catherine
+B:Playford, 11th ed., 1701 (Barlow 471)
 M:2/4
 K:G
 P:A

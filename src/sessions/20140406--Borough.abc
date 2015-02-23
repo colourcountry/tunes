@@ -50,9 +50,11 @@ d| e2d B2d G3-G2G F2A c2A F6 d^cd f2e d2B cAF |1 GFG B2c d3-d2 :|2 GFG B2A G3-G2
 P:B
 B2B BGA B2B B3 A2B c2d f3 e3 d2e f2e d2B cAF |1 G2G G2B d3 c3 :|2 GFG B2A G3-G2 ||
 
-% BFS 14-04 05 Newcastle, into BFS 14-04 06 Portsmouth
+%      BFS 14-04 05 = WFS 13-11 16 Newcastle,
+% into BFS 14-04 06 = WFS 13-10 41 Portsmouth
 
-% BFS 14-04 07 Captain Lanoe's Quick March, into...
+%      BFS 14-04 07 = WFS 13-07 02 Captain Lanoe's Quick March,
+% into...
 
 X:BFS 14-04 08
 T:Upton Stick Dance
@@ -63,7 +65,7 @@ d| dcB BAG AGA BGE |1,3 DGG GBd edB A2 :|2,4 DGG GAB AGF G2 :|
 P:B
 GBd g2d edc B2A GBd g2d edB A3 GBd g2d edB ABd ege dBG AGF G2 :|
 
-% BFS 14-04 09 The Sloe, into...
+%      BFS 14-04 09 The Sloe, into...
 
 X:BFS 14-04 10
 T:Kerry Polka #1
@@ -117,7 +119,7 @@ P:A
 P:B
 d2{c}d Bcd e3-e2e f2{e}f def gba gfe d2d Bcd e2{f}e gfe d2{e}d cBA G6
 
-% BFS 14-04 14 = WFS 13-06 04
+%      BFS 14-04 14 = WFS 13-06 04
 
 X:WFS 13-06 04
 T:Scan Tester's #2
@@ -175,7 +177,7 @@ D2| G2B2e2 d2B2G2 c4E2 E4G2 F2G2A2 E2F2D2 |1 G4B2 D4 :|2 G6-G4 ||
 P:B
 d2| e4d2 g4B2 d2c2B2 A4B2 c4A2 f4e2 e2d2c2 B4c2 d4B2 g4f2 e2A2A2 A4B2 c2B2A2 d2c2A2 G6-G4 |]
 
-% BFS 14-04 19 Elsey's Waltz = WFS 13-02 01
+%      BFS 14-04 19 Elsey's Waltz = WFS 13-02 01
 
 X:WFS 13-02 01
 T:Elsey's Waltz
@@ -327,7 +329,7 @@ P:A
 P:B
 A2FD B2GE c2AF d2BG edcB cBAG |1 AGFE D4 :|2 FGAF G2 |]
 
-% BFS 14-04 35 = WFS 13-07 18 Jack Robinson
+%      BFS 14-04 35 = WFS 13-07 18 Jack Robinson
 
 % Into...
 
@@ -342,7 +344,7 @@ GABc A3G F2D2 D4 |1,3 d2A2 d3c B2G2 G4 :|2,4 EFG2 FGA2 G4 G4 :|
 P:B
 FGA2 FGA2 d2A2 d2A2 FGA2 FGA2 d2A2 d2A2 d2cB c4 B2AG A2D2 EFG2 FGA2 G4 G4 :|
 
-% BFS 14-04 37 = EATMD 13-01 50 (in G)
+%      BFS 14-04 37 = EATMD 13-01 50 (in G)
 
 X:BFS 14-04 38
 T:Grimstock
@@ -409,7 +411,7 @@ AAA A2G F2G A2B |1,3 cBc e2d B3 G3 :|2,4 cBc e2F G6 :|
 P:B
 d2g g2g f2A A2B |1,3 cBc e2d B3 G3 :|2 cBc e2F G6 :| [P:(A2)] |]
 
-% BFS 14-04 44 The Man in the Moon, into...
+%      BFS 14-04 44 The Man in the Moon, into...
 
 X:BFS 14-04 45
 T:
@@ -496,7 +498,7 @@ D2D2 D2GF E2E2 E2cA |1,3 F2F2 FDEF GFGA B2G2 :|2,4 F2F2 FDEF G4 G2 :|
 P:D
 GA| B2B2 B2GA B2B2 B2GA Bgfe dcB2 AGAB A4 B2B2 BGAB c2c2 c4 dgfe dcBA A2G2 G2 :|
 
-% BFS 14-04 54 = WFS 14-03 19 Astley's Ride, into BFS 14-04 55 = WFS 13-10 03 Buttered Peas
+%      BFS 14-04 54 = WFS 14-03 19 Astley's Ride, into BFS 14-04 55 = WFS 13-10 03 Buttered Peas
 
 X:BFS 14-04 56
 T:Lord of the Dance
@@ -527,9 +529,9 @@ D3EF2E2 D2E2F2G2 |1,3 A2F2D2F2 E4E4 :|2,4 A2F2D2F2 E4D4 :|
 P:B
 A2Bcd2cB A2F2A2F2 |1,3 A2Bcd2cB A2F2E4 :|2,4 A2F2D2F2 E4D4 :| 
 
-% BFS 14-04 59 Michael Turner's Waltz
+%      BFS 14-04 59 Michael Turner's Waltz
 
-% BFSX 14-04 60 Andrew Kerr, into BFSX 14-04 61 Long Room at Scarborough
+%      BFSX 14-04 60 Andrew Kerr, into BFSX 14-04 61 Long Room at Scarborough
 
 X:BFS 14-04 62
 T:Cheshire Waltz
@@ -555,7 +557,7 @@ d2| c2F2 F2e2 d2G2 G2g2 |1,3 f2A>B c2e2 d2G>A B>dc>B :|2,4 f2A>B c>de>f g2G2 G2 
 P:C
 A2| B2B2 B2A>G F>EF>G A2-A>B c2c2 c2B>A |1,3 G>FG>A B2 :|2,4 G2B2 G2 :|
 
-% BFS 14-04 64 = EATMD 13-02 13 Coleford Jig, Into...
+%      BFS 14-04 64 = EATMD 13-02 13 Coleford Jig, Into...
 
 X:BFS 14-04 65
 T:Stringers Hornpipe
@@ -577,7 +579,7 @@ D2| G2G2 GABc d4 d2B2 |1,3 c4 c2A2 B4 B2 :|2,4 c2A2 A2F2 A2G2 G2 :|
 P:B
 d2| e2d2 B2G2 G2F2 F4 e2d2 c2A2 A2G2 G2Bd g2g2 g2ag f2e2 e4 d2d2 c2F2 A2G2 G2 :|
 
-% Into BFS 14-04 67 Jenny Lind Polka
+% Into BFS 14-04 67 = WFS 13-07 04 Jenny Lind Polka
 
 X:BFS 14-04 68
 T:The Cotillion
@@ -603,7 +605,7 @@ D2| GABc d2g2 d2BA G2AB c2E2 E2AG FGEF D2D2 E2C2 C2c2 c2E2 E2c2 Bcd2 D2F2 G4 G2 
 P:B
 F2| G2D2 D2G2 B2G2 Bcd2 c2A2 A2a2 a2A2 ABc2 B2G2 c2A2 |1 d2B2 efg2 fga2 A2^c2 d4 d2 :|2 d2B2 e2c2 Bcd2 D2F2 G4 G2 :|
 
-% BFS 14-04 70 Orange in Bloom (in G)
+%      BFS 14-04 70 Orange in Bloom (in G)
 
 X:BFS 14-04 71
 T:Dear Tobacco
@@ -649,7 +651,7 @@ D2| EFG2 G2F2 E4 E2D2 E3D E2F2 GFGA GFED EFG2 G2F2 E4 E2D2 E3D E2F2 G4 G2 :|
 P:B
 D2| Bcd2 d2c2 B2A2 A4 BABc d2D2 BABc d2D2 EFG2 G2F2 E4 E2D2 E3D E2F2 G4 G2 :|
 
-% BFS 14-04 75 = EATMD 13-08 09 Mount Hills
+%      BFS 14-04 75 = EATMD 13-08 09 Mount Hills
 
 X:BFS 14-04 76
 T:Cumberland Waltz
@@ -665,7 +667,7 @@ A2| f4f2 e4d2 c4B2 G4A2 BcB2A2 BcB2A2 |1,3 BcB2A2 F4 :|2,4 A2c2e2 d4 :|
 
 X:BFS 14-04 77
 T:Westmoreland
-B:Playford, 6th edn, 1686
+B:Playford, 6th edn, 1686 (Barlow 260)
 B:Hardcore English, 2007, p87-2
 M:6/4
 K:G
@@ -684,9 +686,9 @@ D2| G4G2 G2A2B2 c4B2 A4G2 F4E2 D4E2 F4G2 A4c2 B3AG2 B2c2d2 e4A2 A4G2 F3ED2 D2E2F
 P:B
 Bc| d4d2 d2B2d2 G4G2 G2B2d2 e4e2 e2c2e2 A4A2 A2B2c2 d4d2 e2f2g2 f2g2a2 d4c2 B3AG2 A3GF2 G6 G4 :|
 
-% BFS 14-04 79 The Dusty Miller, into BFS 14-04 80 Three Rusty Swords
+%      BFS 14-04 79 The Dusty Miller, into BFS 14-04 80 Three Rusty Swords
 
-% BFS 14-04 81 = WFS 14-03 26 Josefins Dopvals
+%      BFS 14-04 81 = WFS 14-03 26 Josefins Dopvals
 
 X:BFS 14-04 82
 T:Å Jenta Å Ja
@@ -717,7 +719,7 @@ D2DF E2EF D2DF E2EF D2dc BAGF E2A2 F2D2 :|
 P:B
 A2AB AGFG A2d2 A2FG A2d2 A2d2 A2d2 A2F2 G2BG F2dF E2EF AGFE D2dc BAGF E2A2 F2D2 :|
 
-% BFS 14-04 85 = WFS 13-10 36 Jamaica
+%      BFS 14-04 85 = WFS 13-10 36 Jamaica
 
 X:BFS 14-04 86
 T:The British Toper

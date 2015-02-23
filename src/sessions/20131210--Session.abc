@@ -1,11 +1,15 @@
 X:WFS 13-12 01
 T:
+S:Walthamstow session 2013-12-10
+Z:<djl@colourcountry.net>
 M:4/4
 K:D
 [P:A] A2| dcBc d2B2 A2B2 F2A2 BAG2 d2cd A6GF E2B2 A2G2 AGFG A2dB G2FG A2A2 d6 |]
 
 X:WFS 13-12 02
 T:Good King Wenceslas
+S:Walthamstow session 2013-12-10
+Z:<djl@colourcountry.net>
 M:4/4
 L:1/4
 P:AB
@@ -15,6 +19,8 @@ K:G
 
 X:WFS 13-12 03
 T:Tomorrow Will Be My Dancing Day
+S:Walthamstow session 2013-12-10
+Z:<djl@colourcountry.net>
 M:6/8
 P:ABC
 K:G
@@ -24,6 +30,8 @@ K:G
 
 X:WFS 13-12 04
 T:I Saw Three Ships Come Sailing In
+S:Walthamstow session 2013-12-10
+Z:<djl@colourcountry.net>
 M:6/8
 K:G
 [P:A] D| G2G A2B | d2B A2c |1 B2G G2B | A2F D2 :| B2G GAB | A3 G2 |]
@@ -32,6 +40,8 @@ K:G
 
 X:WFS 13-12 05
 T:We Three Kings
+S:Walthamstow session 2013-12-10
+Z:<djl@colourcountry.net>
 M:6/8
 P:AB
 K:Em
@@ -40,6 +50,8 @@ K:Em
 
 X:WFS 13-12 06
 T:Ding Dong! Merrily On High
+S:Walthamstow session 2013-12-10
+Z:<djl@colourcountry.net>
 M:4/4
 K:G
 [P:A] G2G2 AGFE | D4 D2D2 | E2G2 G2F2 | G4 G4 :|
@@ -47,6 +59,8 @@ K:G
 
 X:WFS 13-12 07
 T:Silent Night
+S:Walthamstow session 2013-12-10
+Z:<djl@colourcountry.net>
 M:6/8
 K:G
 [P:A] d>ed B3 | d>ed B3 | a2a f3 | g2g d3
@@ -55,36 +69,29 @@ K:G
 
 X:WFS 13-12 08
 T:Jingle Bells
+S:Walthamstow session 2013-12-10
+Z:<djl@colourcountry.net>
 M:2/4
 K:G
 [P:A] BBB2 | BBB2 | BdG>A | B4 | ccc>c | cBBB |1 BAAB | A2d2 :|2 ddcA | G4 
 [P:B] DBAG | D3D | DBAG | E4 |1 EcBA | F4 | ddcA | B4 :|2 EcBA | dddd | edcA | G2d2 |]
 
-X:WFS 13-12 09
-T:Kafoozalum
-M:2/4
-R:swung
-K:G
-[P:A] d2dc | Bcd2 | ABcB | ABc2 | d2{e}dc | Bcd2 | GAB2{G} | A2G2 :|
-[P:B] BGDG | BGB2 | cAFA | cAc2 | BGDG | BGB2 | GAB2{G} | A2G2 :|
+%      WFS 13-12 09 = WFS 13-10 08 Kafoozalum
 
-X:WFS 13-12 10
-T:The Keel Row
-M:2/4
-K:G
-[P:A] B2GB | c2Ac | B2GB | AFD2 | B2GB | c2Ac | BGAF | G4 :|
-[P:B] (3Bdddg | e2dc | B2FB | AGD2 | (3Bdddg | e2dc | BGAF | G4 :|
+%      WFS 13-12 10 = WFS 13-10 07 The Keel Row
 
 %%text Salmon Tails Up The Water (WFS 13-12 11 = WFS 13-10 14), into...
 
-% WFS 13-12 12 = WFS 13-11 07 Rattling Bog
+%      WFS 13-12 12 = WFS 13-11 07 Rattling Bog
 
-%%text !Michael Turner's Waltz (WFS 13-12 13 = WFS 13-07 05)
+%%text Michael Turner's Waltz (WFS 13-12 13 = WFS 13-07 05)
 
 %%text Oyster Girl (WFS 13-12 14 = WFS 13-11 12), into...
 
 X:WFS 13-12 15
 T:Rosin the Bow
+S:Walthamstow session 2013-12-10
+Z:<djl@colourcountry.net>
 M:6/8
 P:A1 A2 B A2
 K:G
@@ -97,6 +104,8 @@ K:G
 
 X:WFS 13-12 18
 T:Captain Lanoe's Quick March
+S:Walthamstow session 2013-12-10
+Z:<djl@colourcountry.net>
 M:6/8
 K:G
 [P:A] G2B d2d | gfe d3 | cec BdB |1,3 AGA B2A :|2,4 AGA G3{A} :|
@@ -105,6 +114,8 @@ K:G
 X:WFS 13-12 19
 T:Linky Lanky
 S:Frankie
+S:Walthamstow session 2013-12-10
+Z:<djl@colourcountry.net>
 M:6/8
 K:Em
 [P:A] D| E2B B2A | G2G AGF | E2B B2A | G2A [1 B2F :|2 B2 
@@ -115,6 +126,8 @@ K:Em
 
 X:WFS 13-12 20
 T:God Rest Ye Merry, Gentlemen
+S:Walthamstow session 2013-12-10
+Z:<djl@colourcountry.net>
 M:2/4
 R:swung
 P:AB
@@ -131,6 +144,8 @@ K:G
 X:WFS 13-12 25
 T:Wisbech
 S:Frankie
+S:Walthamstow session 2013-12-10
+Z:<djl@colourcountry.net>
 M:6/8
 K:Em
 [P:A] E2G B2E | D2F A2E-|E2F G2A | B3 d3 | c2d e2c | d2B G2B |1,3 A2B A2G | F2G A2F :|2,4 A3 G2F | E6 :|
@@ -142,6 +157,8 @@ K:Em
 
 X:WFS 13-12 30
 T:Soldier's Joy
+S:Walthamstow session 2013-12-10
+Z:<djl@colourcountry.net>
 M:4/4
 K:D
 [P:A] AFDF AFDF |1 A2d2 d2B2 :|2 G2E2 E2FG :|3 A2d2 d2e2 | fagf egfe d2f2 d2 :|
@@ -153,6 +170,8 @@ K:D
 
 X:WFS 13-12 33
 T:John Ryan's
+S:Walthamstow session 2013-12-10
+Z:<djl@colourcountry.net>
 M:4/4
 K:D
 [P:A] d2d2 BcdB |1 A2F2 A2F2 :|2 A2F2 E2D2 :|3 A2F2 A2de | f2d2 e2c2 d4 d2 :|
@@ -164,6 +183,8 @@ K:D
 
 X:WFS 13-12 37
 T:Lemmy Brazil's
+S:Walthamstow session 2013-12-10
+Z:<djl@colourcountry.net>
 M:4/4
 K:D
 [P:A] AG| F2A2{d} B2A2 defd B2AG FAdA Bcdf |1 e2e2 e2 :|2 e2c2 d2 ||
@@ -171,6 +192,8 @@ K:D
 
 X:WFS 13-12 38
 T:
+S:Walthamstow session 2013-12-10
+Z:<djl@colourcountry.net>
 M:2/4
 K:G
 [P:A] G2GA B2B2 A2A2 GBd2 e2e2 |1,3 dBG2 GFGB AFD2 :|2,4 dBGA B2A2 G2 :|
@@ -182,6 +205,8 @@ K:G
 
 X:WFS 13-12 42
 T:Gloucestershire Wassail
+S:Walthamstow session 2013-12-10
+Z:<djl@colourcountry.net>
 M:3/4
 L:1/4
 P:AB

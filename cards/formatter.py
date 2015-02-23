@@ -1492,7 +1492,13 @@ if __name__=="__main__":
 
     if ARGS.ids == ["-"]:
         sys.stderr.write("% Enter tune IDs one per line or finish with EOF (Ctrl-D). Nothing specified = format entire collection\n")
-        ARGS.ids = sys.stdin.readlines()
+        new_ids = sys.stdin.readlines()
+        ARGS.ids = []
+        for new_id in new_ids:
+            stripped_id = re.sub('#.*$', '', new_id).strip()
+            if stripped_id:
+                sys.stderr.write("%% Got ID %s\n" % stripped_id)
+                ARGS.ids.append(stripped_id)
 
     if ARGS.crib:
         ARGS.no_chords = True

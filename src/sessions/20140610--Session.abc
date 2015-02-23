@@ -1,0 +1,152 @@
+%      WFS 14-06 01 = WFS 13-10 05 Jamie Allen,
+% into WFS 14-06 02 = WFS 13-10 14 Salmon Tails Up The Water
+
+%      WFS 14-06 03 = WFS 13-10 18 Donkey Riding,
+% into WFS 14-06 04 = WFS 13-10 16 Rakes Of Mallow
+
+X:WFS 14-06 05
+T:Black Almain
+S:Walthamstow session 2014-06-10
+Z:<djl@colourcountry.net>
+M:4/4
+K:D
+P:A
+D3E DEFG A6A2 |1,3 G2A2B2A2 A8 :|2,4 G2A2B2AG A8 :|
+P:B
+d4 B4 A6F2 G2F2G2E2 F4F4 G2F2G2A2 F4D2G2 E2D2E2C2 D8 :|
+
+%      WFS 14-06 06 = WFS 13-07 04 Jenny Lind Polka
+
+%      WFS 14-06 07 = WFS 13-10 32 I'll Go And Enlist For A Sailor
+
+%      WFS 14-06 08 = WFS 13-11 07 Rattling Bog
+
+%      WFS 14-06 09 = WFS 13-10 09 Bear Dance
+
+%      WFS 14-06 10 = EATMD 13-02 12 Brighton Camp
+
+%      WFS 14-06 11 = WFS 13-10 07 The Keel Row
+% into WFS 14-06 12 = WFS 13-10 08 Kafoozalum
+
+X:WFS 14-06 13
+T:Follow The Drum
+S:Walthamstow session 2014-06-10
+Z:<djl@colourcountry.net>
+C:Chingford
+N:Adapted by Adrian apparently from Michael Turner's Jig
+M:6/8
+K:G
+P:A
+GAG G2A B2G Bcd |1,3 GAG G2B A2B A3 :|2,4 g2d edc B2A G3 :|
+P:B
+AAA A2B c2d e2f |1,3 g2d g2d cBA d3 :|2,4 g2d edc B2A G3 :|
+
+%      WFS 14-06 14 = WFS 13-07 01 Oscar Woods' Jig,
+% into WFS 14-06 15 = WFS 13-10 13 Rogue's March,
+% into WFS 14-06 16 = WFS 13-07 02 Captain Lanoe's Quick March
+
+X:WFS 14-06 17
+T:
+S:Walthamstow session 2014-06-10
+Z:<djl@colourcountry.net>
+M:3/4
+K:D
+P:A
+A2|G4FE F4A2 G4FE F4A2 F4D2 E2F2G2 F2E2D2 D4 :|
+P:B
+D2|E2F2G2 A4F2 A4F2 D4 :|
+
+%      WFS 14-06 18 = WFS 13-10 22 Harper's Frolic,
+% into WFS 14-06 19 = WFS 13-10 23 Bonnie Kate
+
+X:WFS 14-06 20
+T:Theme Vannitaise
+S:Walthamstow session 2014-06-10
+Z:<djl@colourcountry.net>
+M:4/4
+K:Em
+P:A
+E2B2 B2AB G2E2 E4 |1,3 A2AG F2FE DEFA G2F2 :|2,4 A2AG F2FE DEFD E4 :|
+P:B
+EFGF EFGF EFGA B2G2 |1,3 DEFE D3E F2A2 G2F2 :|2,4 DEFE D2A2 G2F2 E4 :|
+
+%      WFS 14-06 21 = WFS 13-12 15 Rosin The Bow
+
+%      WFS 14-06 22 = BFS 14-04 01 When Daylight Shines
+
+%      WFS 14-06 23 = SSF 14-19b 01 Albert Falmer's Bonfire Tune,
+% into WFS 14-06 24 = WFS 14-04 33 Foul Weather Call
+
+%      WFS 14-06 25 = WFS 13-11 16 Newcastle,
+% into WFS 14-06 26 = WFS 13-10 41 Portsmouth
+
+X:WFS 14-06 27
+T:Kirkgate Hornpipe
+T:'The other Newcastle tune'
+S:Walthamstow session 2014-06-10
+Z:<djl@colourcountry.net>
+K:G
+P:A
+gD|B2B2 BcAF G2G2 GABc d2df edcB BAcA GFED B2B2 Bd^cA d2d2 d2^cB Ad^cB AGFE D2D2 D2 :|
+P:B
+AB c2c2 c2AB cBAG FEDC B,2d2 d2ef gfed cBAG e2e2 efge dcBc d2g2 egec ABGF G2G2 G2 :|
+
+%      WFS 14-06 28 = WFS 13-07 21 Hesleyside Reel
+
+%      WFS 14-06 29 = WFS 13-10 34 Great North Run '86
+
+%      WFS 14-06 30 = SSFx 14-18 041 Come Ashore Jolly Tar And Your Trousers On
+
+%      WFS 14-06 31 = WFS 13-11 19 Rochdale Coconut Dance,
+% into WFS 14-06 32 = WFS 13-11 20 Tip Top Polka
+
+%      WFS 14-06 33 = WFS 13-07 11 Enrico
+
+%      WFS 14-06 34 = WFS 13-07 12 Paddy Carey's
+
+%      WFS 14-06 35 = SSF 14-18 044 Morgan Rattler
+
+%      WFS 14-06 36 = WFS 13-07 13 Sprit Of The Dance
+
+X:WFS 14-06 37
+T:Whisky Before Breakfast
+S:Walthamstow session 2014-06-10
+Z:<djl@colourcountry.net>
+M:4/4
+K:D
+P:A
+A,B,DE D2DE F2BF ABAF G2BG F2AF |1,3 EDEF EDBG, :|2,4 EDEF D4 :|
+P:B
+A2B2 d2cd efed cdA2 e2ef e2ef gfed cABc d2fd c2ec BABc dAFD G2BG F2AF EDEF D4 :|
+
+%      WFS 14-06 38 = BFS 14-04 71 Dear Tobacco
+
+%      WFS 14-06 39 = BFS 14-04 72 Trip To Cartmell
+
+%      WFS 14-06 40 = BFS 14-04 73 Lady Susan Stewart's Reel
+
+%      WFS 14-06 41 = WFS 13-10 26 Spootiskerry
+
+%      WFS 14-06 42 = WFS 14-05 37 Dennington Bell
+
+%      WFS 14-06 43 = WFS 13-06 04 Scan Tester's #2,
+% into WFS 14-06 44 = WFS 13-06 05 Scan Tester's #1
+
+%      WFS 14-06 45 = WFS 13-12 38
+
+%      WFS 14-06 46 = WFS 13-10 39 Man In The Moon
+
+%      WFS 14-06 47 = EATMD 13-01 19 Sherborne Waltz (as jig in D)
+
+X:WFS 14-06 48
+T:The Blue Ribbon
+S:Walthamstow session 2014-06-10
+Z:<djl@colourcountry.net>
+K:D
+P:A
+A2Bc defg a2a2 |1,3 f4 g2g2 e4 f2f2 d4 :|2,4 g2g2 e2c2 d4 d4 :|
+P:B
+D2A2 F2A2 B2G2 E2D2 C2A,2 B,2C2 |1,3 D2F2 A4 :|2,4 D4 D4 :|
+
+%      WFS 14-06 49 = WFS 13-07 10 Staten Island Ferry
+
