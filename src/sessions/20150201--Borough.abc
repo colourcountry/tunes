@@ -10,3 +10,226 @@ B2c2| d3e d2c2 B4-B2c2 d2g2 f2e2 e2d2 B2c2 d3e d2c2 B4-B2AB c2A2G2F2 G4 :|
 P:D
 A3B c2A2 Bcde d2B2 A3B c2A2 Bcde d4 e2g2 c2e2 d2g2 B2dd d2c2 B2A2 G4 G2 :|
 
+%      BFS 15-02 02 = BFS 14-04 20 The Queen's Delight,
+% into BFS 15-02 03 = WFS 13-07 12 Paddy Carey's
+
+%      BFS 15-02 04 = EATMD 13-02 02 The Dusty Miller,
+% into BFS 15-02 05 = EATMD 13-02 03 Three Rusty Swords,
+% into BFS 15-02 06 = EATMD 13-02 04 Old Lancashire Hornpipe
+
+X:BFS 15-02 07
+T:Manchester Hornpipe
+R:swung
+R:not swung by morris
+Z:<djl@colourcountry.net>
+M:4/4
+K:G
+P:A
+A2| dcdA FAdf edcB A2g2 |1 fgaf d2ef edcB A4 :|2 fgaf bgec d2f2 d2
+P:B
+fg| afaf d2fa bgbg e2fg afaf bagf edcB A2Bc [P:(A2)]
+
+X:BFS 15-02 08
+T:Miss Thompson's
+R:swung
+M:4/4
+K:D
+P:A
+d2df edcB A2AB AGFE |1,3 DFAF DGBG DFAF GFED :|2,4 DFAd fedc d2d2 d2 :|
+P:B
+cd|ecec Ace2 fdfd Adf2 g2g2 f2fd edcB A4 BGBG DGBG AFAF DFAF BGAd fedc d2d2 d2 :|
+
+X:BFS 15-02 09
+T:
+R:swung
+M:4/4
+K:D
+P:A
+A2| BAFA D2(3EFA BABd e2de |1,3 fagf egfe defd BcdB :|2,4 fagf egfe d2d2 d2 :|
+P:B
+fg| afdf a2gf efga b2ag fagf egfe defd BcdB [P:(A2)] :|
+
+X:BFS 15-02 10
+T:
+M:6/8
+K:Em
+P:A
+EFG B2c B3 B2c |1,3 B2c BGE FGF B,3 :|2,4 BGE F2B, E3-E2 :|
+P:B
+B|e2B c2A BAG A3 AGF B2F GFE B,2B e2b c2A BAG A2F GFE B,2D E3-E2 :|
+
+% Into...
+
+X:BFS 15-02 11
+T:
+M:6/8
+K:G
+P:A
+B2B BAG B2A AGF G2G GFE G2F F2D E2D EFG E2D D2F G2G GAB B2A A3 :|
+P:B
+d3 e2 dcB A3 |1,3 G2G GAB B2A A3 :|2,4 G2G GAB A2G G3 :|
+P:C
+D| E2E EFG E2D DEF |1,3 G2G GAB B2A A2 :|2,4 G2G A2B A2G G2 :|
+
+%      BFS 15-02 12 = BFS 14-04 34 Alexandra Park
+
+%      BFS 15-02 13 = BFS 14-04 22 Worcester Hornpipe,
+% into BFS 15-02 14 = EATMD 13-01 09 Gloucester Hornpipe
+
+%      BFS 15-02 15 = WFS 13-07 15 L.N.B. Polka,
+% into...
+
+X:BFS 15-02 16
+T:
+M:4/4
+K:D
+P:A
+DEFG A4 B2B2 A4 |1,3 DEFG A2B2 c2B2 B2A2 :|2,4 DEFG F2E2 D4 :|
+P:B
+d2A2 A2B^c d2A2 A4 |1,3 DEFG A2B2 c2B2 B2A2 :|2,4 DEFG F2E2 D4 :|
+
+X:BFS 15-02 17
+T:
+M:6/8
+K:D
+P:A
+dAd fed cBA g3 |1,3 fed cde dAG FED :|2,4 fed cde d3 d3 :|
+P:B
+FDF AGF GEG BAG FDF AGF G2E E3 FDF AGF B^cd efg fed edc d3 d3 :|
+
+% Into...
+
+X:BFS 15-02 18
+T:
+M:6/8
+K:G
+P:A
+D|G2B B2d d2g g2d |1,3 edc BAG FGA A3 :|2,4 edc B2A G3-G2 :|
+P:B
+d|d2D D2c c2E E2c |1,3 BAG F2G A3-A2 :|2,4 BAG FGA G3-G2 :|
+
+%      BFS 15-02 19 = WFS 13-11 02 The Curly Headed Ploughboy,
+% into BFS 15-02 20 = BFS 14-04 11 The Barren Rocks Of Aden (in G)
+
+%      BFS 15-02 21 = WFS 13-06 04 Scan Tester's #2,
+% into BFS 15-02 22 = WFS 13-06 05 Scan Tester's #1
+
+%      BFS 15-02 23 = WFS 13-02 01 Elsey's Waltz,
+% into BFS 15-02 24 = WFS 13-07 05 Michael Turner's Waltz
+
+%      BFSx 15-02 25 = SSFx 14-18 168 Sheffield Hornpipe (2),
+% into BFSx 15-02 26 = EATMD 13-10 22 Sadlers Wells Hornpipe
+
+%      BFS 15-02 27 = WFS 13-10 22 Harper's Frolic,
+% into BFS 15-02 28 = WFS 13-10 23 Bonnie Kate,
+% into BFS 15-02 29 = SSF 14-18 083 Dark Girl Dressed In Blue
+
+X:BFS 15-02 30
+M:4/4
+K:D
+P:A
+d2D2 D3E D^C,DE D^C,DE F2F2 F3G FEFG FEFG A2A2 A2BA G2G2 G2AG F2D2 G2F2 E4-E4 :|
+P:B
+E3F E3F EDCB, A,4 A3B A3B AGFE D2AG F2E2 D2AG F2E2 D2AG FGAG F2E2 D4-D4 :|
+
+X:BFS 15-02 31
+M:4/4
+K:G
+P:A
+G2gf edcB ABcd B2G2 |1,3 G2gf edcB dcAF G4 :|2,4 cBcd e2c2 dcAF G4 :|
+P:B
+DGBG DGBG DGBd c2A2 DFAF DFAF DFAc B2G2 DGBG DGBG DGBd c2cd e2d2 c2B2 AGAF G2 :|
+
+% Into BFS 15-02 32 = WFS 13-07 11 Enrico (swung)
+
+%      BFSx 15-02 33 = EATMD 13-02 06,
+% into BFSx 15-02 34 = EATMD 13-02 07 The Old Horned Sheep
+
+X:BFS 15-02 35
+M:3/4
+K:G
+P:A
+B2GFG2 AFDFA2 DEFGAB |1,3 c2BAB2 :|2,4 DEFGAc B2G2 :|
+P:B
+Bc|d2g2d2 d2cBAG |1,3 FAc2c2 c2BA :|2,4 FAdAF2 A2G2 :|
+
+% Into...
+
+X:BFS 15-02 36
+T:Skelton's
+T:Mazurka d'Auvergne
+T:Mazurka Gentiane
+M:3/4
+K:G
+P:A
+DGGFG2 DBBAB2 |1,3 cBAGFG AGFED :|2,4 cBAGFA G2G2 :|
+P:B
+Bc|d2dedc B2G2AB |1,3 c2cdcB A2 :|2,4 cBAGFA G2G2 :|
+
+%      BFS 15-02 37 = WFS 13-10 04 Uncle Bernard's Polka,
+% into BFS 15-02 38 = WFS 13-07 04 Jenny Lind Polka,
+% into BFS 15-02 39 = EATMD 13-02 12 Brighton Camp
+
+%      BFS 15-02 40 = WFS 13-10 13 Rogue's March,
+% into BFS 15-02 41 = WFS 13-12 18 Captain Lanoe's Quick March
+
+%      BFS 15-02 42 = SSF 14-19b 32 Harliquin Air
+
+X:BFS 15-02 43
+T:Tom Fowler's Hornpipe
+M:4/4
+K:G
+P:A
+Bc| dcBA Ggfg e4 d4 cdcB ABAG F4 E4 DEFG A2B2 c2de d2c2 BAGA D2F2 G6 :|
+P:B
+d2| g2bg e2ag f4 d2ef g2bg e2ag fgef d2ef gddd gddd gdgd gddd g3f edcB ABAG F2E2 DEFG A2B2 c2de d2c2 BAGA D2F2 G8 :|
+
+%      BFS 15-02 44 = SSF 14-18 127 The Perfect Cure (in D),
+% into...
+
+X:BFS 15-02 45
+M:6/8
+K:D
+P:A
+e|f2d A2F G3 B3 |1,3 A2d c2d e3-e2 :|2,4 A2d cde d3-d2 :|
+P:B
+f|g2g gfe f2f fed e2e efg |1 a3-a2 :|2 a3 g3 [P:(A)]
+
+%      BFS 15-02 46 = BFS 14-04 76 Cumberland Waltz,
+% into BFS 15-02 47 = BFS 14-04 77 Westmoreland
+
+X:BFS 15-02 48
+M:4/4
+K:D
+P:A
+DE|F2F2 FEDF A2B2 AFDE FEFG ABAF |1,3 EDEF E2 :|2,4 D3E D2 :|
+P:B
+A2|d2d2 dcBA B2dB AFD2 |1,3 d2d2 dcBA BABc B2A2 :|2,4 FEFG ABAF D4-D2 :|
+
+% Into...
+
+X:BFS 15-02 49
+M:4/4
+K:D
+P:A
+F2A2 F2F2 G4 G2G2 A2AB AFD2 EDEF E2FG A2d2 c2A2 BABc BAFD E2FG F2E2 D4 D4 :|
+P:B
+d3d-d2A2 c3c-c2A2 B2Bc dcB2 A2AB AFD2 A2d2 c2A2 BABc BAGD E2FG F2E2 D4 D4 :|
+
+%      BFS 15-02 50 = SSF 14-18 044 Morgan Rattler,
+% into BFS 15-02 51 = BFS 14-04 28 Grimstock
+
+%      BFS 15-02 52 = BFS 14-04 68 The Cotillion,
+% into BFS 15-02 53 = BFS 14-04 69 Trip To Brighton
+
+%      BFS 15-02 54 = BFS 14-04 28 Centenary March
+
+%      BFS 15-02 55 = SSF 14-21 61 Da Slockit Light
+
+%      BFS 15-02 56 = WFS 13-10 29 Old Morpeth Rant,
+% into BFS 15-02 57 = WFS 13-10 28 Morpeth Rant
+
+%      BFSx 15-02 58 = BFS 14-04 86 The British Toper,
+% into BFSx 15-02 59 = BFS 14-04 87 Orlando's Return,
+% into BFSx 15-02 60 = BFS 14-04 88 Prince William's March,
+% into BFSx 15-02 61 = BFS 14-04 09 Doctor Fauster's Tumblers

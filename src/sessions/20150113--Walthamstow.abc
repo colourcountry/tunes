@@ -1,0 +1,122 @@
+%      WFS 15-01 01 = WFS 13-10 14 Salmon Tails Up The Water,
+% into WFS 15-01 02 = WFS 13-11 07 Rattling Bog
+
+%      WFS 15-01 03 = EATMD 13-02 12 Brighton Camp
+
+%      WFS 15-01 04 = WFS 13-01 01 Winster Gallop
+
+%      WFS 15-01 05 = WFS 13-10 04 Uncle Bernard's Polka,
+% into WFS 15-01 06 = WFS 13-07 04 Jenny Lind Polka (in G)
+
+%      WFS 15-01 07 = WFS 13-10 32 I'll Go And Enlist For A Sailor
+
+%      WFS 15-01 08 = WFS 13-10 31 Idbury Hill
+
+%      WFS 15-01 09 = SSFx 13-18 040 Sheriff's Ride
+
+%      WFS 15-01 10 = EATMD 13-02 05 The Princess Royal
+
+%      WFS 15-01 11 = WFS 13-07 08 Off To California
+
+%      WFS 15-01 12 = SSF 14-21 81 Gypsy Hornpipe
+
+%      WFS 15-01 13 = WFS 13-07 01 Oscar Woods' Jig (in D),
+% into WFS 15-01 14 = WFS 13-07 02 Captain Lanoe's Quick March,
+% into WFS 15-01 15 = WFS 13-10 13 Rogue's March
+
+X:WFS 15-01 16
+T:Saddle The Pony
+M:6/8
+K:G
+P:A
+D| GBA G2B def gdB GBA G2B ADD ADD GBA G2B def gdg ege dBA BGG G :|
+P:B
+Bd| efe edB def gfg |1,3 efe edB dBA A |2,4 efe dBA BGG G :|
+
+%      WFS 15-01 17 = WFS 14-01 36 Pippa Sandford's
+
+%      WFS 15-01 18 = SSF 14-18 020 Go Mauve
+
+%      WFS 15-01 19 = WFS 13-11 30 Black Joak,
+% into WFS 15-01 20 = BFS 14-04 20 The Queen's Delight
+
+%      WFS 15-01 21 = SSF 14-19b 32 Harliquin Air
+
+%      WFS 15-01 22 = WFS 13-10 22 Harper's Frolic,
+% into WFS 15-01 23 = WFS 13-10 23 Bonnie Kate
+
+%      WFS 15-01 24 = WFS 14-05 17 Iron Legs,
+% into WFS 15-01 25 = WFS 14-05 18 Sportsman's Hornpipe
+
+X:WFS 15-01 26
+T:Black Nag
+M:6/8
+K:Am
+P:A
+E| A2A BAB cBc Bcd edc BAB A3-A2 :|
+P:B
+BGE B2B BGE Bcd |1,3 ecA e2e ecA ecA :|2,4 edc BcB A3-A2
+
+%      WFS 15-01 27 = WFS 14-05 01 Gilderoy
+
+X:WFS 15-01 28
+T:Bampton Greensleeves
+M:4/4
+R:swung
+K:Am
+P:A
+c2ce dcB2 cBA2 BAG2 c2ce dcB2 cABG A2A2 :|
+P:B
+gfge dBG2 gfge afd2 gfge dBG2 cdec A2A2 :|
+
+%      WFS 15-01 29 = WFS 14-03 13 Slangpolska efter Byss-Calle
+
+%      WFS 15-01 30 = EATMD 13-01 32 South Downs
+
+%      WFS 15-01 31 = BFS 14-04 77 Westmoreland
+
+%      WFS 15-01 32 = WFS 13-07 05 Michael Turner's Waltz,
+% into WFS 15-01 33 = WFS 13-10 39 Man In The Moon
+
+%      WFS 15-01 34 = SSF 14-19b 01 Albert Falmer's Bonfire Tune,
+% into WFS 15-01 35 = WFS 14-04 33 Foul Weather Call
+
+%      WFS 15-01 36 = WFS 14-01 11 Old Tom Of Oxford (in G),
+% into WFS 15-01 37 = WFS 13-11 27 Old Molly Oxford
+
+%      WFS 15-01 38 = SSF 14-18 004 Maiden Lane
+
+X:WFS 15-01 39
+T:Whitefriars Hornpipe
+M:2/4
+K:G
+P:A
+AB|cBAG FGAF GABG A2D2 F2D2 F2A2 A2AB cBAG FGAF GABG ABcd B2G2 G2
+P:B
+AB|cBcd e4 g4 agfe defd |1 efge a2A2 A2B2 :|2 ABcd B2G2 G2
+
+%      WFS 15-01 40 = WFS 13-07 10 Staten Island Ferry
+
+%      WFS 15-01 41 = BFS 14-04 65 Stringers Hornpipe
+
+%      WFS 15-01 42 = WFS 13-07 14 Ffidl Ffadl,
+% into WFS 15-01 43 = WFS 13-07 15 L.N.B. Polka
+
+%      WFS 15-01 44 = WFS 13-07 19 Three Around Three
+
+%      WFS 15-01 45 = WFS 13-07 20 Great North Run '86,
+% into WFS 15-01 46 = WFS 13-07 21 Hesleyside Reel
+
+%      WFS 15-01 47 = WFS 14-01 31 Because He Was A Bonny Lad,
+% into WFS 15-01 48 = WFS 14-01 32 Welcome To The Town Again
+
+%      WFS 15-01 49 = WFS 13-11 16 Newcastle,
+% into WFS 15-01 50 = WFS 13-10 41 Portsmouth
+
+%      WFS 15-01 51 = WFS 13-06 02 Lemonville,
+% into WFS 15-01 52 = WFS 13-06 03 The Quarryman
+
+%      WFS 15-01 53 = WFS 13-07 17 Amoco Stomp,
+% into WFS 15-01 54 = WFS 13-12 19 Linky Lanky
+
+%      WFS 15-01 55 = SSF 14-19a 37 En Avant Blonde

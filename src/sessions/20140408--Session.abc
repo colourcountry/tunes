@@ -1,17 +1,10 @@
-%      WFS 14-04 01 Winster Gallop
+%      WFS 14-04 01 = WFS 13-01 01 Winster Gallop
 
-%      WFS 14-04 02 Jamie Allen
+%      WFS 14-04 02 = WFS 13-10 05 Jamie Allen
 
-%      WFS 14-04 03 Winster Gallop
+%      WFS 14-04 03 = WFS 13-01 01 Winster Gallop
 
-X:WFS 14-04 04
-T:The Barren Rocks of Aden
-M:2/4
-K:D
-P:A
-f>g f>e df Ad ce Af/e/ |1,3 dA de :|2,4 d2 d{e} ||
-P:B
-f/g/|a>f df eg Ae/f/ g>e ce |1,3 d/e/f/g/ a :|2,4 d2 d{e} |]
+%      WFS 14-04 04 = BFS 14-04 11 The Barren Rocks of Aden
 
 %      WFS 14-04 05 = WFS 13-10 09 Bear Dance
 
@@ -33,7 +26,7 @@ f/g/|a>f df eg Ae/f/ g>e ce |1,3 d/e/f/g/ a :|2,4 d2 d{e} |]
 
 %      WFS 14-04 15 Lemmie Brazil's No.2
 
-%      WFS 14-04 16 Slangpolska efter Byss-Kalle
+%      WFS 14-04 16 = WFS 14-03 13 Slangpolska efter Byss-Kalle
 
 %      WFS 14-04 17 = WFS 13-10 22 Harper's Frolic,
 % into WFS 14-04 18 = WFS 13-10 23 Bonnie Kate
@@ -67,12 +60,12 @@ g>f g>e dB AG |1,3 g>f g>a be ef :|2,4 A/B/A/G/ EF G2 G2{def} :| x{A} |]
 
 %      WFS 14-04 25 = EATMD 13-01 32 South Downs
 
-%      WFS 14-04 26 Linen Hall
+%      WFS 14-04 26 = EATMD 13-01 33 Linen Hall
 
 %      WFS 14-04 27 = WFS 13-10 32 I'll Go And Enlist For A Sailor,
-% into WFS 14-04 28 Amoco Stomp
+% into WFS 14-04 28 = WFS 13-07 17 Amoco Stomp
 
-%      WFS 14-04 29 Three Around Three, into...
+%      WFS 14-04 29 = WFS 13-07 19 Three Around Three, into...
 
 X:WFS 14-04 30
 T:The Quaker
@@ -97,7 +90,7 @@ gfed e2a2 gfed dcBA |1,3 d2A2 BcdB g2f2 e4 :|2,4 d2A2 BcdA G2F2 D4 :|
 P:B
 GFED A2A2 Bcde dcBA |1,3 d2A2 BcdB g2f2 e4 :|2,4 d2A2 BcdA G2F2 D4 :|
 
-%      WFS 14-04 34 Off To California
+%      WFS 14-04 34 = WFS 13-07 08 Off To California
 
 X:WFS 14-04 35
 T:Hunting The Hare
@@ -112,9 +105,9 @@ P:B
 
 %      WFS 14-04 37 = WFS 13-07 02 Captain Lanoe's Quick March
 
-%      WFS 14-04 38 The Man In The Moon
+%      WFS 14-04 38 = WFS 13-10 39 The Man In The Moon
 
-%      WFS 14-04 39 Sherborne Waltz / Orange In Bloom
+%      WFS 14-04 39 = EATMD 13-01 19 Sherborne Waltz / Orange In Bloom
 
 X:WFS 14-04 40
 T:Sailor's Hornpipe

@@ -365,7 +365,7 @@ P:B
 e2 g2 e2 g2 agfe d4 fedc BGAB dcBA G2 || [P:(A2)] |]
 
 X:EATMD 13-01 48
-M:6/8
+M:12/8
 K:G
 P:A
 G2F G2A B2c dcB c2B c2d e2f gfe d2e dcB c2d cBA |1 B2c BAG ABc d3 :|2 G3 B3 G3
@@ -374,7 +374,7 @@ B2A| GBd gdB GBd g2f e2f gfe d2c B3 c2d edc |1 B2c dBG A3 e3 f2e dcA :|2 B3 G3 A
 
 X:EATMD 13-01 49
 T:The Fiery Clock Face
-M:6/8
+M:12/8
 K:G
 P:A
 g2g G2A B2c d2e =f2=f A2B c2d e2f g2g G2A B2c d3 efg a2{g}f g3 :|

@@ -1,10 +1,397 @@
-X:1
-T:Chingford Processional
+% Tunes of Chingford Morris, freshly transcribed from memory
+% David Linton, 2015-02-24
+% Slows are not explicitly notated.
+
+X:CM BRC
+T:Brighton Camp
+R:Ashford 
+S:Chingford Morris
+Z:<djl@colourcountry.net>
+M:4/4
+K:G
+P:A
+gf|e2dc B2A2 |1 B2G2 E2D2 G2G2 GABc d4 B2 |2 B2G2 E2G2 FGA2 D2EF G4 G2
+P:B
+dc|B2d2 e2f2 g2d2 B2GA B2d2 e2f2 g4 f2 [P:(A2)]
+
+X:CM BRG
+T:British Grenadiers
+R:Ashford
+S:Chingford Morris
+Z:<djl@colourcountry.net>
+K:G
+P:A
+D2| G2D2 G2A2 B2cB A2Bc d2G2 BAGF G6
+P:B
+Bc| d3e d2c2 B2c2 d2d2 e2e2 dcBA G4 F4 G2FG A2GA B2AB c2Bc d2G2 BAGF G3
+
+X:CM 100
+T:100 Pipers
+R:Black Rod
+S:Chingford Morris
+Z:<djl@colourcountry.net>
+K:G
+M:6/8
+P:A
+GA| B2D DED E2G e3 |1 d2B BAG B2A A :|2 dcB ABA G3-G
+P:B
+Bc| d2d def g2g gfe d2B BAG B2A A [P:(A2)]
+
+X:CM HTH
+T:Hunting The Hare
+R:Chingford Processional
+S:Chingford Morris
 Z:<djl@colourcountry.net>
 M:6/8
 K:D
 P:A
-d2A FGA |1,3 Bed cBc :|2,4 Bec d3 :|
+d2A FGA |1 Bed cBc :|2 Bec d3
 P:B
-fed fed fed fed ecd ecd egf e3 ||
-(4:6:2 d2A2 | (4:6:3 FGA2 | (4:6:3 Bed2 | (4:6:3 cBc2 [P:(A2)] :|
+fed fed fed fed ecd ecd egf e3 [P:(A)]
+
+X:CM TOF
+T:Tobin's Favourite
+R:Chingford Stick Dance
+S:Chingford Morris
+Z:<djl@colourcountry.net>
+M:6/8
+K:D
+P:A
+DFA dcd ecA cde |1 fef gfg ecA GFE :|2 fef gec Agf D3
+P:B
+fga agf efg efg fef gfg ecA GFE [P:(A2)]
+
+% CM SHF Sherwood Foresters Colne #1
+
+X:CM OYG
+T:Oyster Girl
+R:Colne #2
+S:Chingford Morris
+Z:<djl@colourcountry.net>
+M:6/8
+K:G
+ded B2G A2F D3 G2G BGB d2c A3 ded B2g f2e c2A d2d cBA G6 :|
+P:B
+Bcd Bcd e2c e2c ABc ABc d2B d2B ded B2g f2e c2A d2d cBA G6 :|
+
+X:CM RTB
+T:Rosin The Bow
+R:Colne #3
+S:Chingford Morris
+Z:<djl@colourcountry.net>
+M:6/8
+K:G
+P:A
+D| GFG BGB | d3 efg |1 dBG GAB | E3-E2D :|2 dBG ABA | G3-G
+P:B
+Bc| d2d def | g2g gfe | dBG GAB | E3-E2D [P:(A2)]
+
+X:CM COB
+T:Constant Billy
+S:Chingford Morris
+Z:<djl@colourcountry.net>
+M:6/8
+K:G
+P:A
+G2d BAB c2A FED BAG E2E DEF G3 :|
+P:B
+Bcd e3 ABc d3 Bcd e2e ABc def g2d BAB c2A FED BAG E2E DEF G3 :|
+
+X:CM DTJ
+T:Down (with) The Jubilee
+N:(incomplete)
+S:Chingford Morris
+Z:<djl@colourcountry.net>
+M:6/8
+K:G
+P:A
+G2B AcA B2d cec |1 dgf edc BAG FED :|2 dgf ed^c d3-d3
+P:B
+e2c ABc d2B GAB cde EFG ABG FED BAG cBA dcB efg
+
+X:CM 18M
+T:Lilliburlero
+R:18th of March
+S:Chingford Morris
+Z:<djl@colourcountry.net>
+M:6/8
+K:G
+P:A
+GAG B2B ABA c3 BdG c2B AGF G3
+P:B
+g2f g2d de=f e2d def gde dcB A2d edc Bcd edc Bcd egG c2B AGF G3
+
+X:CM MCR
+T:Manchester Hornpipe
+R:Essex Border
+S:Chingford Morris
+Z:<djl@colourcountry.net>
+M:4/4
+K:G
+P:A
+A2| dcdA FAdf edcB A2g2 |1 fgaf d2ef edcB A4 :|2 fgaf bgec d4-d2 
+P:B
+fg| afaf d2fa bgbg e2fg afaf bagf edcB A2Bc [P:(A2)]
+
+X:CM CUN
+T:Cuckoo Out O' Nest
+R:Face Up
+S:Chingford Morris
+Z:<djl@colourcountry.net>
+M:4/4
+K:G
+P:A
+BdBA G2g2 dedB c2Bc dcBA GFGA B2G2 G4
+P:B
+d2d2 d2ed c2c2 c4 c2c2 c2dc BcBA G4 [P:(A2)]
+
+X:CM COC
+T:Cock O' The North
+R:First Dance
+S:Chingford Morris
+Z:<djl@colourcountry.net>
+M:6/8
+K:G
+P:A
+d2c| B2B BAG B2d e2d |1 B2B BAG A3 :|2 B2B ABA G3
+P:B
+d| g2d e2d g2d e2d |1 B2B BAG A3-A2 :|3 B2B AGA G3
+
+X:CM FTD
+T:Follow The Drum
+S:Chingford Morris
+Z:<djl@colourcountry.net>
+M:6/8
+K:G
+P:A
+GAG G2A B2G Bcd |1 GAG G2B A2B A3 :|2 g2d edc B2A G3
+P:B
+AAA A2B c2d e2f |1 g2d g2d cBA d3 :|2 g2d edc B2A G3
+
+X:CM DOL
+T:The Doldrum
+R:Gisburn
+S:Chingford Morris
+Z:<djl@colourcountry.net>
+M:6/8
+K:G
+P:A
+D| G2G GFG A2A ABc dBG FEF G3
+P:B
+e| d2d BGB A2A FED |1 d2d BGB A3-A2 :|2 dBG FEF G3
+
+% CM BMD
+
+X:CM GOG
+T:Golden Glory
+S:Chingford Morris
+Z:<djl@colourcountry.net>
+M:6/8
+K:G
+P:A
+G2B BAB c2A ABc |1 ded cBA b2G FED :|2 ded cBA G4
+P:B
+d2d d2G c2B B2A e2d d2G c2B B2A [P:(A2)]
+
+X:CM STP
+T:Speed The Plough
+R:Green Willow
+S:Chingford Morris
+Z:<djl@colourcountry.net>
+K:G
+P:A
+GABc dedB dedB dedB c2ec B2dB |1 c2A2 A4 :|2 c2A2 G4
+P:B
+g2g2 g2ef g2fe d2B2 c2ec B2dB |1 c2A2 A4 :|2 c2A2 G4
+
+X:CM RXC
+T:Roxburgh Castle
+R:Grenoside
+S:Chingford Morris
+Z:<djl@colourcountry.net>
+M:4/4
+K:G
+P:A
+G2GB dBGB c2ce dBGB |1 c2ec B2dB c2A2 A4 :|2 c2ec B2dB c2A2 G2
+P:B
+d2| gdBd edBd gdBd edBd |1 c2ec B2dB c2A2 A2 :|2 c2ec B2dB c2A2 G2
+
+X:CM INH
+T:Innocent Hare
+S:Chingford Morris
+Z:<djl@colourcountry.net>
+M:6/8
+K:G
+P:A
+D|G2G A2A B2B c2c d2d GAB AGF G3
+P:B
+B|cec A2G F2E D2B cec A2G F2G A2 [P:(A2)]
+
+X:CM IRD
+T:Iron Duke
+S:Chingford Morris
+Z:<djl@colourcountry.net>
+M:6/8
+K:G
+P:A
+G2d dBd |1 efg dBA |2 e2f g3
+P:B
+gbg afd |1 efg dBG |2 e2f g3 |3 efg gBA [P:(A2)]
+
+X:CM BRA
+T:Barren Rocks Of Aden
+R:Jack's Nuts #1
+S:Chingford Morris
+Z:<djl@colourcountry.net>
+M:4/4
+K:G
+P:A
+B3c B3A G2B2 D2G2 F2A2 D2BA |1 G2D2 G2A2 :|2 G6
+P:B
+Bc| d3B G2B2 A2c2 D2AB c3A F2A2 |1 GABc d2 :|2 G6
+
+X:CM MIW
+T:Maggie In The Wood
+R:Jack's Nuts #2
+S:Chingford Morris
+Z:<djl@colourcountry.net>
+M:4/4
+K:G
+P:A
+G2D2 G3A B2d2 e4 |1 d2B2 BAGA B2A2 A4 :|2 d2B2 A2BA G6
+P:B
+d2| g2f2 e2d2 e2f2 g3e |1 d2B2 BAGA B2A2 A4 :|2 d2B2 A2BA G6
+
+X:CM PWD
+T:Polly Wolly Doodle
+R:Mischief Night
+M:4/4
+K:G
+P:A 
+GA| B2B2 G2GA B2B2 G2GA B2B2 c2B2 A6 FG A2A2 F2FG A2A2 F2A2 d2d2 c2A2 |1 B6 :|2 G6
+
+X:CM MOS
+T:Morning Star
+S:Chingford Morris
+Z:<djl@colourcountry.net>
+M:4/4
+K:G
+P:A
+BcBD E2FG ABAF D2GA BcBD E2AG D2F2 G4 :|
+P:B
+GABc d2d2 |1,3 egfe dcBA :|2,4 egfe d4 :|5 egfe dBG2 ABcA FGAF G6A2
+
+X:CM NRC
+T:No Room For The Cuckoo
+N:(incomplete)
+S:Chingford Morris
+Z:<djl@colourcountry.net>
+M:6/8
+K:G
+P:A
+GAB FED EGe dBA GAB FED E2F G3
+
+X:CM LIP
+T:Lincolnshire Poacher
+R:Old Mabel
+S:Chingford Morris
+Z:<djl@colourcountry.net>
+M:6/8
+K:D
+P:A
+A| d2d dcB A2G F2A d2d e2c d3-d2
+P:B
+A| d2e f2g a2f d2e f2f fed e3-e2
+A| d2e f2g a2f d2e f2f fed e3
+f2e| d2d dcB A2G F2A d2d e2c d3
+
+X:CM OWT
+T:Old Woman Tossed Up In A Blanket
+S:Chingford Morris
+Z:<djl@colourcountry.net>
+M:6/8
+K:G
+P:A
+d|BAG Bcd edc BAG cBc A2B cBA G3
+P:B
+d|gfg gfg gfg afd dcB cde efg d2c [P:(A2)]
+
+X:CM POH
+T:Pole Hill
+N:(incomplete)
+S:Chingford Morris
+Z:<djl@colourcountry.net>
+M:6/8
+K:G
+P:A
+D2B BAG A2B cBA dBG Ddc BcA G3
+
+X:CM PAF
+T:Prince Albert's Farewell
+S:Chingford Morris
+Z:<djl@colourcountry.net>
+M:6/8
+K:G
+P:A
+d| gag fgf efe d2B cBc def g3-g2
+P:B
+d| Bcd Bcd BAG g2d cBc def g2d B2d cBc def g3-g2
+
+X:CM PRR
+T:Princess Royal
+S:Chingford Morris
+Z:<djl@colourcountry.net>
+K:Em
+M:4/4
+P:A
+BA| G2F2 E2BA G2F2 E2B2 c3B A2d2 BcBA G2BG A2G2 F2E2 DEFD B,2BA GFEG F2D2 E4 E2 :|
+P:B
+e2e2 e2de f2B2 B4 e2B2 B2A2 GFGB d4 E3F G3A B2B2 e4 d2G2 c4 B2E2 A4 G2F2 E2D2 EFGF E2BA GFEG F2D2 E4 E2 :|
+
+X:CM SPD
+T:St. Patrick's Day
+R:Shooting
+S:Chingford Morris
+Z:<djl@colourcountry.net>
+K:G
+M:6/8
+P:A
+D| GAG GAB ded dBG ABc BAG |1 EFE E2 :|2 E2F G2
+P:B
+d| def gag fed e2 :| d| def gag fed efg [P:(A)]
+
+X:CM SHH
+T:Sheffield Hornpipe
+R:Take Five
+S:Chingford Morris
+Z:<djl@colourcountry.net>
+K:D
+M:4/4
+P:A
+FE| D2FA d2d2 BGBd A4 |1 cABc dcdf ecdB AGFE :|2 BGBd cAce D4 D2
+P:B
+cd| ecA2 A2e2 fdA2 A2f2 gefd edcd edcB AGFE [P:(A2)]
+
+X:CM BSH
+T:Bobby Shaftoe
+R:Three Hand Reel
+S:Chingford Morris
+Z:<djl@colourcountry.net>
+K:G
+M:2/4
+P:A
+GGGc BdBG |1 DDDG FAFD :|2 AcAF G2G2
+P:B
+BdBG BdB2 |1 AcAF AcA2 :|2 AcAF G2G2
+
+X:CM UPS
+T:Twin Sisters / Rattlebones
+R:Upton Stick Dance
+S:Chingford Morris
+Z:<djl@colourcountry.net>
+M:6/8
+K:G
+P:A
+B/c/| dBB BAG AGA BAE |1 DGG GBd edB A2 :|2 DGG GAB AGA G2
+P:B
+D| GBd g2d edB ABA GBd g2d edB A3 GBd g2d edB ABd ege dBG AGF G2

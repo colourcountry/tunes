@@ -1,35 +1,36 @@
-EATMD 13-02 12 # Ashford: Brighton Camp
-WFS 14-01 08 # Ashford: British Grenadiers
-# Black Rod: 100 Pipers
-# Chingford Processional: 
-# Chingford Stick Dance: Tobin's Favourite
-# Colne: Sherwood Foresters
-WFS 13-11 12 # Colne #1: Oyster Girl
-WFS 13-12 15 # Colne #2: Rosin The Bow
-# Constant Billy
-# Down (with) The Jubilee
-BFS 14-04 39 # Eighteenth Of March: Lilliburlero
-# Essex Border: Manchester Hornpipe
-# Face Up: Cuckold Out O' Nest
-WFS 14-01 03 # First Dance: Cock O' The North
-WFS 14-06 13 # Follow The Drum
-# Gisburn: The Doldrum
+CM BRC # Ashford: Brighton Camp
+CM BRG # Ashford: British Grenadiers
+CM 100 # Black Rod: 100 Pipers
+CM HTH # Chingford Processional: Hunting The Hare
+CM TOF # Chingford Stick Dance: Tobin's Favourite
+# Colne #1: Sherwood Foresters
+CM OYG # Colne #2: Oyster Girl
+CM RTB # Colne #3: Rosin The Bow
+CM COB # Constant Billy
+CM DTJ # Down (with) The Jubilee
+CM 18M # BFS 14-04 39 # Eighteenth Of March: Lilliburlero
+CM MCR # Essex Border: Manchester Hornpipe
+CM CUN # Face Up: Cuckold Out O' Nest
+CM COC # First Dance: Cock O' The North
+CM FTD # # Follow The Drum
+CM DOL # Gisburn: The Doldrum
 # Godley Hill #1: Boatman's Dance
-# Godley Hill #2: Golden Glory
-WFS 13-10 43 # Green Willow: Speed The Plough
-WFS 13-06 06 # Grenoside: Roxburgh Castle
-# Innocent Hare
-BFS 14-04 11 # Jack's Knuts #1,#3: Barren Rocks Of Aden
-WFS 14-03 24 # Jack's Knuts #2: Maggie In The Wood
-WFS 14-01 09 # Mischief Night: Polly-wolly-doodle
-SSFx 14-19b 49 # Morning Star
-# No Room For The Cuckoo
-WFS 13-10 06 # Old Mabel: Lincolnshire Poacher
-# Old Woman Tossed Up In A Blanket
-# Pole Hill: ?
-# Prince Albert's Farewell
-# Princess Royal
-# Shooting: St. Patrick's Day
-WFS 13-07 07 # Take Five: Sheffield Hornpipe
-WFS 13-10 19 # Three Hand Reel: Bobby Shaftoe
-# Upton Stick Dance: Twin Sisters / Rattlebones
+CM GOG # Godley Hill #2: Golden Glory
+CM STP # Green Willow: Speed The Plough
+CM RXC # Grenoside: Roxburgh Castle
+CM INH # Innocent Hare
+CM IRD # Iron Duke
+CM BRA # Jack's Knuts #1,#3: Barren Rocks Of Aden
+CM MIW # Jack's Knuts #2: Maggie In The Wood
+CM PWD # Mischief Night: Polly-wolly-doodle
+CM MOS # Morning Star
+CM NRC # No Room For The Cuckoo
+CM LIP # Old Mabel: Lincolnshire Poacher
+CM OWT # Old Woman Tossed Up In A Blanket
+CM POH # Pole Hill: ?
+CM PAF # Prince Albert's Farewell
+CM PRY # Princess Royal
+CM SPD # Shooting: St. Patrick's Day
+CM SHH # Take Five: Sheffield Hornpipe
+CM BSH # Three Hand Reel: Bobby Shaftoe
+CM UPS # Upton Stick Dance: Twin Sisters / Rattlebones

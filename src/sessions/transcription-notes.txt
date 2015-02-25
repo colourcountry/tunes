@@ -1,0 +1,102 @@
+IDs
+---
+Sessions: [where] [when]
+
+The 'when' is chosen so that performances come out in order when sorted alphabetically.
+
+e.g. WFS 13-07 = walthamstow folk session, 2013-07 (July)
+or   SSF 14-19a = sheffield sessions festival, 2014, 19th (April in this case), first session of the day
+
+Sometimes an 'x' is added to 'where': SSFx 14-18 168. 
+This makes the indexer ignore that performance, because
+- I started the tune, but few people joined in (so it's not representative of the session) or
+- the session plays a particular tune by tradition (e.g. Borough's ending set)
+
+Performances: [session] [index]
+e.g. SSF 14-19a 04
+
+Again '0's are used to make them sort properly.
+
+Tunes: the performance index of the first time the tune was encountered.
+
+
+Repeats
+-------
+Tunes repeat a lot, and even contain nested repeats, which doesn't come across well in traditional notation.
+Most tunes are played 'AABB', that is, play the A line twice then the B line twice. This is shown with a single repeat.
+
+A = Bc| ded B2G A2F D3 G2G BGB d2c A3 ded B2g f2e c2A d2d cBA G3
+AA = Bc| ded B2G A2F D3 G2G BGB d2c A3 ded B2g f2e c2A d2d cBA G3 :|
+
+But the A and B parts often also repeat the initial few bars, to give a line with 2 alternates
+
+A1 = GA| B2D DED E2G e3 d2B BAG B2A A
+A2 = GA| B2D DED E2G e3 d2B ABA G3
+A  = GA| B2D DED E2G e3 |1 d2B BAG B2A A :|2 d2B ABA G3
+AA = GA| B2D DED E2G e3 |1,3 d2B BAG B2A A :|2,4 d2B ABA G3 :|
+
+Occasionally A1 is identical to A2, so 'A' gets played 4 times.
+When this happens, the last bar is marked |1,2,3,4 to distinguish it from the single repeat above.
+
+AA = F2F E2F GFE F2D FGF E2F |1,2,3,4 GFE D3 :|
+
+Note the difference between
+a) W |1,3 X :|2 Y :|4 Z  =  WX WY WX WZ    
+b) W |1,3 X :|2 Y :|  Z  =  WX WY WX Z
+Both are common. (Normally Z is twice as long in case b, but don't rely on it.)
+
+The double percent sign is used when one line repeats part of a previous line.
+Often A2 (the second repeat of the A part) is used as the second half of the B part.
+There is special support in the formatter to turn the directive [P:(XX)] into an instruction to repeat XX.
+
+P:A
+B2B Bcd e2e e3 |1,3 d2d d2e d2c B2A :|2,4 def gdB A3 G3 :|
+P:B
+g3 f3 e3 def g2g f2f e2e d2c [P:(A2)] :|
+
+The % double percent is also used for AABA tunes.
+
+P:A
+BdB| G3 F2G AGE E3 D3 EGE D3 G2B A3 G3-G3 :|
+P:B
+GFG| A3 D3 AGA B3 G3 GAB c3 d2c BdB A3-A3 [P:(A)]
+
+
+Anacrusis
+---------
+
+With strict traditional notation, often a section needs to be written out with |1 and |2 only because of the anacrusis
+to the next part of the tune.
+
+P:A
+GA| B2dB AGA2 GABc d2ef |1,3 gfge dBGd e2A2 A2GA :|2 gfge dBGA B2A2 G2GA :|4 gfge dBGA B2A2 G2d2
+P:B
+edef gfge dBGB d2d2 edef gfge dBGB A2GA B2dB AGA2 GABc d2ef :|1 gfge dBGA B2A2 G2d2 :|2 gfge dBGA B2A2 G2
+
+By bending the rules slightly, we can identify more repeated sections:
+
+P:A
+GA| B2dB AGA2 GABc d2ef |1,3 gfge dBGd e2A2 A2 :|2,4 gfge dBGA B2A2 G2 :|
+P:B
+d2| edef gfge dBGB d2d2 edef gfge dBGB A2 [P:(A2)] :|
+
+Repeats are written out where the body of the repeated section would only be one bar long.
+For sanity, alternatives are only allowed to start at the beginning of a bar, although this often collides with
+the previous rule :(
+
+In other tunes the parts have anacrusis of different lengths.
+I relax the rule that "the last bar of a repeat/repeat alternative + the anacrusis = a full bar".
+The last note is always shown as the shortest note that would fit before any of the possible following anacruses.
+That is, if the last note is a quaver, there will come a point that you only get to play a quaver. Other times you
+may need to lengthen this note until the anacrusis or barline that starts the line you are going to play next.
+Conversely, sometimes players don't play the anacrusis in a particular place. This is shown by lengthening that last note
+to 'overlap' with the anacrusis.
+(It's less complicated than it sounds.)
+
+Rhythm
+------
+Swung tunes are generally notated in straight quavers.
+The degree of swing can vary between players from almost none (1:1) to fully dotted (3:1)
+so the general direction 'swung' is used for performances with a significant amount.
+
+12/8 is only used when there are a significant number of 'triplets' that are not just decorations (e.g. The Fiery Clock Face)
