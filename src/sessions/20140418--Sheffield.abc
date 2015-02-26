@@ -171,9 +171,9 @@ X:SSF 14-18 021
 M:3/4
 K:D
 P:A
-D2FEFG A2GFED |1,3 E2EDEF E6 :|2,4 E2EFED D6 :|
+D2FEFG A2GFED |1,3 E2EDEF E6 :|2,4 E2EFED D4 :| C2
 P:B
-{C2}| B,3ddc dAGFED A,2d3c A4F2 G3FGA |1 G2GFED CDE2EF EDC3B, :|2 BAGFED E2EDEF G2FEDE 
+B,3ddc dAGFED A,2d3c A4F2 G3FGA |1 G2GFED CDE2EF EDC3B, :|2 BAGFED E2EDEF G2FEDE 
 
 % Into...
 
@@ -234,9 +234,9 @@ X:SSF 14-18 027
 M:6/8
 K:Dm
 P:A
-D2D FED A2A-A2B cBA dcB |1,3 cBA GFE :|2 A2 G2 E2 :|4 A3 d2
+D2D FED A2A-A2B cBA dcB |1,3 cBA GFE :|2 A2 G2 E2 :|4 A3
 P:B
-e|f2f fed _B3 d2e |1,3 feg fed ^cAd AeA :|2,4 feg fe^c d3 d2 :|
+D2e|f2f fed _B3 d2e |1,3 feg fed ^cAd AeA :|2,4 feg fe^c d3 :|
 
 % Into SSF 14-18 028 = EATMD 13-01 49 The Fiery Clock Face
 
@@ -900,7 +900,7 @@ G2d dcB A2B c2c |1,3 BAG GAB A2G FED :|2,4 BAG c2B AGF G3 :|
 P:B
 F2G AFD F2G ABc |1,3 d2B d2B dBG dBG :|2,4 dBG c2B AGF G3 :|
 
-% Into SSF 14-18 137 = WFS 13-12 18 Captain Lanoe's Quick March
+% Into SSF 14-18 137 = WFS 13-07 02 Captain Lanoe's Quick March
 
 %      SSF 14-18 138 = WFS 13-10 22 Harper's Frolic,
 % into SSF 14-18 139 = WFS 13-10 23 Bonny Kate
@@ -1112,7 +1112,7 @@ g2B2 d2g2 f2A2 c2e2 |1,3 d2D2 d2B2 cBAB cdef :|2,4 d2B2 d3c B2A2 G4 :|
 
 %      SSF 14-18 169 = SSF 14-18 050
 
-%      SSF 14-18 170 = WFS 13-07 10 Staten Island Ferry
+%      SSF 14-18 170 = WFS 13-01 04 Staten Island Ferry
 
 X:SSF 14-18 171
 T:

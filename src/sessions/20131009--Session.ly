@@ -598,7 +598,7 @@ piece = "Portsmouth"
 opus = "WFS 13-10 41"
 }}
 
-\markuplist{ "The Staten Island Ferry (WFS 13-10 42 = WFS 13-07 10)"
+\markuplist{ "The Staten Island Ferry (WFS 13-10 42 = WFS 13-01 04)"
 }
 
 \score{{

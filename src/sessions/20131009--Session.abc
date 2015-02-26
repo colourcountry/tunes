@@ -343,7 +343,8 @@ D| G>A B/A/G/A/ E2 e2 |1,3 dB c/B/A/G/ A3 :|2,4 dB c/B/A/B/ G3 :|
 P:B
 d| g>a b/a/g/f/ gd Bd gB c/B/A/G/ A3 || [P:(A2)] :|
 
-X:WFS 13-10 43
+% WFS 13-10 43 =
+X:WFS 13-06 07
 T:Speed The Plough
 S:Walthamstow session 2013-10-09
 Z:<djl@colourcountry.net>

@@ -12,11 +12,11 @@
 
 %      WFS 15-01 08 = WFS 13-10 31 Idbury Hill
 
-%      WFS 15-01 09 = SSFx 13-18 040 Sheriff's Ride
+%      WFS 15-01 09 = SSFx 14-18 040 Sheriff's Ride
 
 %      WFS 15-01 10 = EATMD 13-02 05 The Princess Royal
 
-%      WFS 15-01 11 = WFS 13-07 08 Off To California
+%      WFS 15-01 11 = WFS 13-06 03 Off To California
 
 %      WFS 15-01 12 = SSF 14-21 81 Gypsy Hornpipe
 
@@ -57,7 +57,7 @@ E| A2A BAB cBc Bcd edc BAB A3-A2 :|
 P:B
 BGE B2B BGE Bcd |1,3 ecA e2e ecA ecA :|2,4 edc BcB A3-A2
 
-%      WFS 15-01 27 = WFS 14-05 01 Gilderoy
+%      WFS 15-01 27 = BFS 14-04 50 Gilderoy
 
 X:WFS 15-01 28
 T:Bampton Greensleeves
@@ -95,7 +95,7 @@ AB|cBAG FGAF GABG A2D2 F2D2 F2A2 A2AB cBAG FGAF GABG ABcd B2G2 G2
 P:B
 AB|cBcd e4 g4 agfe defd |1 efge a2A2 A2B2 :|2 ABcd B2G2 G2
 
-%      WFS 15-01 40 = WFS 13-07 10 Staten Island Ferry
+%      WFS 15-01 40 = WFS 13-01 04 Staten Island Ferry
 
 %      WFS 15-01 41 = BFS 14-04 65 Stringers Hornpipe
 

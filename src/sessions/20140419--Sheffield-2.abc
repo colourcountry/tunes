@@ -35,17 +35,7 @@ B2G2 D3D E2c2 c4 |1,3 cBAG F2E2 D2d2 d3c :|2,4 cBAG FEFA G4 G2 :|
 P:B
 g4 f4 c4-c2d2 e2fe d2c2 B4-B2c2 d3e d2B2 A4-A2BA |1 G2B2 c2^c2 d4 e2f2 :|2 G2g2 f2ef g4 g4 |]
 
-% Into...
-
-X:SSF 14-19b 04
-T:Red Wing
-M:4/4
-K:G
-P:A
-D2| G2G2 GABc d4-d2B2 c2e2 f2e2 d4-d2B2 c2cB A2c2 B2BA G2B2 |1,3 A2E2 F2G2 A2F2 E2 :|2 A2E2 F2D2 G4 G2 :|4 A2E2 F2D2 G2
-P:B
-g2 g2f2| e8-e2g2 f2e2 d4 B4-B2d2 e2d2 |1 d4 A4-A2d2 e2d2 d4 B4-B2 :|2 d4 A4-A2c2 B2A2 G3A B2A2 G4 |]
-
+% Into SSF 14-19b 04 = EATMD 13-01 45 Red Wing (in G)
 
 X:SSF 14-19b 05
 T:Soldiers' Joy (?)

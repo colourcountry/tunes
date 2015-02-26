@@ -1,4 +1,5 @@
 #!/usr/bin/python
+#coding: utf-8
 
 import sys, csv, re, argparse
 
@@ -228,7 +229,18 @@ These are the most popular tunes played at Walthamstow folk session
             once.append(tune)
     print '''</table>'''
 
-    print '''\n%s tunes have been played twice: %s.''' % (len(twice), ', '.join(sorted([tune.last_name for tune in twice])))
+    twice_list = []
+    twice_unknown_count = 0
+    for tune in twice:
+        if tune.last_name:
+            twice_list.append(tune.last_name)
+        else:
+            twice_unknown_count += 1
+
+    print '''\n%s tunes have been played twice: %s''' % (len(twice), ', '.join(sorted(twice_list)))
+
+    if twice_unknown_count:
+        print '''and %s whose name I haven't found out.''' % twice_unknown_count
 
     print '''\n%s more tunes have been played only once.''' % len(once)
 

@@ -8,12 +8,12 @@
 
 %      WFS 14-04 05 = WFS 13-10 09 Bear Dance
 
-%      WFS 14-04 06 The Curly Headed Ploughboy
+%      WFS 14-04 06 = WFS 13-11 01 The Curly Headed Ploughboy
 
 %      WFS 14-04 07 = WFS 13-10 13 Rogue's March,
 % into WFS 14-04 08 = WFS 13-07 02 Captain Lanoe's Quick March
 
-%      WFS 14-04 09 = WFS 13-10 43 Speed The Plough,
+%      WFS 14-04 09 = WFS 13-06 07 Speed The Plough,
 % into WFS 14-04 10 = WFS 13-10 19 Bobby Shaftoe
 
 %      WFS 14-04 11 = WFS 13-11 07 Rattling Bog
@@ -22,20 +22,20 @@
 
 %      WFS 14-04 13 = WFS 13-10 16 Rakes of Mallow
 
-%      WFS 14-04 14 Soldier's Joy
+%      WFS 14-04 14 = WFS 13-12 30 Soldier's Joy
 
-%      WFS 14-04 15 Lemmie Brazil's No.2
+%      WFS 14-04 15 = WFS 13-06 02 Lemmie Brazil's No.2
 
 %      WFS 14-04 16 = WFS 14-03 13 Slangpolska efter Byss-Kalle
 
 %      WFS 14-04 17 = WFS 13-10 22 Harper's Frolic,
 % into WFS 14-04 18 = WFS 13-10 23 Bonnie Kate
 
-%      WFS 14-04 19 Davey Davey Nick Nack
+%      WFS 14-04 19 = WFS 13-11 10 Davey Davey Nick Nack
 
-%      WFS 14-04 20 Flower of Edinburgh
+%      WFS 14-04 20 = WFS 14-01 41 Flower of Edinburgh
 
-%      WFS 14-04 21 The New Rigged Ship
+%      WFS 14-04 21 = WFS 13-11 13 The New Rigged Ship
 
 X:WFS 14-04 22
 T:Smash The Windows / Roaring Jelly
@@ -56,7 +56,7 @@ B2 B>c dB AG |1,3 B2 B2 A/B/A/G/ ED :|2,4 A/B/A/G/ EF G2 G2{A} :| x{def} ||
 P:B
 g>f g>e dB AG |1,3 g>f g>a be ef :|2,4 A/B/A/G/ EF G2 G2{def} :| x{A} |]
 
-%      WFS 14-04 24 = WFS 13-07 10 Staten Island Ferry
+%      WFS 14-04 24 = WFS 13-01 04 Staten Island Ferry
 
 %      WFS 14-04 25 = EATMD 13-01 32 South Downs
 
@@ -90,7 +90,7 @@ gfed e2a2 gfed dcBA |1,3 d2A2 BcdB g2f2 e4 :|2,4 d2A2 BcdA G2F2 D4 :|
 P:B
 GFED A2A2 Bcde dcBA |1,3 d2A2 BcdB g2f2 e4 :|2,4 d2A2 BcdA G2F2 D4 :|
 
-%      WFS 14-04 34 = WFS 13-07 08 Off To California
+%      WFS 14-04 34 = WFS 13-06 03 Off To California
 
 X:WFS 14-04 35
 T:Hunting The Hare
