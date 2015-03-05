@@ -12,14 +12,15 @@ B2d d2B |1,4 c2e e2c :|2,5 c2A A3 :|3,6 c2e e3 d2g dBG A3 G3 :|
 
 X:WFS 13-07 02
 T:Captain Lanoe's Quick March
+N:Often in a set with 'The Moon and Seven Stars', 'Rogue's March' and/or 'Oscar Woods' Jig'
 S:Walthamstow session 2013-07-09
 Z:<djl@colourcountry.net>
 M:6/8
 K:G
 P:A
-G2B d2d gfe d3 cec BdB |1,3 AGA B2A :|2,4 AGA G3 :|
+"G"G2B d2d "C"gfe "G"d3 "D"cec "G"BdB |1,3 "D"AGA B2A :|2,4 "D"AGA "G"G3 :|
 P:B
-B3 B3 BAB c3 |1,3 B2c d2c B2A B2G :|2,4 d2g dBG A3 G3 :|
+"Em"B3 B3 BAB "C"c3 |1,3 "D"B2c d2c B2A "G"B2G :|2,4 "G"d2g dBG "D"A3 "G"G3 :|
 
 X:WFS 13-07 03
 T:The Moon And Seven Stars
@@ -36,7 +37,8 @@ X:WFS 13-07 04
 T:Jenny Lind Polka
 S:Walthamstow session 2013-07-09
 Z:<djl@colourcountry.net>
-M:2/4
+M:4/4
+L:1/4
 K:D
 P:A
 FA GB Af f/e/f |1,3 Ge e/d/e Fd d/c/d :|2,4 ge e/g/f/e/ df d2 :|
@@ -80,14 +82,15 @@ ecA2 A2e2 fdA2 A4 g2f2 e2d2 cdcB AGFE [P:(A2)] :|
 % WFS 13-07 08 =
 X:WFS 13-06 03
 T:Off To California
+R:swung
 S:Walthamstow session 2013-07-09
 Z:<djl@colourcountry.net>
 M:4/4
 K:G
 P:A
-(3DEF| G>F G>B A>G E>D G>B d>g e2 (3def g>f g>d e>d B>G |1 A>B A>G E2 :|2 (3ABA G>F G2
+(3DEF| GFGB AGED GBdg e2(3def gfgd edBG |1 ABAG E2 :|2 (3ABAGF G2
 P:B
-B>d| g>f e>g f>e d>f e>d e>f e>d B>G g>f g>d e>d B>G A>B A>G E2 [P:(A2)] :|
+Bd| gfeg fedf edef edBG gfgd edBG ABAG E2 [P:(A2)] :|
 
 X:WFS 13-07 09
 T:Horses Brawl
@@ -188,7 +191,8 @@ X:WFS 13-07 17
 T:Amoco Stomp
 S:Walthamstow session 2013-07-09
 Z:<djl@colourcountry.net>
-M:2/4
+M:4/4
+L:1/4
 K:Em
 P:A
 EE/F/ GA B/c/B/A/ B2 AF F/G/A/F/ |1,3 GE ED :|2,4 GE E2 :|
@@ -232,14 +236,15 @@ f2| g2eg f2d2 e2ce d2B2 e2ce d2B2 ABAG E2D2 [P:(A2)] :|
 
 X:WFS 13-07 21
 T:Hesleyside Reel
+N:Often in a set with 'Great North Run '86'
 S:Walthamstow session 2013-07-09
 Z:<djl@colourcountry.net>
 M:4/4
 K:G
 P:A
-GA| B2dB AGA2 GABc d2ef |1,3 gfge dBGd e2A2 A2 :|2,4 gfge dBGA B2A2 G2 :|
+GA| "G"B2dB "D"AGA2 "G"GABc d2ef |1,3 "C"gfge "G"dBGd "D"e2A2 A2 :|2,4 "C"gfge "G"dBGA "D"B2A2 "G"G2 :|
 P:B
-d2| edef gfge dBGB d2d2 edef gfge dBGB A2 [P:(A2)] :|
+d2| "C"edef gfge "G"dBGB d2d2 "C"edef gfge "G"dBGB "D"A2 [P:(A2)] :|
 
 X:WFS 13-07 22
 T:Galopede

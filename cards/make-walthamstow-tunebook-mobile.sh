@@ -4,20 +4,20 @@ rm out/*
 
 # Start with the specially chosen easy tunes
 
-python ./formatter.py -p preamble.mobile.ly.fragment -S - < ids/easy.ids
+python ./formatter.py -p preamble.mobile.ly.fragment -S -X - < ids/easy.ids
 lilypond -o out/out out/tunes0.ly
 pdfnup --nup 1x2 --papersize '{3.6in,6.4in}' -o out/out-easy.pdf out/out.pdf
 
 # Get all WFS tunes with high popularity and format them in full (without chords)
 
-#python ../src/indexer.py ids -s ../src/index.csv -p 6 -f WFS -k name 
-python ./formatter.py -p preamble.mobile.ly.fragment -S -C - < ids/main.ids
+#python ../src/indexer.py ids -s ../src/index.csv -p 6 -f WFS -k name > ids/main.ids
+python ./formatter.py -p preamble.mobile.ly.fragment -S -X - < ids/main.ids
 lilypond -o out/out out/tunes0.ly
 pdfnup --nup 1x2 --papersize '{3.6in,6.4in}' -o out/out-main.pdf out/out.pdf
 
 # Make crib sheets for tunes with medium popularity
 
-#python ../src/indexer.py ids -s ../src/index.csv -p 4 -P 6 -f WFS -k name
+#python ../src/indexer.py ids -s ../src/index.csv -p 2 -f WFS -k name > ids/crib.ids
 python ./formatter.py -p preamble.crib.mobile.ly.fragment -c - < ids/crib.ids
 lilypond -o out/out-crib out/tunes0.ly
 

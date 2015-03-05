@@ -4,21 +4,21 @@ rm out/*
 
 # Start with the specially chosen easy tunes
 
-python ./formatter.py -p preamble.a4-by-4.ly.fragment -S - < ids/easy.ids
+python ./formatter.py -p preamble.a4-by-4.ly.fragment -S -X - < ids/easy.ids
 lilypond -o out/out out/tunes0.ly
 pdfnup --nup 1x4 --no-landscape --suffix easy out/out.pdf
 
-# Get all WFS tunes with high popularity and format them in full (without chords)
+# Get all WFS tunes with high popularity and format them in full
 
-#python ../src/indexer.py ids -s ../src/index.csv -p 6 -f WFS -k name 
-python ./formatter.py -p preamble.a4-by-4.ly.fragment -S -C - < ids/main.ids
+#python ../src/indexer.py ids -s ../src/index.csv -p 6 -f WFS -k name > ids/main.ids
+python ./formatter.py -p preamble.a4-by-4.ly.fragment -S -X - < ids/main.ids
 lilypond -o out/out out/tunes0.ly
 pdfnup --nup 1x4 --no-landscape --suffix main out/out.pdf
 
-# Make crib sheets for tunes with medium popularity
+# Make crib sheets for tunes with medium popularity (include above for ease of use)
 
-#python ../src/indexer.py ids -s ../src/index.csv -p 4 -P 6 -f WFS -k name
-python ./formatter.py -p preamble.crib.a4-by-4.ly.fragment -c - < ids/crib.ids
+#python ../src/indexer.py ids -s ../src/index.csv -p 2 -f WFS -k name > ids/crib.ids
+python ./formatter.py -p preamble.crib.a4-by-4.ly.fragment -c -X - < ids/crib.ids
 lilypond -o out/out out/tunes0.ly
 pdfnup --nup 1x4 --no-landscape --suffix crib out/out.pdf
 

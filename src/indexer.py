@@ -319,7 +319,10 @@ if __name__=="__main__":
 
     elif ARGS.format=='ids':
         for tune in out_tunes:
-            print tune.id
+            if tune.last_name:
+                print "%s # %s" % (tune.id, tune.last_name)
+            else:
+                print tune.id
 
     elif ARGS.format=='popularity':
         for tune in out_tunes:

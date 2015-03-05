@@ -346,8 +346,17 @@ class AbcConnector:
         return result
 
 class Duration:
+    '''Represents a length of time expressed as n beats of length d.
+Optionally n can be a list, showing that the duration is subdivided.
+Arithmetic operations on durations always yield undivided durations.'''
+
     def __init__(self, n=0, d=1):
-        self.n = n
+        if isinstance(n, list):
+            self.n = sum(n)
+            self.divisions = n
+        else:
+            self.n = n
+            self.divisions = [n]
         self.d = d
 
     def lower(self):
@@ -411,15 +420,16 @@ class Duration:
         if self.d == 1:
             return "%s" % self.n
         else:
-            return "%s/%s" % (self.n, self.d)
+            return "%s/%s" % ("+".join([str(i) for i in self.divisions]), self.d)
 
     def __repr__(self):
         if self.d == 1:
             return "<dur %s>" % self.n
         else:
-            return "<dur %s/%s>" % (self.n, self.d)
+            return "<dur %s/%s>" % ("+".join([str(i) for i in self.divisions]), self.d)
 
     def as_ly(self, unit=None):
+        '''Return a lilypond note length with the same duration as self.'''
         if unit is None:
             unit = Duration(1,1)
         dur = self * unit
@@ -446,6 +456,19 @@ class Duration:
     def as_moment(self):
         return '%s/%s' % (self.n, self.d)
 
+    def as_meter(self):
+        if len(self.divisions) > 1:
+            divisions = ' '.join([str(i) for i in self.divisions])
+            if self.n % 3 == 0:
+                # make sure anything 3-like is beamed in threes
+                structure = ' '.join(['3' for i in range(self.n/3)])
+                return r"\compoundMeter #' (%s %s) \set Timing.beatStructure = #' (%s)" % (divisions, self.d, structure)
+            else:
+                return r"\compoundMeter #' (%s %s)" % (divisions, self.d)
+        else:
+            return r'\time %s/%s' % (self.n, self.d)
+            
+
     def as_ab(self):
         if self.d == 1:
             if self.n == 1:
@@ -455,7 +478,7 @@ class Duration:
         elif self.n == 1 and self.d == 2:
             return '/'
         else:
-            return '%s/%s' % (self.n, self.d)
+            return "%s/%s" % ("+".join([str(i) for i in self.divisions]), self.d)
 
     @classmethod
     def from_string(c_lass,strg):
@@ -476,7 +499,14 @@ class Duration:
             except ValueError:
                 raise NotImplementedError("multiple slashes in duration %s" % strg)
             try:
-                return c_lass(int(n),int(d))
+                n = int(n)
+                return c_lass(n,int(d))
+            except ValueError:
+                pass
+
+            try:
+                n = [int(i) for i in n.split('+')]
+                return c_lass(n,int(d))
             except ValueError:
                 raise NotImplementedError("non-integer duration %s" % strg)
         else:
@@ -1137,7 +1167,7 @@ class Tune:
                 # phrase without id, doesn't need identifying
 
             if not continuation:
-                s += "\\time %s\n" % phrase.time.as_moment()
+                s += phrase.time.as_meter()
                 if not ARGS.no_key_signatures:
                     s += "\\key %s\n" % phrase.key.as_ly()
 

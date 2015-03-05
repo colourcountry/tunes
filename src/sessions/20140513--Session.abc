@@ -10,6 +10,7 @@
 
 X:WFS 14-05 06
 T:Aiken Drum
+O:Scotland, <1820 according to pghardy
 S:Walthamstow session 2014-05-13
 Z:<djl@colourcountry.net>
 M:2/4
@@ -67,7 +68,7 @@ Z:<djl@colourcountry.net>
 M:4/4
 K:Ador
 P:A
-{B}| c2cA B2BA |1,3 GABc dBGB c2cA B2BA D2A2 A4 :|2,4 GABc dBG2 gfge dcBA E2A2 A3 :|
+c2cA B2BA |1,3 GABc dBGB c2cA B2BA D2A2 A4 :|2,4 GABc dBG2 gfge dcBA E2A2 A4 :|
 P:B
 ABcd efge afdf edcB ABcd efge afdf e2e2 a2af g2ge c2ce dBGB cBcA BABG E2A2 A4 :|
 
@@ -131,7 +132,7 @@ K:D
 P:A
 FG| A2fe d2EF G2ed c2EF |1 G2ed c>dcB A>BAG F2 :|2 G2ed cABc d>efe d :|
 P:B
-dc=c| BB-Bd e>dcB A2Ad f2A2 BB-Bd e>dcB AdAF E2 [P:(A2)] |]
+dc=c| BB2d e>dcB A2Ad f2A2 BB2d e>dcB AdAF E2 [P:(A2)] |]
 
 %      WFS 14-05 38 = WFS 13-01 01 Winster Gallop
 
