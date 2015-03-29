@@ -90,6 +90,15 @@ Key.REGISTER.update( {
     'emaj': Key.REGISTER['e'],
     'fmaj': Key.REGISTER['f'],
     'gmaj': Key.REGISTER['g'],
+    'bbma': Key.REGISTER['bb'],
+    'ebma': Key.REGISTER['eb'],
+
+    'amin': Key.REGISTER['am'],
+    'bmin': Key.REGISTER['bm'],
+    'cmin': Key.REGISTER['cm'],
+    'dmin': Key.REGISTER['dm'],
+    'emin': Key.REGISTER['em'],
+    'gmin': Key.REGISTER['gm'],
 
     'cdor': Key.REGISTER['bb'],
     'ddor': Key.REGISTER['c'],
@@ -351,12 +360,7 @@ Optionally n can be a list, showing that the duration is subdivided.
 Arithmetic operations on durations always yield undivided durations.'''
 
     def __init__(self, n=0, d=1):
-        if isinstance(n, list):
-            self.n = sum(n)
-            self.divisions = n
-        else:
-            self.n = n
-            self.divisions = [n]
+        self.n = n
         self.d = d
 
     def lower(self):
@@ -417,16 +421,10 @@ Arithmetic operations on durations always yield undivided durations.'''
         return (self < other or self == other)
 
     def __str__(self):
-        if self.d == 1:
-            return "%s" % self.n
-        else:
-            return "%s/%s" % ("+".join([str(i) for i in self.divisions]), self.d)
+        return self.as_ab()
 
     def __repr__(self):
-        if self.d == 1:
-            return "<dur %s>" % self.n
-        else:
-            return "<dur %s/%s>" % ("+".join([str(i) for i in self.divisions]), self.d)
+        return "<dur %s>" % self.as_ab()
 
     def as_ly(self, unit=None):
         '''Return a lilypond note length with the same duration as self.'''
@@ -449,25 +447,12 @@ Arithmetic operations on durations always yield undivided durations.'''
             elif dur.n == 4:
                 return r'\longa'
             else:
-                raise NotImplementedError("note of length %s" % (dur.n, dur.d))
+                raise NotImplementedError("note of length %s (%s)" % (dur.n, str(dur)))
         else:
-            raise NotImplementedError("note of length %s/%s" % (dur.n, dur.d))
+            raise NotImplementedError("note of length %s/%s (%s)" % (dur.n, dur.d, str(dur)))
 
     def as_moment(self):
         return '%s/%s' % (self.n, self.d)
-
-    def as_meter(self):
-        if len(self.divisions) > 1:
-            divisions = ' '.join([str(i) for i in self.divisions])
-            if self.n % 3 == 0:
-                # make sure anything 3-like is beamed in threes
-                structure = ' '.join(['3' for i in range(self.n/3)])
-                return r"\compoundMeter #' (%s %s) \set Timing.beatStructure = #' (%s)" % (divisions, self.d, structure)
-            else:
-                return r"\compoundMeter #' (%s %s)" % (divisions, self.d)
-        else:
-            return r'\time %s/%s' % (self.n, self.d)
-            
 
     def as_ab(self):
         if self.d == 1:
@@ -478,7 +463,7 @@ Arithmetic operations on durations always yield undivided durations.'''
         elif self.n == 1 and self.d == 2:
             return '/'
         else:
-            return "%s/%s" % ("+".join([str(i) for i in self.divisions]), self.d)
+            return "%s/%s" % (self.n, self.d)
 
     @classmethod
     def from_string(c_lass,strg):
@@ -494,26 +479,119 @@ Arithmetic operations on durations always yield undivided durations.'''
             if strg.endswith("/"):
                 strg = strg+"2"
 
-            try:
-                (n, d) = strg.split("/")
-            except ValueError:
-                raise NotImplementedError("multiple slashes in duration %s" % strg)
+            dur_match = re.match('([0-9+]+)/([0-9]+)', strg)
+            if dur_match:
+                n = dur_match.group(1)
+                d = dur_match.group(2)
+            else:
+                raise NotImplementedError("unparseable duration %s" % strg)
+
             try:
                 n = int(n)
                 return c_lass(n,int(d))
             except ValueError:
-                pass
-
-            try:
-                n = [int(i) for i in n.split('+')]
-                return c_lass(n,int(d))
-            except ValueError:
                 raise NotImplementedError("non-integer duration %s" % strg)
+
         else:
             try:
                 return c_lass(int(strg),1)
             except ValueError:
                 raise NotImplementedError("unparseable duration %s" % list(strg))
+
+class Meter(Duration):
+    '''A meter (time signature)
+
+Supported formats:
+    simple       4/4
+    compound     2+3+2/8
+    multiple     2/2,3/2
+    both         2+3/8,3+2/8
+
+For multiple meters, the longest duration is the 'master';
+bars of shorter duration must be marked up with explicit barlines.
+'''
+
+    def __init__(self, n=0, d=1, multiples=None):
+        if isinstance(n, list):
+            self.n = sum(n)
+            self.divisions = n
+        else:
+            self.n = n
+            self.divisions = [n]
+        self.d = d
+        self.multiples = multiples
+
+    def _compound_meter(self):
+        if self.multiples:
+            return '(%s)' % (' '.join([multiple._compound_meter() for multiple in self.multiples]))
+        else:
+            return '(%s %s)' % (' '.join([str(i) for i in self.divisions]), self.d)
+
+    def as_meter(self):
+        if self.multiples or len(self.divisions) > 1:
+            if self.d < 4:
+                # 3/2 and similar is beamed into minims
+                three = "\set Timing.beatStructure = #' (%s)" % (' '.join(['1' for i in range(self.n)]))
+            elif self.n > 3 and self.n % 3 == 0:
+                # anything 3-like is beamed in threes
+                three = "\set Timing.beatStructure = #' (%s)" % (' '.join(['3' for i in range(self.n/3)]))
+            else:
+                # always beam
+                three = ''
+
+            return r"\compoundMeter #' %s" % self._compound_meter() + three
+
+        else:
+            return r'\time %s/%s' % (self.n, self.d)
+            
+    def as_ab(self):
+        if self.multiples:
+            return ','.join(multiple.as_ab() for multiple in self.multiples)
+
+        elif self.d == 1:
+            if self.n == 1:
+                return ''
+            else:
+                return str(self.n)
+
+        elif self.n == 1 and self.d == 2:
+            return '/'
+
+        else:
+            return "%s/%s" % ("+".join([str(i) for i in self.divisions]), self.d)
+
+    def __repr__(self):
+        return "<meter %s>" % self.as_ab()
+
+    @classmethod
+    def from_string(c_lass,strg):
+        strg = strg.strip().lower()
+
+        if strg == 'c':
+           return c_lass(4,4)
+        elif strg == 'c|' or not strg:
+           return c_lass(2,2)
+
+        multiple_parts = strg.split(',')
+
+        if len(multiple_parts) > 1:
+            multiple_meters = [c_lass.from_string(part) for part in multiple_parts]
+            max_meter = max(multiple_meters)
+            return c_lass(max_meter.divisions, max_meter.d, multiple_meters)
+        else:
+
+            dur_match = re.match('([0-9+]+)/([0-9]+)', strg)
+            if dur_match:
+                n = dur_match.group(1)
+                d = dur_match.group(2)
+            else:
+                raise NotImplementedError("unparseable meter %s" % strg)
+
+            try:
+                n = [int(i) for i in n.split('+')]
+                return c_lass(n,int(d))
+            except ValueError:
+                raise NotImplementedError("non-integer in meter %s" % strg)
 
 class AbcNote:
     # Letters H..W,h..w are assumed to be valid trills but ignored (they don't need to be defined)
@@ -659,13 +737,7 @@ class AbcField:
     @classmethod
     def value_from_string(c_lass, what, value):
         if what == AbcField.METER:
-            value = value.strip().lower()
-            if value == 'c':
-               value = Duration(4,4)
-            elif value == 'c|' or not value:
-               value = Duration(2,2)
-            else:
-                value = Duration.from_string(value)
+            value = Meter.from_string(value)
         elif what == AbcField.UNIT_NOTE_LENGTH:
             value = Duration.from_string(value)
         elif what == AbcField.KEY:
@@ -706,7 +778,14 @@ class AbcField:
         elif self.what == AbcField.KEY:
             return r'\key %s' % self.value.as_ly()
         elif self.what == AbcField.CHORD_NAME:
-            return r'<>^\markup { \sans \small "%s" } ' % self.value
+            if self.value.startswith("^"):
+                # vmp sometimes specifies above or below this way
+                return r'<>^\markup { \sans \small "%s" } ' % self.value[1:]
+            elif self.value.startswith("_"):
+                # vmp sometimes specifies above or below this way
+                return r'<>_\markup { \sans \small "%s" } ' % self.value[1:]
+            else:
+                return r'<>^\markup { \sans \small "%s" } ' % self.value
         else:
             raise NotImplementedError("inline field: %s" % self)
 
@@ -851,6 +930,7 @@ class Phrase:
         bar_check = "|"
         pause = 0
         chord_time = None
+        grace_note = None
         last_note_index = None
         prev_item = None
         new_bar = None
@@ -901,7 +981,7 @@ class Phrase:
                         if bar_limit and cur_bar_nr >= bar_limit:
                             break
 
-                if pause:
+                if grace_note:
                     # put passing notes in brackets
                     cur_bar.append( r'\parenthesize' )
 
@@ -926,11 +1006,19 @@ class Phrase:
                     else:
                         new_bar = item.as_ly()
 
-                    if pause:
+                    if grace_note:
                         raise NotImplementedError("bar line whilst paused (%s)" % pause)
                         # grace notes can't span a bar line
                         cur_bar.append('}')
-                        pause = False
+                        pause = 0
+                        grace_note = 0
+
+                    if chord_time:
+                        raise NotImplementedError("bar line during chord (%s)" % pause)
+                        # chords can't span a bar line
+                        cur_bar.append('>')
+                        pause = 0
+                        chord_time = 0
 
                     if ticks.n == 0:
                         # the only situation we want a barline at time 0 is if the phrase is itself empty
@@ -971,6 +1059,7 @@ class Phrase:
 
 
                 elif item.what == AbcConnector.BEGIN_GRACE:
+                    grace_note = True
                     pause = -1 # grace notes take up no time
                     if i==0 or not isinstance(self.notes[i-1], AbcNote):
                         cur_bar.append(r'\afterGrace <> {')
@@ -979,10 +1068,11 @@ class Phrase:
                         cur_bar.insert(last_note_index, r'\afterGrace')
                         cur_bar.append(r'{')
                 elif item.what == AbcConnector.END_GRACE:
-                    if not pause:
+                    if not grace_note:
                         raise NotImplementedError("} character outside gracenote")
                     cur_bar.append('}')
-                    pause = False
+                    grace_note = False
+                    pause = 0
 
                 elif item.what == AbcConnector.BEGIN_SLUR:
                     raise NotImplementedError("slur")
@@ -993,7 +1083,7 @@ class Phrase:
                     cur_bar.append(r'<')
                     chord_time = True
                 elif item.what == AbcConnector.END_CHORD:
-                    pause = False
+                    pause = 0
                     if isinstance(chord_time, Duration):
                         cur_bar.extend([r'>', chord_time.as_ly()])
                         chord_time = None
@@ -1257,9 +1347,9 @@ class Tune:
         except NotImplementedError, e:
             ref = re.match("^[[](X:[^]]*)[]]",ab)
             if ref:
-                log_to_stderr("%% Unknown item in tune %s: %s" ,ref.group(1), str(e))
+                log_to_stderr("%% Unknown item in tune %s: %s" ,ref.group(1), e)
             else:
-                log_to_stderr("%% Unknown item in tune also missing id: ", str(e))
+                log_to_stderr("%% Unknown item in tune also missing id: ", e)
             # this is automatically fatal
             return None
 
@@ -1274,7 +1364,7 @@ class Tune:
             tune.src = ab
 
         cur_key = Key.from_string('C')
-        cur_time = Duration.from_string('2/2')
+        cur_time = Meter.from_string('2/2')
         cur_unit = Duration.from_string('1/8')
         cur_phrase_id = 'A'
         cur_phrase = None
@@ -1390,7 +1480,7 @@ class ABCollection:
         ab = ""
         prev_x_line = ""
         x_line = ""
-        pause = False
+        pause = 0
         for line in fileobj.readlines()+["X::"]:
             try:
                 line = line.decode('utf-8')
@@ -1436,7 +1526,7 @@ class ABCollection:
                 # use entire tune after X: as its own id for duplicate checking purposes
                 check_id = re.sub("^[[]X:[^]]*[]]","",finished_ab)
 
-                if self.ids is not None and tune_id not in self.ids:
+                if self.ids and tune_id not in self.ids:
                     if ARGS.verbose:
                         log_to_stderr("%% Skipped %s as not in supplied tune list", tune_id)
                 elif check_id in self.tune_check:
@@ -1467,15 +1557,15 @@ class ABCollection:
 
     def get_tunes(self):
         tune_list = []
-        if self.ids is None:
-            for id in sorted(self.tunes.keys()):
-                tune_list.extend(self.tunes[id])
-        else:
+        if self.ids:
             for id in self.ids:
                 if id in self.tunes:
                     tune_list.extend(self.tunes[id])
                 else:
                     sys.stderr.write("%% WARNING: Tune with ID %s was not found in the sources\n" % id)
+        else:
+            for id in sorted(self.tunes.keys()):
+                tune_list.extend(self.tunes[id])
         return tune_list
 
     def get_phrases(self):
@@ -1551,18 +1641,26 @@ if __name__=="__main__":
     if ARGS.verbose:
         log_to_stderr("%% Called formatter with arguments %s", vars(ARGS))
 
-    for (path, dirs, files) in os.walk(ARGS.source_dir, followlinks=True):
+    if os.path.isfile(ARGS.source_dir):
+        log_to_stderr("%% Processing single file", ARGS.source_dir)
+        data = open(ARGS.source_dir, 'r')
+        count = TUNES.add_data(data, ARGS.max_tunes)
         if ARGS.verbose:
-            log_to_stderr("%% Looking for .abc files in %s", path)
-        for filename in files:
-            if filename.endswith(".abc"):
-                data = open(os.path.join(path,filename), 'r')
-                count = TUNES.add_data(data, ARGS.max_tunes)
-                if ARGS.verbose:
-                    log_to_stderr("%% Scanned %s , found %s tune%s.\n",filename, count, '' if count==1 else 's')
+            log_to_stderr("%% Scanned %s , found %s tune%s.\n",ARGS.source_dir, count, '' if count==1 else 's')    
+    else:
+        for (path, dirs, files) in os.walk(ARGS.source_dir, followlinks=True):
+            if ARGS.verbose:
+                log_to_stderr("%% Looking for .abc files in %s", path)
+            for filename in files:
+                if filename.lower().endswith(".abc"):
+                    data = open(os.path.join(path,filename), 'r')
+                    count = TUNES.add_data(data, ARGS.max_tunes)
+                    if ARGS.verbose:
+                        log_to_stderr("%% Scanned %s , found %s tune%s.\n",filename, count, '' if count==1 else 's')
     # PHRASES.update(abfile.get_phrases())
 
     all_tunes = TUNES.get_tunes()
+    log_to_stderr("%% %s tunes to be formatted." % len(all_tunes));
 
     if not all_tunes:
         raise SystemExit("% No tunes found, nothing to do.")
@@ -1606,7 +1704,7 @@ if __name__=="__main__":
                 ly_file.write( z.encode('utf-8') )
                 ab_file.write( tune.as_ab().encode('utf-8') )
             except NotImplementedError, e:
-                log_to_stderr("%% Couldn't render the following tune (%s): %s\n",tune.get_name(), str(e))
+                log_to_stderr("%% Couldn't render the following tune (%s): %s\n",tune.get_name(), e)
                 sys.stderr.write(tune.src.encode('utf-8'))
           
 

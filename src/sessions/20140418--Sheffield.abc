@@ -160,6 +160,7 @@ AGFG ABcA BAGd g2d2 |1,3 e2e2 dBGA B2A2 A4 :|2,4 e2e2 dBGA B2A2 G4 :|
 
 X:SSF 14-18 020
 T:Go Mauve
+N:Blowzabella, Vanilla, 1990
 M:4/4
 K:Em
 P:A
@@ -284,8 +285,9 @@ A|B3 d2B c2B A3 B2A GAB A2A D3 |1 GAB ABc B2A GAB A2G FGA G3-F2 :|2 GAB ABc Bcd 
 %       SSF 14-18 038 = WFS 13-10 32 I'll Go And Enlist For A Sailor
 
 X:SSF 14-18 039
-T:
-M:
+T:A Hornpipe By Mr. Moore
+Z:Title from Watts MS, tune in Gdor
+M:4/4
 K:Em
 P:A
 G2e2 E2FE DEFA B2F2 |1,3 G2e2 E2FE DEF2-F4 :|2,4 GABG FGAF D2E2 E4 :|
@@ -578,7 +580,9 @@ e|f2f def fed e2c d2d B2d fed c2A BAB dcB ABc d2e |1 fef agf fed e2 :|2 fef def 
 %      SSF 14-18 091 = BFS 14-04 39 Lilliburlero
 
 X:SSF 14-18 092
-T:
+T:The R.S.B.
+C:Andy Cutting
+N:Blowzabella, Vanilla, 1997
 M:6/8
 K:Em
 P:A
