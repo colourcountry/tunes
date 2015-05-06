@@ -93,11 +93,11 @@ T:Knocknaboul Polka No. 2
 M:2/4
 K:D
 P:A
-F2E2| D2F2 FGFE D2F2 F3D C,2E EFED C,2E A,4 D2F2 FGFE D2F2 A2d2 cBAG F2E2 D4 :|
+F2E2| D2F2 FGFE D2F2 F3D C2E EFED C2E A,4 D2F2 FGFE D2F2 A2d2 cBAG F2E2 D4 :|
 P:B
-{c}| d3c d3c d2 e3d |1,3 cbA2 A3B c2d2 e3 :|2,4 cBAF G2E2 D4 :|
+{c}| d3c d3c d2 e3d |1,3 cBA2 A3B c2d2 e3 :|2,4 cBAF G2E2 D4 :|
 P:C
-E2| F3E F3G A2G2 E3D C,2A,2 A,2C,2 C,2D2 E4 F3E F3G A2G2 E2d2 cBAF G2E2 D4 :|
+E2| F3E F3G A2G2 E3D C2A,2 A,2C2 C2D2 E4 F3E F3G A2G2 E2d2 cBAF G2E2 D4 :|
 
 % Into SSF 14-21 20 = BFS 14-04 28 Centenary March
 
@@ -168,7 +168,7 @@ B:Offord, John Of The Green, 2008, p.2
 M:3/2
 K:Dm
 P:A
-"Dm"D4 DEF2 E2D2 "A5"E2A2-A2c2 "D/F#"B2A2 "G5"B4 Bcd2 "C"c2B2 "F"c2F2-F2c2 B2A2 "Gm"GAB2 "Dm"AGF2 "C"GFE2 "Gm"FED2 "A5"FGA2 "D8"D4 :|
+"Dm"d4 def2 e2d2 "A5"e2A2-A2c2 "D/F#"B2A2 "G5"B4 Bcd2 "C"c2B2 "F"c2F2-F2c2 B2A2 "Gm"GAB2 "Dm"AGF2 "C"GFE2 "Gm"FED2 "A5"FGA2 "D8"D4 :|
 P:B
 "Dm"agfe f2a2 d2a2 "Gm"bagf "C"e2g2 c2g2 "F"agfe "G5"d2f2 B2f2 "E5"gfed "A5"^c2e2 A3G "Dm"F2"C"G2-G2"F"A2-A2"Gm"B2-B2"A5"A2-A2D2 E2^C2 :|
 
@@ -493,7 +493,7 @@ R:slightly swung
 C:Jess Arrowsmith, 199x
 K:A
 P:A
-a2gf e2e2 f2ed cdec |1,3 d2ed cdec dcbd cBA2 :|2,4 d2ed cBA2 BAG2 A4 :|
+a2gf e2e2 f2ed cdec |1,3 d2ed cdec dcBd cBA2 :|2,4 d2ed cBA2 BAG2 A4 :|
 P:B
 B3B B2B2 ABcA B4 |1,2,3 BABc dcde fedc dcBA |4 a2g2 f2e2 d2c2 B2A2
 

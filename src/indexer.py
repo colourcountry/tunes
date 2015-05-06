@@ -325,13 +325,17 @@ if __name__=="__main__":
                 print tune.id
 
     elif ARGS.format=='popularity':
+
+        sessions = ','.join(reversed(Performance.SESSIONS))
+        print "Total,%s,Tune ID,Tune name" % sessions
+
         for tune in out_tunes:
             p = Tune.get_popularity(tune)
 
             ticks = ''
             for column in p[1:]:
-                ticks += 'y ' if column else '. '
+                ticks += 'y,' if column else 'n,'
 
-            print p[0],ticks,tune.id,tune.get_index_name()
+            print "%s,%s%s,%s" % (p[0],ticks,tune.id,tune.get_index_name())
 
 
