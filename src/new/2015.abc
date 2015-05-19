@@ -255,3 +255,22 @@ P:A
 E2G B2F A2c e2d |1,3 c2A B2G E2F E2D :|2,4 c2A B2G E6 :|
 P:B
 d3 Bcd e3 ABc |1,3 d2c B2A E2F E2D :|2 d2e f2d B3 A3 :| G2F G2A B2c d2e f2d BAF E6 ||
+
+
+X:NEW 15-xx
+C:David Linton <djl@colourcountry.net>
+M:6/8
+K:G
+P:A
+D|GAB ced-def gdb cde AcE-EFG ABA GAB ced-def g2d e2c EAc-cBA G2 :|
+P:B
+A2d BdA-ABd fa2 g2e BeG-GAB cde A2d BdA-ABd fa2 g2f edc-cBc D2 :|
+
+X:NEW 15-xx
+C:David Linton <djl@colourcountry.net>
+M:6/8
+K:G
+P:A
+g2d BCd e2d c2e |1,3 f2d _Bcd e2d c2f :|2,4 f2d e2c def g3 :|
+P:B
+a2f efa c'2a f3 g2e deg b2a ^g3 a2f efa c'2a =f2a g2e f2d e^cb a3 :|
