@@ -3,7 +3,7 @@ CM BRG # Ashford: British Grenadiers
 CM 100 # Black Rod: 100 Pipers
 CM HTH # Chingford Processional: Hunting The Hare
 CM TOF # Chingford Stick Dance: Tobin's Favourite
-# Colne #1: Sherwood Foresters
+CM SHF # Colne #1: Sherwood Foresters
 CM OYG # Colne #2: Oyster Girl
 CM RTB # Colne #3: Rosin The Bow
 CM COB # Constant Billy

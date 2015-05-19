@@ -256,8 +256,7 @@ E2G B2F A2c e2d |1,3 c2A B2G E2F E2D :|2,4 c2A B2G E6 :|
 P:B
 d3 Bcd e3 ABc |1,3 d2c B2A E2F E2D :|2 d2e f2d B3 A3 :| G2F G2A B2c d2e f2d BAF E6 ||
 
-
-X:NEW 15-xx
+X:NEW 15-35
 C:David Linton <djl@colourcountry.net>
 M:6/8
 K:G
@@ -266,7 +265,7 @@ D|GAB ced-def gdb cde AcE-EFG ABA GAB ced-def g2d e2c EAc-cBA G2 :|
 P:B
 A2d BdA-ABd fa2 g2e BeG-GAB cde A2d BdA-ABd fa2 g2f edc-cBc D2 :|
 
-X:NEW 15-xx
+X:NEW 15-36
 C:David Linton <djl@colourcountry.net>
 M:6/8
 K:G
@@ -274,3 +273,32 @@ P:A
 g2d BCd e2d c2e |1,3 f2d _Bcd e2d c2f :|2,4 f2d e2c def g3 :|
 P:B
 a2f efa c'2a f3 g2e deg b2a ^g3 a2f efa c'2a =f2a g2e f2d e^cb a3 :|
+
+X:NEW 15-37
+C:David Linton <djl@colourcountry.net>
+M:6/8
+K:Edor
+P:A
+G2A B2c dcd B2d |1,3 e2d c2A B2A GFE :|2,4 efe cBA B3-B2 :|
+P:B
+f| g3 f3e d2B G2B A2A AGA |1 B2c dcB :|2 B3-B2 |3 B2c de |4 B2d BAG
+P:C
+E2F G2A BAB G2B |1,3 c2B cde f2d BAG :|2,4 cde fec d3-d2 :|"Coda(4)" cdc ABc ded Bcd E3-E2
+
+X:B15A1
+T:Constant Billy
+M:6/8
+K:Gmix
+P:A
+"G"G2d BAB "Dm"c2A FED "Em"BAG "F"E2E "G"DEF G3 :|
+P:B
+"G"Bcd "Am"e2e "F"ABc "G"d2d "Em"Bcd "Fma7"e2e "Dm7"ABc "G"def g2d BAB "Dm"c2A FED "C"BAG "F"E2E "G"DEF G3 :|
+
+X:B15A2
+T:Old Woman Tossed Up In A Blanket
+M:6/8
+K:Gmix
+P:A
+"G"BAG Bcd "C"edc "G"BAG "Am"cBc "F"A2B "G"cBA G2 :|
+P:B
+d| "G"gfg gfg gfg "Dm"afd dcB "C"cde "F"efg "Am"fed "G"BAG Bcd "C"edc "G"BAG "Am"cBc "F"A2B "G"cBA G2 :|

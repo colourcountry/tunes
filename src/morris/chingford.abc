@@ -61,7 +61,17 @@ DFA dcd ecA cde |1 fef gfg ecA GFE :|2 fef gec Agf D3
 P:B
 fga agf efg efg fef gfg ecA GFE [P:(A2)]
 
-% CM SHF Sherwood Foresters Colne #1
+X:CM SHF
+T:Sherwood Foresters
+R:Colne #1
+S:Chingford Morris
+Z:<djl@colourcountry.net>
+M:6/8
+K:G
+P:A
+d2B BAB d2B BAB c2e g2e d2B BAB c2A AGA B2G G2F E2e d2c B2A G3 :|
+P:B
+d2c Bcd e2f g2a b2a gfe d2c B2d e2e ecA d2d dBG c2A b2G FGA d2^c
 
 X:CM OYG
 T:Oyster Girl
@@ -70,6 +80,7 @@ S:Chingford Morris
 Z:<djl@colourcountry.net>
 M:6/8
 K:G
+P:A
 ded B2G A2F D3 G2G BGB d2c A3 ded B2g f2e c2A d2d cBA G6 :|
 P:B
 Bcd Bcd e2c e2c ABc ABc d2B d2B ded B2g f2e c2A d2d cBA G6 :|
@@ -99,7 +110,6 @@ Bcd e3 ABc d3 Bcd e2e ABc def g2d BAB c2A FED BAG E2E DEF G3 :|
 
 X:CM DTJ
 T:Down (with) The Jubilee
-N:(incomplete)
 S:Chingford Morris
 Z:<djl@colourcountry.net>
 M:6/8
@@ -107,7 +117,7 @@ K:G
 P:A
 G2B AcA B2d cec |1 dgf edc BAG FED :|2 dgf ed^c d3-d3
 P:B
-e2c ABc d2B GAB cde EFG ABG FED BAG cBA dcB efg
+e2c ABc d2B GAB cde EFG ABG FED BAG cBA dcB efg dcB AGF GAG G3
 
 X:CM 18M
 T:Lilliburlero
@@ -285,13 +295,14 @@ GABc d2d2 |1,3 egfe dcBA :|2,4 egfe d4 :|5 egfe dBG2 ABcA FGAF G6A2
 
 X:CM NRC
 T:No Room For The Cuckoo
-N:(incomplete)
 S:Chingford Morris
 Z:<djl@colourcountry.net>
 M:6/8
 K:G
 P:A
-GAB FED EGe dBA GAB FED E2F G3
+GAB FED EGe dBA GAB FED E2F G2 :|
+P:B
+A|B3 B3 BAG A3 GAB FED E2F G2 :|4 BAG BAG BAG A3 BAG FED E2F G2F ||
 
 X:CM LIP
 T:Lincolnshire Poacher
@@ -320,13 +331,14 @@ d|gfg gfg gfg afd dcB cde efg d2c [P:(A2)]
 
 X:CM POH
 T:Pole Hill
-N:(incomplete)
 S:Chingford Morris
 Z:<djl@colourcountry.net>
 M:6/8
 K:G
 P:A
 D2B BAG A2B cBA dBG Ddc BcA G3
+P:B
+GAB A2d A2d AFD G2A B2A GFE D3 || [P:(A)]
 
 X:CM PAF
 T:Prince Albert's Farewell
@@ -339,7 +351,7 @@ d| gag fgf efe d2B cBc def g3-g2
 P:B
 d| Bcd Bcd BAG g2d cBc def g2d B2d cBc def g3-g2
 
-X:CM PRR
+X:CM PRY
 T:Princess Royal
 S:Chingford Morris
 Z:<djl@colourcountry.net>
