@@ -31,8 +31,8 @@ P:A A B B
 M:9+6/8
 L:1/8
 K:G
-[P:A] D| GAB c2A Bdg |1 edc BcA :|2 edc cBA G2
-[P:B] d| g2d cde d2B |1 ABc def :|2 ABc cBA G2 
+[P:A] D| GAB c2A Bdg edc BAG-GAB c2A Bdg edc BcA G2 :|
+[P:B] d| g2d ced-d2B ABc def g2d ced-d2B ABc DBA G2 :|
 
 
 X:NEW 14-04
