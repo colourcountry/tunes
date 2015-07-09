@@ -261,18 +261,18 @@ C:David Linton <djl@colourcountry.net>
 M:6/8
 K:G
 P:A
-D|GAB ced-def gdb cde AcE-EFG ABA GAB ced-def g2d e2c EAc-cBA G2 :|
+D|GAB ced-def g2d e2c AcE-EFG ABA GAB ced-dBd g2d e2c EAc-cBA G2 :|
 P:B
 A2d BdA-ABd fa2 g2e BeG-GAB cde A2d BdA-ABd fa2 g2f edc-cBc D2 :|
 
 X:NEW 15-36
 C:David Linton <djl@colourcountry.net>
 M:6/8
-K:G
+K:D
 P:A
-g2d BCd e2d c2e |1,3 f2d _Bcd e2d c2f :|2,4 f2d e2c def g3 :|
+d2A FGA B2A G2B |1,3 =c2A =FGA B2A G2c :|2,4 =c2A B2G ABC D3 :|
 P:B
-a2f efa c'2a f3 g2e deg b2a ^g3 a2f efa c'2a =f2a g2e f2d e^cb a3 :|
+e2c Ace g2e =c3 d2B GBd f2e ^d3 e2c Ace g2e =c2e d2B c2A |1 B^GF E3 :|2 B2G ABc ||
 
 X:NEW 15-37
 C:David Linton <djl@colourcountry.net>
@@ -283,7 +283,7 @@ G2A B2c dcd B2d |1,3 e2d c2A B2A GFE :|2,4 efe cBA B3-B2 :|
 P:B
 f| g3 f3e d2B G2B A2A AGA |1 B2c dcB :|2 B3-B2 |3 B2c de |4 B2d BAG
 P:C
-E2F G2A BAB G2B |1,3 c2B cde f2d BAG :|2,4 cde fec d3-d2 :|"Coda(4)" cdc ABc ded Bcd E3-E2
+E2F G2A BAB G2B |1,3 c2B cde f2d BAG :|2 cde fec d3-dBF :|4 cdc ABc ded Bcd
 
 X:B15A1
 T:Constant Billy
@@ -302,3 +302,37 @@ P:A
 "G"BAG Bcd "C"edc "G"BAG "Am"cBc "F"A2B "G"cBA G2 :|
 P:B
 d| "G"gfg gfg gfg "Dm"afd dcB "C"cde "F"efg "Am"fed "G"BAG Bcd "C"edc "G"BAG "Am"cBc "F"A2B "G"cBA G2 :|
+
+X:NEW 15-38
+T:A Hornpipe
+M:4/4
+K:G
+P:A
+Bd|gdBe dBAG FGAB cdef gdBe dBAG B2A2 A2Bd gdBe dBAG FGAB cdef gfed cBAG D2G2 G2 :|
+P:B
+Bc|dBgd bagf edCB AGFE DGBd edBG B2A2 A2Bc dBgd bagf edCB AGFE DGBd cAEF A2G2 G2 :|
+
+X:NEW 15-39
+M:9+6/8
+K:C
+P:A
+c'2a g2e cde d2B G3 A2B c2d efe |1,3 d2B G3g :|2,4 dcB c3 :|
+P:B
+d2B G3 g3 e2g d2B c2A f3 e3 |1,3 d2B GBc :|2,4 dcB c3 :|
+
+X:NEW 15-40
+M:6/8
+K:G
+P:A
+G2d dcB B2c d2G G2d dcB A2B c2G g2d dcB B2c d2d g2e dBG A2B c3 :|
+P:B
+d2 d2 e2 d2 |1,3 B2c dBG A2B c3 :|2 g2e dBG A3 G3 :|4 g2e dBG A2B c2d e2d cBA ||
+
+X:NEW 15-41
+M:6/8
+K:Edor
+P:A
+E2G B2F A2c e2d c2A B2G :|1,3 E2F E2D :|2,4 E6 :|
+P:B
+d3 Bcd e3 ABc :|1,3 d2c B3A E2F E2D :|2 d2e f2d B3 A3 || G2F G2A B2c d2e f2d BAF E6 ||
+
