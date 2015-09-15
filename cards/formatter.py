@@ -780,12 +780,12 @@ class AbcField:
         elif self.what == AbcField.CHORD_NAME:
             if self.value.startswith("^"):
                 # vmp sometimes specifies above or below this way
-                return r'<>^\markup { \sans \small "%s" } ' % self.value[1:]
+                return r'<>^\markup { \bold \small "%s" } ' % self.value[1:]
             elif self.value.startswith("_"):
                 # vmp sometimes specifies above or below this way
-                return r'<>_\markup { \sans \small "%s" } ' % self.value[1:]
+                return r'<>_\markup { \bold \small "%s" } ' % self.value[1:]
             else:
-                return r'<>^\markup { \sans \small "%s" } ' % self.value
+                return r'<>^\markup { \bold \small "%s" } ' % self.value
         else:
             raise NotImplementedError("inline field: %s" % self)
 

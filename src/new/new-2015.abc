@@ -190,7 +190,7 @@ P:D
 
 X:NEW 15-28
 C:David Linton <djl@colourcountry.net>
-M:6/8,9/8
+M:6+9/8
 K:Am
 P:A
 "Am"A3 a2e | "C"g3 g2e dcB | "F"A2B c2e |1 "C"g3 g2e dcB :|2 "C"g3 g2e | d2c BAG
@@ -200,7 +200,7 @@ P:B
 X:NEW 15-29
 C:David Linton <djl@colourcountry.net>
 M:3/2
-K:Am
+K:Ador
 P:A
 AB| cdec d3B A2AB AGE2-E2gf edBc d2^cB A2AG [E2A2] :|
 P:B
@@ -209,11 +209,11 @@ gf| edBc d3e d2dB d^cA2-A2AB cdec d2^cB A2AG [E2A2] :|
 X:NEW 15-30
 C:David Linton <djl@colourcountry.net>
 M:4/4
-K:D
+K:Dmix
 P:A
-A,2D2 DEFG A2AB cBA2 A2EF G2FE |1,3 D2A,2 A,B,CB, :|2 D4 D3C :|4 D4 D2
+A,2D2 DEFG A2AB cBA2 A2EF GAFE |1,3 D2A,2 A,B,CB, :|2 D4 D3C :|4 D4 D4
 P:B
-fa| "Bm"d2 d2Bd "C"edc2 c4 |1,3 Bcdc BAG2 B2A2 A2 :|2,4 Bcdc bAGF E2D2 D2 :|
+fa "Bm"d2 d2Bd "C"edc2 c4 |1,3 Bcdc BAG2 B2A2 A4 :|2,4 Bcdc BAGF E2D2 D4 :|
 
 X:NEW 15-31
 T:Princess Royal again
@@ -232,9 +232,9 @@ C:David Linton <djl@colourcountry.net>
 M:6/8
 K:Edor
 P:A
-E3 B2c B2A GFE D3 A2B A2G FED G2A B2E AFD E3 :|
+E3 B2d B2A GFE D3 A2B A2G FED G2A B2E AFD E3 :|
 P:B
-B3 B2c B2A GAB d3 d3e c2B ABd e3 d2c Bcd e3B
+B3 B2d B2A GAB d3 d2e c2B ABd e3 d2c Bcd e2B
 G2A B2E AFD A,3 G,2A, B,2E AFD E3 :| 
 
 X:NEW 15-33
@@ -263,14 +263,14 @@ K:G
 P:A
 D|GAB ced-def g2d e2c AcE-EFG ABA GAB ced-dBd g2d e2c EAc-cBA G2 :|
 P:B
-A2d BdA-ABd fa2 g2e BeG-GAB cde A2d BdA-ABd fa2 g2f edc-cBc D2 :|
+A2d BdA-ABd fa2 g2e BeG-GAB cde A2d BdA-ABd fa2 g2f edc-cBc d2 :|
 
 X:NEW 15-36
 C:David Linton <djl@colourcountry.net>
 M:6/8
 K:D
 P:A
-d2A FGA B2A G2B |1,3 =c2A =FGA B2A G2c :|2,4 =c2A B2G ABC D3 :|
+d2A FGA B2A G2B |1,3 =c2A =FGA B2A G2c :|2,4 =c2A B2G ABc d3 :|
 P:B
 e2c Ace g2e =c3 d2B GBd f2e ^d3 e2c Ace g2e =c2e d2B c2A |1 B^GF E3 :|2 B2G ABc ||
 
@@ -281,7 +281,7 @@ K:Edor
 P:A
 G2A B2c dcd B2d |1,3 e2d c2A B2A GFE :|2,4 efe cBA B3-B2 :|
 P:B
-f| g3 f3e d2B G2B A2A AGA |1 B2c dcB :|2 B3-B2 |3 B2c de |4 B2d BAG
+f| g3 f2e d2B G2B A2A AGA |1 B2c dcB :|2 B3-B2 |3 B2c de |4 B2d BAG
 P:C
 E2F G2A BAB G2B |1,3 c2B cde f2d BAG :|2 cde fec d3-dBF :|4 cdc ABc ded Bcd
 
@@ -310,29 +310,35 @@ K:G
 P:A
 Bd|gdBe dBAG FGAB cdef gdBe dBAG B2A2 A2Bd gdBe dBAG FGAB cdef gfed cBAG D2G2 G2 :|
 P:B
-Bc|dBgd bagf edCB AGFE DGBd edBG B2A2 A2Bc dBgd bagf edCB AGFE DGBd cAEF A2G2 G2 :|
+Bc|dBgd bagf edcB AGFE DGBd edBG B2A2 A2Bc dBgd bagf edcB AGFE DGBd cAEF A2G2 G2 :|
 
 X:NEW 15-39
 M:9+6/8
 K:C
 P:A
-c'2a g2e cde d2B G3 A2B c2d efe |1,3 d2B G3g :|2,4 dcB c3 :|
+c'2a g2e cde |d2B G3 |A2B c2d efe |1,3 d2B G3g :|2,4 dcB c3 :|
 P:B
-d2B G3 g3 e2g d2B c2A f3 e3 |1,3 d2B GBc :|2,4 dcB c3 :|
+d2B G3 g3 |e2g d2B |c2A f3 e3 |1,3 d2B GBc :|2,4 dcB c3 :|
 
 X:NEW 15-40
 M:6/8
 K:G
 P:A
-G2d dcB B2c d2G G2d dcB A2B c2G g2d dcB B2c d2d g2e dBG A2B c3 :|
+G2d dcB B2c d2G G2d dcB A2B c2G G2d dcB B2c d2d g2e dBG A2B c3 :|
 P:B
-d2 d2 e2 d2 |1,3 B2c dBG A2B c3 :|2 g2e dBG A3 G3 :|4 g2e dBG A2B c2d e2d cBA ||
+d3 d3 e3 d3 |1,3 B2c dBG A2B c3 :|2 g2e dBG A3 GAB :|4 g2e dBG A2B c2d e2d cBA ||
 
-X:NEW 15-41
-M:6/8
-K:Edor
+X:NEW 15-42
+M:4/4
+K:Ador
+R:swung
 P:A
-E2G B2F A2c e2d c2A B2G :|1,3 E2F E2D :|2,4 E6 :|
-P:B
-d3 Bcd e3 ABc :|1,3 d2c B3A E2F E2D :|2 d2e f2d B3 A3 || G2F G2A B2c d2e f2d BAF E6 ||
+ABcd efga gece g2fe :|1,3 dcBd g2fe dcBA GABc :|2,4 dcBA GABc B2A2 A4 :|
 
+X:NEW 15-43
+M:6/8
+K:Ador
+P:A
+g2e c2e dcB A2G A2B cde f2g a2f g2e c2e dcB A2B [M:9/8] c2d e2f gfe [M:6/8] d2B G3 :|
+P:B
+A2A f2a g2e c2d e2f gfe d2B G3  A2A f2a g2e c2d e2f gfe [M:9/8] ded B2G A3 :|

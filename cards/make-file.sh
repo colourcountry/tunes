@@ -4,7 +4,8 @@ rm out/*
 
 echo '' | python ./formatter.py -p preamble.a4-by-4.ly.fragment -s "$1" -v - 2>out/fail.abc
 lilypond -o out/out out/tunes0.ly
-pdfjam --landscape --nup '1x2' -o out/out-tmp.pdf -- out/out.pdf -
+#pdfjam --landscape --nup '1x2' -o out/out-tmp.pdf -- out/out.pdf -
+pdfjam --nup '1x4' -o out/out-tmp.pdf -- out/out.pdf -
 
 cp out/out-tmp.pdf "$(basename $1 .abc).pdf"
 echo "Wrote $(basename $1 .abc).pdf"
