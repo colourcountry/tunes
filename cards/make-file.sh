@@ -2,7 +2,7 @@
 
 rm out/*
 
-echo '' | python ./formatter.py -p preamble.a4-by-4.ly.fragment -s "$1" -v - 2>out/fail.abc
+echo '' | python ./formatter.py -p preamble.a4-by-4.ly.fragment -i "$1" -v - 2>out/fail.abc
 lilypond -o out/out out/tunes.ly
 #pdfjam --landscape --nup '1x2' -o out/out-tmp.pdf -- out/out.pdf -
 pdfjam --nup '1x4' -o out/out-tmp.pdf --no-tidy -- out/out.pdf -

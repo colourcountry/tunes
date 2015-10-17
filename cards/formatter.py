@@ -1589,13 +1589,14 @@ class ABCollection:
 if __name__=="__main__":
     parser = argparse.ArgumentParser(description="Compiles PDFs from a library of ABC files, optionally specifying which tunes to include. Outputs a valid ABC file containing any tunes that were not successfully converted. You can also supply '-' to take tune IDs from standard input, one per line")
 
-    parser.add_argument("-s", "--source-dir", help="Directory to find ABC files", default="data")
+    parser.add_argument("-i", "--input", help="ABC file, or directory to find ABC files", default="data")
+    parser.add_argument("-s", "--strict", help="Does nothing (provided for compatibility with abc2ly)", action="store_true")
     parser.add_argument("-d", "--dest-dir", help="Directory to save PDF files", default="out")
     parser.add_argument("-o", "--output", help="File to save intermediate Lilypond code", default="out/tunes.ly")
     parser.add_argument("-p", "--preamble", help="Lilypond fragment to append tunes to", default="preamble.ly.fragment")
     parser.add_argument("-c", "--crib", help="Format as crib sheet (only the first 2 bars of each tune, implies -T -C -W -S -O -X)", action="store_true")
     parser.add_argument("-b", "--break", help="Add page break after each tune", action="store_true")
-    parser.add_argument("-i", "--interactive", help="Prompt after encountering a tune with errors", action="store_true")
+    parser.add_argument("-I", "--interactive", help="Prompt after encountering a tune with errors", action="store_true")
     parser.add_argument("-n", "--tunes-per-pdf", help="Split into separate PDFs each containing this number of tunes", type=int)
     parser.add_argument("-x", "--max-tunes", help="Stop processing after this number of tunes", type=int)
     parser.add_argument("-K", "--no-key-signatures", help="Omit key signatures (print explicit accidentals)", action="store_true")
@@ -1642,14 +1643,14 @@ if __name__=="__main__":
     if ARGS.verbose:
         log_to_stderr("%% Called formatter with arguments %s", vars(ARGS))
 
-    if os.path.isfile(ARGS.source_dir):
-        log_to_stderr("%% Processing single file", ARGS.source_dir)
-        data = open(ARGS.source_dir, 'r')
+    if os.path.isfile(ARGS.input):
+        log_to_stderr("%% Processing single file", ARGS.input)
+        data = open(ARGS.input, 'r')
         count = TUNES.add_data(data, ARGS.max_tunes)
         if ARGS.verbose:
-            log_to_stderr("%% Scanned %s , found %s tune%s.\n",ARGS.source_dir, count, '' if count==1 else 's')    
+            log_to_stderr("%% Scanned %s , found %s tune%s.\n",ARGS.input, count, '' if count==1 else 's')    
     else:
-        for (path, dirs, files) in os.walk(ARGS.source_dir, followlinks=True):
+        for (path, dirs, files) in os.walk(ARGS.input, followlinks=True):
             if ARGS.verbose:
                 log_to_stderr("%% Looking for .abc files in %s", path)
             for filename in files:
