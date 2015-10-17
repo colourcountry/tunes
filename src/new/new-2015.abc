@@ -123,7 +123,7 @@ K:Edor
 P:A
 gfe fed cBA B2G EFG B2d |1,3 A2F DEF A2d c2A ABc def :|2,4 A2F DEF AGF E3 EFD E3 :|
 P:B
-G3 GAB d3 E3 EFG B3 |1,3 G3 GAB dcB AGF EFD E3 :|2 e3 edc dcB AGF EFD E3 :|4 e3 e2f gdb AGF EFD E3 :|
+G3 GAB d3 E3 EFG B3 |1,3 G3 GAB dcB AGF EFD E3 :|2 e3 edc dcB AGF EFD E3 :|4 e3 e2f gdB AGF EFD E3 :|
 
 % Into...
 
@@ -324,9 +324,9 @@ X:NEW 15-40
 M:6/8
 K:G
 P:A
-G2d dcB B2c d2G G2d dcB A2B c2G G2d dcB B2c d2d g2e dBG A2B c3 :|
+G2d dcB B2c d2G G2d dcB A2B c3 G2d dcB B2c d2d g2e dBG A2B c3 :|
 P:B
-d3 d3 e3 d3 |1,3 B2c dBG A2B c3 :|2 g2e dBG A3 GAB :|4 g2e dBG A2B c2d e2d cBA ||
+e3 d3 e3 d3 |1,3 B2c dBG A2B c3 :|2 g2e dBG A2B c3 :|4 g2e dBG A2B c2d e2d cBA ||
 
 X:NEW 15-42
 M:4/4
@@ -341,4 +341,39 @@ K:Ador
 P:A
 g2e c2e dcB A2G A2B cde f2g a2f g2e c2e dcB A2B [M:9/8] c2d e2f gfe [M:6/8] d2B G3 :|
 P:B
-A2A f2a g2e c2d e2f gfe d2B G3  A2A f2a g2e c2d e2f gfe [M:9/8] ded B2G A3 :|
+A2A f2a g2e c2d e2f gfe d3 B2c A2A f2a g2e c2B [M:9/8] c2d e2f gfe [M:6/8] d2B G3 :|
+
+X:NEW 15-44
+M:6/8
+K:G
+P:A
+ded BGd g2f edB |1,3 cBc a2g fed cBc :|2,4 cAa z2g f2d efg ||
+P:B
+e2f gfe ded BGg |1,3 f2e d2c B2A Bcd :|2 A2B c2d e2d efg :|4 fed cBA G3 B2c ||
+
+X:NEW 15-45
+M:4/4
+R:swung
+K:Em
+P:A
+GFGA BGE2 D2A2 AGE2 G2GA B2d2 |1,3 BAF2 EDEF :|2,4 BAF2 E4 :|
+P:B
+GFGA B2d2 dcA2 A2GA |1,3 Bdge dBAG B2A2 A2BA :|2,4 B2Bc BAGA BAF2 E4 :|
+P:C
+g3f edBc dedB A2GA B2Bc BAGA |1,3 Bd2B d2e2 :|2,4 BAF2 E4 :|
+
+X:NEW 15-46
+M:4/4
+K:G
+P:A
+G2GB dBcd ecfd g3f |1,3 e2ed cBAG FGAB AFED :|2,4 edcB dcAF D2G2 G4 :|
+P:B
+A2AB cAdB e2dc B2G2 A2AB c2A2 dcAF G4
+A2AB cAdB ecfd g3f egfe d2B2 cedc BGBd edcB dcAF D2G2 G4 :|
+
+X:NEW 15-47
+M:4/4
+K:Am
+P:A
+ABcA agfe defd gecB |1,3 ABcA agfe dcBA G4 :|2,4 ABce dcBA (3GBGE2 A4 :|
+

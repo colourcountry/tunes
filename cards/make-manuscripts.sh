@@ -3,7 +3,7 @@
 rm out/*
 
 python ./formatter.py -p preamble.a4-by-4.ly.fragment -s ../src/manuscripts -
-lilypond -o out/out out/tunes0.ly
+lilypond -o out/out out/tunes.ly
 pdfjam --landscape --nup '1x2' -o out/out-tmp.pdf -- out/out.pdf -
 
 cp out/out.pdf manuscripts.pdf

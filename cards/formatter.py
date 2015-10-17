@@ -1591,6 +1591,7 @@ if __name__=="__main__":
 
     parser.add_argument("-s", "--source-dir", help="Directory to find ABC files", default="data")
     parser.add_argument("-d", "--dest-dir", help="Directory to save PDF files", default="out")
+    parser.add_argument("-o", "--output", help="File to save intermediate Lilypond code", default="out/tunes.ly")
     parser.add_argument("-p", "--preamble", help="Lilypond fragment to append tunes to", default="preamble.ly.fragment")
     parser.add_argument("-c", "--crib", help="Format as crib sheet (only the first 2 bars of each tune, implies -T -C -W -S -O -X)", action="store_true")
     parser.add_argument("-b", "--break", help="Add page break after each tune", action="store_true")
@@ -1676,14 +1677,21 @@ if __name__=="__main__":
     if not ARGS.tunes_per_pdf:
         ARGS.tunes_per_pdf = len(all_tunes)
 
+    if not ARGS.output:
+        ARGS.output = os.path.join('out','tunes.ly')
+
     for i in range(0,len(all_tunes),ARGS.tunes_per_pdf):
         tuneset = all_tunes[i:i+ARGS.tunes_per_pdf]
-        ly_filename = 'tunes%s.ly' % i
-        ly_file = open(os.path.join('out',ly_filename),'w')
+        if i == 0:
+            ly_filename = ARGS.output
+        else:
+            ly_filename = '%s.%s' % (ARGS.output, i)
+        ly_file = open(ly_filename,'w')
         ly_file.write(PREAMBLE)
 
-        ab_filename = 'tunes%s.ab' % i
-        ab_file = open(os.path.join('out',ab_filename),'w')
+
+        ab_filename = ly_filename+'.ab'
+        ab_file = open(ab_filename,'w')
         for tune in tuneset:
             try:
                 if ARGS.crib:

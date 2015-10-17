@@ -4,7 +4,7 @@ rm out/*
 
 python ../src/indexer.py ids -s ../src/index.csv -k name |\
 python ./formatter.py -p preamble.mobile.ly.fragment -
-lilypond -o out/out out/tunes0.ly
+lilypond -o out/out out/tunes.ly
 pdfjam --landscape --nup '1x2' -o out/out-tmp.pdf -- out/out.pdf -
 
 mv out/out-tmp.pdf complete.pdf
