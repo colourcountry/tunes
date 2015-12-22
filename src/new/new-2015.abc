@@ -52,7 +52,6 @@ P:B
 d3 B3 A2G DEG |1,3 DEG B2G A2B A3 :|2,4 DEG B2G A2G G3 :|
 
 X:NEW 15-18
-T:
 C:David Linton <djl@colourcountry.net>
 K:D
 P:A
@@ -63,7 +62,6 @@ AfAd f2ef BgBd g2fg |1,3 cace a2ga fedc edcB :|2,4 afge gfed cddc d2cB :|
 
 
 X:NEW 15-10
-T:
 M:6/8
 C:David Linton <djl@colourcountry.net>
 K:G
@@ -73,7 +71,6 @@ P:B
 c2c cBc e2c ABc |1,3 d2d def gfe dcB :|2,4 d2c BAG FGA G3 :|
 
 X:NEW 15-12
-T:
 M:6/8
 C:David Linton <djl@colourcountry.net>
 K:G
@@ -101,7 +98,6 @@ P:A
 P:B
 "Dm"d6 "C"e3de2 "Bb"f3ef2 "Am+F"F6 "G5"G6 "F"A3GA2 "Dm"d3cd2 "Am"C6-C6
 "Dm"D6 "C"E3DE2 "F"F3GA2 "Am"c6 "Bb"A2G4 "Dm"GFD3C "G"D6-D6 :|
-
 
 X:NEW 15-19
 C:David Linton <djl@colourcountry.net>
@@ -305,6 +301,7 @@ d| "G"gfg gfg gfg "Dm"afd dcB "C"cde "F"efg "Am"fed "G"BAG Bcd "C"edc "G"BAG "Am
 
 X:NEW 15-38
 T:A Hornpipe
+C:David Linton <djl@colourcountry.net>
 M:4/4
 K:G
 P:A
@@ -313,6 +310,7 @@ P:B
 Bc|dBgd bagf edcB AGFE DGBd edBG B2A2 A2Bc dBgd bagf edcB AGFE DGBd cAEF A2G2 G2 :|
 
 X:NEW 15-39
+C:David Linton <djl@colourcountry.net>
 M:9+6/8
 K:C
 P:A
@@ -321,6 +319,7 @@ P:B
 d2B G3 g3 |e2g d2B |c2A f3 e3 |1,3 d2B GBc :|2,4 dcB c3 :|
 
 X:NEW 15-40
+C:David Linton <djl@colourcountry.net>
 M:6/8
 K:G
 P:A
@@ -329,6 +328,7 @@ P:B
 e3 d3 e3 d3 |1,3 B2c dBG A2B c3 :|2 g2e dBG A2B c3 :|4 g2e dBG A2B c2d e2d cBA ||
 
 X:NEW 15-42
+C:David Linton <djl@colourcountry.net>
 M:4/4
 K:Ador
 R:swung
@@ -336,6 +336,7 @@ P:A
 ABcd efga gece g2fe :|1,3 dcBd g2fe dcBA GABc :|2,4 dcBA GABc B2A2 A4 :|
 
 X:NEW 15-43
+C:David Linton <djl@colourcountry.net>
 M:6/8
 K:Ador
 P:A
@@ -344,6 +345,7 @@ P:B
 A2A f2a g2e c2d e2f gfe d3 B2c A2A f2a g2e c2B [M:9/8] c2d e2f gfe [M:6/8] d2B G3 :|
 
 X:NEW 15-44
+C:David Linton <djl@colourcountry.net>
 M:6/8
 K:G
 P:A
@@ -352,6 +354,7 @@ P:B
 e2f gfe ded BGg |1,3 f2e d2c B2A Bcd :|2 A2B c2d e2d efg :|4 fed cBA G3 B2c ||
 
 X:NEW 15-45
+C:David Linton <djl@colourcountry.net>
 M:4/4
 R:swung
 K:Em
@@ -363,6 +366,7 @@ P:C
 g3f edBc dedB A2GA B2Bc BAGA |1,3 Bd2B d2e2 :|2,4 BAF2 E4 :|
 
 X:NEW 15-46
+C:David Linton <djl@colourcountry.net>
 M:4/4
 K:G
 P:A
@@ -372,8 +376,19 @@ A2AB cAdB e2dc B2G2 A2AB c2A2 dcAF G4
 A2AB cAdB ecfd g3f egfe d2B2 cedc BGBd edcB dcAF D2G2 G4 :|
 
 X:NEW 15-47
+C:David Linton <djl@colourcountry.net>
 M:4/4
 K:Am
 P:A
 ABcA agfe defd gecB |1,3 ABcA agfe dcBA G4 :|2,4 ABce dcBA (3GBGE2 A4 :|
+
+X:NEW 15-48
+C:David Linton <djl@colourcountry.net>
+M:9/8
+K:D
+P:A
+F2A BAG FED CDE EFE C2A, F2A BAG FED CDE FDB, B,2A,:|
+P:B
+C2E EFG A2F G2A Bdc d2A F2A BAG FED CDE EFE C2A,
+CDE EFG A2F [M:12/8]G2A B2A Bdc dAF [M:9/8]DEF GAB AFD CDE FDB, B,2A,
 
