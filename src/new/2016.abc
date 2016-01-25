@@ -42,7 +42,7 @@ T:Ropemakers Hornpipe
 C:David Linton <djl@colourcountry.net>
 K:G
 P:A
-BA| G2dc B2G2 G2dc BGBd e2A2 A2ed cBAB cdef g2G2 G2dc BAGF EDEF GABc A2GA B2G2 |1 G2 :|2 GAGF ||
+BA| G2dc B2G2 G2dc BGBd e2A2 A2ed cBAB cdef g2G2 G2dc BAGF EDEF GABc A2GA B2G2 G :| AGF ||
 P:B
 E2EF GABc dBG2 G2AG FGAB cdef g2G2 GAGF E2EF GABc |1 dBG2 G2FG AB^cd efga f2d2 BdBG :|2 dBGF EDEF GABc A2GA B2G2 G2 ||
 
@@ -70,9 +70,9 @@ C:David Linton <djl@colourcountry.net>
 M:4/4
 K:Em
 P:A
-E2e2 e2BA GABA d2A2 |1,3 A2cB GFGA B3A BAF2 :|2,4 A2cB GFGA F2D2 D4 :|
+E2e2 e2BA GABA d2A2 |1,3 cBG2 GFGA B3A BAF2 :|2,4 cBG2 GFGA F2D2 D4 :|
 P:B
-E2e2 e3f g2fe d2A2 |1,3 A2cB GFGA B3c BAF2 :|2,4 A2cB GFGA F2D2 D4 :|
+E2e2 e3f g2fe d2A2 |1,3 cBG2 GFGA B3c BAF2 :|2,4 cBG2 GFGA F2D2 D4 :|
 
 X:15301
 T:Coomaree
@@ -92,19 +92,19 @@ C:David Linton <djl@colourcountry.net>
 M:3/2
 K:Am
 P:A
-"F"edcB |"G"d2B2 G4 "Am"cBAG |1,3 "Em"B2G2 E4 :|2,4 "Em"B2G2 "A"A4 :|
+edcB |d2B2 G4 cBAG |1,3 B2G2 E4 :|2,4 B2G2 A4 :|
 P:B
-"D"aged |"C"c2de "G"d4 "Am"cBAG |1,3 "Em"B2G2 E4 :|2,4 "Em"B2G2 "A"A4 :|
+aged |c2de d4 cBAG |1,3 B2G2 E4 :|2,4 B2G2 A4 :|
 
 X:15303
 C:David Linton <djl@colourcountry.net>
 M:3/8
 K:Ddor
 P:A
-"Am"CDE "Em"GAB "F"cBA "C"G3 |1,3 "Bb"GAF "Dm"GFD "Am"CGE "G"D3 :|2,4 "Bb"GcA "Dm"GFE "G"D3 :|
+CDE GAB cBA G3 |1,3 GAF GFD CGE D3 :|2,4 GcA GFE D3 :|
 P:B
-"Dm"d3 "C"ede "Bb"fef "Am+F"F3 "G5"G3 "F"AGA "Dm"dcd "Am"C3-C3
-"Dm"D3 "C"CDE "F"FGA "Am"c3 "Bb"AcA "Dm"GFE "G"D3-D3 :|
+d3 ede fef F3 G3 AGA dcd C3-C3
+D3 CDE FGA c3 AcA GFE D3-D3 :|
 
 X:15401
 T:The Lord Hood
@@ -112,18 +112,18 @@ C:David Linton <djl@colourcountry.net>
 M:4/4
 K:D
 P:A
-"D"d2AG F2GA "G"Bcde "D"f2d2 "A"e2dc "G"d2cB "D"AGF2 "A"E4 "D"A2FA "G"B2GB "A"cded "Bm"f2d2 "Em"g2ag "Bm"fedf "A"edc2 "D"d4 :|
+d2AG F2GA Bcde f2d2 e2dc d2cB AGF2 E4 A2FA B2GB cded f2d2 g2ag fedf edc2 d4 :|
 P:B
-"G"B2dB "D"A2dA "G"Bcde "Bm"f2d2 "A"e2dc "G"d2cB "D"AGF2 "A"E4 "G"B2GB "A"cded "Bm"f2d2 "D/F"a2dc "G"B2dB "D"AGF2 "A"EDC2 "D"D4 :|
+B2dB A2dA Bcde f2d2 e2dc d2cB AGF2 E4 B2GB cded f2d2 a2dc B2dB AGF2 EDC2 D4 :|
 
 X:15402
 T:Storth
 C:David Linton <djl@colourcountry.net>
 K:Dmix
 P:A
-"D"d>e fe "C"dc cd |1,3 "D"ef ed "A5"cA A2 :|2,4 "C"ed "C/A"ef "G"gG G2 :|
+d>e fe dc cd |1,3 ef ed cA A2 :|2,4 ed ef gG G2 :|
 P:B
-"A5"a2 g>f e^c A^c ef ga "D"fd d2 "A5"a2 g>f e^c AB =cd "C"ef "G"gG G2 :|
+a2 g>f e^c A^c ef ga fd d2 a2 g>f e^c AB =cd ef gG G2 :|
 
 X:15403
 M:4/4
@@ -161,11 +161,11 @@ C:David Linton <djl@colourcountry.net>
 M:6/8
 K:Edor
 P:A
-"Em"e2E-E2F G2A BdB "D"AFD D2C "Em"E2E-E2F G2A Bdc "A"ecA A2G :|
+e2E-E2F G2A BdB AFD D2C E2E-E2F G2A Bdc ecA A2G :|
 P:B
-"Em"e3 efg fed edB "D"dBA A2G "Em"e3 efg fed efg "A"a2A A2G :|
+e3 efg fed edB dBA A2G e3 efg fed efg a2A A2G :|
 P:C
-"G"B3 BAG "Bm"FED C2D "Em"E2B, EFG "G"B2B-BdB "Bm"AFD D2C |1 "Em"E3 EFG :|2 "A"E3 E3
+B3 BAG FED C2D E2B, EFG B2B-BdB AFD D2C |1 E3 EFG :|2 E3 E3
 
 X:15603
 C:David Linton <djl@colourcountry.net>
@@ -183,7 +183,7 @@ K:G
 P:A
 D|GAB ced dBd g2d e2c ABc EFG ABA GAB ced dBd g2d e2c ABc DEF G2 :|
 P:B
-A2d BGd ABd fa2 g2e B2e GAB cde A2d BGd ABd fa2 g2f e2d cBc d2 :|
+[K:D]A2d BGd ABd fa2 g2e B2e GAB cde A2d BGd ABd fa2 g2f e2d cBc d2 :|
 
 X:15605
 M:6/8
@@ -206,11 +206,11 @@ C:David Linton <djl@colourcountry.net>
 M:6/8
 K:G
 P:A
-D| "G"GBd BGd BGB def |1,3 g2G BAG "D"FGA FED :|2,4 "C"g2E "D"FGA "G"BGD G2 :|
+D| GBd BGd BGB def |1,3 g2G BAG FGA FED :|2,4 g2E FGA BGD G2 :|
 P:B
-"D"AFD FAF DAF DFA |1,3 "C"cBA "G"B2G "Em"EFG "D"AFD :|2,4 "C"cBA "G"B2G "D"FGA "G"G2 :|
+AFD FAF DAF DFA |1,3 cBA B2G EFG AFD :|2,4 cBA B2G FGA G2 :|
 P:C
-"C"e2e e2f "G"gdB GdB |1,3 "D"A2A ABc DEF "G"GBd :|2,4 "D"ABc DEF AGF "G"G2 :|
+e2e e2f gdB GdB |1,3 A2A ABc DEF GBd :|2,4 ABc DEF AGF G2 :|
 
 X:15901
 M:9+6/8
@@ -236,4 +236,3 @@ P:A
 g2e c2e dcB A2G A2B cde f2g a2f g2e c2e dcB A2B [M:9/8] c2d e2f gfe [M:6/8] d2B G3 :|
 P:B
 A2A f2a g2e c2d e2f gfe d3 B2c B2A f2a g2e c2G [M:9/8] c2d e2f gfe [M:6/8] d2B G3 :|
-

@@ -1,29 +1,60 @@
-X:NEW 16-01
-M:9/8
-K:D
+X:16101
+T:Reed's Fortune
+C:David Linton <djl@colourcountry.net>
+M:6/8
+K:G
 P:A
-F2A BAG FED CDE B,ED C2A, F2A BAG FED CDE FDB, B,2A,:|
+DGB cde dcB A2G |1,3 BcB AGA BGE EFG :|2,4 BcB AGE DEF G :| Bd ||
 P:B
-C2E EFG A2F G2A Bdc d2A F2A BAG FED CDE B,ED C2A,
-CDE EFG A2F [M:12/8]G2A B2A Bdc dAF [M:9/8]DEF GAB AGF EDE FDB, B,2A,
+e2e dBG ABc dBG |1,3 ABc dBG EFG DGB :|2,4 BcB AGA BGE EFG :|
 
-X:NEW 16-02
+X:16301
+C:David Linton <djl@colourcountry.net>
 M:3/2
-K:Am
+K:Ador
 P:A
 aecA cdec dggf gdBG BcdB G4 A2cA BcdB cdec |1 fedc BA^GA Bcde :|2 fedc BAA^G A4 :|
 P:B
 A2AG A2AB cBcd B2BA B2Bc dcde c2cB c2cd efga ged2 d2cd e4
 f2fe fedc ecA2 d2dc dcBA B^GE2 edcB cBAG AG^FE |1 D2A2 ^G2^F^G A4 :|2 [M:2/2] D2a2 ^g2^f^g ||
 
-X:NEW 16-03
+X:16302
+C:David Linton <djl@colourcountry.net>
 M:3/2
 K:D
 P:A
-DEFG A2A2 Bcd2 |1,3 A2GF E2DE F2D2 :|2,4 A2GF E2C2 D4 :|
+DEFG A2A2 Bcd2 |1,3 A2GF E2D2 F2D2 :|2,4 A2GF E2C2 D4 :|
 P:B
 E2FG A2A2 F2D2 |1,3 [M:2/2] Bcd2 A2F2 G2F2 E4 :|2,4 [M:2/2] Bcd2 A2 d2 f2e2 d4 :|
 
+X:16401
+C:David Linton <djl@colourcountry.net>
+M:4/4
+R:swung
+K:Edor
+P:A
+e2 (3edB G3d edef g2fe d2dB ABde fdec d2B2 e2 (3edB G2Bd edef g2ag fedc BABc d6Bd :|
+P:B
+e2b2 b3a gafg a4 |1,3 fedc Bcde faef d2B2 :|2,4 fedc BABc d6Bd :| 
+
+X:16701
+C:David Linton <djl@colourcountry.net>
+M:4+3/4
+K:Dmix
+P:A
+A,2DE FD2F AF2ABc |1,3 A2GA FD2F GECDB,C :|2,4 A2GA FD2F ECCB,C2 :|
+P:B
+D2d2 dcAG FGAdBc |1,3 A2GA FD2F GECDB,C :|2,4 A2GA FD2F ECCB,C2 :|
+
+X:16901
+C:David Linton <djl@colourcountry.net>
+M:9/8
+K:D
+P:A
+F2A BAG FED CDE B,2E C2A, F2A BAG FED CDE FDB, B,2A,:|
+P:B
+C2E EFG A2F G2A Bdc d2A F2A BAG FED CDE B,2E C2A,
+CDE EFG A2F [M:12/8]G2A B2A Bdc dAF [M:9/8]DEF GAB AGF EDE FDB, B,2A,
 
 X:NEW 15-24
 T:Alders Brook
