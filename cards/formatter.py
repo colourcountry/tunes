@@ -778,14 +778,22 @@ class AbcField:
         elif self.what == AbcField.KEY:
             return r'\key %s' % self.value.as_ly()
         elif self.what == AbcField.CHORD_NAME:
+
+            def protect_curlies(x):
+                # strings containing backslashes are interpreted as raw lilypond,
+                # which means you have to be careful with characters like ' or }
+                if '\\' in x:
+                    return x
+                return '"'+x+'"'
+
             if self.value.startswith("^"):
                 # vmp sometimes specifies above or below this way
-                return r'<>^\markup { \bold \small "%s" } ' % self.value[1:]
+                return r'<>^\markup { \bold \small %s } ' % protect_curlies(self.value[1:])
             elif self.value.startswith("_"):
                 # vmp sometimes specifies above or below this way
-                return r'<>_\markup { \bold \small "%s" } ' % self.value[1:]
+                return r'<>_\markup { \bold \small %s } ' % protect_curlies(self.value[1:])
             else:
-                return r'<>^\markup { \bold \small "%s" } ' % self.value
+                return r'<>^\markup { \bold \small %s } ' % protect_curlies(self.value)
         else:
             raise NotImplementedError("inline field: %s" % self)
 
@@ -1206,7 +1214,7 @@ class Tune:
     def render_ly(self, phrase_identifier=None, end=None, bar_limit=None, line_break=True, page_break=True, no_repeats=False):
 
         if not phrase_identifier:
-            phrase_identifier = '''\\markup { \\bold \\sans \\smaller %s }\n'''
+            phrase_identifier = '''\\markup { \\bold \\sans \\smaller "%s" }\n'''
 
         if not end:
             end = ''

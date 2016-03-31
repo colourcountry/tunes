@@ -1,15 +1,17 @@
 X:16101
 T:Reed's Fortune
-C:David Linton <djl@colourcountry.net>
+C:david@colourcountry.net
 M:6/8
 K:G
 P:A
-DGB cde dcB A2G |1,3 BcB AGA BGE EFG :|2,4 BcB AGE DEF G :| Bd ||
+"G"DGB "C"cde "G"dcB "D"A2G |1,3 "Em" BcB "C"AGA "Em"BGE "C"EFG :|2 "Em"BcB "C"AGE "D"DAF "G"GFE :|4 "Em"BcB "C"AGE "D"DAF "G"GBd ||
 P:B
-e2e dBG ABc dBG |1,3 ABc dBG EFG DGB :|2,4 BcB AGA BGE EFG :|
+"C"e2e "G"dBG "D"ABc "G"dBG |1,3 "D"ABc "G"dBG "C"EFG "G"DGB :|2,4 "G"BcB "Bm"AGA "Em"BGE "C"EFG :|
+P:A'
+(2:3:3DGB2 (2:3:3cde2 (2:3:3dcB2 A2G |1,3  BcB AGA BGE EFG :|2 BcB AGE DAF GFE :|4 BcB AGE DAF GBd ||
 
 X:16301
-C:David Linton <djl@colourcountry.net>
+C:david@colourcountry.net
 M:3/2
 K:Ador
 P:A
@@ -19,7 +21,7 @@ A2AG A2AB cBcd B2BA B2Bc dcde c2cB c2cd efga ged2 d2cd e4
 f2fe fedc ecA2 d2dc dcBA B^GE2 edcB cBAG AG^FE |1 D2A2 ^G2^F^G A4 :|2 [M:2/2] D2a2 ^g2^f^g ||
 
 X:16302
-C:David Linton <djl@colourcountry.net>
+C:david@colourcountry.net
 M:3/2
 K:D
 P:A
@@ -28,17 +30,17 @@ P:B
 E2FG A2A2 F2D2 |1,3 [M:2/2] Bcd2 A2F2 G2F2 E4 :|2,4 [M:2/2] Bcd2 A2 d2 f2e2 d4 :|
 
 X:16401
-C:David Linton <djl@colourcountry.net>
+C:david@colourcountry.net
 M:4/4
 R:swung
 K:Edor
 P:A
 e2 (3edB G3d edef g2fe d2dB ABde fdec d2B2 e2 (3edB G2Bd edef g2ag fedc BABc d6Bd :|
 P:B
-e2b2 b3a gafg a4 |1,3 fedc Bcde faef d2B2 :|2,4 fedc BABc d6Bd :| 
+e2b2 b3a gafg a4 |1,3 fedc Bcde faef d2B2 :|2,4 fedc BABc d6Bd :|
 
 X:16701
-C:David Linton <djl@colourcountry.net>
+C:david@colourcountry.net
 M:4+3/4
 K:Dmix
 P:A
@@ -47,18 +49,39 @@ P:B
 D2d2 dcAG FGAdBc |1,3 A2GA FD2F GECDB,C :|2,4 A2GA FD2F ECCB,C2 :|
 
 X:16901
-C:David Linton <djl@colourcountry.net>
+T:Commit No Nuisance
+C:david@colourcountry.net
+M:9/8
+K:G
+P:A
+B2d edc BAG FGA E2A F2D B2d edc BAG FGA BGE E2D :|
+P:B
+F2A ABc d2B c2d egf g2d B2d edc BAG FGA E2A F2D
+F2A ABc d2B [M:12/8] c2d e2d egf gdB [M:9/8] GAB cde dcB AGA BGE E2D :|
+
+X:16902
+T:Tippy Titfer
+C:david@colourcountry.net
 M:9/8
 K:D
 P:A
-F2A BAG FED CDE B,2E C2A, F2A BAG FED CDE FDB, B,2A,:|
+d2d A2A BcB A2A dcd e2f |1 d2d A2A BcB A2d cde d3 :|2 d2d A2A Bcd efg f2e d3 :|
 P:B
-C2E EFG A2F G2A Bdc d2A F2A BAG FED CDE B,2E C2A,
-CDE EFG A2F [M:12/8]G2A B2A Bdc dAF [M:9/8]DEF GAB AGF EDE FDB, B,2A,
+fga a2a fga a2a fga b2a |1 fga a2a fga b2a g2f e3 :|2 fga a2a b2a g2f e2d fge :|
+
+X:16903
+C:david@colourcountry.net
+M:6/8
+K:G
+P:A
+gdB fdB ecd-dBA GAB cde |1,3 ed^c def :|2,4 d^cd g3
+P:B
+M:9/8
+afd gdB ecd-ded BAG Adf afd gdB ecd-dGB cAF G3
 
 X:NEW 15-24
 T:Alders Brook
-C:David Linton <djl@colourcountry.net>
+C:david@colourcountry.net
 K:G
 M:9+6/8
 P:A
@@ -67,7 +90,7 @@ P:B
 F2F F2A GAB | A2B cBA | F2F F2A GFE | D2F GAB | A2A A2D GAB | A2B cBA | F2F F2A GFE | D2d cBA
 
 X:NEW 15-25
-C:David Linton <djl@colourcountry.net>
+C:david@colourcountry.net
 K:Ador
 M:2+2+3+3/4
 P:A
@@ -78,7 +101,7 @@ P:B
 
 X:NEW 15-26
 T:
-C:David Linton <djl@colourcountry.net>
+C:david@colourcountry.net
 K:Edor
 P:A
 cB|"Em"G2B2 G2Bc "G"dedc B2de |1,3 "Bm/D"fdcd B2cd "A"edcB BAGF :|2,4 "D"fedc "A"BABc "Bm"d4-d2 :|
@@ -86,7 +109,7 @@ P:B
 cd|"A"e2c2 e2c2 "Em"dcB2 B4 "G"d2B2 d2B2 "D"AGF2 F2Ad "A"e2c2 e2c2 "Em"dcB2 "G"B2de "Bm"fedc "A"BABc "D"d4-d2 :|
 
 X:NEW 15-28
-C:David Linton <djl@colourcountry.net>
+C:david@colourcountry.net
 M:6+9/8
 K:Am
 P:A
@@ -95,7 +118,7 @@ P:B
 "Dm"F3 F2G | "Am"e3 e2d cBA | "G"G3 G2B |1 "Em"g2e d2c BAG :|2 g3 efe dcB
 
 X:NEW 15-30
-C:David Linton <djl@colourcountry.net>
+C:david@colourcountry.net
 M:4/4
 K:Dmix
 P:A
@@ -105,7 +128,7 @@ fa "Bm"d2 d2Bd "C"edc2 c4 |1,3 Bcdc BAG2 B2A2 A4 :|2,4 Bcdc BAGF E2D2 D4 :|
 
 X:NEW 15-31
 T:Princess Royal again
-C:David Linton <djl@colourcountry.net>
+C:david@colourcountry.net
 M:4/4
 K:Em
 P:A
@@ -117,7 +140,7 @@ P:B
 
 
 X:NEW 15-32
-C:David Linton <djl@colourcountry.net>
+C:david@colourcountry.net
 M:6/8
 K:Edor
 P:A
@@ -127,7 +150,7 @@ B3 B2d B2A GAB d3 d2e c2B ABd e3 d2c Bcd e2B
 G2A B2E AFD A,3 G,2A, B,2E AFD E3 :|
 
 X:NEW 15-36
-C:David Linton <djl@colourcountry.net>
+C:david@colourcountry.net
 M:6/8
 K:D
 P:A
@@ -136,7 +159,7 @@ P:B
 e2c Ace g2e =c3 d2B GBd f2e ^d3 e2c Ace g2e =c2e d2B c2A |1 B^GF E3 :|2 B2G ABc ||
 
 X:NEW 15-37
-C:David Linton <djl@colourcountry.net>
+C:david@colourcountry.net
 M:6/8
 K:Edor
 P:A
@@ -162,7 +185,7 @@ ABcA agfe defd gecB |1,3 ABcA agfe dcBA G4 :|2,4 ABce dcBA (3GBGE2 A4 :|
 
 X:NEW 15-18
 T:
-C:David Linton <djl@colourcountry.net>
+C:david@colourcountry.net
 K:D
 P:A
 AdAc d2cd BdBc d2cd |1,3 AdAc d2cd BAGF E2FG :|2,4 AGFE GFED CDDC DEFG :|
@@ -171,7 +194,7 @@ AfAd f2ef BgBd g2fg |1,3 cace a2ga fedc edcB :|2,4 afge gfed cddc d2cB :|
 
 X:15301
 T:The Cocky Fire Fox
-C:David Linton <djl@colourcountry.net>
+C:david@colourcountry.net
 R:swung
 M:3/2
 K:A
@@ -179,4 +202,3 @@ P:A
 "A"aaAB cdef "C"=gece "G"ddGA B=cde "E"fgfe "A"aaAB cdef "C"=gece "G"ddGA B=cdB "D"A2A2 :|
 P:B
 "E"BBEF GABc "G"dcdB |1,3 "A"eeAB cdef "E"gedc :|2 "A"eeAB cedc "E"B4 :|4 [M:2/2] "A"eeAB cdef [M:3/2] "C"g2ec "G"B2de "E"fgfe :|
-
