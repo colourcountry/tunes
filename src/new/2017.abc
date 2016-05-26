@@ -10,6 +10,15 @@ P:B
 P:A'
 (2:3:3DGB2 (2:3:3cde2 (2:3:3dcB2 A2G |1,3  BcB AGA BGE EFG :|2 BcB AGE DAF GFE :|4 BcB AGE DAF GBd ||
 
+X:16102
+C:david@colourcountry.net
+M:6/8
+K:G
+P:A
+BAG cde dBG GFD |1,3 EFG DGB cAE FGA :|2,4 EFG D2B AGF G3 :|
+P:B
+EFG D2B AGF GAB |1,3 cde dBG FGA A2D :|2 cde fgd cAD B2G :|4 cde fgd cAF G3 :|
+
 X:16301
 C:david@colourcountry.net
 M:3/2
@@ -38,6 +47,25 @@ P:A
 e2 (3edB G3d edef g2fe d2dB ABde fdec d2B2 e2 (3edB G2Bd edef g2ag fedc BABc d6Bd :|
 P:B
 e2b2 b3a gafg a4 |1,3 fedc Bcde faef d2B2 :|2,4 fedc BABc d6Bd :|
+
+X:16402
+C:david@colourcountry.net
+M:4/4
+R:swung
+K:G
+P:A
+dBec dBAG FGAF GFED |1,3 EFGE DGAB cBAG GFED :|2,4 EFGE Dddc BGAF G4 :|
+P:B
+FGAF G2G2 FGAF E4 |1,3 FGAF DGAB cBAG GFED :|2,4 FGAF Dddc BGAF G4 :|
+
+X:16403
+C:david@colourcountry.net
+M:4/4
+R:swung
+K:G
+P:A
+DEF| GABG AFED G<EGA GD(3GAB |1,3 cdec dBAG dedc A :|2,4 cdef geBc A2GF G :|
+GAB| cdec dBAG dedc BGAB cdec dBAG dedc A || [P:(A)] ||
 
 X:16701
 C:david@colourcountry.net
